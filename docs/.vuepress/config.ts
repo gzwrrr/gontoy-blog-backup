@@ -18,74 +18,120 @@ export default defineUserConfig({
         viteOptions: {},
         vuePluginOptions: {},
     }),
-    markdown: {
-        anchor: {
-            level: [1, 2, 3],
-            permalink: anchorPlugin.permalink.ariaHidden({
-                class: 'header-anchor',
-                symbol: '#',
-                space: true,
-                placement: 'before',
-            }),
-        },
-        toc: {
-            level: [1, 2, 3]
-        },
-        headers: {
-            level: [1, 2, 3]
-        }
-    },
-    plugins: [
-        containerPlugin({
-            type: 'para',
-            locales: {
-                '/': {
-                    defaultInfo: 'TIP',
-                },
-                '/zh/': {
-                    defaultInfo: '提示',
-                },
-            },
-            before: (info: string): string =>
-                `<div class="custom-container">${info ? `<p class="custom-container-title">${info}</p>` : ''}\n`,
-            after: (): string => '</div>\n'
-        }),
-        registerComponentsPlugin({
-            componentsDir: path.resolve(__dirname, './components'),
-        }),
-        searchProPlugin({
-            // 索引全部内容
-            indexContent: true,
-            // 为分类和标签添加索引
-            customFields: [
-                // {
-                //     getter: (page) => page.frontmatter.category,
-                //     formatter: "分类：$content",
-                // },
-                // {
-                //     getter: (page) => page.frontmatter.tag,
-                //     formatter: "标签：$content",
-                // },
-            ],
-        }),
-        commentPlugin({
-            provider: "Giscus",
-            comment: true,
-            repo: "gzwrrr/giscus",
-            repoId: "R_kgDOI40yuA",
-            category: "General",
-            categoryId: "DIC_kwDOI40yuM4CT86L",
-            mapping: "title",
-            strict: false
-        }),
-        autoCatalogPlugin(),
-    ],
     theme: hopeTheme({
         // 此处放置主题配置
         author: "Gontoy",
         favicon: "/logo.png",
         darkmode: "switch",
         fullscreen: true,
+        navbar: [
+            {
+                text: "主页",
+                link: "/README.md",
+                icon: "lightbulb",
+                // 仅在 `/zh/guide/` 激活
+                activeMatch: "^/zh/guide/$",
+            },
+            {
+                text: "导航",
+                link: "/guide/",
+                icon: "lightbulb",
+                // 仅在 `/zh/guide/` 激活
+                activeMatch: "^/zh/guide/$",
+            },
+            {
+                text: "Java",
+                icon: "circle-info",
+                link: "/article/java/"
+            },
+            {
+                text: "Go",
+                icon: "circle-info",
+                link: "/article/go/"
+            },
+            {
+                text: "算法",
+                icon: "circle-info",
+                link: "/article/algorithm/"
+            },
+            {
+                text: "Springs",
+                icon: "circle-info",
+                link: "/article/springs/"
+            },
+            {
+                text: "数据库",
+                icon: "circle-info",
+                children: [
+                    "/article/mysql/",
+                    "/article/redis/",
+                ]
+            },
+            {
+                text: "设计",
+                icon: "circle-info",
+                children: [
+                    "/article/design/",
+                ]
+            },
+            {
+                text: "中间件",
+                icon: "circle-info",
+                children: [
+                    "/article/rabbitmq/",
+                    "/article/elasticsearch/",
+                    "/article/mongodb/",
+                    "/article/netty/",
+                    "/article/quartz/",
+                ]
+            },
+            {
+                text: "运维",
+                icon: "circle-info",
+                children: [
+                    "/article/git/",
+                    "/article/docker/",
+                    "/article/jenkins/",
+                    "/article/linux/",
+                ]
+            },
+            {
+                text: "其他文章",
+                icon: "circle-info",
+                link: "/article/other/"
+            },
+            {
+                text: "关于",
+                icon: "circle-info",
+                link: "/about/"
+            },
+        ],
+        sidebar: {
+            "/guide/": "structure",
+            "/article/java/": "structure",
+            "/article/go/": "structure",
+            "/article/algorithm/": "structure",
+            "/article/springs/": "structure",
+            "/article/design/": "structure",
+            "/article/mysql/": "structure",
+            "/article/redis/": "structure",
+            "/article/rabbitmq/": "structure",
+            "/article/elasticsearch/": "structure",
+            "/article/git/": "structure",
+            "/article/docker/": "structure",
+            "/article/jenkins/": "structure",
+            "/article/linux/": "structure",
+            "/article/mongodb/": "structure",
+            "/article/netty/": "structure",
+            "/article/quartz/": "structure",
+            "/article/other/": "structure",
+            "/about/": "structure",
+            "/": [
+                "" /* / */,
+                // "contact" /* /contact.html */,
+                // "about" /* /about.html */,
+            ],
+        },
         themeColor: {
             blue: "#2196f3",
             red: "#f26d6d",
@@ -139,44 +185,68 @@ export default defineUserConfig({
                 ],
             }
         },
-        navbar: [
-            {
-                text: "主页",
-                link: "/README.md",
-                icon: "lightbulb",
-                // 仅在 `/zh/guide/` 激活
-                activeMatch: "^/zh/guide/$",
-            },
-            {
-                text: "导航",
-                link: "/guide/",
-                icon: "lightbulb",
-                // 仅在 `/zh/guide/` 激活
-                activeMatch: "^/zh/guide/$",
-            },
-            {
-                text: "Java",
-                icon: "circle-info",
-                link: "/article/java/"
-            },
-            {
-                text: "go",
-                icon: "circle-info",
-                link: "/article/go/"
-                // children: [
-                //     "/article/go/README.md"
-                // ]
-            },
-        ],
-        sidebar: {
-            "/guide/": "structure",
-            "/article/java/": "structure",
-            "/article/go/": "structure",
-            "/": [
-                "" /* / */,
-                "contact" /* /contact.html */,
-                "about" /* /about.html */,
-            ],
-        },
+
     }),
+    markdown: {
+        anchor: {
+            level: [1, 2, 3],
+            permalink: anchorPlugin.permalink.ariaHidden({
+                class: 'header-anchor',
+                symbol: '#',
+                space: true,
+                placement: 'before',
+            }),
+        },
+        toc: {
+            level: [1, 2, 3]
+        },
+        headers: {
+            level: [1, 2, 3]
+        }
+    },
+    plugins: [
+        containerPlugin({
+            type: 'para',
+            locales: {
+                '/': {
+                    defaultInfo: 'TIP',
+                },
+                '/zh/': {
+                    defaultInfo: '提示',
+                },
+            },
+            before: (info: string): string =>
+                `<div class="custom-container">${info ? `<p class="custom-container-title">${info}</p>` : ''}\n`,
+            after: (): string => '</div>\n'
+        }),
+        registerComponentsPlugin({
+            componentsDir: path.resolve(__dirname, './components'),
+        }),
+        searchProPlugin({
+            // 索引全部内容
+            indexContent: true,
+            // 为分类和标签添加索引
+            customFields: [
+                // {
+                //     getter: (page) => page.frontmatter.category,
+                //     formatter: "分类：$content",
+                // },
+                // {
+                //     getter: (page) => page.frontmatter.tag,
+                //     formatter: "标签：$content",
+                // },
+            ],
+        }),
+        // commentPlugin({
+        //     provider: "Giscus",
+        //     comment: true,
+        //     repo: "gzwrrr/giscus",
+        //     repoId: "R_kgDOI40yuA",
+        //     category: "General",
+        //     categoryId: "DIC_kwDOI40yuM4CT86L",
+        //     mapping: "title",
+        //     strict: false
+        // }),
+        autoCatalogPlugin(),
+    ],
 });
