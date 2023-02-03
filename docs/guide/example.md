@@ -1,0 +1,557 @@
+---
+sidebar: auto
+category:
+  - HTML
+  - Web
+---
+
+[[toc]]
+
+# example
+
+# 标题1 
+## 标题2 
+### 标题3 
+
+
+## 自定义容器
+::: para 段落 1
+  这是一个自定义容器
+:::
+
+
+## md 中直接使用 vue 组件
+
+<!-- @include(../web/dogs.md) -->
+
+<OtherComponent />
+
+<!-- 这是默认主题内置的 `<Badge />` 组件 <Badge text="演示" />
+<div>
+  # test
+  # test
+  # test
+  <button @click="change">{{ buttonName }}</button>
+</div>
+
+<script>
+export default {
+  name: "OtherComponent",
+  data() {
+    return {
+      buttonName: "点击按钮"
+    };
+  },
+  methods: {
+    change() {
+      console.log(111);
+    }
+  }
+};
+</script> -->
+
+
+
+## 图片
+![风景](https://ts1.cn.mm.bing.net/th/id/R-C.05cd17564c9fb529479f316d76553200?rik=uqQSgyqyG%2f0dXw&riu=http%3a%2f%2fbbsimg.res.flyme.cn%2fforum%2f201511%2f27%2f151338qmmsmdssmdomoxjz.jpg&ehk=JYf9%2bLprj6TLKXo9HxaQXAymrSqaLSYajYJq%2bnsRboA%3d&risl=&pid=ImgRaw&r=0)
+
+
+## 代码块
+```java
+public
+```
+
+## 卡片
+
+
+::: tabs#fruit
+
+
+@tab 标题 1
+
+<!-- tab 1 内容 -->
+
+
+@tab 标题 2
+
+<!-- tab 2 内容 -->
+
+@tab:active 标题 3
+
+<!-- tab 3 将会被默认激活 -->
+
+<!-- tab 3 内容 -->
+
+:::
+
+
+## 代码块分组
+安装 VuePress Theme Hope:
+
+::: code-tabs#shell
+
+@tab pnpm
+
+```bash
+pnpm add -D vuepress-theme-hope
+```
+
+@tab yarn
+
+```bash
+yarn add -D vuepress-theme-hope
+```
+
+@tab:active npm
+
+```bash
+npm i -D vuepress-theme-hope
+```
+
+:::
+
+安装 VuePress Plugin Markdown Enhance:
+
+::: code-tabs#shell
+
+@tab pnpm
+
+```bash
+pnpm add -D vuepress-plugin-md-enhance
+```
+
+@tab yarn
+
+```bash
+yarn add -D vuepress-plugin-md-enhance
+```
+
+@tab:active npm
+
+```bash
+npm i -D vuepress-plugin-md-enhance
+```
+
+:::
+
+## 任务列表
+- [ ] 计划 A
+- [x] 计划 B
+
+
+## 属性支持
+包含 `行内代码`{.inline-code} 和 ![favicon](/logo.png){.image} 的文字，也支持 _强调_{.emphasis} 和 **加粗**{.bold}。
+
+| 表格 |
+| ---- |
+| 内容 |
+
+{.table}
+
+- list item{.list-item}
+
+  - nested list item
+    {.nested}
+
+{.list}
+
+一行换行的文字  
+{.break}
+
+--- {.horizontal}
+
+块级元素 {.block}
+
+
+## 标记
+示范： ==这是一个标记== 
+
+
+## 自定义容器
+::: info
+信息容器。
+:::
+
+::: note
+注释容器。
+:::
+
+::: tip
+提示容器
+:::
+
+::: warning 警告
+警告容器
+:::
+
+::: danger
+危险容器
+:::
+
+::: details
+详情容器
+:::
+
+::: info 自定义标题
+
+一个有 `代码` 和 [链接](#演示) 的信息容器。
+
+```js
+const a = 1;
+```
+
+:::
+
+::: note 自定义标题
+
+一个有 `代码` 和 [链接](#演示) 的注释容器。
+
+```js
+const a = 1;
+```
+
+:::
+
+::: tip 自定义标题
+
+一个有 `代码` 和 [链接](#演示) 的提示容器。
+
+```js
+const a = 1;
+```
+
+:::
+
+::: warning 自定义标题
+
+一个有 `代码` 和 [链接](#演示) 的警告容器。
+
+```js
+const a = 1;
+```
+
+:::
+
+::: danger 自定义标题
+
+一个有 `代码` 和 [链接](#演示) 的危险容器。
+
+```js
+const a = 1;
+```
+
+:::
+
+::: details 自定义标题
+
+一个有 `代码` 和 [链接](#演示) 的详情容器。
+
+```js
+const a = 1;
+```
+
+:::
+
+::: info 自定义信息
+:::
+
+::: note 自定义注释
+:::
+
+::: tip 自定义提示
+:::
+
+::: warning 自定义警告
+:::
+
+::: danger 自定义危险
+:::
+
+
+## 自定义对齐
+:::: danger W.I.P
+vuepress-theme-hope v2 仍在制作中，API 可能会有
+
+::: center
+重大的变动。
+:::
+
+如果你在使用过程中遇到了 bug，可以
+
+::: right
+[提一个 issue](https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues)。
+:::
+
+::::
+
+
+## 思维导图
+<iframe
+  :src="$withBase('/markmap/html/demo-zh.html')"
+  width="100%"
+  height="400"
+  frameborder="0"
+  scrolling="No"
+  leftmargin="0"
+  topmargin="0"
+/>
+
+
+
+
+## 柱状图
+::: chart 一个块状图案例
+
+```json
+{
+  "type": "bar",
+  "data": {
+    "labels": ["红色", "蓝色", "黄色", "绿色", "紫色", "橙色"],
+    "datasets": [
+      {
+        "label": "投票数",
+        "data": [12, 19, 3, 5, 2, 3],
+        "backgroundColor": [
+          "rgba(255, 99, 132, 0.2)",
+          "rgba(54, 162, 235, 0.2)",
+          "rgba(255, 206, 86, 0.2)",
+          "rgba(75, 192, 192, 0.2)",
+          "rgba(153, 102, 255, 0.2)",
+          "rgba(255, 159, 64, 0.2)"
+        ],
+        "borderColor": [
+          "rgba(255, 99, 132, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 206, 86, 1)",
+          "rgba(75, 192, 192, 1)",
+          "rgba(153, 102, 255, 1)",
+          "rgba(255, 159, 64, 1)"
+        ],
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": true
+      }
+    }
+  }
+}
+```
+
+:::
+
+
+## 气泡图
+::: chart 一个气泡图案例
+
+```json
+{
+  "type": "bubble",
+  "data": {
+    "datasets": [
+      {
+        "label": "第一个数据集",
+        "data": [
+          { "x": 20, "y": 30, "r": 15 },
+          { "x": 40, "y": 10, "r": 10 }
+        ],
+        "backgroundColor": "rgb(255, 99, 132)"
+      }
+    ]
+  }
+}
+```
+
+:::
+
+
+## 线状图
+::: chart 一个线状图案例
+
+```json
+{
+  "type": "line",
+  "data": {
+    "labels": ["一月", "二月", "三月", "四月", "五月", "六月", "七月"],
+    "datasets": [
+      {
+        "label": "我的第一个数据集",
+        "data": [65, 59, 80, 81, 56, 55, 40],
+        "fill": false,
+        "borderColor": "rgb(75, 192, 192)",
+        "tension": 0.1
+      }
+    ]
+  }
+}
+```
+
+:::
+
+## 玫瑰图
+::: chart 一个玫瑰图案例
+
+```json
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["红色", "绿色", "黄色", "灰色", "蓝色"],
+    "datasets": [
+      {
+        "label": "My First Dataset",
+        "data": [11, 16, 7, 3, 14],
+        "backgroundColor": [
+          "rgb(255, 99, 132)",
+          "rgb(75, 192, 192)",
+          "rgb(255, 205, 86)",
+          "rgb(201, 203, 207)",
+          "rgb(54, 162, 235)"
+        ]
+      }
+    ]
+  }
+}
+```
+
+:::
+
+## 雷达图
+::: chart 一个雷达图案例
+
+```json
+{
+  "type": "radar",
+  "data": {
+    "labels": ["吃饭", "喝水", "睡觉", "设计", "编程", "骑车", "跑步"],
+    "datasets": [
+      {
+        "label": "我的第一个数据集",
+        "data": [65, 59, 90, 81, 56, 55, 40],
+        "fill": true,
+        "backgroundColor": "rgba(255, 99, 132, 0.2)",
+        "borderColor": "rgb(255, 99, 132)",
+        "pointBackgroundColor": "rgb(255, 99, 132)",
+        "pointBorderColor": "#fff",
+        "pointHoverBackgroundColor": "#fff",
+        "pointHoverBorderColor": "rgb(255, 99, 132)"
+      },
+      {
+        "label": "我的第二个数据集",
+        "data": [28, 48, 40, 19, 96, 27, 100],
+        "fill": true,
+        "backgroundColor": "rgba(54, 162, 235, 0.2)",
+        "borderColor": "rgb(54, 162, 235)",
+        "pointBackgroundColor": "rgb(54, 162, 235)",
+        "pointBorderColor": "#fff",
+        "pointHoverBackgroundColor": "#fff",
+        "pointHoverBorderColor": "rgb(54, 162, 235)"
+      }
+    ]
+  },
+  "options": {
+    "elements": {
+      "line": {
+        "borderWidth": 3
+      }
+    }
+  }
+}
+```
+
+:::
+
+
+## 散点图
+::: chart 一个散点图案例
+
+```json
+{
+  "type": "scatter",
+  "data": {
+    "datasets": [
+      {
+        "label": "散点数据集",
+        "data": [
+          { "x": -10, "y": 0 },
+          { "x": 0, "y": 10 },
+          { "x": 10, "y": 5 },
+          { "x": 0.5, "y": 5.5 }
+        ],
+        "backgroundColor": "rgb(255, 99, 132)"
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "x": {
+        "type": "linear",
+        "position": "bottom"
+      }
+    }
+  }
+}
+```
+
+:::
+
+## vue 交互
+::: vue-playground 自定义导入与映射的 Vue 交互演示
+
+@file App.vue
+
+```vue
+<script setup>
+import { ref } from "vue";
+import Comp from "./Comp.vue";
+
+const msg = ref("Hello Playground!");
+</script>
+
+<template>
+  <h1>{{ msg }}</h1>
+  <input v-model="msg" />
+  <Comp />
+</template>
+```
+
+@file Comp.vue
+
+```vue
+<script setup>
+import { useBattery } from "@vueuse/core";
+import { ref } from "vue";
+
+const { charging, level } = useBattery();
+</script>
+
+<template>
+  <h1>Battery status</h1>
+  <p>Charging: {{ charging }}</p>
+  <p>Level: {{ level * 100 }}%</p>
+</template>
+```
+
+@import
+
+```json
+{
+  "imports": {
+    "@vueuse/core": "https://unpkg.com/@vueuse/core/index.mjs",
+    "@vueuse/shared": "https://unpkg.com/@vueuse/shared/index.mjs",
+    "vue-demi": "https://unpkg.com/vue-demi/lib/index.mjs"
+  }
+}
+```
+
+@setting
+
+```json
+{
+  "showCompileOutput": true
+}
+```
+
+:::

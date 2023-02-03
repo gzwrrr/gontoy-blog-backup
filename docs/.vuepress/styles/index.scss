@@ -1,0 +1,25 @@
+$themeColor: #064242;
+
+.custom-container-title {
+    width: auto;  
+    border-bottom: 1px #1d1e1f solid;
+}
+
+.custom-container {
+    position: relative;
+    padding: 1px 10px;
+    border-radius: 5px;
+    background-color: #aab2b7;
+    color: #1d1e1f;
+}
+
+.custom-container::after {
+    content: '';
+    position: absolute;
+    border-radius: 3px 0 0 3px;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: $themeColor;
+}
