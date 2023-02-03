@@ -8,6 +8,7 @@ import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { containerPlugin } from '@vuepress/plugin-container'
 import { anchorPlugin } from '@vuepress/markdown'
+import { blogPlugin } from "vuepress-plugin-blog2";
 
 
 
@@ -24,44 +25,45 @@ export default defineUserConfig({
         favicon: "/logo.png",
         darkmode: "switch",
         fullscreen: true,
+        iconAssets: "https://at.alicdn.com/t/c/font_3879594_02a7jyioxr8t.css",
         navbar: [
             {
                 text: "主页",
                 link: "/README.md",
-                icon: "lightbulb",
+                icon: "zhuye",
                 // 仅在 `/zh/guide/` 激活
                 activeMatch: "^/zh/guide/$",
             },
             {
                 text: "导航",
                 link: "/guide/",
-                icon: "lightbulb",
+                icon: "tubiaozhuanqu-16",
                 // 仅在 `/zh/guide/` 激活
                 activeMatch: "^/zh/guide/$",
             },
             {
                 text: "Java",
-                icon: "circle-info",
+                icon: "java",
                 link: "/article/java/"
             },
             {
                 text: "Go",
-                icon: "circle-info",
+                icon: "code",
                 link: "/article/go/"
             },
             {
                 text: "算法",
-                icon: "circle-info",
+                icon: "jichengsuanfa",
                 link: "/article/algorithm/"
             },
             {
                 text: "Springs",
-                icon: "circle-info",
+                icon: "bxl-spring-boot",
                 link: "/article/springs/"
             },
             {
                 text: "数据库",
-                icon: "circle-info",
+                icon: "database-full",
                 children: [
                     "/article/mysql/",
                     "/article/redis/",
@@ -69,14 +71,14 @@ export default defineUserConfig({
             },
             {
                 text: "设计",
-                icon: "circle-info",
+                icon: "sheji1",
                 children: [
                     "/article/design/",
                 ]
             },
             {
                 text: "中间件",
-                icon: "circle-info",
+                icon: "zhongjianjian",
                 children: [
                     "/article/rabbitmq/",
                     "/article/elasticsearch/",
@@ -87,7 +89,7 @@ export default defineUserConfig({
             },
             {
                 text: "运维",
-                icon: "circle-info",
+                icon: "yunwei-yunweirizhi",
                 children: [
                     "/article/git/",
                     "/article/docker/",
@@ -97,12 +99,12 @@ export default defineUserConfig({
             },
             {
                 text: "其他文章",
-                icon: "circle-info",
+                icon: "qita",
                 link: "/article/other/"
             },
             {
                 text: "关于",
-                icon: "circle-info",
+                icon: "guanyu1",
                 link: "/about/"
             },
         ],
@@ -139,7 +141,11 @@ export default defineUserConfig({
             orange: "#fb9b5f",
         },
         plugins: {
-            blog: true,
+            blog: {
+                excerpt: true,
+                excerptLength: 0,
+                filter: (page) => Boolean(page.filePathRelative) && !page.frontmatter.home && !page.frontmatter.notPage
+            },
             autoCatalog: true,
             mdEnhance: {
                 presentation: true,
@@ -165,24 +171,29 @@ export default defineUserConfig({
         blog: {
             name: "Gzw",
             avatar: "/logo.png",
+            roundAvatar: true,
             description: "极简主义",
             medias: {
                 // GitHub 已经内置了图标
                 GitHub: "https://github.com/gzwrrr",
-                // 一个自定义媒体 MediaX (仅作示例)
-                MediaX: [
-                    // 链接
-                    "https://mediax.com/UserX/",
-                    // 图标 SVG 字符串
-                    "<svg ....</svg>",
-                ],
-                // 一个自定义媒体 MediaY (仅作示例)
-                MediaY: [
-                    // 链接
-                    "https://mediay.com/UserY/",
-                    // 图标地址
-                    path.resolve(__dirname, "icons/mediay.svg"),
-                ],
+                QQ: "tencent://message/?uin=1627121193&Site=&Menu=yes",
+                Email: "mailto:1627121193@qq.com",
+                BiliBili: "https://space.bilibili.com/361206654?spm_id_from=333.1007.0.0",
+                Wechat: "weixin://dl/business/?t=Gzwen996-icu-io"
+                // // 一个自定义媒体 MediaX (仅作示例)
+                // MediaX: [
+                //     // 链接
+                //     "https://mediax.com/UserX/",
+                //     // 图标 SVG 字符串
+                //     "<svg ....</svg>",
+                // ],
+                // // 一个自定义媒体 MediaY (仅作示例)
+                // MediaY: [
+                //     // 链接
+                //     "https://mediay.com/UserY/",
+                //     // 图标地址
+                //     path.resolve(__dirname, "icons/mediay.svg"),
+                // ],
             }
         },
 
@@ -250,3 +261,5 @@ export default defineUserConfig({
         autoCatalogPlugin(),
     ],
 });
+
+

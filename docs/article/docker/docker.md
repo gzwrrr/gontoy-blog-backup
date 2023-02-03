@@ -3,6 +3,7 @@ aliases:
 tags: 
 date: 2022-02-10-Thursday 17:01:17
 update: 2022-03-02-Wednesday 18:10:48
+star: true
 order: 1
 ---
 
@@ -19,6 +20,7 @@ order: 1
 <img src="http://gitee.com/gzwrrr/typora-img/raw/master/images/docker.png" alt="docker" style="zoom:50%;" />
 
 
+<!-- more -->
 
 ## 1.命令
 

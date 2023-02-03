@@ -1,5 +1,6 @@
 ---
 sidebar: auto
+notPage: true
 category:
   - HTML
   - Web
