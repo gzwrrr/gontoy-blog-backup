@@ -42,14 +42,12 @@ export default defineUserConfig({
                 activeMatch: "^/zh/guide/$",
             },
             {
-                text: "Java",
-                icon: "java",
-                link: "/article/java/"
-            },
-            {
-                text: "Go",
+                text: "编程语言",
                 icon: "code",
-                link: "/article/go/"
+                children: [
+                    "/article/java/",
+                    "/article/go/",
+                ]
             },
             {
                 text: "算法",
@@ -98,6 +96,11 @@ export default defineUserConfig({
                 ]
             },
             {
+                text: "数学建模",
+                icon: "qita",
+                link: "/article/modeling/"
+            },
+            {
                 text: "其他文章",
                 icon: "qita",
                 link: "/article/other/"
@@ -126,6 +129,7 @@ export default defineUserConfig({
             "/article/mongodb/": "structure",
             "/article/netty/": "structure",
             "/article/quartz/": "structure",
+            "/article/modeling/": "structure",
             "/article/other/": "structure",
             "/about/": "structure",
             "/": [
@@ -238,15 +242,20 @@ export default defineUserConfig({
             indexContent: true,
             // 为分类和标签添加索引
             customFields: [
-                // {
-                //     getter: (page) => page.frontmatter.category,
-                //     formatter: "分类：$content",
-                // },
-                // {
-                //     getter: (page) => page.frontmatter.tag,
-                //     formatter: "标签：$content",
-                // },
+                {
+                    getter: (page) => page.frontmatter.category,
+                    formatter: "分类：$content",
+                },
+                {
+                    getter: (page) => page.frontmatter.tag,
+                    formatter: "标签：$content",
+                },
             ],
+            locales: {
+                "/zh/": {
+                    placeholder: "搜索",
+                },
+            },
         }),
         // commentPlugin({
         //     provider: "Giscus",

@@ -4,7 +4,7 @@ layout: BlogHome
 heroImage: /logo.png
 bgImage: /bg.jpg
 heroText: Gzw's blog
-tagline: 极简主义
+tagline: 极简主义 | Java 全栈
 actionText: 快速上手 →
 actionLink: /zh/guide/
 features:
@@ -17,7 +17,12 @@ features:
 actions:
 - text: 博客
   link: https://www.gzw-icu.com
-copyright: false
+copyright: false,
+projects: 
+- name: Gzw's Blog
+  desc: 博客
+  link: https://www.gzw-icu.com
+  icon: /logo.png
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 

@@ -1,3 +1,52 @@
+---
+title: "Redis 简单使用"
+shortTitle: "Redis 简单使用"
+description: "Redis 简单使用"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2022-02-22
+category: 
+- "redis"
+- "数据库"
+- "缓存"
+tag:
+- "redis"
+- "数据库"
+- "缓存"
+sticky: 1
+star: false
+article: true
+timeline: true,
+dir:
+  text: "Redis 简单使用"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
+index: true
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "Redis 简单使用"
+  description: "Redis 简单使用"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
+---
+
+
+
+
+
+
 # Redis 简单使用
 
 

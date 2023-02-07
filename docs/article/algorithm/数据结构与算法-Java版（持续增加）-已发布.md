@@ -1,3 +1,48 @@
+---
+title: "数据结构与算法-Java版"
+shortTitle: "数据结构与算法-Java版"
+description: "数据结构与算法-Java版"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2022-02-01
+category: 
+- "算法"
+- "Java"
+tag:
+- "算法"
+- "Java"
+sticky: 1
+star: false
+article: true
+timeline: true,
+dir:
+  text: "数据结构与算法-Java版"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
+index: true
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "数据结构与算法-Java版"
+  description: "数据结构与算法-Java版"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
+---
+
+
+
+
 # 数据结构与算法-Java版
 
 

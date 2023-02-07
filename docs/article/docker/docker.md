@@ -1,11 +1,47 @@
 ---
-aliases: 
-tags: 
-date: 2022-02-10-Thursday 17:01:17
-update: 2022-03-02-Wednesday 18:10:48
-star: true
-order: 1
+title: "Docker"
+shortTitle: "Docker"
+description: "Docker 基本使用"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2022-02-13
+category: 
+- "运维"
+- "docker"
+tag:
+- "运维"
+- "docker"
+sticky: 1
+star: false
+article: true
+timeline: true,
+dir:
+  text: "Docker"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
+index: true
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "Docker"
+  description: "Docker 基本使用"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
 ---
+
+
+
 
 # Docker
 
@@ -19,8 +55,6 @@ order: 1
 
 <img src="http://gitee.com/gzwrrr/typora-img/raw/master/images/docker.png" alt="docker" style="zoom:50%;" />
 
-
-<!-- more -->
 
 ## 1.命令
 

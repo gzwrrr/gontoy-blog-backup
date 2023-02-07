@@ -1,3 +1,49 @@
+---
+title: "Jenkinsfile 配置"
+shortTitle: "Jenkinsfile 配置"
+description: "Jenkinsfile 配置"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2022-02-01
+category: 
+- "jenkins"
+- "运维"
+tag:
+- "jenkins"
+- "运维"
+sticky: 1
+star: false
+article: true
+timeline: true,
+dir:
+  text: "Jenkinsfile 配置"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
+index: true
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "Jenkinsfile 配置"
+  description: "Jenkinsfile 配置"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
+---
+
+
+
+
+
 # Jenkinsfile 简单使用
 
 

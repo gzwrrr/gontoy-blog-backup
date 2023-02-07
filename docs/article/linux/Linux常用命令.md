@@ -1,3 +1,49 @@
+---
+title: "Linux 命令整理"
+shortTitle: "Linux 命令整理"
+description: "Linux 命令整理"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2022-08-10
+category: 
+- "linux"
+- "运维"
+tag:
+- "linux"
+- "运维"
+sticky: 1
+star: false
+article: true
+timeline: true,
+dir:
+  text: "Linux 命令整理"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
+index: true
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "Linux 命令整理"
+  description: "Linux 命令整理"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
+---
+
+
+
+
+
 # Linux命令整理
 
 ## 1.关机指令
