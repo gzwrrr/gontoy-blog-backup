@@ -1,7 +1,49 @@
 ---
+title: "Java 基础错题集"
+shortTitle: "Java 基础错题集"
+description: "Java 基础错题集"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2023-01-09
+category: 
+- "java"
+- "错题集"
+tag:
+- "java"
+- "错题集"
+sticky: 1
+star: false
+article: true
+timeline: true,
+dir:
+  text: "Java 基础错题集"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
 index: true
-order: 5
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "Java 基础错题集"
+  description: "Java 基础错题集"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
 ---
+
+
+
+
+
 
 # Java基础错题集
 
@@ -75,9 +117,9 @@ order: 5
 
 9. 【Java 容器】容器的继承关系：
 
-   ![Java容器继承关系](Java基础错题集.assets/Java容器继承关系-1.png)
+   ![Java容器继承关系-1](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E9%94%99%E9%A2%98%E9%9B%86/20230209/java%E5%AE%B9%E5%99%A8%E7%BB%A7%E6%89%BF%E5%85%B3%E7%B3%BB-1.png)
 
-![image-20230111190453006](Java基础错题集.assets/Java容器继承关系-2.png)
+![Java容器继承关系-2](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E9%94%99%E9%A2%98%E9%9B%86/20230209/java%E5%AE%B9%E5%99%A8%E7%BB%A7%E6%89%BF%E5%85%B3%E7%B3%BB-2.png)
 
 10. 【初始化】初始化顺序：静态变量和静态初始化块谁先声明谁先初始化。原因穷根究底，**是因为在类加载机制中，初始化阶段产生`<clinit>`()的时候，编译器收集的顺序是由语句在源文件中出现的顺序决定的。**
 

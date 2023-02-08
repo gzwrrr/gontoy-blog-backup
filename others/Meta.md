@@ -17,7 +17,7 @@ tag:
 - ""
 sticky: 1
 star: false
-article: false
+article: true
 timeline: true,
 dir:
   text: ""

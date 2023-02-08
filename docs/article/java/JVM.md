@@ -1,10 +1,52 @@
 ---
+title: "JVM"
+shortTitle: "JVM"
+description: "JVM"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2022-06-11
+category: 
+- "java"
+- "JVM"
+- "虚拟机"
+tag:
+- "java"
+- "JVM"
+- “虚拟机”
+sticky: 1
+star: false
+article: true
+timeline: true,
+dir:
+  text: "JVM"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
 index: true
-order: 10
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "JVM"
+  description: "JVM"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
 ---
 
 
+
+
 # JVM
+
 JVM 的具体实现常见的有：
 
 > 标 * 的是最常用的三大虚拟机
@@ -895,10 +937,6 @@ JDK 内置了许多命令行工具，它们可用来获取目标 JVM 不同方�
 
 
 
-![image-20230124165201034](../../../../../../C-Photos/Code/Java/JVM/image-20230124165201034.png)
-
-
-
 
 
 
@@ -911,7 +949,7 @@ JDK 内置了许多命令行工具，它们可用来获取目标 JVM 不同方�
 
 所以，方法区看作是一块独立于Java堆的内存空间。
 
-<img src="https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//JVM/20230130/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E7%BB%93%E6%9E%84%E6%80%BB%E8%A7%88.png" alt="image-20230130165620395" style="zoom:50%;" />
+<img src="https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//jvm/20230209/%E6%96%B9%E6%B3%95%E5%8C%BA-2.png" alt="image-20230130165620395" style="zoom:50%;" />
 
 **从线程共享与否的角度来看**
 

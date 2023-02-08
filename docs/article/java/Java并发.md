@@ -1,7 +1,47 @@
 ---
+title: "Java 并发"
+shortTitle: "Java 并发"
+description: "Java 并发"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2022-02-07
+category: 
+- "java"
+- "并发"
+tag:
+- "java"
+- "并发"
+sticky: 1
+star: false
+article: true
+timeline: true,
+dir:
+  text: "Java 并发"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
 index: true
-order: 4
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "Java 并发"
+  description: "Java 并发"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
 ---
+
+
+
 
 # Java并发
 
@@ -752,9 +792,7 @@ public class ReentrantLockTest3 {
 
 - 一个线程在执行非原子性操作时，加锁会让这个操作变成原子性操作
 - 这就意味着，当执行的线程在得到的时间片内没有完成整个操作，锁就不会解开，也即其他线程即使得到了时间片也无法对这个对象进行操作
-- 只有等到未完成操作的线程再次得到自己加锁的对象并完成了整个操作，即使得非原子性操作在逻辑上变成原子性操作时，锁才会解开，其他线程才能访问这个对象，否则就得一直出现上述第二点的情况，这也会导致性能下降（还有线程上下文切换的开销），见下图
-
-![image-20220630102001101](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\Java并发.assets\3.2.1性能.png)
+- 只有等到未完成操作的线程再次得到自己加锁的对象并完成了整个操作，即使得非原子性操作在逻辑上变成原子性操作时，锁才会解开，其他线程才能访问这个对象，否则就得一直出现上述第二点的情况，这也会导致性能下降（还有线程上下文切换的开销）
 
 ```java
 public class SynchronizedSolution {
@@ -928,7 +966,7 @@ class Test {
 
 ### 3.4.1 普通对象头
 
-![image-20220701093956420](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\Java并发.assets\image-20220701093956420.png)
+![image-20220701093956420](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E5%B9%B6%E5%8F%91/20230209/%E6%99%AE%E9%80%9A%E5%AF%B9%E8%B1%A1%E5%A4%B4.png)
 
 
 
@@ -936,7 +974,7 @@ class Test {
 
 ### 3.4.2 数组对象头
 
-![image-20220701094022990](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\Java并发.assets\image-20220701094022990.png)
+![image-20220701094022990](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E5%B9%B6%E5%8F%91/20230209/%E6%95%B0%E7%BB%84%E5%AF%B9%E8%B1%A1%E5%A4%B4.png)
 
 
 
@@ -944,7 +982,7 @@ class Test {
 
 ### 3.4.3 Mark Word
 
-![image-20220701094445330](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\Java并发.assets\image-20220701094445330.png)
+![image-20220701094445330](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E5%B9%B6%E5%8F%91/20230209/MarkWord.png)
 
 
 
@@ -1651,7 +1689,7 @@ boolean awaitTermination(long timeout, TimeUnit unit) throws InterruptedExceptio
 
 ### 3.9.3 Tomcat 线程池
 
-![image-20220705154941172](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\Java并发.assets\Tomcat线程池Connect.png)
+![image-20220705154941172](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E5%B9%B6%E5%8F%91/20230209/tomcat%E7%BA%BF%E7%A8%8B%E6%B1%A0.png)
 
 - Tomcat 使用 LimitLatch 来限流，可以控制最大连接个数，类似 JUC 中的 Semaphore。
 - Tomcat 线程池扩展了 ThreadPoolExecutor，行为稍有不同
@@ -1663,7 +1701,7 @@ boolean awaitTermination(long timeout, TimeUnit unit) throws InterruptedExceptio
 
 #### 1.Connector 配置
 
-![image-20220705160156893](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\Java并发.assets\Connector1.png)
+![image-20220705160156893](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E5%B9%B6%E5%8F%91/20230209/tomcatConnector%E9%85%8D%E7%BD%AE.png)
 
 
 
@@ -1671,7 +1709,7 @@ boolean awaitTermination(long timeout, TimeUnit unit) throws InterruptedExceptio
 
 #### 2.Executor 线程配置
 
-![image-20220705160323855](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\Java并发.assets\Connector2.png)
+![image-20220705160323855](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E5%B9%B6%E5%8F%91/20230209/tomcatExecutor%E7%BA%BF%E7%A8%8B%E9%85%8D%E7%BD%AE.png)
 
 
 
@@ -1851,7 +1889,7 @@ class MyLock implements Lock {
 
 ### 3.10.2 Reentrantlock
 
-![image-20220705170923776](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\Java并发.assets\Reentrantlock关系.png)
+![image-20220705170923776](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E5%B9%B6%E5%8F%91/20230209/Reentrantlock%E7%BB%A7%E6%89%BF%E5%85%B3%E7%B3%BB.png)
 
 #### 1.加锁解锁流程
 
@@ -2361,7 +2399,7 @@ public class CyclicBarrierTest {
 
 ### 3.10.9 线程安全集合类概述
 
-![image-20220706192308478](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\Java并发.assets\安全集合类.png)
+![image-20220706192308478](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E5%B9%B6%E5%8F%91/20230209/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E9%9B%86%E5%90%88%E7%B1%BB.png)
 
 **线程安全类（主要 3 类）：**
 

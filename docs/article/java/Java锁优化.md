@@ -1,7 +1,51 @@
 ---
+title: "Java 锁优化"
+shortTitle: "Java 锁优化"
+description: "Java 锁优化"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2022-08-03
+category: 
+- "java"
+- "锁"
+- "优化"
+tag:
+- "java"
+- "锁"
+- "优化"
+sticky: 1
+star: false
+article: true
+timeline: true,
+dir:
+  text: "Java 锁优化"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
 index: true
-order: 6
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "Java 锁优化"
+  description: "Java 锁优化"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
 ---
+
+
+
+
+
 
 # Java锁优化
 

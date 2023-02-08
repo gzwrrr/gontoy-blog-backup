@@ -92,7 +92,7 @@ feed:
 
 ## 4.Quartz 的体系结构
 
-![image-20220818193350723](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Quartz\Quartz.assets\image-20220818193350723.png)
+![image-20220818193350723](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//quartz/20230209/Quartz%E7%9A%84%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.png)
 
 
 
@@ -312,4 +312,4 @@ public class HelloJob implements Job {
 
 ## 5.Trigger
 
-![image-20220820155844402](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Quartz\Quartz.assets\image-20220820155844402.png)
+![image-20220820155844402](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//quartz/20230209/trigger.png)

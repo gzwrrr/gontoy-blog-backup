@@ -110,8 +110,6 @@ feed:
 
 ## 5.RabbitMQ 的核心部分
 
-![RabbitMQ工作原理](http://lsky.gzw-icu.com/i/2022/08/25/RabbitMQ工作原理/2022/08/25.png)
-
 **六大模式：**
 
 - 简单模式
@@ -156,9 +154,10 @@ feed:
   - rabbitmqctl set_permissions -p "/" 名称 " .* " " .* " " .* "
   - rabbitmqctl list_users（查看当前用户）
 
-- 上述一切正常后登录就能看到如下结果
 
-![管理插件](http://lsky.gzw-icu.com/i/2022/08/25/管理插件/2022/08/25.png)
+
+
+
 
 # Quick start
 
@@ -1224,8 +1223,6 @@ public class SendMessageController {
   - 使用 `rabbitmq-plugins enable rabbitmq_delayed_message_exchange` 安装插件
   - 使用 `systemctl restart rabbitmq-server` 重启
   - 成功后可以在新建交换机处看到延迟交换机的选项
-
-![延时插件选项](http://lsky.gzw-icu.com/i/2022/08/25/延时插件选项/2022/08/25.png)
 
 
 

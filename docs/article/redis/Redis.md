@@ -106,7 +106,7 @@ redis-benchmark 是 redis 官方自带的一个压力测试工具
 | 6    | -d    | 以字节的形式指定SET/GET值的数据大小      | 2         |
 | 7    | -k    | 1=keep alive 0 = reconnect               | 1         |
 | 8    | -r    | SET/GET/INCR 使用随机key，SADD使用随机值 | /         |
-| 9    | -p    | 通过管道传输<numreq>请求                 | 1         |
+| 9    | -p    | 通过管道传输`<numreq>`请求                 | 1         |
 | 10   | -q    | 强制退出redis，仅显示query/sec值         | /         |
 | 11   | --csv | 以CSV格式输出                            | /         |
 | 12   | -l    | 生成循环，永久执行测试                   | /         |

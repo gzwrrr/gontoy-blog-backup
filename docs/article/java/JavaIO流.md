@@ -1,7 +1,49 @@
 ---
+title: "JavaIO流"
+shortTitle: "JavaIO流"
+description: "JavaIO流"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2022-10-05
+category: 
+- "java"
+- "io流"
+tag:
+- "java"
+- "io流"
+sticky: 1
+star: false
+article: true
+timeline: true,
+dir:
+  text: "JavaIO流"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
 index: true
-order: 1
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "JavaIO流"
+  description: "JavaIO流"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
 ---
+
+
+
+
+
 
 # JavaIO流
 
@@ -9,13 +51,13 @@ order: 1
 
 IO 流继承结构
 
-![IO流继承结构](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\JavaIO流.assets\IO流继承结构.png)
+<img src="https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//javaio/20230209/IO%E6%B5%81%E7%BB%A7%E6%89%BF%E7%BB%93%E6%9E%84.png" alt="IO流继承结构" style="zoom:80%;" />
 
 
 
 File 的构造方法
 
-![image-20220708020022650](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\JavaIO流.assets\File实现的接口.png)
+![image-20220708020022650](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//javaio/20230209/file%E7%9A%84%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95.png)
 
 ```java
 // 根据路径构造一个 File 对象
@@ -96,4 +138,3 @@ public class FileInfo01 {
 }
 ```
 
-p9

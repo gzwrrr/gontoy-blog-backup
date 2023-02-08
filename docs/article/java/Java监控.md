@@ -1,7 +1,51 @@
 ---
+title: "Java 监控"
+shortTitle: "Java 监控"
+description: "Java 监控"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2022-04-06
+category: 
+- "java"
+- "监控"
+tag:
+- "java"
+- "监控"
+sticky: 1
+star: false
+article: true
+timeline: true,
+dir:
+  text: "Java 监控"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
 index: true
-order: 6
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "Java 监控"
+  description: "Java 监控"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
 ---
+
+
+
+
+
+
+
 
 # Java监控
 

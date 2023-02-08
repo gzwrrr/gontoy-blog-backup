@@ -812,7 +812,7 @@ class MaxDepth {
 
 ### 满二叉树/完全二叉树
 
-![满二叉树与完全二叉树](C:\MyDisk\B-Data\Excalidraw\算法\二叉树\满二叉树与完全二叉树.png)
+![满二叉树与完全二叉树](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/20230208/%E6%BB%A1%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%8E%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91.png)
 
 - 一棵深度为 k 且有 `2^k-1` 个结点的二叉树称为满二叉树。
 
@@ -1703,13 +1703,13 @@ public static Node getMinDistanceAndUnselectedNode(HashMap<Node, Integer> distan
 
 **队列可以分为四种类型：**普通队列、循环队列、优先级队列、双端队列，如下所示：
 
-<img src="C:\MyDisk\C-Photos\Code\Java\Queue\simple-queue_0.png" alt="simple-queue_0" style="zoom:50%;" />
+<img src="https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/20230208/%E6%99%AE%E9%80%9A%E9%98%9F%E5%88%97.png" alt="simple-queue_0" style="zoom:50%;" />
 
 <img src="C:\MyDisk\C-Photos\Code\Java\Queue\circular-queue.png" alt="circular-queue" style="zoom:50%;" />
 
-<img src="C:\MyDisk\C-Photos\Code\Java\Queue\priority-queue.png" alt="priority-queue" style="zoom: 50%;" />
+<img src="https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/20230208/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97.png" alt="priority-queue" style="zoom: 50%;" />
 
-<img src="C:\MyDisk\C-Photos\Code\Java\Queue\double-ended-queue.png" alt="double-ended-queue" style="zoom:50%;" />
+<img src="https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/20230208/%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97.png" alt="double-ended-queue" style="zoom:50%;" />
 
 **循环队列：**
 
@@ -1814,7 +1814,7 @@ public static int[] getMaxArrFromWindow(int[] arr, int w) {
 
 # 基础排序
 
-![排序算法的时空复杂度比较](C:\MyDisk\B-Data\Excalidraw\算法\基础排序\排序算法的时空复杂度比较.png)
+![排序算法的时空复杂度比较](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/20230208/%E5%9F%BA%E7%A1%80%E6%8E%92%E5%BA%8F%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6.png)
 
 **到目前为止：**
 

@@ -174,8 +174,6 @@ feed:
 
 图片：
 
-![image-20210822163655706](C:\Users\16271\AppData\Roaming\Typora\typora-user-images\image-20210822163655706.png)
-
 示例（重点 ）：
 
 属性|属主|属组|大小|时间|文件/目录名
@@ -270,7 +268,7 @@ l---r-xr-x|root|usr|7|Feb 20 12 : 00|bin -> usr/bin
 
 ==vim键盘图==
 
-![image-20210823010758520](C:\Users\16271\AppData\Roaming\Typora\typora-user-images\image-20210823010758520.png)
+![image-20230209011324200](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//linux/20230209/vim%E7%BC%96%E8%BE%91%E5%99%A8%E9%94%AE%E4%BD%8D.png)
 
 
 

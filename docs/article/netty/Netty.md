@@ -594,7 +594,7 @@ public class GroupChatClient {
 
 ### 单线程模型
 
-![什么是Netty？_慕课手记](https://file.yasinshaw.com/201907/11/956A5814BE5F.jpg)
+![什么是Netty？_慕课手记](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//netty/20230209/%E5%8D%95%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B.jpg)
 
 - 可以实现应用程序通过一个「阻塞对象」监听「多路连接请求」
 - Reactor 对象通过监控客户端请求事件，收到事件进行分发
@@ -611,7 +611,7 @@ public class GroupChatClient {
 
 ### 多线程模型
 
-![image-20230108113811182](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Netty\Netty.assets\image-20230108113811182.png)
+![image-20230108113811182](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//netty/20230209/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B.jpeg)
 
 - Reactor 对象通过 select 监控客户端请求事件，收到事件后通过 dispatch 进行分发
 - 如果建立连接请求，则 Acceptor 对象通过 Accept 处理连接请求，然后创建一个 Handler 对象处理完成连接后的各个事件
@@ -625,7 +625,7 @@ public class GroupChatClient {
 
 ### 主从 Reactor 多线程
 
-<img src="https://www.pianshen.com/images/653/43a4c8cc8c67d3f8314567fd1f5e51dd.png" alt="什么是Netty？_慕课手记" style="zoom:50%;" />
+<img src="https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//netty/20230209/%E4%B8%BB%E4%BB%8EReactor%E5%A4%9A%E7%BA%BF%E7%A8%8B.jpeg" alt="什么是Netty？_慕课手记" style="zoom:50%;" />
 
 - SubReactor 可以有多个，即 Reactor 主线程可以对应多个 Reactor 子线程，以此解决 Reactor 的性能瓶颈
 - MainReactor 对象通过 Select 监听连接事件，收到后通过 Acceptor 对象处理连接事件
@@ -642,7 +642,7 @@ public class GroupChatClient {
 
 ### Netty 主从多线程
 
-![使用netty手撸一个简易http服务器](https://www.icode9.com/img/ll/?i=20200113162543811.png?,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3NzE5ODc0,size_16,color_FFFFFF,t_70)
+![使用netty手撸一个简易http服务器](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//netty/20230209/%E4%B8%BB%E4%BB%8E%E5%A4%9A%E7%BA%BF%E7%A8%8B.jpeg)
 
 - BossGroup 线程维护 Selector，只关注 Accept，接收到 Accept 事件后，会获取对应的 SocketChannel，封装成 NIOSocketChannel 注册到 Worker 线程（事件循环）并进行维护
 - 当 Worker 线程监听到 Selector 中通道发生了 Worker 关心的事件时，就会进行处理（由 Handler 处理，这里的 Handler 已经加入到通道了）
@@ -950,7 +950,7 @@ public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObjec
 
 ## Pipeline 与 Channel
 
-![image-20230108195118087](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Netty\Netty.assets\image-20230108195118087.png)
+![image-20230108195118087](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//netty/20230209/Pipeline%E4%B8%8EChannel.png)
 
 - 每个 Channel 都有且仅有一个 ChannelPipeline 与之对应
 - ChannelPipeline 中维护了一个由 ChannelHandlerContext 组成的双向链表，并且每个 ChannelHandlerContext 中又关联着一个 ChannelHandler
