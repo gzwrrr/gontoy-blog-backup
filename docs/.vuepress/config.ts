@@ -12,6 +12,7 @@ import { blogPlugin } from "vuepress-plugin-blog2";
 
 
 
+
 const __dirname = getDirname(import.meta.url)
 export default defineUserConfig({
     base: '/Blog-Vuepress/',
@@ -19,6 +20,16 @@ export default defineUserConfig({
         viteOptions: {},
         vuePluginOptions: {},
     }),
+    alias: {
+        "@theme-hope/modules/blog/components/BlogHome": path.resolve(
+            __dirname,
+            "./components/BlogHome.vue"
+        ),
+        "@theme-hope/components/NormalPage": path.resolve(
+            __dirname,
+            "./components/NormalPage.vue"
+        ),
+    },
     theme: hopeTheme({
         // 此处放置主题配置
         author: "Gontoy",
@@ -150,6 +161,29 @@ export default defineUserConfig({
                 excerptLength: 0,
                 filter: (page) => Boolean(page.filePathRelative) && !page.frontmatter.home && !page.frontmatter.notPage
             },
+            feed: {
+                rss: true,
+                icon: "https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/Individual/logo.png",
+                rssOutputFilename: "rss.xml"
+            },
+            pwa: {
+                showInstall: true,
+                manifest: {
+                    name: "Gzw's Blog",
+                    short_name: "Gzw's Blog",
+                    description: "Gzw's Blog",
+                    theme_color: "#21332d",
+
+                },
+                favicon: "https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/Individual/logo.png",
+                // 最大缓存：5M
+                maxSize: 4096,
+                cacheHTML: false,
+                cachePic: false,
+                maxPicSize: 1024,
+                update: "available",
+                themeColor: "#21332d"
+            },
             autoCatalog: true,
             mdEnhance: {
                 presentation: true,
@@ -184,19 +218,11 @@ export default defineUserConfig({
                 Email: "mailto:1627121193@qq.com",
                 BiliBili: "https://space.bilibili.com/361206654?spm_id_from=333.1007.0.0",
                 Wechat: "weixin://dl/business/?t=Gzwen996-icu-io"
-                // // 一个自定义媒体 MediaX (仅作示例)
                 // MediaX: [
                 //     // 链接
                 //     "https://mediax.com/UserX/",
                 //     // 图标 SVG 字符串
                 //     "<svg ....</svg>",
-                // ],
-                // // 一个自定义媒体 MediaY (仅作示例)
-                // MediaY: [
-                //     // 链接
-                //     "https://mediay.com/UserY/",
-                //     // 图标地址
-                //     path.resolve(__dirname, "icons/mediay.svg"),
                 // ],
             }
         },
@@ -243,11 +269,11 @@ export default defineUserConfig({
             // 为分类和标签添加索引
             customFields: [
                 {
-                    getter: (page) => page.frontmatter.category,
+                    getter: (page) => page.frontmatter.category + "",
                     formatter: "分类：$content",
                 },
                 {
-                    getter: (page) => page.frontmatter.tag,
+                    getter: (page) => page.frontmatter.tag + "",
                     formatter: "标签：$content",
                 },
             ],
@@ -257,16 +283,16 @@ export default defineUserConfig({
                 },
             },
         }),
-        // commentPlugin({
-        //     provider: "Giscus",
-        //     comment: true,
-        //     repo: "gzwrrr/giscus",
-        //     repoId: "R_kgDOI40yuA",
-        //     category: "General",
-        //     categoryId: "DIC_kwDOI40yuM4CT86L",
-        //     mapping: "title",
-        //     strict: false
-        // }),
+        commentPlugin({
+            provider: "Giscus",
+            comment: true,
+            repo: "gzwrrr/giscus",
+            repoId: "R_kgDOI40yuA",
+            category: "General",
+            categoryId: "DIC_kwDOI40yuM4CT86L",
+            mapping: "title",
+            strict: false
+        }),
         autoCatalogPlugin(),
     ],
 });

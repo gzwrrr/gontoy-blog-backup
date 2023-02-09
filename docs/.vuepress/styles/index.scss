@@ -1,6 +1,3 @@
-$themeColor: #21332d;
-
-
 h2, h3 {
     position: relative;
     padding: 5px 5px 5px !important;
@@ -94,5 +91,5 @@ p, ul, ol {
     top: 0;
     width: 5px;
     height: 100%;
-    background-color: $themeColor;
+    background-color: var(--theme-color);
 }
