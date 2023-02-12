@@ -1,3 +1,49 @@
+---
+title: "PWA 基本介绍"
+shortTitle: "PWA 基本介绍"
+description: "PWA 基本介绍"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2023-02-03
+category: 
+- "优化"
+- "缓存"
+- "通用"
+tag:
+- "优化"
+- "缓存"
+- "通用"
+sticky: 1
+star: false
+article: true
+timeline: true,
+dir:
+  text: "PWA 基本介绍"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
+index: true
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "PWA 基本介绍"
+  description: "PWA 基本介绍"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
+---
+
+
+
 # PWA 基本介绍
 
 PWA 的优势：

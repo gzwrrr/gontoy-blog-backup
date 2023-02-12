@@ -15,8 +15,8 @@ category:
 tag:
 - "算法"
 - "Java"
-sticky: 1
-star: false
+sticky: 999
+star: true
 article: true
 timeline: true,
 dir:

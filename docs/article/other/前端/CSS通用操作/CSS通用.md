@@ -1,3 +1,49 @@
+---
+title: "CSS 通用"
+shortTitle: "CSS 通用"
+description: "CSS 通用"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2022-12-04
+category: 
+- "css"
+- "通用"
+tag:
+- "css"
+- "通用"
+sticky: 1
+star: false
+article: true
+timeline: true,
+dir:
+  text: "CSS 通用"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
+index: true
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "CSS 通用"
+  description: "CSS 通用"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
+---
+
+
+# CSS 通用
+
+
 # 组件
 
 ## vue

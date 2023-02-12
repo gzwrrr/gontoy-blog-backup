@@ -1,4 +1,48 @@
-# Java通用
+---
+title: "Java 通用"
+shortTitle: "Java 通用"
+description: "Java 通用"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2022-05-01
+category: 
+- "Java"
+- "通用"
+tag:
+- "Java"
+- "通用"
+sticky: 1
+star: false
+article: true
+timeline: true,
+dir:
+  text: "Java 通用"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
+index: true
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "Java 通用"
+  description: "Java 通用"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
+---
+
+
+
+# Java 通用
 
 
 

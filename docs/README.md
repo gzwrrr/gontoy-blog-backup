@@ -18,12 +18,12 @@ actions:
 - text: 博客
   link: https://www.gzw-icu.com
 copyright: false,
-projects: 
-- name: Gzw's Blog
-  desc: 博客
-  link: https://www.gzw-icu.com
-  icon: /logo.png
-footer: MIT Licensed | Copyright © 2018-present Evan You
+# projects: 
+# - name: Gzw's Blog
+#   desc: 博客
+#   link: https://www.gzw-icu.com
+#   icon: /logo.png
+# footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
 

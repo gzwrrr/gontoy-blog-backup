@@ -15,8 +15,8 @@ category:
 tag:
 - "java"
 - "并发"
-sticky: 1
-star: false
+sticky: 998
+star: true
 article: true
 timeline: true,
 dir:
