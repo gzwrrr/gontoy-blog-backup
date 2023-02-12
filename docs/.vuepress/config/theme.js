@@ -7,7 +7,7 @@ export default hopeTheme({
     // 此处放置主题配置
     author: "Gontoy",
     favicon: "/logo.png",
-    darkmode: "switch",
+    darkmode: "enable",
     fullscreen: true,
     iconAssets: "https://at.alicdn.com/t/c/font_3879594_02a7jyioxr8t.css",
     navbar: [{

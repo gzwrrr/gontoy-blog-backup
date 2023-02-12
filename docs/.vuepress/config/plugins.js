@@ -17,6 +17,9 @@ import {
     pwaPlugin
 } from "vuepress-plugin-pwa2";
 import {
+    mdEnhancePlugin
+} from "vuepress-plugin-md-enhance";
+import {
     getDirname,
     path
 } from "@vuepress/utils";
@@ -24,6 +27,26 @@ const __dirname = getDirname(
     import.meta.url)
 
 export default [
+    // mdEnhancePlugin({
+    //     stylize: [{
+    //         matcher: "/^不$/u",
+    //         replacer: ({
+    //             tag,
+    //             attrs,
+    //             content
+    //         }) => {
+    //             if (tag === "em")
+    //                 return {
+    //                     tag: "span",
+    //                     attrs: {
+    //                         ...attrs,
+    //                         style: "color: red"
+    //                     },
+    //                     content,
+    //                 };
+    //         },
+    //     }, ],
+    // }),
     containerPlugin({
         type: 'para',
         locales: {

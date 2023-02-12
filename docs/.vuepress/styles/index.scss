@@ -67,16 +67,21 @@ a.header-anchor {
 // }
 
 img {
-    // box-shadow: 0px 0px 20px -5px #000000 !important;
+    box-shadow: 0px 0px 20px -5px #0e0e0eac !important;
 }
 
-
+// 图片 -- 开始
 figure {
     // border: 1px solid var(--theme-grey);
-    padding: 20px 10px 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 20px -5px #000000 !important;
+    // padding: 20px 10px 10px;
+    // border-radius: 5px;
+    margin-bottom: 50px !important;
 }
+
+figcaption {
+    display: none !important;
+}
+// 图片 -- 结束
 
 mark {
     background-color: var(--deep-theme-color);
@@ -84,6 +89,24 @@ mark {
     border-radius: 5px;
     color: var(--theme-white);
 }
+
+table {
+    margin: 0 auto !important;
+    width: auto !important;
+}
+
+thead, tbody {
+}
+
+thead tr {
+    background-color: var(--dark-theme-color) !important;
+
+}
+
+tr:nth-child(2n) {
+    background-color: var(--dark-theme-color) !important;
+}
+
 
 .header-anchor {
     left: 40px;

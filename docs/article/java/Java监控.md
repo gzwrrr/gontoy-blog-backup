@@ -121,9 +121,9 @@ export JRE_HOME=$JAVA_HOME/jre
 
 2. 在本地主机（windows）上键入 `win + R`，输入 `jconsole` 打开 Java 自带的监控工具，如果没有要检查 Java 环境是否配置好了
 
-![image-20220628181250186](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\Java监控.assets\image-20220628181250186.png)
+![image-20220628181250186](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E7%9B%91%E6%8E%A7/20230212/1.png)
 
-![image-20220628181330428](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\Java监控.assets\image-20220628181330428.png)
+![image-20220628181330428](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E7%9B%91%E6%8E%A7/20230212/2.png)
 
 2. 在 Linux 服务器（CentOS7）上输入以下命令允许远程连接，输入命令时要在测试文件所在的目录下（或者在命令的最后写上全路径），并且要确保已存在测试文件的字节码文件
 
@@ -131,7 +131,7 @@ export JRE_HOME=$JAVA_HOME/jre
    java -Djava.rmi.server.hostname=Linux主机ip -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=任意端口（用于远程连接） -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false 程序名
    ```
 
-   ![image-20220628181512365](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\Java监控.assets\image-20220628181512365.png)
+   ![image-20220628181512365](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E7%9B%91%E6%8E%A7/20230212/3.png)
 
 3. 在本地主机的 `jconsole` 中输入 `主机ip:端口` 进行连接
 
@@ -141,5 +141,5 @@ export JRE_HOME=$JAVA_HOME/jre
 
 6. 连接成功后观测一段时间便得到了如下结果
 
-   ![image-20220628183243643](C:\MyDisk\B-Data\Record\Note\WorkingArea\CodingStudy\Java\Java监控.assets\image-20220628183243643.png)
+   ![image-20220628183243643](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown/https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E7%9B%91%E6%8E%A7/20230212/4.png)
 
