@@ -3,8 +3,7 @@ h2, h3 {
     padding: 5px 5px 5px !important;
     margin-top: 55px !important;
     margin-bottom: 20px !important;
-    border-radius: 5px;
-    background-color: #21332d;
+    // background-color: #21332d;
 }
 
 h2::after {
@@ -35,15 +34,30 @@ a.header-anchor {
     // background-color: #21332d;
 }
 
-// .theme-hope-content > p {
-//     position: relative;
-//     display: block;
-//     margin-block-start: .7em;
-//     margin-block-end: .7em;
-//     margin-inline-start: 0px;
-//     margin-inline-end: 0px;
-//     padding-left: 17px;
-// }
+
+li > p {
+    margin: 0;
+}
+
+.theme-hope-content > p {
+    position: relative;
+    display: block;
+    // margin-block-start: .7em;
+    // margin-block-end: .7em;
+    // margin-inline-start: 0px;
+    // margin-inline-end: 0px;
+    margin: 1em 0 0 !important;
+}
+
+.theme-hope-content > ul, ol {
+    position: relative;
+    display: block;
+    // margin-block-start: .7em;
+    // margin-block-end: .7em;
+    // margin-inline-start: 0px;
+    // margin-inline-end: 0px;
+    margin: 0px !important;
+}
 
 // .theme-hope-content > p::after {
 //     // content: '\2725';
@@ -66,7 +80,7 @@ a.header-anchor {
 //     overflow-wrap: break-word;
 // }
 
-img {
+.theme-hope-content > img {
     box-shadow: 0px 0px 20px -5px #0e0e0eac !important;
 }
 
@@ -83,12 +97,7 @@ figcaption {
 }
 // 图片 -- 结束
 
-mark {
-    background-color: var(--deep-theme-color);
-    padding: 2px 7px;
-    border-radius: 5px;
-    color: var(--theme-white);
-}
+
 
 table {
     margin: 0 auto !important;
@@ -164,3 +173,47 @@ tr:nth-child(2n) {
 .sidebar-links {
     // border-left: 1px solid var(--theme-grey) !important;
 }
+
+
+
+// 标记样式 -- 开始
+mark {
+    background-color: var(--deep-theme-color);
+    padding: 2px 7px;
+    border-radius: 5px;
+    color: var(--theme-white);
+}
+
+.em {
+    background-color: var(--theme-red);
+    padding: 2px 7px;
+    border-radius: 5px;
+    color: var(--theme-white);
+}
+// 标记样式 -- 结束
+
+
+
+// mermaid -- 开始
+.mermaid-wrapper {
+    background-color: var(--theme-white);
+}
+// mermaid -- 结束
+
+
+// 标题样式 -- 开始
+.straight-line {
+    background-image: linear-gradient(to bottom , #7A88FF, #7AFFAF);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% 3px;
+    padding-bottom: 2px;
+}
+
+h2, h3 {
+    background-image: linear-gradient(to right , var(--theme-grey), transparent 80%);
+    background-position: 0% 100%;
+    background-size: 40% 10%;
+    background-repeat: no-repeat;
+}
+// 标题样式 -- 结束

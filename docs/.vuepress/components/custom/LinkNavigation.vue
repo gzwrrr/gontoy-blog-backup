@@ -65,7 +65,7 @@ const to = (url) => {
 }
 
 .item {
-  background-color: var(--deep-theme-color);
+  background-color: var(--theme-blue);
   width: 30%;
   border-radius: 3px;
   margin: 10px 1.5% 0;
@@ -102,7 +102,7 @@ const to = (url) => {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
+    width: px;
     height: 30px;
     overflow: hidden;
     border-radius: 5px;

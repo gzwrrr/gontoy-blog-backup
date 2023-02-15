@@ -1,0 +1,26 @@
+[{
+    "title": "Tailwind CSS",
+    "icon": "https://www.gontoy.com/xxx.png",
+    "desc": "Tailwind CSS 是一个功能类优先的 CSS 框架",
+    "url": "https://www.tailwindcss.cn/docs"
+}, {
+    "title": "Bootstrap",
+    "icon": "https://www.gontoy.com/xxx.png",
+    "desc": "Bootstrap是最受欢迎的HTML、CSS 和 JS 框架之一，用于开发响应式布局、移动设备优先的 WEB 项目",
+    "url": "https://www.bootcss.com/"
+}, {
+    "title": "Vue.js",
+    "icon": "https://www.gontoy.com/xxx.png",
+    "desc": "Vue.js 是一套构建用户界面的渐进式框架",
+    "url": "https://cn.vuejs.org/"
+}, {
+    "title": "React",
+    "icon": "https://www.gontoy.com/xxx.png",
+    "desc": "React 是一个用于构建用户界面的 JavaScript 库",
+    "url": "https://zh-hans.reactjs.org/"
+}, {
+    "title": "jQuery",
+    "icon": "https://www.gontoy.com/xxx.png",
+    "desc": "jQuery 是一个快速、简洁的 JavaScript 库，改变了 Web 开发的方式",
+    "url": "https://www.jquery123.com/"
+}]

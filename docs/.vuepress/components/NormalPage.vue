@@ -1,6 +1,8 @@
 <template>
     <div>
-        <PureMode />
+        <ClientOnly>
+            <PureMode />
+        </ClientOnly>
         <NormalPage />
         <LeftFloating />
     </div>

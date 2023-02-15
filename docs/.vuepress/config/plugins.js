@@ -20,6 +20,9 @@ import {
     mdEnhancePlugin
 } from "vuepress-plugin-md-enhance";
 import {
+    componentsPlugin
+} from "vuepress-plugin-components";
+import {
     getDirname,
     path
 } from "@vuepress/utils";
@@ -27,26 +30,50 @@ const __dirname = getDirname(
     import.meta.url)
 
 export default [
-    // mdEnhancePlugin({
-    //     stylize: [{
-    //         matcher: "/^不$/u",
-    //         replacer: ({
-    //             tag,
-    //             attrs,
-    //             content
-    //         }) => {
-    //             if (tag === "em")
-    //                 return {
-    //                     tag: "span",
-    //                     attrs: {
-    //                         ...attrs,
-    //                         style: "color: red"
-    //                     },
-    //                     content,
-    //                 };
-    //         },
-    //     }, ],
-    // }),
+    mdEnhancePlugin({
+        stylize: [{
+            matcher: /^不/,
+            replacer: ({
+                tag,
+                attrs,
+                content
+            }) => {
+                if (tag === "em")
+                    return {
+                        tag: "span",
+                        attrs: {
+                            ...attrs,
+                            class: "em"
+                        },
+                        content,
+                    };
+            },
+        }, ],
+        mermaid: true,
+        presentation: true,
+        tabs: true,
+        chart: true,
+        vuePlayground: true,
+        codetabs: true,
+        tasklist: true,
+        imgLazyload: true,
+        figure: true,
+        include: true,
+        attrs: true,
+        mark: true,
+        container: true,
+        align: true,
+        // 启用下角标功能
+        sub: true,
+        // 启用上角标
+        sup: true,
+        // 启用脚注
+        footnote: true,
+    }),
+    componentsPlugin({
+        // 插件选项
+        components: ["PDF", "Badge"]
+    }),
     containerPlugin({
         type: 'para',
         locales: {

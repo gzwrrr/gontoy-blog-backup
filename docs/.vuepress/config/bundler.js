@@ -4,6 +4,7 @@ import {
 
 
 export default viteBundler({
-    viteOptions: {},
+    viteOptions: {
+    },
     vuePluginOptions: {},
 })

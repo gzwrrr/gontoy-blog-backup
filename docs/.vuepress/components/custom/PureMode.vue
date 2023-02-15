@@ -41,7 +41,7 @@ const pure = () => {
         navbar.removeAttribute('style');
         tip.value = '纯净';
         try {
-            exitFullscreen();
+            exitFullscreen(document);
         } catch (_) {
 
         }
@@ -72,7 +72,7 @@ const launchFullScreen = (document) => {
 
 }
 
-const exitFullscreen = () => {
+const exitFullscreen = (document) => {
 
     if (document.exitFullscreen) {
 
