@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3f44c2da","path":"/article/modeling/C-%E9%A2%84%E6%B5%8B%E5%9E%8B/","title":"C 预测型","lang":"en-US","frontmatter":{"title":"C 预测型","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

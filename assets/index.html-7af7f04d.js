@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6225c1e8","path":"/article/mysql/MySQL/","title":"My S Q L","lang":"en-US","frontmatter":{"title":"My S Q L","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5c2b48d3","path":"/article/modeling/Z-%E5%85%B6%E4%BB%96/","title":"Z 其他","lang":"en-US","frontmatter":{"title":"Z 其他","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

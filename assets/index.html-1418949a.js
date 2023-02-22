@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-8e5c562a","path":"/article/springs/%E5%8E%9F%E7%90%86/","title":"原理","lang":"en-US","frontmatter":{"title":"原理","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

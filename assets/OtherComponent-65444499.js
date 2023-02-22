@@ -1,0 +1,1 @@
+import{_ as e,Q as t,S as o}from"./framework-ec2af7a3.js";const n={name:"OtherComponent",data(){return{}},methods:{}};function r(a,s,c,p,_,m){return t(),o("div")}const f=e(n,[["render",r],["__file","OtherComponent.vue"]]);export{f as default};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-41bb4fec","path":"/guide/%E5%B7%A5%E5%85%B7/","title":"工具","lang":"en-US","frontmatter":{"title":"工具","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

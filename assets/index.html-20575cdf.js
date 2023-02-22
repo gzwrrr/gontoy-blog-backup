@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-f6207900","path":"/article/python/%E5%BA%93/","title":"库","lang":"en-US","frontmatter":{"title":"库","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

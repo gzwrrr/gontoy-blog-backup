@@ -1,0 +1,1 @@
+const e="Node",t=[{title:"Releases | Node.js",icon:"https://www.gontoy.com/xxx.png",desc:"Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.",url:"https://nodejs.org/en/blog/release/"}],s={typeName:e,list:t};export{s as default,t as list,e as typeName};

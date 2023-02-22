@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-31119e00","path":"/article/other/%E8%BF%90%E7%BB%B4/","title":"运维","lang":"en-US","frontmatter":{"title":"运维","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

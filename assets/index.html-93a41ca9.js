@@ -1,0 +1,1 @@
+import{_ as t,Q as a,S as r,U as e,a4 as c}from"./framework-ec2af7a3.js";const n={},s=e("h1",{id:"quartz",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#quartz","aria-hidden":"true"},"#"),c(" Quartz")],-1),o=[s];function _(d,i){return a(),r("div",null,o)}const l=t(n,[["render",_],["__file","index.html.vue"]]);export{l as default};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-67c3e165","path":"/article/modeling/B-%E8%AF%84%E4%BB%B7%E5%9E%8B/","title":"B 评价型","lang":"en-US","frontmatter":{"title":"B 评价型","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

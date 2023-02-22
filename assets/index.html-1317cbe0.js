@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-9cde80ec","path":"/article/other/%E7%BD%91%E7%BB%9C/","title":"网络","lang":"en-US","frontmatter":{"title":"网络","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

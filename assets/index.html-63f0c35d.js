@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-350ac0ae","path":"/article/other/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/","title":"架构设计","lang":"en-US","frontmatter":{"title":"架构设计","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

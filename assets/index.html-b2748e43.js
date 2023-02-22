@@ -1,0 +1,1 @@
+import{_ as t,Q as a,S as c,U as e,a4 as n}from"./framework-ec2af7a3.js";const r={},s=e("h1",{id:"设计模式",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#设计模式","aria-hidden":"true"},"#"),n(" 设计模式")],-1),o=[s];function _(d,i){return a(),c("div",null,o)}const l=t(r,[["render",_],["__file","index.html.vue"]]);export{l as default};

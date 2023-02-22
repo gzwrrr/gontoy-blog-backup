@@ -1,0 +1,1 @@
+import{_ as t,Q as a,S as n,U as e,a4 as r}from"./framework-ec2af7a3.js";const s={},c=e("h1",{id:"spring-全家桶",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#spring-全家桶","aria-hidden":"true"},"#"),r(" Spring 全家桶")],-1),o=[c];function i(_,d){return a(),n("div",null,o)}const l=t(s,[["render",i],["__file","index.html.vue"]]);export{l as default};

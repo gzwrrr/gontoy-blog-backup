@@ -1,0 +1,1 @@
+const e="可视化",t=[{title:"Regulex：JavaScript Regular Expression Visualizer",icon:"https://www.gontoy.com/xxx.png",desc:"",url:"https://jex.im/regulex/#!flags=&re=%5E(a%7Cb)*%3F%24"}],s={typeName:e,list:t};export{s as default,t as list,e as typeName};

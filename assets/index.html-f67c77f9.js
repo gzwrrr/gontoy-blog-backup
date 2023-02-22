@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7b20a4c5","path":"/article/modeling/A-%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/","title":"A 基本知识","lang":"en-US","frontmatter":{"title":"A 基本知识","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

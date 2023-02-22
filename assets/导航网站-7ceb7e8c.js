@@ -1,0 +1,1 @@
+const t="搜索",i=[{title:"中文文档 - Tailwind CSS 中文文档",icon:"https://www.gontoy.com/xxx.png",desc:"Tailwind CSS 是一个功能类优先的 CSS 框架，它由 Adam Wathan 创建。本站提供 Tailwind CSS 官方文档中文翻译致力于为广大国内开发者提供准确的中文文档，助力开发者掌握并使用这一框架。",url:"https://www.tailwindcss.cn/docs\r"}],n={typeName:t,list:i};export{n as default,i as list,t as typeName};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3b11ca90","path":"/article/other/%E5%89%8D%E7%AB%AF/PWA/","title":"P W A","lang":"en-US","frontmatter":{"title":"P W A","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

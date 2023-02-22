@@ -1,0 +1,1 @@
+import{_ as a,o as c,Q as r,S as l,W as f,H as p}from"./framework-ec2af7a3.js";const d={__name:"ShowPdf",props:{filePath:String,fileName:String},setup(e){const o=e,{filePath:t,fileName:n}=o,s=`/pdf/${t}/${n}.pdf`;return c(async()=>{}),(i,u)=>{const _=p("PDF");return r(),l("div",null,[f(_,{url:s})])}}},P=a(d,[["__file","ShowPdf.vue"]]);export{P as default};

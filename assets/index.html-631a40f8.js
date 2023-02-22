@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5bc93818","path":"/category/","title":"Category","lang":"en-US","frontmatter":{"title":"Category","feed":false,"sitemap":false,"blog":{"type":"category","key":"category"},"layout":"BlogCategory"},"headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

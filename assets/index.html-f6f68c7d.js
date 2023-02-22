@@ -1,0 +1,1 @@
+import{_ as t,Q as a,S as o,U as e,a4 as c}from"./framework-ec2af7a3.js";const n={},r=e("h1",{id:"go",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#go","aria-hidden":"true"},"#"),c(" Go")],-1),s=[r];function _(d,i){return a(),o("div",null,s)}const l=t(n,[["render",_],["__file","index.html.vue"]]);export{l as default};

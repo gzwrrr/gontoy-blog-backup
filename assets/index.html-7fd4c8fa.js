@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3cdd38ca","path":"/article/mysql/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/","title":"数据库原理","lang":"en-US","frontmatter":{"title":"数据库原理","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

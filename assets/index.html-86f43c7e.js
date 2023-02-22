@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-50dcd5f5","path":"/article/springs/SpringCloud/Alibaba/","title":"Alibaba","lang":"en-US","frontmatter":{"title":"Alibaba","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-154dc4c4","path":"/star/","title":"Star","lang":"en-US","frontmatter":{"title":"Star","feed":false,"sitemap":false,"blog":{"type":"type","key":"star"},"layout":"BlogType"},"headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};

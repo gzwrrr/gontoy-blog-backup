@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0da0c339","path":"/tag/go/","title":"go Tag","lang":"en-US","frontmatter":{"title":"go Tag","feed":false,"sitemap":false,"blog":{"type":"category","name":"go","key":"tag"},"layout":"BlogCategory"},"headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null,"excerpt":"","copyright":{"author":"gzw"}}');export{e as data};
