@@ -70,7 +70,7 @@ conda创建新环境的方法是使用 `conda create --name <env_name> python=<v
 ## 切换环境
 
 1. 打开命令行窗口，输入`conda env list`或者`conda info --envs`查看当前已有的虚拟环境，其中带星号的是当前激活的环境。
-2. 如果想要切换到其他虚拟环境，可以使用`conda activate <NAME>`命令，其中<NAME>是你想要切换的虚拟环境的名称。例如，如果你想要切换到名为my_test的虚拟环境，可以输入`conda activate my_test`
+2. 如果想要切换到其他虚拟环境，可以使用`conda activate <NAME>`命令，其中`<NAME>`是你想要切换的虚拟环境的名称。例如，如果你想要切换到名为my_test的虚拟环境，可以输入`conda activate my_test`
 3. 如果想要退出当前虚拟环境，可以使用`conda deactivate`命令。
 
 
@@ -79,11 +79,11 @@ conda创建新环境的方法是使用 `conda create --name <env_name> python=<v
 
 ## 镜像源
 
-conda国内镜像源设置的方法是使用conda config --add channels <URLS> 命令1，其中<URLS> 是你想要添加的镜像源的地址。你可以从一些国内的网站上找到可用的镜像源，例如https://developer.aliyun.com/mirror/anaconda2。在使用国内镜像源的时候，最好删除一下~/.condarc 里的 defaults 频道，因为这是官方的频道，在国内连接可能会很慢或者失败1。你可以用vim打开~/.condarc 手动删除掉 defaults 这一行，或者运行conda config --remove channels defaults 命令
+conda国内镜像源设置的方法是使用 `conda config --add channels <URLS>` 命令1，其中 `<URLS>` 是你想要添加的镜像源的地址。你可以从一些国内的网站上找到可用的镜像源，例如https://developer.aliyun.com/mirror/anaconda2。在使用国内镜像源的时候，最好删除一下~/.condarc 里的 defaults 频道，因为这是官方的频道，在国内连接可能会很慢或者失败1。你可以用vim打开~/.condarc 手动删除掉 defaults 这一行，或者运行conda config --remove channels defaults 命令
 
 - 打开命令行窗口，输入`conda config --show-sources`查看当前的镜像源设置。
-- 如果想要添加新的镜像源，可以使用`conda config --add channels <URL>`命令，其中<URL>是你想要添加的镜像源的网址。例如，如果你想要添加清华大学的镜像源，可以输入`conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/`
-- 如果想要删除某个镜像源，可以使用`conda config --remove channels <NAME>`命令，其中<NAME>是你想要删除的镜像源的名称。例如，如果你想要删除默认的官方镜像源（可能会导致连接慢或失败），可以输入`conda config --remove channels defaults`
+- 如果想要添加新的镜像源，可以使用`conda config --add channels <URL>`命令，其中 `<URL>` 是你想要添加的镜像源的网址。例如，如果你想要添加清华大学的镜像源，可以输入`conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/`
+- 如果想要删除某个镜像源，可以使用`conda config --remove channels <NAME>`命令，其中 `<NAME>` 是你想要删除的镜像源的名称。例如，如果你想要删除默认的官方镜像源（可能会导致连接慢或失败），可以输入`conda config --remove channels defaults`
 - 如果想要查看或修改镜像源配置文件，可以使用文本编辑器打开~/.condarc文件（Linux/Mac）或C:\Users\用户名.condarc文件（Windows），并按照需要进行修改。
 - 修改完毕后，可以再次使用`conda config --show-sources`命令查看是否生效。
 

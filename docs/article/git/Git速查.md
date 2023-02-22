@@ -50,6 +50,15 @@ feed:
 
 
 
+# 添加远程仓库地址
+```bash
+git remote add <name> <url>
+# 上传
+git push --set-upstream <name> master
+```
+
+
+
 # 强制覆盖本地分支
 
 ```bash
