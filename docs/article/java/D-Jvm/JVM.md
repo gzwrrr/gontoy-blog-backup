@@ -1,6 +1,6 @@
 ---
 title: "JVM"
-shortTitle: "JVM"
+shortTitle: "A-JVM"
 description: "JVM"
 icon: ""
 author: 
