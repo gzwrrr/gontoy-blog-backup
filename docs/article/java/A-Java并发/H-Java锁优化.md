@@ -1,6 +1,6 @@
 ---
 title: "Java 锁优化"
-shortTitle: "Java 锁优化"
+shortTitle: "H-Java 锁优化"
 description: "Java 锁优化"
 icon: ""
 author: 

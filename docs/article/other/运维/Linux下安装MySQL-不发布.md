@@ -2,7 +2,7 @@
 title: "Linux下安装MySQL"
 shortTitle: "Linux下安装MySQL"
 description: "Linux下安装MySQL"
-icon: "Linux下安装MySQL"
+icon: ""
 author: 
   name: gzw
   url: 

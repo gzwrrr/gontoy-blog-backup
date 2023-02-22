@@ -1,42 +1,83 @@
+// 默认标签样式修改 -- 开始
+a.header-anchor {
+    // background-color: #21332d;
+}
+li > p {
+    margin: 0;
+}
+table {
+    margin: 0 auto !important;
+    width: auto !important;
+}
+thead, tbody {
+}
+thead tr {
+    background-color: var(--dark-theme-color) !important;
+}
+tr:nth-child(2n) {
+    background-color: var(--dark-theme-color) !important;
+}
+
+// 标题样式 -- 开始
+.straight-line {
+    background-image: linear-gradient(to bottom , #7A88FF, #7AFFAF);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% 3px;
+    padding-bottom: 2px;
+}
+
 h2, h3 {
+    // background-image: linear-gradient(to right , var(--theme-grey), transparent 80%);
+    // background-position: 0% 100%;
+    // background-size: 40% 10%;
+    // background-repeat: no-repeat;
     position: relative;
     padding: 5px 5px 5px !important;
     margin-top: 55px !important;
-    margin-bottom: 20px !important;
-    // background-color: #21332d;
+    margin-bottom: 10px !important;
+    border-bottom: 1px solid var(--theme-grey);
+}
+
+h2::after, h3::after, h4::after  {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    justify-content: center;
+    align-items: center; 
+    display: -webkit-flex;
+    border-radius: 3px;
+    padding: 0 5px;
 }
 
 h2::after {
     content: 'H2';
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    justify-content: center;
-    align-items: center; 
-    display: -webkit-flex;
-    border-radius: 3px;
-    padding: 0 5px;
 }
 
 h3::after {
     content: 'H3';
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    justify-content: center;
-    align-items: center; 
-    display: -webkit-flex;
-    border-radius: 3px;
-    padding: 0 5px;
 }
 
-a.header-anchor {
-    // background-color: #21332d;
+h4::after {
+    content: 'H4';
+}
+// 标题样式 -- 结束
+
+// 默认标签样式修改 -- 结束
+
+
+
+
+// ==========================================================================================================
+
+
+
+// 文章样式 -- 开始
+.main-content {
 }
 
-
-li > p {
-    margin: 0;
+#toc {
+    width: 500px !important;
 }
 
 .theme-hope-content > p {
@@ -83,39 +124,6 @@ li > p {
 .theme-hope-content > img {
     box-shadow: 0px 0px 20px -5px #0e0e0eac !important;
 }
-
-// 图片 -- 开始
-figure {
-    // border: 1px solid var(--theme-grey);
-    // padding: 20px 10px 10px;
-    // border-radius: 5px;
-    margin-bottom: 50px !important;
-}
-
-figcaption {
-    display: none !important;
-}
-// 图片 -- 结束
-
-
-
-table {
-    margin: 0 auto !important;
-    width: auto !important;
-}
-
-thead, tbody {
-}
-
-thead tr {
-    background-color: var(--dark-theme-color) !important;
-
-}
-
-tr:nth-child(2n) {
-    background-color: var(--dark-theme-color) !important;
-}
-
 
 .header-anchor {
     left: 40px;
@@ -175,6 +183,20 @@ tr:nth-child(2n) {
 }
 
 
+// 图片 -- 开始
+figure {
+    // border: 1px solid var(--theme-grey);
+    // padding: 20px 10px 10px;
+    // border-radius: 5px;
+    margin-bottom: 50px !important;
+}
+
+figcaption {
+    display: none !important;
+}
+// 图片 -- 结束
+
+
 
 // 标记样式 -- 开始
 mark {
@@ -201,19 +223,11 @@ mark {
 // mermaid -- 结束
 
 
-// 标题样式 -- 开始
-.straight-line {
-    background-image: linear-gradient(to bottom , #7A88FF, #7AFFAF);
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 100% 3px;
-    padding-bottom: 2px;
-}
 
-h2, h3 {
-    background-image: linear-gradient(to right , var(--theme-grey), transparent 80%);
-    background-position: 0% 100%;
-    background-size: 40% 10%;
-    background-repeat: no-repeat;
-}
-// 标题样式 -- 结束
+// 文章样式 -- 结束
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+[
+    {
+        "typeName": "通用",
+        "list": [
+            {
+                "title": "零代码-前端工具箱",
+                "icon": "https://www.gontoy.com/xxx.png",
+                "desc": "零代码工具箱提供前端各种常用工具，帮助提高前端开发效率，零代码独创的在线布局工具，通过简单拖拽即可完成各种复杂的布局！",
+                "url": "https://www.lingdaima.com/\r"
+            },
+            {
+                "title": "\"clip-path\" | Can I use... Support tables for HTML5, CSS3, etc",
+                "icon": "https://www.gontoy.com/xxx.png",
+                "desc": "",
+                "url": "https://caniuse.com/?search=clip-path\r"
+            },
+            {
+                "title": "Bennett Feely",
+                "icon": "https://www.gontoy.com/xxx.png",
+                "desc": "Bennett Feely is a web developer based in Pittsburgh. He makes websites so you don't have to.",
+                "url": "https://bennettfeely.com/\r"
+            },
+            {
+                "title": "Open-Source UI elements - made with CSS and HTMLCheckmark",
+                "icon": "https://www.gontoy.com/xxx.png",
+                "desc": "Library of free and customizable HTML and CSS UI elements. It's all open-source, and it's all free. Try it out to save you many hours spent on building & customizing UI components for your next project.",
+                "url": "https://uiverse.io/\r"
+            },
+            {
+                "title": "align-content - CSS Reference",
+                "icon": "https://cssreference.io/favicons/favicon-32x32.png?v=201702181118",
+                "desc": "Learn how align-content works in CSS.",
+                "url": "https://cssreference.io/property/align-content/\r"
+            },
+            {
+                "title": "Archives | CSS-Tricks - CSS-Tricks",
+                "icon": "https://www.gontoy.com/xxx.png",
+                "desc": "",
+                "url": "https://css-tricks.com/archives/\r"
+            },
+            {
+                "title": "CSS Tricks",
+                "icon": "https://www.gontoy.com/xxx.png",
+                "desc": "一些常用的 CSS 样式, 一点 CSS 技巧",
+                "url": "https://qishaoxuan.github.io/css_tricks/createTriangle/\r"
+            },
+            {
+                "title": "Online CSS3 Code Generator With a Simple Graphical Interface - EnjoyCSS",
+                "icon": "https://www.gontoy.com/xxx.png",
+                "desc": "EnjoyCSS is an advanced CSS3 generator that saves your time. Its handy and simple UI allows you to adjust rich graphical styles quickly and without coding.",
+                "url": "https://enjoycss.com/\r"
+            },
+            {
+                "title": "JavaScript Snippets - 30 seconds of code",
+                "icon": "https://www.gontoy.com/xxx.png",
+                "desc": "Browse 725 JavaScript code snippets for all your development needs on 30 seconds of code.",
+                "url": "https://www.30secondsofcode.org/js/p/1"
+            }
+        ]
+    }
+]

@@ -137,3 +137,12 @@ vertical-align: top;
 }
 ```
 
+
+### 文字超出省略
+```css
+.omit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+```
