@@ -11,95 +11,101 @@ export default hopeTheme({
     fullscreen: true,
     iconAssets: "https://at.alicdn.com/t/c/font_3879594_02a7jyioxr8t.css",
     navbar: [{
-            text: "主页",
-            link: "/README.md",
-            icon: "zhuye",
-            // 仅在 `/zh/guide/` 激活
-            activeMatch: "^/zh/guide/$",
-        },
-        {
-            text: "导航",
-            link: "/guide/",
-            icon: "tubiaozhuanqu-16",
-            // 仅在 `/zh/guide/` 激活
-            activeMatch: "^/zh/guide/$",
-        },
-        {
-            text: "编程语言",
-            icon: "code",
-            children: [
-                "/article/java/",
-                "/article/go/",
-            ]
-        },
-        {
-            text: "算法",
-            icon: "jichengsuanfa",
-            link: "/article/algorithm/"
-        },
-        {
-            text: "Springs",
-            icon: "bxl-spring-boot",
-            link: "/article/springs/"
-        },
-        {
-            text: "数据库",
-            icon: "database-full",
-            children: [
-                "/article/mysql/",
-                "/article/redis/",
-            ]
-        },
-        {
-            text: "设计",
-            icon: "sheji1",
-            children: [
-                "/article/design/",
-            ]
-        },
-        {
-            text: "中间件",
-            icon: "zhongjianjian",
-            children: [
-                "/article/rabbitmq/",
-                "/article/elasticsearch/",
-                "/article/mongodb/",
-                "/article/netty/",
-                "/article/quartz/",
-            ]
-        },
-        {
-            text: "运维",
-            icon: "yunwei-yunweirizhi",
-            children: [
-                "/article/git/",
-                "/article/docker/",
-                "/article/jenkins/",
-                "/article/linux/",
-            ]
-        },
-        {
-            text: "数学建模",
-            icon: "qita",
-            link: "/article/modeling/"
-        },
-        {
-            text: "其他文章",
-            icon: "qita",
-            link: "/article/other/"
-        },
-        {
-            text: "关于",
-            icon: "guanyu1",
-            link: "/about/"
-        },
+        text: "主页",
+        link: "/README.md",
+        icon: "zhuye",
+        // 仅在 `/zh/guide/` 激活
+        activeMatch: "^/zh/guide/$",
+    },
+    {
+        text: "导航",
+        link: "/guide/",
+        icon: "tubiaozhuanqu-16",
+        // 仅在 `/zh/guide/` 激活
+        activeMatch: "^/zh/guide/$",
+    },
+    {
+        text: "编程语言",
+        icon: "code",
+        children: [
+            "/article/java/",
+            "/article/go/",
+            "/article/js/"
+        ]
+    },
+    {
+        text: "算法",
+        icon: "jichengsuanfa",
+        link: "/article/algorithm/"
+    },
+    {
+        text: "框架",
+        icon: "database-full",
+        children: [
+            "/article/springs/",
+            "/article/vue/",
+        ]
+    },
+    {
+        text: "数据库",
+        icon: "database-full",
+        children: [
+            "/article/mysql/",
+            "/article/redis/",
+        ]
+    },
+    {
+        text: "设计",
+        icon: "sheji1",
+        children: [
+            "/article/design/",
+        ]
+    },
+    {
+        text: "中间件",
+        icon: "zhongjianjian",
+        children: [
+            "/article/rabbitmq/",
+            "/article/elasticsearch/",
+            "/article/mongodb/",
+            "/article/netty/",
+            "/article/quartz/",
+        ]
+    },
+    {
+        text: "运维",
+        icon: "yunwei-yunweirizhi",
+        children: [
+            "/article/git/",
+            "/article/docker/",
+            "/article/jenkins/",
+            "/article/linux/",
+        ]
+    },
+    {
+        text: "数学建模",
+        icon: "qita",
+        link: "/article/modeling/"
+    },
+    {
+        text: "其他文章",
+        icon: "qita",
+        link: "/article/other/"
+    },
+    {
+        text: "关于",
+        icon: "guanyu1",
+        link: "/about/"
+    },
     ],
     sidebar: {
         "/guide/": "structure",
         "/article/java/": "structure",
         "/article/go/": "structure",
+        "/article/js/": "structure",
         "/article/algorithm/": "structure",
         "/article/springs/": "structure",
+        "/article/vue/": "structure",
         "/article/design/": "structure",
         "/article/mysql/": "structure",
         "/article/redis/": "structure",
@@ -116,7 +122,7 @@ export default hopeTheme({
         "/article/other/": "structure",
         "/about/": "structure",
         "/": [
-            "" /* / */ ,
+            "" /* / */,
             // "contact" /* /contact.html */,
             // "about" /* /about.html */,
         ],

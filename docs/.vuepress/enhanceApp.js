@@ -1,8 +1,5 @@
 import components from './config/component'
-import OtherComponent from './components/OtherComponent.vue'​
-// export default ({ Vue }) => {
-//  components.forEach(({name, component}) => Vue.component(name, component))
-// }
+import OtherComponent from './components/OtherComponent.vue'
 
 // 使用异步函数也是可以的
 export default ({

@@ -48,7 +48,7 @@ export default [
                         content,
                     };
             },
-        }, ],
+        },],
         mermaid: true,
         presentation: true,
         tabs: true,
@@ -96,13 +96,13 @@ export default [
         indexContent: true,
         // 为分类和标签添加索引
         customFields: [{
-                getter: (page) => page.frontmatter.category + "",
-                formatter: "分类：$content",
-            },
-            {
-                getter: (page) => page.frontmatter.tag + "",
-                formatter: "标签：$content",
-            },
+            getter: (page) => page.frontmatter.category + "",
+            formatter: "分类：$content",
+        },
+        {
+            getter: (page) => page.frontmatter.tag + "",
+            formatter: "标签：$content",
+        },
         ],
         locales: {
             "/zh/": {

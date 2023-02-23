@@ -97,9 +97,9 @@ feed:
 
 2. 实现 Runnable 接口
 
-3. 实现 Callable<T> 接口，配合FutureTask`<V>` 类
+3. 实现 `Callable<T>` 接口，配合 `FutureTask<V>` 类
 
-   - FutureTask 实现了 RunnableFuture 接口，而 RunnableFuture 继承了 Runnable 接口和 Future`<V>` 接口（==接口可以多继承，类不行==），这可以返回一个任务的执行结果（Runnable 没有返回值），多线程操作间更加方便
+   - FutureTask 实现了 RunnableFuture 接口，而 RunnableFuture 继承了 `Runnable` 接口和 `Future<V>` 接口（==接口可以多继承，类不行==），这可以返回一个任务的执行结果（Runnable 没有返回值），多线程操作间更加方便
    - FutureTask 可以接收 Callable 类型的参数（Callable 与 Runnable 类似，前者比后者多了返回值并且可以抛出异常），以此来处理有返回值的情况
    - Callable 接口中只有一个 call 方法，并且使用了 @FunctionalInterface 注解
 

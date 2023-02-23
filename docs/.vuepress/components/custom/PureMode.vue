@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div>
+        <!-- <div>
             <button @click="pure()">{{ tip }}</button>
-        </div>
+        </div> -->
     </div>
 </template>
 

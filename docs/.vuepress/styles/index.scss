@@ -12,11 +12,14 @@ table {
 thead, tbody {
 }
 thead tr {
-    background-color: var(--dark-theme-color) !important;
+    background-color: var(--theme-deep-blue) !important;
 }
 tr:nth-child(2n) {
-    background-color: var(--dark-theme-color) !important;
+    background-color: var(--theme-blue) !important;
 }
+
+
+
 
 // 标题样式 -- 开始
 .straight-line {
@@ -230,6 +233,20 @@ mark {
 
 
 
+
+
+// markdown -- 开始
+.table-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+
+
+// markdown -- 结束
 
 
 
