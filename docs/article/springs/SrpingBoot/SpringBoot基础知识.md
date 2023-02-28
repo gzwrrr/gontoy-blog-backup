@@ -1,7 +1,7 @@
 ---
-title: "Spring Boot 学习"
-shortTitle: "Spring Boot 学习"
-description: "Spring Boot 学习"
+title: "Spring Boot 基础知识"
+shortTitle: "Spring Boot 基础知识"
+description: "Spring Boot 基础知识"
 icon: ""
 author: 
   name: gzw
@@ -18,7 +18,7 @@ star: false
 article: true
 timeline: true,
 dir:
-  text: "Spring Boot 学习"
+  text: "Spring Boot 基础知识"
   icon: ""
   collapsible: true
   index: true
@@ -31,15 +31,44 @@ copy:
   disableCopy: false
   disableSelection: false
 feed:
-  title: "Spring Boot 学习"
-  description: "Spring Boot 学习"
+  title: "Spring Boot 基础知识"
+  description: "Spring Boot 基础知识"
   author:
     name: gzw
     email: 1627121193@qq.com
 ---
 
 
-# Spring Boot 学习
+
+
+
+# Spring Boot 基础知识
+
+Spring Boot 是基于 Spring 框架的一个全新的框架，它主要对 Spring 框架做了以下封装：
+
+1. 自动化配置
+
+Spring Boot 提供了一系列的 Starter 依赖，可以根据项目的需求自动加载所需要的依赖，从而减少了开发人员在配置文件中手动添加各种依赖的繁琐工作。此外，Spring Boot 还提供了一个注解 @EnableAutoConfiguration，它会自动根据项目所依赖的 Starter 来进行自动化配置，使得开发者不需要关心底层框架的配置。
+
+1. 嵌入式 Web 容器
+
+Spring Boot 内置了 Tomcat、Jetty 和 Undertow 等多种嵌入式 Web 容器，可以在运行时快速启动一个 Web 服务。在开发阶段，开发人员可以在 IDE 中直接运行 Spring Boot 项目，无需手动安装和配置 Web 服务器。
+
+1. 简化的 Maven/Gradle 配置
+
+Spring Boot 通过提供约定大于配置的方式，简化了 Maven 和 Gradle 的配置。在 Maven 中，只需要添加一个 Starter 依赖，即可实现对应功能的开发。在 Gradle 中，可以通过 Groovy 语言编写 Gradle 配置文件，非常简洁易懂。
+
+1. 简化的 Spring 开发
+
+Spring Boot 还提供了大量的快捷开发工具，如自动扫描、自动注入、自动配置等，开发者可以专注于业务逻辑的开发，而不需要花费大量时间在繁琐的配置上。
+
+1. 多种方式的配置
+
+Spring Boot 提供了多种配置方式，包括 YAML、Properties、XML 和 Java 等多种配置方式，开发者可以根据自己的习惯选择适合自己的配置方式。此外，Spring Boot 还支持外部配置，可以将配置信息独立出来，以便于在不同环境下进行管理。
+
+总之，Spring Boot 对 Spring 框架进行了封装，使得开发者可以更加方便快捷地进行应用程序的开发和部署。
+
+
 
 
 

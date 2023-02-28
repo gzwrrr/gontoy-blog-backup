@@ -61,3 +61,21 @@ java 中对异常的处理包括两种方式：
 2. 使用 try ... catch 语句进行异常捕获
 
 【注意】如果 Java 中异常发生之后一直上抛，最终抛给 main 方法且 main 继续上抛至调用者 JVM，这时只有一个结果，即终止 Java 程序的执行
+
+
+
+
+
+
+
+## RuntimeException
+
+![image-20230224162650522](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E5%BC%82%E5%B8%B8/20230224/runtimeException.png)
+
+
+
+
+
+## UncheckedException
+
+![image-20230224162757266](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E5%BC%82%E5%B8%B8/20230224/uncheckedException.png)

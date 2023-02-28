@@ -52,6 +52,8 @@ export default hopeTheme({
         children: [
             "/article/mysql/",
             "/article/redis/",
+            "/article/elasticsearch/",
+            "/article/mongodb/",
         ]
     },
     {
@@ -66,8 +68,6 @@ export default hopeTheme({
         icon: "zhongjianjian",
         children: [
             "/article/rabbitmq/",
-            "/article/elasticsearch/",
-            "/article/mongodb/",
             "/article/netty/",
             "/article/quartz/",
         ]

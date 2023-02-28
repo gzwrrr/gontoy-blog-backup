@@ -36,7 +36,10 @@ feed:
   author:
     name: gzw
     email: 1627121193@qq.com
+
 ---
+
+
 
 # JS 基础知识
 
@@ -59,6 +62,8 @@ feed:
 在Web开发中，window和document是两个非常重要的对象：
 1. window对象表示当前浏览器窗口，它是BOM（浏览器对象模型）的一部分，提供了很多与浏览器窗口相关的属性和方法，如：window.innerWidth、window.innerHeight、window.open()等  
 2. document对象表示当前页面，它是DOM（文档对象模型）的一部分，提供了很多与页面内容相关的属性和方法，如：document.getElementById()、document.querySelector()等  
+
+
 
 
 
@@ -258,6 +263,184 @@ myFunction.apply(myObject, myArray);   // 返回 20
 
 
 
+## Window 对象
+
+所有浏览器都支持 window 对象。它表示浏览器窗口
+
+所有 JavaScript 全局对象、函数以及变量均自动成为 window 对象的成员
+
+1. 全局变量是 window 对象的属性（甚至 HTML DOM 的 document 也是 window 对象的属性之一）
+
+2. 全局函数是 window 对象的方法
+
+### Window 子对象
+
+Window的子对象主要有如下几个：
+
+1. JavaScript document 对象
+2. JavaScript frames 对象
+3. JavaScript history 对象
+4. JavaScript location 对象
+5. JavaScript navigator 对象
+6. JavaScript screen 对象
+
+### Window 尺寸
+
+有三种方法能够确定浏览器窗口的尺寸（浏览器的窗口，不包括工具栏和滚动条）。
+
+对于Internet Explorer、Chrome、Firefox、Opera 以及 Safari：
+
+- window.innerHeight - 浏览器窗口的内部高度
+- window.innerWidth - 浏览器窗口的内部宽度
+
+对于 Internet Explorer 8、7、6、5：
+
+- document.documentElement.clientHeight
+- document.documentElement.clientWidth
+
+或者
+
+- document.body.clientHeight
+- document.body.clientWidth
+
+实用的 JavaScript 方案（涵盖所有浏览器）：
+
+```js
+var w=window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var h=window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+```
+
+
+
+### Window Screen
+
+**window.screen**对象在编写时可以不使用 window 这个前缀。
+
+一些属性：
+
+- screen.availWidth - 可用的屏幕宽度
+- screen.availHeight - 可用的屏幕高度
+
+
+
+### Window Location
+
+**window.location** 对象在编写时可不使用 window 这个前缀。 一些例子：
+
+一些实例:
+
+- [location.hostname](https://www.w3cschool.cn/jsref/prop-loc-hostname.html) 返回 web 主机的域名
+- [location.pathname](https://www.w3cschool.cn/jsref/prop-loc-pathname.html) 返回当前页面的路径和文件名
+- [location.port](https://www.w3cschool.cn/jsref/prop-loc-port.html) 返回 web 主机的端口 （80 或 443）
+- [location.protocol](https://www.w3cschool.cn/jsref/prop-loc-protocol.html) 返回所使用的 web 协议（http:// 或 https://）
+
+
+
+### Window Location Href
+
+location.href 属性返回当前页面的 URL
+
+
+
+
+
+### Window History
+
+**window.history**对象在编写时可不使用 window 这个前缀。
+
+为了保护用户隐私，对 JavaScript 访问该对象的方法做出了限制。
+
+一些方法：
+
+- [history.back()](https://www.w3cschool.cn/jsref/met-his-back.html) - 与在浏览器点击后退按钮相同
+- [history.forward()](https://www.w3cschool.cn/jsref/met-his-forward.html) - 与在浏览器中点击向前按钮向前相同
+
+
+
+### Window Navigator
+
+```js
+txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+txt+= "<p>Browser Name: " + navigator.appName + "</p>";
+txt+= "<p>Browser Version: " + navigator.appVersion + "</p>";
+txt+= "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+txt+= "<p>Platform: " + navigator.platform + "</p>";
+txt+= "<p>User-agent header: " + navigator.userAgent + "</p>";
+txt+= "<p>User-agent language: " + navigator.systemLanguage + "</p>";
+document.getElementById("example").innerHTML=txt;
+```
+
+来自 navigator 对象的信息具有误导性，不应该被用于检测浏览器版本，这是因为：
+
+- navigator 数据可被浏览器使用者更改
+- 一些浏览器对测试站点会识别错误
+- 浏览器无法报告晚于浏览器发布的新操作系统
+
+由于 navigator 可误导浏览器检测，使用对象检测可用来嗅探不同的浏览器
+
+由于不同的浏览器支持不同的对象，您可以使用对象来检测浏览器。例如，由于只有 Opera 支持属性 "window.opera"，您可以据此识别出 Opera。
+
+例子：if (window.opera) {...some action...}
+
+
+
+
+
+
+
+
+
+## JavaScript 计时事件
+
+通过使用 JavaScript，我们有能力做到在一个设定的时间间隔之后来执行代码，而不是在函数被调用后立即执行。我们称之为计时事件。
+
+在 JavaScritp 中使用计时事件是很容易的，两个关键方法是:
+
+- [setInterval() ](https://www.w3cschool.cn/jsref/met-win-setinterval.html)- 间隔指定的毫秒数不停地执行指定的代码。
+- [setTimeout() ](https://www.w3cschool.cn/jsref/met-win-settimeout.html)- 暂停指定的毫秒数后执行指定的代码
+
+**Note:** setInterval() 和 setTimeout() 是 HTML DOM Window对象的两个方法
+
+clearInterval() 方法用于停止 setInterval() 方法执行的函数代码
+
+```js
+window.clearInterval(intervalVariable)
+```
+
+clearTimeout() 方法用于停止执行setTimeout()方法的函数代码
+
+```js
+window.clearTimeout(timeoutVariable)
+```
+
+
+
+
+
+## JavaScript Cookies
+
+Cookies 是一些数据, 存储于你电脑上的文本文件中
+
+当 web 服务器向浏览器发送 web 页面时，在连接关闭后，服务端不会记录用户的信息
+
+Cookies 的作用就是用于解决 "如何记录客户端的用户信息":
+
+- 当用户访问 web 页面时，他的名字可以记录在 cookie 中
+- 在用户下一次访问该页面时，可以在 cookie 中读取用户访问记录
+
+JavaScript 可以使用 **document.cookie** 属性来创建 、读取、及删除 cookies
+
+```js
+document.cookie="username=John Doe";
+```
+
+
+
 ## 其他
 
 javascript:void(0);代表什么都不执行，其实就是不返回任何值，但是 void 中的内容还是会执行的，比如 javascript:void(alert('点击')); 就会弹出提示 
@@ -266,7 +449,7 @@ javascript:void(0);代表什么都不执行，其实就是不返回任何值，�
 
 
 
-## HTML 语义化
+### HTML 语义化
 
 | 标签            | 描述                                       |
 | --------------- | ------------------------------------------ |

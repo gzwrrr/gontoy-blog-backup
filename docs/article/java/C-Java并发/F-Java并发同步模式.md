@@ -460,6 +460,26 @@ class WaitNotify {
 
 ### 3.2 await 和 signal
 
+:::info wait 和 await 的区别
+
+在Java中，wait和await都是用于并发编程中的线程间通信的关键字，但是它们的具体用法和作用略有不同。
+
+**wait：**
+
+wait()是Object类中定义的方法，它会让当前线程释放对象的锁，并进入等待状态，直到其他线程调用notify()或notifyAll()方法唤醒它，才会重新竞争对象的锁并继续执行。wait()必须在同步方法或同步块中使用，因为它要求线程持有对象的锁。
+
+**await：**
+
+await()是Condition接口中定义的方法，它需要与Lock配合使用。一个Lock对象可以有多个与之对应的Condition对象，用于唤醒不同的等待线程。当一个线程调用await()方法时，它会释放当前持有的锁并进入等待状态，直到其他线程调用Condition对象的signal()或signalAll()方法唤醒它，才会重新竞争锁并继续执行。
+
+可以看到，wait()和await()都能让线程进入等待状态，但是它们的作用对象和使用方式不同。wait()需要在同步方法或同步块中使用，而await()需要先获取一个Lock对象，并且需要和对应的Condition对象一起使用。
+
+另外，wait()和await()方法都可以被中断，即在等待过程中可以被其他线程打断，抛出InterruptedException异常。不同的是，wait()方法会自动重新获得对象的锁，而await()方法需要在被唤醒后重新竞争Lock对象的锁。
+
+:::
+
+
+
 **使用 await 和 signal 实现交替输出：**
 
 ```java
