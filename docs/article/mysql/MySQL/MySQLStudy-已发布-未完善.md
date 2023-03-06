@@ -506,8 +506,6 @@ Explain 各个字段的含义
 
 
 
-
-
 ### InnoDB 事务实现
 
 InnoDB 是通过 `Buffer Pool`、`LogBuffer`、`RedoLog`、`UndoLog` 来实现事务的：

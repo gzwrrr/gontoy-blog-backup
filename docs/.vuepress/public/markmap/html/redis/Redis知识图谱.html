@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.4"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"Redis","children":[{"type":"heading","depth":1,"payload":{"lines":[2,3]},"content":"概述"},{"type":"heading","depth":1,"payload":{"lines":[4,5]},"content":"数据结构","children":[{"type":"heading","depth":2,"payload":{"lines":[6,7]},"content":"字符串"},{"type":"heading","depth":2,"payload":{"lines":[8,9]},"content":"哈希表"},{"type":"heading","depth":2,"payload":{"lines":[10,11]},"content":"列表"},{"type":"heading","depth":2,"payload":{"lines":[12,13]},"content":"集合"},{"type":"heading","depth":2,"payload":{"lines":[14,15]},"content":"有序集合"},{"type":"heading","depth":2,"payload":{"lines":[16,17]},"content":"地理空间数据"}]},{"type":"heading","depth":1,"payload":{"lines":[18,19]},"content":"持久化","children":[{"type":"heading","depth":2,"payload":{"lines":[20,21]},"content":"RDB"},{"type":"heading","depth":2,"payload":{"lines":[22,23]},"content":"AOF"},{"type":"heading","depth":2,"payload":{"lines":[24,25]},"content":"AOF Rewrite"},{"type":"heading","depth":2,"payload":{"lines":[26,27]},"content":"AOF重写配置"}]},{"type":"heading","depth":1,"payload":{"lines":[28,29]},"content":"高可用性方案","children":[{"type":"heading","depth":2,"payload":{"lines":[30,31]},"content":"主从复制"},{"type":"heading","depth":2,"payload":{"lines":[32,33]},"content":"哨兵模式"},{"type":"heading","depth":2,"payload":{"lines":[34,35]},"content":"Redis Cluster"}]},{"type":"heading","depth":1,"payload":{"lines":[36,37]},"content":"发布订阅模式","children":[{"type":"heading","depth":2,"payload":{"lines":[38,39]},"content":"Pub/Sub基础"},{"type":"heading","depth":2,"payload":{"lines":[40,41]},"content":"Pub/Sub高级特性"},{"type":"heading","depth":2,"payload":{"lines":[42,43]},"content":"Pub/Sub配置"}]},{"type":"heading","depth":1,"payload":{"lines":[44,45]},"content":"Lua脚本","children":[{"type":"heading","depth":2,"payload":{"lines":[46,47]},"content":"脚本加载"},{"type":"heading","depth":2,"payload":{"lines":[48,49]},"content":"脚本执行"},{"type":"heading","depth":2,"payload":{"lines":[50,51]},"content":"脚本缓存"},{"type":"heading","depth":2,"payload":{"lines":[52,53]},"content":"Redis内置函数"},{"type":"heading","depth":2,"payload":{"lines":[54,55]},"content":"Lua语言教程"}]},{"type":"heading","depth":1,"payload":{"lines":[56,57]},"content":"事务"},{"type":"heading","depth":1,"payload":{"lines":[58,59]},"content":"分布式锁","children":[{"type":"heading","depth":2,"payload":{"lines":[60,61]},"content":"Redis实现分布式锁"},{"type":"heading","depth":2,"payload":{"lines":[62,63]},"content":"分布式锁应用"},{"type":"heading","depth":2,"payload":{"lines":[64,65]},"content":"避免死锁"},{"type":"heading","depth":2,"payload":{"lines":[66,67]},"content":"持久化"}]},{"type":"heading","depth":1,"payload":{"lines":[68,69]},"content":"性能优化","children":[{"type":"heading","depth":2,"payload":{"lines":[70,71]},"content":"Pipeline"},{"type":"heading","depth":2,"payload":{"lines":[72,73]},"content":"连接池"},{"type":"heading","depth":2,"payload":{"lines":[74,75]},"content":"Redis参数"},{"type":"heading","depth":2,"payload":{"lines":[76,77]},"content":"性能测试工具"}]},{"type":"heading","depth":1,"payload":{"lines":[78,79]},"content":"安全性","children":[{"type":"heading","depth":2,"payload":{"lines":[80,81]},"content":"认证"},{"type":"heading","depth":2,"payload":{"lines":[82,83]},"content":"授权"},{"type":"heading","depth":2,"payload":{"lines":[84,85]},"content":"网络隔离"},{"type":"heading","depth":2,"payload":{"lines":[86,87]},"content":"Redis安全实践"}]},{"type":"heading","depth":1,"payload":{"lines":[88,89]},"content":"Redis与其他系统集成","children":[{"type":"heading","depth":2,"payload":{"lines":[90,91]},"content":"MySQL"},{"type":"heading","depth":2,"payload":{"lines":[92,93]},"content":"PostgreSQL"},{"type":"heading","depth":2,"payload":{"lines":[94,95]},"content":"Elasticsearch"},{"type":"heading","depth":2,"payload":{"lines":[96,97]},"content":"Redis与其他NoSQL数据库的比较"}]},{"type":"heading","depth":1,"payload":{"lines":[98,99]},"content":"Redis开发最佳实践","children":[{"type":"heading","depth":2,"payload":{"lines":[100,101]},"content":"项目架构"},{"type":"heading","depth":2,"payload":{"lines":[102,103]},"content":"性能调优"},{"type":"heading","depth":2,"payload":{"lines":[104,105]},"content":"数据设计"},{"type":"heading","depth":2,"payload":{"lines":[106,107]},"content":"Redis扩容"},{"type":"heading","depth":2,"payload":{"lines":[108,109]},"content":"Redis监控"},{"type":"heading","depth":2,"payload":{"lines":[110,111]},"content":"Redis容灾"},{"type":"heading","depth":2,"payload":{"lines":[112,113]},"content":"Redis部署"}]},{"type":"heading","depth":1,"payload":{"lines":[114,115]},"content":"Redis生态系统","children":[{"type":"heading","depth":2,"payload":{"lines":[116,117]},"content":"Redis模块"},{"type":"heading","depth":2,"payload":{"lines":[118,119]},"content":"Redis工具"},{"type":"heading","depth":2,"payload":{"lines":[120,121]},"content":"Redis客户端库"},{"type":"heading","depth":2,"payload":{"lines":[122,123]},"content":"Redis中间件"},{"type":"heading","depth":2,"payload":{"lines":[124,125]},"content":"Redis监控工具"}]}]},{})</script>
+</body>
+</html>
