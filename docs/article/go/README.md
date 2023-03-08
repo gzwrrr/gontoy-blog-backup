@@ -3,4 +3,6 @@ notPage: true
 ---
 
 # GoLang
-待补充
+:::info 说明
+GoLang 的简单使用
+:::

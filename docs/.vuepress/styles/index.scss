@@ -87,19 +87,19 @@ h4::after {
     margin-top: 20px !important;
 }
 
-.page-title {
-    // width: var(--content-width);
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--theme-grey);
-}
+// .page-title {
+//     // width: var(--content-width);
+//     padding-bottom: 20px;
+//     border-bottom: 1px solid var(--theme-grey);
+// }
 
 .sidebar-links .router-link-active {
     background-color: var(--deep-theme-color) !important;
 }
 
-hr {
-   display: none;
-}
+// hr {
+//    display: none;
+// }
 
 
 #toc {
@@ -275,4 +275,11 @@ mark {
 // markdown -- 结束
 
 
-
+// 主页 -- 开始
+.project-panel {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--bg-color-secondary);
+    box-shadow: 0 0 1px 1px var(--card-shadow);
+}
+// 主页 -- 结束

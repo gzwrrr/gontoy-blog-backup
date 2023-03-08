@@ -18,11 +18,23 @@ actions:
 - text: 博客
   link: https://www.gzw-icu.com
 copyright: false,
-# projects: 
-# - name: Gzw's Blog
-#   desc: 博客
-#   link: https://www.gzw-icu.com
-#   icon: /logo.png
+projects: 
+- name: CodeSheep
+  desc: 【强烈推荐】羊哥的资源聚合&分享&导航网站
+  link: https://r2coding.com/#/README
+  icon: 
+- name: Pdai
+  desc: 【强烈推荐】Java 全栈知识体系
+  link: https://www.pdai.tech/md/java/basic/java-basic-oop.html
+  icon: 
+- name: Gzw's Zfile
+  desc: 我的资源分享
+  link: https://zfile.gzw-icu.com
+  icon:
+- name: Gzw's Excalidraw
+  desc: 我的画板
+  link: https://board.gzw-icu.com/
+  icon:
 # footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 

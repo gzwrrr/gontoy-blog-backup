@@ -873,6 +873,16 @@ class BlockingQueue<T> {
 
 ### 9.2 ThreadPoolExecutor
 
+:::info 说明
+
+原理简单来说就是一个 **线程集合 WorkerSet** 和一个 **阻塞队列 WorkQueue** 相互配合
+
+线程会将 **任务** 放到 WorkQueue 中，WorkerSet 中的线程会不断地从队列中获取任务并执行
+
+:::
+
+
+
 #### 1.线程池状态
 
 ThreadPoolExecutor 使用 int 的高 3 位来表示线程池的状态，低 29 位表示线程数量。这样做的目的是将线程池状态与线程个数合二为一，这样就可以用一次 cas 原子操作进行赋值
@@ -907,22 +917,21 @@ ThreadPoolExecutor 使用 int 的高 3 位来表示线程池的状态，低 29 �
 
 #### 3.常用工厂方法
 
-（1）newFixedThreadPool
+**三种类型：**
 
-- 核心线程数等于最大线程数，即没有救急线程，因此也无需超时时间
-- 阻塞队列时无界的，可以放任意数量的任务。适用于任务量已知但相对耗时的任务
+1. newFixedThreadPool
+   - 核心线程数等于最大线程数，即没有救急线程，因此也无需超时时间
+   - 阻塞队列时无界的，可以放任意数量的任务。适用于任务量已知但相对耗时的任务
 
-（2）newCachedThreadPool
+2. newCachedThreadPool
+   - 核心线程数为 0，最大线程数为 Integer.MAX_VALUE，救急线程的空闲生存时间是 60s。这意味着全部都是救急线程且 60s 后回收，救急线程可以无限创建
+   - 队列采用了 synchronousQueue 实现，特点是没有容量，没有线程来取是放不进去的（一手交钱，一首交货）
+   - 整个线程池表现为线程数会根据任务量不断增长没有上限，当任务执行完毕并空闲 1 分钟后释放线程。适合任务数比较密集但是每个任务执行时间较短的情况
 
-- 核心线程数为 0，最大线程数为 Integer.MAX_VALUE，救急线程的空闲生存时间是 60s。这意味着全部都是救急线程且 60s 后回收，救急线程可以无限创建
-- 队列采用了 synchronousQueue 实现，特点是没有容量，没有线程来取是放不进去的（一手交钱，一首交货）
-- 整个线程池表现为线程数会根据任务量不断增长没有上限，当任务执行完毕并空闲 1 分钟后释放线程。适合任务数比较密集但是每个任务执行时间较短的情况
-
-（3）newSingleThreadExecutor
-
-- 希望多个任务排队执行，线程数固定为 1，任务数多于 1 时，会放入无界队列排队。任务执行完毕时这个唯一的线程也不会被释放
-- 如果任务执行失败抛出异常且没有补救措施时，会创建一个新的线程保证池的正常工作
-- newSingleThreadExecutor 的线程个数始终为 1 不可修改，因为 FinalizableDelegateExecutorService 应用的是装饰器模式，对外只暴露了 ExecutorService 接口，因此不能调用 ThreadPoolExecutor 中特有的方法；newFixedThreadPool(1) 初始为 1之后还可以修改，因为对外暴露的是 ThreadPoolExecutor 对象，可以强转后调用 setCorePoolSize 等方法进行修改
+3. newSingleThreadExecutor
+   - 希望多个任务排队执行，线程数固定为 1，任务数多于 1 时，会放入无界队列排队。任务执行完毕时这个唯一的线程也不会被释放
+   - 如果任务执行失败抛出异常且没有补救措施时，会创建一个新的线程保证池的正常工作
+   - newSingleThreadExecutor 的线程个数始终为 1 不可修改，因为 FinalizableDelegateExecutorService 应用的是装饰器模式，对外只暴露了 ExecutorService 接口，因此不能调用 ThreadPoolExecutor 中特有的方法；newFixedThreadPool(1) 初始为 1之后还可以修改，因为对外暴露的是 ThreadPoolExecutor 对象，可以强转后调用 setCorePoolSize 等方法进行修改
 
 
 
@@ -971,6 +980,34 @@ boolean isTerminated();
 // 调用 shutdown 后，由于调用线程并不会等待所有任务运行结束，因此如果它想在线程池 TERMINATED 后做些事情，可以使用此方法等待
 boolean awaitTermination(long timeout, TimeUnit unit) throws InterruptedException;
 ```
+
+
+
+
+
+#### 6.小结
+
+:::warning 注意
+
+不推荐使用 Executors 直接创建线程，因为内部的 BlockingQueue 默认实现可能会导致 OOM
+
+:::
+
+**推荐创建线程池的方式：**
+
+1. 直接使用 ThreadPoolExecutor 自定义线程池，注意要规避无限创建线程或者频繁创建与销毁线程的问题
+2. 使用工具库，比如：
+   1. commons-lang3
+   2. guava
+   3. Spring 配置线程池
+
+**配置线程池时注意：**
+
+1. CPU密集型: 尽可能少的线程，Ncpu+1
+2. IO密集型: 尽可能多的线程, Ncpu*2，比如数据库连接池
+3. 混合型: CPU密集型的任务与IO密集型任务的执行时间差别较小，拆分为两个线程池；否则没有必要拆分。
+
+
 
 
 

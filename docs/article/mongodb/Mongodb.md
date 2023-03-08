@@ -46,7 +46,7 @@ feed:
 
 # Mongodb 简单使用
 
-
+[[toc]]
 
 # 插入文档
 

@@ -46,6 +46,8 @@ feed:
 
 # Java 中的数据结构
 
+[[toc]]
+
 ## java 中的容器
 
 > 容器主要包括 Collection 和 Map 两种，Collection 存储着对象的集合，而 Map 存储着键值对（两个对象）的映射表

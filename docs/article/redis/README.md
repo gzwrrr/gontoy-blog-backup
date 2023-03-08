@@ -32,3 +32,5 @@ Redis 相关的内容大部分内容来自狂神的 B 站视频
 另外部分源自于「Java 全栈知识体系」，原文链接：https://pdai.tech/md/db/nosql-redis/db-redis-introduce.html
 
 :::
+
+[[toc]]

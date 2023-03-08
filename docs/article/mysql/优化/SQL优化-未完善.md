@@ -43,6 +43,8 @@ feed:
 
 # MySQL 本身的优化
 
+[[toc]]
+
 - MySQL 内核优化
 - SQL 优化
 - MySQL 服务器配置优化

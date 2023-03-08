@@ -43,6 +43,11 @@ feed:
 ---
 
 
+# Redis 性能优化
+
+[[toc]]
+
+
 ## 1.Redis Pipeline
 
 Redis Pipeline是一种将多个Redis命令打包在一起发送到Redis服务器的技术，从而减少客户端与Redis服务器之间的网络通信开销。

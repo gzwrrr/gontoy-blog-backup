@@ -26,10 +26,31 @@ import {
     getDirname,
     path
 } from "@vuepress/utils";
+import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
+import { tocPlugin } from '@vuepress/plugin-toc'
+
 const __dirname = getDirname(
     import.meta.url)
 
 export default [
+    tocPlugin({
+        // 配置项
+        componentName: 'Toc',
+        defaultOptions: {
+            containerTag: 'nav',
+            containerClass: 'vuepress-toc',
+            listClass: 'vuepress-toc-list',
+            itemClass: 'vuepress-toc-item',
+            linkTag: 'RouterLink',
+            linkClass: 'vuepress-toc-link',
+            linkActiveClass: 'active',
+            linkChildrenActiveClass: 'active',
+        }
+    }),
+    autoCatalogPlugin({
+        //插件选项
+        index: true
+    }),
     mdEnhancePlugin({
         stylize: [{
             matcher: /^不/,

@@ -48,6 +48,8 @@ feed:
 
 # Redis 发布订阅
 
+[[toc]]
+
 - redis 发布订阅（pub/sub）是一种消息通信模式
 - Redis 客户端可以订阅任意数量的频道
 

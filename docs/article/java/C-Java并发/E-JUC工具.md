@@ -662,18 +662,71 @@ public class CyclicBarrierTest {
 
 ## 8.Queue
 
-- LinkedBlockingQueue
-  - 链表实现，支持有界
-  - 懒惰创建，每次入队都会生成新 Node
-  - 使用两把锁提高性能（锁住的范围更小）
-- ArrayBlockingQueue
-  - 数组实现，强制有界
-  - 提前初始化 Node 数组
-  - 使用一把锁性能较低
-- ConcurrentLinkedQueue
-  - 与 LinkedBlockingQueue 类似，使用了两把锁，同一时刻允许两个线程（生产者线程与消费者线程）执行
-  - dummy 节点的引入让两把锁锁住的是不同对象，避免竞争
-  - “锁” 使用 cas 实现的
+### 8.1 BlockingQueue
+
+> BlockingQueue 一般用于一个线程产生对象，另外一个线程消费对象
+
+1. 当队列中对象数量到达临界点后，负责生产的线程会一直阻塞直到消费线程取出
+2. 当消费线程试图从空队列中取出一个对象时，该线程会阻塞直到队列中有对象可以消费
+3. 不能向 BlockingQueue 中放入 null
+4. 删除非头/尾节点的效率较低
+
+
+
+
+
+### 8.2 BlockingDeque
+
+> 可以从任意一端放入或抽取对象的队列
+
+1. 当不能插入元素而又有线程尝试插入时，会阻塞，同理，读取时也一样
+2. 使用双端队列意味着，一个线程既可以是生产者，也可以是消费者
+
+注意：BlockingDeque 接口继承自 BlockingQueue 接口。这就意味着你可以像使用一个 BlockingQueue 那样使用 BlockingDeque。
+
+
+
+
+
+### 8.3 其他
+
+**BlockingQueue 的其他实现：**
+
+1. LinkedBlockingQueue
+   - 链表实现，支持有界
+   - 懒惰创建，每次入队都会生成新 Node
+   - 使用两把锁提高性能（锁住的范围更小）
+   - 以 FIFO 的形式对元素进行存储
+
+2. ArrayBlockingQueue
+
+   - 数组实现，强制有界
+   - 提前初始化 Node 数组
+   - 使用一把锁性能较低
+   - 以 FIFO 的形式对元素进行存储
+
+3. ConcurrentLinkedQueue
+
+   - 与 LinkedBlockingQueue 类似，使用了两把锁，同一时刻允许两个线程（生产者线程与消费者线程）执行
+   - dummy 节点的引入让两把锁锁住的是不同对象，避免竞争
+   - “锁” 使用 cas 实现的
+
+4. DelayQueue：持有一个对象直到指定的延迟时间
+
+5. PriorityBlockingQueue
+
+   - 无界的并发队列
+
+   - 以元素的优先级大小进行存储
+
+6. SynchronousQueue
+
+   1. 只能存储一个元素
+   2. 满了或者为空时，想要插入或者取出都会阻塞
+
+**BlockingDeque 的其他实现：**
+
+LinkedBlockingDeque：LinkedBlockingDeque 是一个双端队列，在它为空的时候，一个试图从中抽取数据的线程将会阻塞，无论该线程是试图从哪一端抽取数据。
 
 
 

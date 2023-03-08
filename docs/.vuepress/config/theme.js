@@ -42,6 +42,7 @@ export default hopeTheme({
         text: "框架",
         icon: "database-full",
         children: [
+            "/article/tomcat/",
             "/article/springs/",
             "/article/vue/",
         ]
@@ -57,10 +58,11 @@ export default hopeTheme({
         ]
     },
     {
-        text: "设计",
+        text: "设计/架构",
         icon: "sheji1",
         children: [
             "/article/design/",
+            "/article/framework/",
         ]
     },
     {
@@ -104,6 +106,7 @@ export default hopeTheme({
         "/article/go/": "structure",
         "/article/js/": "structure",
         "/article/algorithm/": "structure",
+        "/article/tomcat/": "structure",
         "/article/springs/": "structure",
         "/article/vue/": "structure",
         "/article/design/": "structure",
@@ -111,6 +114,7 @@ export default hopeTheme({
         "/article/redis/": "structure",
         "/article/rabbitmq/": "structure",
         "/article/elasticsearch/": "structure",
+        "/article/framework/": "structure",
         "/article/git/": "structure",
         "/article/docker/": "structure",
         "/article/jenkins/": "structure",

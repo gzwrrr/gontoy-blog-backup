@@ -44,6 +44,8 @@ feed:
 
 # 基础排序
 
+[[toc]]
+
 ![排序算法的时空复杂度比较](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/20230208/%E5%9F%BA%E7%A1%80%E6%8E%92%E5%BA%8F%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6.png)
 
 **到目前为止：**

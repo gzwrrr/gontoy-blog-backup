@@ -44,7 +44,7 @@ feed:
 
 ## JavaScript 对象实例
 
-
+[[toc]]
 
 ### String（字符串）对象
 
