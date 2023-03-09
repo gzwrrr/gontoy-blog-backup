@@ -26,7 +26,7 @@ import {
     getDirname,
     path
 } from "@vuepress/utils";
-import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
+// import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
 import { tocPlugin } from '@vuepress/plugin-toc'
 
 const __dirname = getDirname(
@@ -47,10 +47,10 @@ export default [
             linkChildrenActiveClass: 'active',
         }
     }),
-    autoCatalogPlugin({
-        //插件选项
-        index: true
-    }),
+    // autoCatalogPlugin({
+    //     //插件选项
+    //     index: true
+    // }),
     mdEnhancePlugin({
         stylize: [{
             matcher: /^不/,

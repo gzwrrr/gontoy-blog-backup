@@ -46,6 +46,8 @@ feed:
 
 # Java 异常
 
+[[toc]]
+
 ![异常的继承结构图](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//java%E5%BC%82%E5%B8%B8/20230209/%E5%BC%82%E5%B8%B8%E7%9A%84%E7%BB%A7%E6%89%BF%E7%BB%93%E6%9E%84%E5%9B%BE.png)
 
 - 不管是错误还是异常，都是可抛出的

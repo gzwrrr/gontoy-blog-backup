@@ -47,11 +47,11 @@ feed:
 
 # JavaIO流
 
-
+[[toc]]
 
 IO 流继承结构
 
-<img src="https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//javaio/20230209/IO%E6%B5%81%E7%BB%A7%E6%89%BF%E7%BB%93%E6%9E%84.png" alt="IO流继承结构" style="zoom:80%;" />
+![IO流继承结构](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//javaio/20230209/IO%E6%B5%81%E7%BB%A7%E6%89%BF%E7%BB%93%E6%9E%84.png)
 
 
 

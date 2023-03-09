@@ -46,6 +46,7 @@ feed:
 
 # Java 并发基本概念
 
+:::info 说明
 - 文章主要是本人在学习 Java 并发（[视频戳这里](https://www.bilibili.com/video/BV16J411h7Rd?spm_id_from=333.337.search-card.all.click&vd_source=e356fec025b50061af78324a814f8da0)）时的笔记，主要用于速查
 - 目前还有许多点未补全，且结构还未进行调整，阅读起来相对困难
-
+:::

@@ -46,6 +46,9 @@ feed:
 
 # Requests
 
+[[toc]]
+
+
 - [官方文档](https://requests.readthedocs.io/en/latest/)
 - Python requests库是一个基于 `urllib` 的，采用 `Apache2` 开源协议的HTTP库，它可以方便地发送和接收 `HTTP` 请求和响应。它提供了一些简单的API函数，如 `get, post, put, delete` 等，以及一个 `Request` 类，用于构建和发送自定义的请求
 

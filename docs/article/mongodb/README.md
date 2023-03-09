@@ -7,5 +7,3 @@ notPage: true
 :::info 说明
 MongoDB 简单使用
 :::
-
-[[toc]]

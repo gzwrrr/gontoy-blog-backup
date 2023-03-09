@@ -46,6 +46,9 @@ feed:
 
 # Java 并发同步模式
 
+
+[[toc]]
+
 ## 1.保护性暂停
 
 即 Guarded Suspension，用在一个线程等待另一个线程的执行结果，要点如下：

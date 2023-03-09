@@ -12,7 +12,6 @@ notPage: true
 
 :::
 
-
 [[toc]]
 
 
@@ -65,6 +64,19 @@ notPage: true
   - 队列：是内部使用的一种数据结构，消息只能存储在队列中；队列仅受主机的内存和磁盘限制的约束，本质上是一个大的消息缓冲区
   - 消费者：队列与消费者是一对一的关系；消费与接收具有相似的关系；消费者大多时候是一个等待接收消息的程序；生产者消费者和消息中间件很多时候并不在一个机器上；同一个应用程序既可以是生产者又可以是消费者
 
+- 其他概念：
+  - Connection：publisher / consumer 和 broker 之间的 TCP 连接
+  - Channel：即信道，是建立在 Connection 之上的虚拟连接，当程序与 Broker 建立 TCP 连接时，
+  - Broker：RabbitMQ 的服务节点，接收和分发消息的应用，RabbitMQ Server 就是 Message Broker
+  - RoutingKey：生产者发送消息给交换机时会指定一个 RoutingKey，即用于匹配交换机
+  - Binding：通过绑定将交换机和队列绑定起来，这样可以正确选择路由到的队列（交换机和队列是 **多对多** 的关系，通过 BindingKey 进行关联）
+- 名词解释：
+  - AMQP（Advanced Message Queuing Protocol）：
+    - 是一种开放标准的消息传递协议，它是一个异步通信协议，支持消息的可靠传递和可靠排队，以及发布和订阅模式。AMQP协议最初由RabbitMQ公司开发，目前已成为ISO标准。
+    - AMQP协议定义了消息的格式、传递方式和路由规则。消息由消息头、消息体和属性组成。消息头包含消息类型、路由信息和传递模式等信息；消息体是实际的消息内容；属性则提供了一些额外的元数据。
+    - AMQP支持多种传输协议，包括TCP、TLS和WebSockets等。AMQP还支持多种编程语言，如Java、C++、Python、Node.js和.NET等，使得开发者可以使用各自熟悉的编程语言进行开发。
+  - Virtual host：AMQP 的基本组件划分到一个虚拟的分组中（出于多租户和安全因素设计），类似于网络中的 namespace 概念；当多个不同的用户使用同一个 RabbitMQ Server 提供的服务时，可以划分出多个 vhost，每个用户在自己的 vhost 创建 exchange / queue 等
+
 
 
 ## 5.RabbitMQ 的核心部分
@@ -78,14 +90,38 @@ notPage: true
 - 主题模式
 - 发布确认模式
 
-**名词解释：**
+**队列的类型：**
 
-- Broker：接收和分发消息的应用，RabbitMQ Server 就是 Message Broker
-- Virtual host：AMQP 的基本组件划分到一个虚拟的分组中（出于多租户和安全因素设计），类似于网络中的 namespace 概念；当多个不同的用户使用同一个 RabbitMQ Server 提供的服务时，可以划分出多个 vhost，每个用户在自己的 vhost 创建 exchange / queue 等
-- Connection：publisher / consumer 和 broker 之间的 TCP 连接
-- Channel：如果每一次访问 RabbitMQ 都建立一个 Connection，在消息量大时建立 TCP 的开销是巨大的，效率也较低；Channel 是在 Connection 内部建立的逻辑连接，如果应用程序支持多线程，通常就是每个线程创建单独的 Channel 进行通讯；AMQP method 中包含了 Channel ID 帮助客户端和 message broker 识别 Channel，所以 Channel 之间是完全隔离的；Channel 作为 轻量级的 Connection 极大减少了操作系统建立 TCP 的开销
-- Exchange：message 到达 broker 的第一站，根据分发规则，匹配查询表中的 routing key，分发消息到 queue 中去，常用类型有：direct（点对点）、topic（发布-订阅）、fanout（多播）
-- Binding：exchange 和 queue 之间的虚拟连接，binding 中可以包含 routing key，binding 信息被保存到  exchange 中的查询表中，用于 message 的分发依据
+1. Direct：直接连接
+2. Fanout：扇出（发布/订阅）
+3. Topic：主题
+
+**核心对象和方法：**
+
+| 对象       | 方法               | 描述                                                         |
+| ---------- | ------------------ | ------------------------------------------------------------ |
+| Connection | open()             | 打开与 RabbitMQ 服务器的 TCP 连接。连接成功后，可以创建一个或多个通道。 |
+| Connection | close()            | 关闭连接。                                                   |
+| Connection | channel()          | 创建一个新的通道，用于执行 AMQP 操作。                       |
+| Channel    | queue_declare()    | 声明一个队列。如果队列不存在，则会创建一个新队列。如果队列已存在，则检查队列的参数是否与声明的参数匹配。 |
+| Channel    | queue_bind()       | 将队列绑定到一个交换器。消息通过交换器路由到队列。           |
+| Channel    | basic_publish()    | 将消息发布到一个交换器。消息必须包含一个路由键，用于将消息路由到正确的队列。 |
+| Channel    | basic_consume()    | 注册一个消费者，开始消费消息。消费者会从指定的队列接收消息，直到取消注册或通道关闭。 |
+| Channel    | basic_ack()        | 确认消息已被消费。消费者在成功处理消息后，应该发送 ACK 给 RabbitMQ。 |
+| Channel    | close()            | 关闭通道。                                                   |
+| Exchange   | exchange_declare() | 声明一个交换器。交换器接收生产者发布的消息，并将其路由到绑定的队列。 |
+| Exchange   | exchange_bind()    | 将一个交换器绑定到另一个交换器。可以使用此方法将一个交换器路由到另一个交换器。 |
+| Exchange   | exchange_unbind()  | 解绑一个交换器。                                             |
+| Exchange   | exchange_delete()  | 删除一个交换器。                                             |
+| Queue      | queue_declare()    | 声明一个队列。如果队列不存在，则会创建一个新队列。如果队列   |
+| Queue      | queue_bind()       | 将队列绑定到一个交换器。消息通过交换器路由到队列。           |
+| Queue      | queue_unbind()     | 解绑一个队列。                                               |
+| Queue      | queue_delete()     | 删除一个队列。                                               |
+| Queue      | basic_get()        | 从队列中获取消息。如果队列为空，则返回 None。                |
+| Queue      | basic_consume()    | 注册一个消费者开始消费消息。                                 |
+| Message    | /                  | 消息对象是由生产者发布到交换器的数据单元，包含消息头和消息体。消息头包含元数据，如路由键、消息 ID、时间戳等。消息体包含实际的数据。 |
+
+
 
 
 

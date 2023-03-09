@@ -43,6 +43,7 @@ feed:
 
 # Linux下安装MySQL
 
+[[toc]]
 
 
 # 下载

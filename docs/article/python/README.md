@@ -3,12 +3,7 @@ notPage: true
 ---
 
 
-
-# Git
-
+# Python
 :::info 说明
-
-Git 使用
-
+Python 简单使用
 :::
-

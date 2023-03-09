@@ -30,7 +30,8 @@ export default hopeTheme({
         children: [
             "/article/java/",
             "/article/go/",
-            "/article/js/"
+            "/article/js/",
+            "/article/python/"
         ]
     },
     {
@@ -105,6 +106,7 @@ export default hopeTheme({
         "/article/java/": "structure",
         "/article/go/": "structure",
         "/article/js/": "structure",
+        "/article/python/": "structure",
         "/article/algorithm/": "structure",
         "/article/tomcat/": "structure",
         "/article/springs/": "structure",

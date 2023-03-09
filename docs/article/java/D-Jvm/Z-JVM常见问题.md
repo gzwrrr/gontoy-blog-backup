@@ -1,7 +1,7 @@
 ---
-title: "JVM 面试常见问题"
-shortTitle: "Z-JVM 面试常见问题"
-description: "JVM 面试常见问题"
+title: "JVM 常见问题"
+shortTitle: "Z-JVM 常见问题"
+description: "JVM 常见问题"
 icon: ""
 author: 
   name: gzw
@@ -22,7 +22,7 @@ star: false
 article: true
 timeline: true,
 dir:
-  text: "JVM 面试常见问题"
+  text: "JVM 常见问题"
   icon: ""
   collapsible: true
   index: true
@@ -35,8 +35,8 @@ copy:
   disableCopy: false
   disableSelection: false
 feed:
-  title: "JVM 面试常见问题"
-  description: "JVM 面试常见问题"
+  title: "JVM 常见问题"
+  description: "JVM 常见问题"
   author:
     name: gzw
     email: 1627121193@qq.com
@@ -44,7 +44,11 @@ feed:
 
 
 
-# JVM 面试常见问题
+# JVM 常见问题
+
+
+
+[[toc]]
 
 
 
