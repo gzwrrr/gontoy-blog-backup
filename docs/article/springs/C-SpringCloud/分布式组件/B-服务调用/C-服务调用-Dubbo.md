@@ -1,14 +1,14 @@
 ---
-title: "Dubbo"
-shortTitle: "Dubbo"
-description: "Dubbo"
+title: "服务调用-Dubbo"
+shortTitle: "C-服务调用-Dubbo"
+description: "服务调用-Dubbo"
 icon: ""
 author: 
   name: gzw
   url: 
   email: 1627121193@qq.com
 isOriginal: false
-date: 2022-07-23
+date: 2022-06-01
 category: 
 - "分布式"
 tag:
@@ -18,7 +18,7 @@ star: false
 article: true
 timeline: true,
 dir:
-  text: "Dubbo"
+  text: "服务调用-Dubbo"
   icon: ""
   collapsible: true
   index: true
@@ -31,8 +31,8 @@ copy:
   disableCopy: false
   disableSelection: false
 feed:
-  title: "Dubbo"
-  description: "Dubbo"
+  title: "服务调用-Dubbo"
+  description: "服务调用-Dubbo"
   author:
     name: gzw
     email: 1627121193@qq.com
@@ -42,9 +42,9 @@ feed:
 
 
 
-# Dubbo
+# 服务调用-Dubbo
 
-### 架构设计
+## 架构设计
 
 Dubbo 是一个高性能、轻量级的开源 RPC 框架，主要用于构建分布式服务应用。它支持多种协议、多种序列化方式和多种注册中心，提供了丰富的功能，包括负载均衡、容错、路由、服务降级等。Dubbo 的架构设计具有以下几个方面的特点：
 
@@ -64,7 +64,7 @@ Dubbo 是一个高性能、轻量级的开源 RPC 框架，主要用于构建分
 
 
 
-### 负载均衡策略
+## 负载均衡策略
 
 1. Random Load Balance 随机负载均衡策略：随机选择一个可用的服务提供者。
 2. Round Robin Load Balance 轮询负载均衡策略：按照顺序轮询选择可用的服务提供者。
@@ -78,7 +78,7 @@ Dubbo 是一个高性能、轻量级的开源 RPC 框架，主要用于构建分
 
 
 
-### 服务引入
+## 服务引入
 
 Dubbo完成服务引入的过程如下：
 
@@ -94,7 +94,7 @@ Dubbo完成服务引入的过程如下：
 
 
 
-### 服务导出
+## 服务导出
 
 在Dubbo中，服务的导出是通过`Protocol`和`Exporter`两个关键组件来实现的。
 
@@ -111,10 +111,4 @@ Dubbo完成服务引入的过程如下：
 5. `Invoker`接收到请求后，根据请求信息和服务接口实现执行相应的方法，并将结果返回给客户端。
 
 需要注意的是，Dubbo支持多协议、多注册中心和多集群等场景，因此，在服务导出时，需要根据实际情况进行配置，以满足不同的业务需求。
-
-
-
-
-
-
 

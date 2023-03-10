@@ -1,4 +1,5 @@
 ---
+notPage: true
 home: true
 layout: BlogHome
 heroImage: /logo.png
@@ -7,6 +8,7 @@ heroText: Gzw's blog
 tagline: 极简主义 | Java 全栈
 actionText: 快速上手 →
 actionLink: /zh/guide/
+date: 2022-06-14
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
@@ -17,7 +19,7 @@ features:
 actions:
 - text: 博客
   link: https://www.gzw-icu.com
-copyright: false,
+copyright:
 projects: 
 - name: CodeSheep
   desc: 【强烈推荐】羊哥的资源聚合&分享&导航网站
@@ -37,5 +39,3 @@ projects:
   icon:
 # footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
-
-

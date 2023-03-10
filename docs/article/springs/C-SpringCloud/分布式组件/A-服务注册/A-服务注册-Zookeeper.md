@@ -1,14 +1,14 @@
 ---
-title: "Zookeeper"
-shortTitle: "Zookeeper"
-description: "Zookeeper"
+title: "服务注册-Zookeeper"
+shortTitle: "A-服务注册-Zookeeper"
+description: "服务注册-Zookeeper"
 icon: ""
 author: 
   name: gzw
   url: 
   email: 1627121193@qq.com
 isOriginal: false
-date: 2022-08-05
+date: 2022-05-28
 category: 
 - "分布式"
 tag:
@@ -18,7 +18,7 @@ star: false
 article: true
 timeline: true,
 dir:
-  text: "Zookeeper"
+  text: "服务注册-Zookeeper"
   icon: ""
   collapsible: true
   index: true
@@ -31,8 +31,8 @@ copy:
   disableCopy: false
   disableSelection: false
 feed:
-  title: "Zookeeper"
-  description: "Zookeeper"
+  title: "服务注册-Zookeeper"
+  description: "服务注册-Zookeeper"
   author:
     name: gzw
     email: 1627121193@qq.com
@@ -40,7 +40,38 @@ feed:
 
 
 
-# Zookeeper
+
+
+# 服务注册-Zookeeper
+
+:::info 说明
+
+ZooKeeper是一个分布式协调服务，主要用于处理分布式应用程序的一些问题，例如命名、配置管理、分布式锁、领导者选举等。
+
+:::
+
+**ZooKeeper的主要特点如下：**
+
+- 分布式：ZooKeeper使用分布式架构，能够处理大规模集群中的节点管理。
+- 高可用：ZooKeeper使用多台服务器构成一个集群，提供了高可用的服务。
+- 数据一致性：ZooKeeper提供了强一致性的数据访问，保证了数据的一致性。
+- 低延迟：ZooKeeper能够快速地进行状态更新，支持高并发的访问请求。
+
+**ZooKeeper提供了一些核心概念，包括：**
+
+- 节点（Node）：ZooKeeper的最小数据单元，每个节点都有一个路径，类似于文件系统中的路径。
+- 会话（Session）：ZooKeeper客户端与服务端的连接，包含一个唯一的Session ID。
+- Watcher：客户端可以向ZooKeeper注册一个Watcher，当该节点发生变化时，ZooKeeper会通知客户端。
+
+
+
+
+
+
+
+
+
+
 
 Zookeeper是一个开源的分布式协调服务框架，旨在提供高效、可靠的分布式协调服务。Zookeeper提供了一个分布式的协调服务，包括数据管理、集群管理、配置管理、服务发现和命名等功能。它的特点是高可靠性、高性能、可扩展性好、易于开发和部署。
 
@@ -54,9 +85,7 @@ Zookeeper还提供了一种分布式锁的机制，称为Zookeeper锁。它基�
 
 
 
-
-
-### ZAB 协议
+## ZAB 协议
 
 ZAB（ZooKeeper Atomic Broadcast）是ZooKeeper使用的协议，它是一种原子广播协议。ZooKeeper是一种分布式协调服务，它可以用于分布式应用程序的协调和管理。在ZooKeeper中，客户端可以创建，读取和更新存储在ZooKeeper中的数据。ZooKeeper使用ZAB协议来保证在集群中不同服务器上的数据的一致性。
 
@@ -72,7 +101,7 @@ ZAB协议主要有两个阶段：崩溃恢复和消息广播。在崩溃恢复�
 
 
 
-### Zookeeper 作为注册中心
+## Zookeeper 作为注册中心
 
 可以使用 Zookeeper 中的临时节点和 watch 机制来实现自动注册和发现。
 
@@ -86,7 +115,7 @@ Zookeeper 注重的是数据一致性，所以数据不一致时服务会不可�
 
 
 
-### Zookeeper 领导者选举流程
+## Zookeeper 领导者选举流程
 
 ZooKeeper 集群中有一个 Leader 节点，它是整个集群的核心，负责维护数据的一致性。在 ZooKeeper 集群中，如果 Leader 节点宕机，需要选举出一个新的 Leader 节点，以保证集群的正常运转。以下是 ZooKeeper 领导者选举的流程：
 
@@ -111,7 +140,7 @@ ZooKeeper 集群中有一个 Leader 节点，它是整个集群的核心，负�
 
 
 
-### Zookeeper 节点数据同步
+## Zookeeper 节点数据同步
 
 在Zookeeper中，节点之间的数据同步主要是通过ZAB协议实现的。ZAB（Zookeeper Atomic Broadcast）是Zookeeper使用的一种协议，它主要用于实现Zookeeper的分布式一致性。
 
@@ -126,4 +155,14 @@ ZAB协议将Zookeeper集群中的节点分为两种角色：Leader和Follower。
 在Zookeeper中，每个节点都会维护一个类似日志的数据结构，称为事务日志（Transaction Log），用于记录每个节点的状态变化。当节点与Leader同步数据时，Leader会向Follower发送数据快照或增量数据来更新Follower的状态。如果Follower节点与Leader不一致，Leader会将最新的数据版本号（ZXID）告诉Follower，并要求Follower根据ZXID来获取缺失的数据。
 
 总的来说，Zookeeper节点之间的数据同步是通过ZAB协议实现的，它主要通过选举Leader、广播数据变更、确认数据变更和更新节点状态等步骤来实现数据的一致性。
+
+
+
+
+
+
+
+
+
+
 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.4"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"RabbitMQ 核心内容","children":[{"type":"heading","depth":1,"payload":{"lines":[2,3]},"content":"六大模式","children":[{"type":"list_item","depth":2,"payload":{"lines":[4,5]},"content":"简单模式（Simple Mode）：最简单的模式，也是最常见的模式。一个生产者发送一条消息，一个消费者接收一条消息。"},{"type":"list_item","depth":2,"payload":{"lines":[5,6]},"content":"工作模式（Work Queue Mode）：也称为任务队列模式，一个生产者发送一条消息到队列，多个消费者竞争获取消息进行处理。每个消息只会被一个消费者处理。"},{"type":"list_item","depth":2,"payload":{"lines":[6,7]},"content":"发布/订阅模式（Publish/Subscribe Mode）：生产者将消息发布到交换机（Exchange）上，多个消费者绑定到交换机上进行订阅，每个消息将被交换机转发给所有绑定的队列。适用于广播消息的场景。"},{"type":"list_item","depth":2,"payload":{"lines":[7,8]},"content":"路由模式（Routing Mode）：生产者将消息发送到指定的交换机上，并且设置了路由键（Routing Key）。消费者根据自己绑定的路由键，从交换机中获取消息进行处理。"},{"type":"list_item","depth":2,"payload":{"lines":[8,9]},"content":"主题模式（Topic Mode）：是路由模式的一种扩展，支持使用通配符匹配路由键。生产者将消息发送到交换机上，消费者根据自己绑定的路由键通配符，从交换机中获取匹配的消息进行处理。"},{"type":"list_item","depth":2,"payload":{"lines":[9,10]},"content":"发布确认模式（Publish Confirm Mode）：用于确保消息成功发送到RabbitMQ服务端。生产者发送消息后，等待RabbitMQ服务端的确认回执，如果收到了回执则表示消息已经被确认发送，否则则需要重发消息。"}]},{"type":"heading","depth":1,"payload":{"lines":[17,18]},"content":"交换机的类型","children":[{"type":"list_item","depth":2,"payload":{"lines":[19,20],"index":1},"content":"1. Direct（直接连接）：将消息直接路由到对应的队列中。"},{"type":"list_item","depth":2,"payload":{"lines":[20,21],"index":2},"content":"2. Fanout（扇出（发布/订阅））：将消息广播到所有绑定的队列中。"},{"type":"list_item","depth":2,"payload":{"lines":[21,22],"index":3},"content":"3. Topic（主题）：将消息按照匹配规则路由到对应的队列中。"},{"type":"list_item","depth":2,"payload":{"lines":[22,23],"index":4},"content":"4. Headers（头交换机）：将消息按照消息头中的键值对进行匹配，匹配成功后路由到对应的队列中。"}]},{"type":"heading","depth":1,"payload":{"lines":[28,29]},"content":"队列的类型","children":[{"type":"list_item","depth":2,"payload":{"lines":[30,31],"index":1},"content":"1. 工作队列"},{"type":"list_item","depth":2,"payload":{"lines":[31,32],"index":2},"content":"2. 死信队列"},{"type":"list_item","depth":2,"payload":{"lines":[32,33],"index":3},"content":"3. 延迟队列"},{"type":"list_item","depth":2,"payload":{"lines":[33,34],"index":4},"content":"4. 镜像队列"}]},{"type":"heading","depth":1,"payload":{"lines":[39,40]},"content":"事务&amp;消息确认机制","children":[{"type":"list_item","depth":2,"payload":{"lines":[41,42]},"content":"生产者消息确认","children":[{"type":"list_item","depth":3,"payload":{"lines":[42,43]},"content":"生产者确认模式"},{"type":"list_item","depth":3,"payload":{"lines":[43,44]},"content":"事务机制"}]},{"type":"list_item","depth":2,"payload":{"lines":[44,45]},"content":"消费者消息确认","children":[{"type":"list_item","depth":3,"payload":{"lines":[45,46]},"content":"手动确认模式"},{"type":"list_item","depth":3,"payload":{"lines":[46,47]},"content":"自动确认模式"}]}]},{"type":"heading","depth":1,"payload":{"lines":[51,52]},"content":"消息持久化","children":[{"type":"list_item","depth":2,"payload":{"lines":[53,54],"index":1},"content":"1. 消息持久化"},{"type":"list_item","depth":2,"payload":{"lines":[54,55],"index":2},"content":"2. 消息确认与持久化的关系"},{"type":"list_item","depth":2,"payload":{"lines":[55,56],"index":3},"content":"3. 持久化交换机与队列"}]},{"type":"heading","depth":1,"payload":{"lines":[58,59]},"content":"集群和高可用","children":[{"type":"list_item","depth":2,"payload":{"lines":[60,61],"index":1},"content":"1. 集群模式"},{"type":"list_item","depth":2,"payload":{"lines":[61,62],"index":2},"content":"2. 高可用模式"},{"type":"list_item","depth":2,"payload":{"lines":[62,63],"index":3},"content":"3. 镜像队列与集群"}]}]},{})</script>
+</body>
+</html>
