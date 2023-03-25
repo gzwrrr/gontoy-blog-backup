@@ -89,7 +89,13 @@ feed:
 - 无随机成分，即相同的输入必定返回相同的输出
 - 哈希函数有离散性和均匀性，这是评判一个哈希函数好坏的重要依据
 - 经典的一个应用是：布隆过滤器
-- 相关的概念有：一致性哈希（可以实现分布式负载均衡）
+- 相关的概念有：[致性哈希](https://zhuanlan.zhihu.com/p/129049724)（可以实现分布式负载均衡）
+
+
+
+
+
+
 
 
 
@@ -134,6 +140,107 @@ class DoubleNode<V> {
     Node next;
 }
 ```
+
+
+
+
+
+### 链表技巧
+
+:::info 相关文章
+
+[单链表的六大解题套路](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247492022&idx=1&sn=35f6cb8ab60794f8f52338fab3e5cda5&scene=21#wechat_redirect)
+
+:::
+
+链表涉及到大量的双指针优化（同向而行或者相向而行）
+
+> 删除链表中的某个节点只需要找到这个节点的上一个节点即可
+
+<br/>
+
+**以下示例代码的链表节点结构如下：**
+
+```java
+private class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+}
+```
+
+<br/>
+
+**虚拟节点：**合并两个或者多个有序链表：使用虚拟节点可以很好规避空节点可能带来的问题，对于多链表可以使用「分治法」或者「优先队列」快速解决
+
+```java
+ListNode mergeKLists(ListNode[] lists) {
+    if (lists.length == 0) return null;
+    // 虚拟头结点
+    ListNode dummy = new ListNode(-1);
+    ListNode p = dummy;
+    // 优先级队列，最小堆
+    PriorityQueue<ListNode> pq = new PriorityQueue<>(
+        lists.length, (a, b)->(a.val - b.val));
+    // 将 k 个链表的头结点加入最小堆
+    for (ListNode head : lists) {
+        if (head != null)
+            pq.add(head);
+    }
+
+    while (!pq.isEmpty()) {
+        // 获取最小节点，接到结果链表中
+        ListNode node = pq.poll();
+        p.next = node;
+        if (node.next != null) {
+            pq.add(node.next);
+        }
+        // p 指针不断前进
+        p = p.next;
+    }
+    return dummy.next;
+}
+```
+
+<br/>
+
+**快慢指针：**快慢指针在许多情况下可以做到只用遍历一次链表就找到想要的节点，例如慢指针每次走一步，快指针每次走两步，这样就能在一次遍历中找到中点
+
+```java
+public ListNode middleNode(ListNode head) {
+    ListNode fast = head;
+    ListNode slow = head;
+    while (fast != null && fast.next != null) {
+        fast = fast.next.next;
+        slow = slow.next;
+    }
+    return slow;
+}
+```
+
+或者是找到第 K 个节点，下面就是先让快指针走 K 步，之后慢指针再同步走，这样快慢指针之间就有一个固定间隔，当快指针到队尾时，慢指针就找到了倒数第 K 个，这样就在一次遍历中找到了想要的节点
+
+```java
+public ListNode removeNthFromEnd(ListNode head, int n) {
+    ListNode dummy = new ListNode(-1, head);
+    ListNode p1 = dummy;
+    for (int i = 0; i < n; i++) {
+        p1 = p1.next;
+    }
+    ListNode p2 = dummy, pre = p2;
+    while (p1 != null) {
+        pre = p2;
+        p2 = p2.next;
+        p1 = p1.next;
+    }
+    pre.next = pre.next.next;
+    return dummy.next;
+}
+```
+
+
 
 
 
@@ -242,6 +349,84 @@ public void noF(Node head) {
 ```
 
 **值得注意的是：**当删除二叉树中的一个节点时，删除过程将按照「后序遍历」的顺序进行
+
+<br/>
+
+**判断链表中是否包含环：**
+
+使用快慢指针即可，相遇说明有环
+
+```java
+// 单纯判断是否有环
+boolean hasCycle(ListNode head) {
+    // 快慢指针初始化指向 head
+    ListNode slow = head, fast = head;
+    // 快指针走到末尾时停止
+    while (fast != null && fast.next != null) {
+        // 慢指针走一步，快指针走两步
+        slow = slow.next;
+        fast = fast.next.next;
+        // 快慢指针相遇，说明含有环
+        if (slow == fast) {
+            return true;
+        }
+    }
+    // 不包含环
+    return false;
+}
+```
+
+给出环的初始节点，代码也比较简单，但是理解看图比较好，这里就直接说结论（具体看上面给出的文章）：使用快慢指针，慢指针每次走一步，快指针每次走两步，当两个指针相遇时，让快慢指针其中一个再次指向头节点，此时让两个指针每次都只走一步，再次相遇时就恰好到达了环的初始节点处
+
+```java
+ListNode detectCycle(ListNode head) {
+    ListNode fast, slow;
+    fast = slow = head;
+    while (fast != null && fast.next != null) {
+        fast = fast.next.next;
+        slow = slow.next;
+        if (fast == slow) break;
+    }
+    // 上面的代码类似 hasCycle 函数
+    if (fast == null || fast.next == null) {
+        // fast 遇到空指针说明没有环
+        return null;
+    }
+
+    // 重新指向头结点
+    slow = head;
+    // 快慢指针同步前进，相交点就是环起点
+    while (slow != fast) {
+        fast = fast.next;
+        slow = slow.next;
+    }
+    return slow;
+}
+```
+
+<br/>
+
+**判断两个环是否相交：**
+
+因为两个链表不一定等长，所以两个指针同时走不一定能同时到达交汇处，这里也直接说解决方案：P1 指针遍历完 A 链表后接着遍历 B 链表；P2 指针遍历完 B 链表后接着遍历 A 链表（这样做可以让两个指针走过的最终长度相等，看图就很容易理解），当两个指针指向的节点相同时就找到交汇点了
+
+```java
+ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+    // p1 指向 A 链表头结点，p2 指向 B 链表头结点
+    ListNode p1 = headA, p2 = headB;
+    while (p1 != p2) {
+        // p1 走一步，如果走到 A 链表末尾，转到 B 链表
+        if (p1 == null) p1 = headB;
+        else            p1 = p1.next;
+        // p2 走一步，如果走到 B 链表末尾，转到 A 链表
+        if (p2 == null) p2 = headA;
+        else            p2 = p2.next;
+    }
+    return p1;
+}
+```
+
+
 
 
 
@@ -618,7 +803,6 @@ class MaxDepth {
 - 满足第一个条件下，如果遇到了第一个左右不双全的情况，那么接下来遇到的所有结点都必须是叶节点，否则返回 false
 
 ```java
- 
     Node r;
     queue.add(head);
     while(!queue.isEmpty()) {
@@ -641,7 +825,6 @@ class MaxDepth {
     }
     return true;
 }
-
 ```
 
 
@@ -857,7 +1040,7 @@ public static boolean isFull(Node x) {
         return true;
     }
     ReturnType data = process(x);
-    return data.nodes = (1 << data.height - 1);
+    return data.nodes == (1 << data.height - 1);
 }
 
 public static ReturnType process(Node x) {
@@ -867,7 +1050,7 @@ public static ReturnType process(Node x) {
     ReturnType left = process(x.left);
     ReturnType right = process(x.right);
     int height = Math.max(left.height, right.height) + 1;
-    int nodes left.nodes + right.nodes + 1;
+    int nodes = left.nodes + right.nodes + 1;
     return new ReturnType(nodes, height);
 }
 ```

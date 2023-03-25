@@ -50,11 +50,21 @@ ZooKeeper是一个分布式协调服务，主要用于处理分布式应用程�
 
 :::
 
+![ZooKeeper的架构](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//zookeeper/20230314/zookeeper%E6%9E%B6%E6%9E%84.jpeg)
+
+| 组件             | 描述                                                         |
+| :--------------- | :----------------------------------------------------------- |
+| Client（客户端） | 客户端，我们的分布式应用集群中的一个节点，从服务器访问信息。对于特定的时间间隔，每个客户端向服务器发送消息以使服务器知道客户端是活跃的。类似地，当客户端连接时，服务器发送确认码。如果连接的服务器没有响应，客户端会自动将消息重定向到另一个服务器。 |
+| Server（服务器） | 服务器，我们的ZooKeeper总体中的一个节点，为客户端提供所有的服务。向客户端发送确认码以告知服务器是活跃的。 |
+| Ensemble         | ZooKeeper服务器组。形成ensemble所需的最小节点数为3。         |
+| Leader           | 服务器节点，如果任何连接的节点失败，则执行自动恢复。Leader在服务启动时被选举。 |
+| Follower         | 跟随leader指令的服务器节点。                                 |
+
 **ZooKeeper的主要特点如下：**
 
 - 分布式：ZooKeeper使用分布式架构，能够处理大规模集群中的节点管理。
 - 高可用：ZooKeeper使用多台服务器构成一个集群，提供了高可用的服务。
-- 数据一致性：ZooKeeper提供了强一致性的数据访问，保证了数据的一致性。
+- 数据一致性（CP）：ZooKeeper提供了强一致性的数据访问，保证了数据的一致性。
 - 低延迟：ZooKeeper能够快速地进行状态更新，支持高并发的访问请求。
 
 **ZooKeeper提供了一些核心概念，包括：**
@@ -69,9 +79,7 @@ ZooKeeper是一个分布式协调服务，主要用于处理分布式应用程�
 
 
 
-
-
-
+## 简介
 
 Zookeeper是一个开源的分布式协调服务框架，旨在提供高效、可靠的分布式协调服务。Zookeeper提供了一个分布式的协调服务，包括数据管理、集群管理、配置管理、服务发现和命名等功能。它的特点是高可靠性、高性能、可扩展性好、易于开发和部署。
 
@@ -99,6 +107,53 @@ ZAB协议主要有两个阶段：崩溃恢复和消息广播。在崩溃恢复�
 
 
 
+## 文件系统 & 命名空间
+
+> Zookeeper 维护着一个文件系统（树形结构），其中的节点称为 Znode
+
+1. 根目录 `/` 下有两个逻辑命名空间 `config` 和 `workers`，前者用于集中配置，后者用于命名
+2. Znode兼具文件和目录两种特点。既像文件一样维护着数据长度、元信息、ACL、时间戳等数据结构，又像目录一样可以作为路径标识的一部分。每个Znode由三个部分组成：
+   - **stat**：此为状态信息，描述该Znode版本、权限等信息。
+   - **data**：与该Znode关联的数据
+   - c**hildren**：该Znode下的节点
+3. Znode被分为持久（persistent）节点，顺序（sequential）节点和临时（ephemeral）节点。
+
+
+
+## Sessions（会话）
+
+会话对于ZooKeeper的操作非常重要。会话中的请求按FIFO顺序执行。一旦客户端连接到服务器，将建立会话并向客户端分配**会话ID** 。
+
+客户端以特定的时间间隔发送**心跳**以保持会话有效。如果ZooKeeper集合在超过服务器开启时指定的期间（会话超时）都没有从客户端接收到心跳，则它会判定客户端死机。
+
+会话超时通常以毫秒为单位。当会话由于任何原因结束时，在该会话期间创建的临时节点也会被删除。
+
+
+
+
+
+## Watches（监视） 
+
+监视是一种简单的机制，使客户端收到关于ZooKeeper集合中的更改的通知。客户端可以在读取特定znode时设置Watches。Watches会向注册的客户端发送任何znode（客户端注册表）更改的通知。
+
+Znode更改是与znode相关的数据的修改或znode的子项中的更改。只触发一次watches。如果客户端想要再次通知，则必须通过另一个读取操作来完成。当连接会话过期时，客户端将与服务器断开连接，相关的watches也将被删除。
+
+
+
+
+
+## 读写操作
+
+| 组件                              | 描述                                                         |
+| :-------------------------------- | :----------------------------------------------------------- |
+| 写入（write）                     | 写入过程由leader节点处理。leader将写入请求转发到所有znode，并等待znode的回复。如果一半的znode回复，则写入过程完成。 |
+| 读取（read）                      | 读取由特定连接的znode在内部执行，因此不需要与集群进行交互。  |
+| 复制数据库（replicated database） | 它用于在zookeeper中存储数据。每个znode都有自己的数据库，每个znode在一致性的帮助下每次都有相同的数据。 |
+| 领导者（Leader）                  | Leader是负责处理写入请求的Znode。                            |
+| 跟随者（Follower）                | follower从客户端接收写入请求，并将它们转发到leader znode。   |
+| 请求处理器（request processor）   | 只存在于leader节点。它管理来自follower节点的写入请求。       |
+| 原子广播（atomic broadcasts）     | 负责广播从leader节点到follower节点的变化。                   |
+
 
 
 ## Zookeeper 作为注册中心
@@ -121,9 +176,9 @@ ZooKeeper 集群中有一个 Leader 节点，它是整个集群的核心，负�
 
 1. 节点状态
 
-   ZooKeeper 集群中的每个节点都有自己的状态，其中包括 LOOKING、FOLLOWING、LEADING 三种状态。LOOKING 状态表示该节点正在寻找 Leader 节点，FOLLOWING 状态表示该节点正在跟随 Leader 节点，LEADING 状态表示该节点是 Leader 节点。
+   ZooKeeper 集群中的每个节点都有自己的状态，其中包括 LOOKING、FOLLOWING、LEADING、observer 四种状态。LOOKING 状态表示该节点正在寻找 Leader 节点，FOLLOWING 状态表示该节点正在跟随 Leader 节点，LEADING 状态表示该节点是 Leader 节点。
 
-2. 选举过程
+2. 选举过程（启动时选举或者运行期间选举）
 
    当一个节点宕机时，其他节点会进入 LOOKING 状态，开始选举新的 Leader 节点。选举过程如下：
 
@@ -159,6 +214,14 @@ ZAB协议将Zookeeper集群中的节点分为两种角色：Leader和Follower。
 
 
 
+
+:::info 相关文章
+
+[zookeeper架构简介](https://www.cnblogs.com/arjenlee/articles/9224366.html#:~:text=Zookpeeper%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9E%B6%E6%9E%84%201%20%E6%AF%8F%E4%B8%AAServer%E5%9C%A8%E5%86%85%E5%AD%98%E4%B8%AD%E5%AD%98%E5%82%A8%E4%BA%86%E4%B8%80%E4%BB%BD%E6%95%B0%E6%8D%AE%EF%BC%9B%202,Zookeeper%E5%90%AF%E5%8A%A8%E6%97%B6%EF%BC%8C%E5%B0%86%E4%BB%8E%E5%AE%9E%E4%BE%8B%E4%B8%AD%E9%80%89%E4%B8%BE%E4%B8%80%E4%B8%AAleader%EF%BC%88Paxos%E5%8D%8F%E8%AE%AE%EF%BC%89%EF%BC%9B%203%20Leader%E8%B4%9F%E8%B4%A3%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%88Zab%E5%8D%8F%E8%AE%AE%EF%BC%89%EF%BC%9B%204%20%E4%B8%80%E4%B8%AA%E6%9B%B4%E6%96%B0%E6%93%8D%E4%BD%9C%E6%88%90%E5%8A%9F%EF%BC%8C%E5%BD%93%E4%B8%94%E4%BB%85%E5%BD%93%E5%A4%A7%E5%A4%9A%E6%95%B0Server%E5%9C%A8%E5%86%85%E5%AD%98%E4%B8%AD%E6%88%90%E5%8A%9F%E4%BF%AE%E6%94%B9)
+
+[基本架构](https://blog.csdn.net/weixin_45366499/article/details/106899924)
+
+:::
 
 
 

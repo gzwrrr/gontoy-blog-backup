@@ -50,7 +50,7 @@ feed:
 
 **到目前为止：**
 
-- 基于比较的	排序，时间复杂度无法做到 O(n*log_2n) 以下
+- 基于比较的排序，时间复杂度无法做到 O(n*log_2n) 以下
 
 - 时间复杂度 O(n*log_2n) 的排序，空间复杂度在 O(n) 以下时，无法做到稳定 
 
@@ -259,6 +259,8 @@ private static int[] partition(int[] arr, int l, int r) {
 
 ## 6.堆排序 
 
+> 建堆的同时调整为大/小根堆，完成后交换堆顶元素和最后一个元素，然后索引缩小，相当于删除最后一个元素，直到遍历完成
+
 ```java
 public static void heapSort(int[] arr) {
     if (arr == null || arr.length < 2) {
@@ -425,7 +427,7 @@ public static void shell(int[] arr) {
 
 <br/>
 
-## 9.计数排序
+## 9.计数（桶）排序
 
 ```java
 public static void count(int[] arr) {

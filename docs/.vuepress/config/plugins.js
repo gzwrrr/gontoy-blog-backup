@@ -26,6 +26,8 @@ import {
     getDirname,
     path
 } from "@vuepress/utils";
+import { seoPlugin } from "vuepress-plugin-seo2";
+import { readingTimePlugin } from "vuepress-plugin-reading-time2";
 // import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
 import { tocPlugin } from '@vuepress/plugin-toc'
 
@@ -33,6 +35,19 @@ const __dirname = getDirname(
     import.meta.url)
 
 export default [
+    readingTimePlugin({
+        // 你的选项
+    }),
+    seoPlugin({
+        // 你的选项
+        hostname: "gzwrrr.github.io",
+        author: {
+            name: "Gzw",
+            url: "https://gzwrrr.github.io",
+            email: "1627121193@qq.com"
+        },
+        autoDescription: true
+    }),
     tocPlugin({
         // 配置项
         componentName: 'Toc',

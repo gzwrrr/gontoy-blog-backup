@@ -52,6 +52,8 @@ feed:
 
 > 容器主要包括 Collection 和 Map 两种，Collection 存储着对象的集合，而 Map 存储着键值对（两个对象）的映射表
 
+![集合框架](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//%E7%AE%97%E6%B3%95/20230314/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84.png)
+
 ### 1.Collection
 
 **1.Set：**
@@ -174,3 +176,262 @@ private static class Node<E> {
 - 内部包含了一个 Entry 类型的数组 table。
 - Entry 存储着键值对。它包含了四个字段，从 next 字段我们可以看出 Entry 是一个链表。即数组中的每个位置被当成一个桶，一个桶存放一个链表
 - HashMap 使用拉链法来解决冲突，同一个链表中存放哈希值和散列桶取模运算结果相同的 Entry。
+
+
+
+
+
+
+
+### 队列
+
+在 Java 中，「队列接口」主要有以下几种：
+
+1. `Queue<E>`: Queue 是 Java 集合框架中的队列接口，它表示一个典型的队列结构，即具有先进先出（FIFO）特点的数据结构，可以存储一系列元素（可重复或不可重复），支持在队列的尾部添加元素、在队列的头部获取并删除元素、获取但不删除队头元素等操作。Queue 是一个接口，它有多个实现类，包括 LinkedList、PriorityQueue 等。
+2. `Deque<E>`: Deque 是 Queue 的子接口，它是一个双端队列，支持在队列的两端添加和删除元素。Deque 提供了一系列的方法，可以允许在队列的头部和尾部进行插入、删除等操作。Deque 也是一个接口，它有多个实现类，包括 ArrayDeque、LinkedList 等。
+3. `BlockingQueue<E>`: BlockingQueue 是一个支持线程安全的队列接口，它继承自 Queue 接口。它提供了一些阻塞操作，当队列为空时会阻塞获取元素的线程，当队列已满时会阻塞添加元素的线程。BlockingQueue 是一个接口，它有多个实现类，包括 ArrayBlockingQueue、LinkedBlockingQueue、PriorityBlockingQueue、SynchronousQueue 等。
+4. `TransferQueue<E>`: TransferQueue 是 BlockingQueue 的子接口，它提供了一些扩展的方法，允许在队列中传输元素，即生产者可以将元素传输给消费者，而不是将元素放在队列中等待消费者取走。TransferQueue 是一个接口，目前只有一个实现类 SynchronousQueue。
+
+
+
+在Java中，常见的队列实现有以下几种：
+
+1. LinkedList
+
+   LinkedList是Java集合框架中的一个双向链表实现，也可以用作队列的实现。由于LinkedList实现了Queue接口，所以可以通过调用Queue中的方法来进行队列操作，如offer()和poll()。
+
+2. ArrayDeque
+
+   ArrayDeque是Java集合框架中的一个双端队列实现，同时也可以用作队列的实现。ArrayDeque使用可调整大小的数组来存储元素，并提供了高效的添加和删除元素的方法。由于ArrayDeque同样实现了Queue接口，所以也可以通过Queue中的方法来进行队列操作。
+
+3. PriorityQueue
+
+   PriorityQueue是Java集合框架中的一个优先队列实现，它可以按照元素的优先级进行排序。PriorityQueue通过二叉堆来实现，每次插入元素时会进行自动排序，可以使用Comparator来指定元素的排序方式。虽然PriorityQueue同样实现了Queue接口，但由于其内部是有序的，所以使用peek()方法查看队列头部元素并不一定返回队列中最先插入的元素，而是最小的元素。
+
+4. ConcurrentLinkedQueue
+
+   ConcurrentLinkedQueue是Java集合框架中的一个线程安全的队列实现，可以用于多线程环境下的并发操作。ConcurrentLinkedQueue的内部实现是基于链表的，每个节点包含一个元素和一个指向下一个节点的引用。由于其采用了无锁的CAS算法实现，因此能够保证在多线程并发操作下的线程安全性。
+
+5. LinkedBlockingQueue
+
+   LinkedBlockingQueue是Java集合框架中的一个阻塞队列实现，可以用于在多线程环境下进行数据传输。它使用链表来存储元素，并提供了阻塞的插入和移除元素的方法，即在队列为空或已满时会阻塞等待。LinkedBlockingQueue中的put()和take()方法会阻塞调用线程，直到队列不为空或不满。
+
+6. ArrayBlockingQueue
+
+   ArrayBlockingQueue是Java集合框架中的一个阻塞队列实现，它使用数组来存储元素。与LinkedBlockingQueue不同，ArrayBlockingQueue的容量是有限的，因此在创建ArrayBlockingQueue对象时需要指定容量。与LinkedBlockingQueue一样，ArrayBlockingQueue也提供了阻塞的插入和移除元素的方法，即在队列为空或已满时会阻塞等待。
+
+
+
+
+
+
+
+### Stack
+
+数组实现栈（注意栈满栈空的情况）：
+
+```java
+public class ArrayStack<T> {
+    private T[] arr;
+    private int top;
+
+    public ArrayStack(int capacity) {
+        arr = (T[]) new Object[capacity];
+        top = -1;
+    }
+
+    public void push(T element) {
+        if (isFull()) {
+            throw new RuntimeException("Stack is full");
+        }
+        arr[++top] = element;
+    }
+
+    public T pop() {
+        if (isEmpty()) {
+            throw new RuntimeException("Stack is empty");
+        }
+        return arr[top--];
+    }
+
+    public T peek() {
+        if (isEmpty()) {
+            throw new RuntimeException("Stack is empty");
+        }
+        return arr[top];
+    }
+
+    public boolean isEmpty() {
+        return top == -1;
+    }
+
+    public boolean isFull() {
+        return top == arr.length - 1;
+    }
+}
+```
+
+使用链表实现栈：
+
+```java
+public class LinkedStack<T> {
+    private Node<T> top;
+
+    private static class Node<T> {
+        private T value;
+        private Node<T> next;
+
+        public Node(T value) {
+            this.value = value;
+        }
+    }
+
+    public void push(T element) {
+        Node<T> newNode = new Node<>(element);
+        if (top == null) {
+            top = newNode;
+        } else {
+            newNode.next = top;
+            top = newNode;
+        }
+    }
+
+    public T pop() {
+        if (isEmpty()) {
+            throw new RuntimeException("Stack is empty");
+        }
+        T value = top.value;
+        top = top.next;
+        return value;
+    }
+
+    public T peek() {
+        if (isEmpty()) {
+            throw new RuntimeException("Stack is empty");
+        }
+        return top.value;
+    }
+
+    public boolean isEmpty() {
+        return top == null;
+    }
+}
+```
+
+Java 中提供了 `Stack` 类，但是在实际开发中并不常用，主要是因为以下几个原因：
+
+1. `Stack` 继承自 `Vector` 类，而 `Vector` 是同步的，线程安全的。但是在实际开发中使用同步容器会影响性能。
+2. `Stack` 的底层实现是基于数组，当元素数量超过数组大小时，需要重新分配内存并进行数据复制，这个过程比较耗时。
+3. 在 JDK1.6 之后，Java 官方推出了新的数据结构 `Deque`，即双端队列，它继承自 `Queue` 接口，可以实现栈的功能，而且性能更好。因此，在实际开发中，更推荐使用 `Deque` 而不是 `Stack`。
+
+Java中`Deque`接口有以下实现类：
+
+- `ArrayDeque`: 基于数组实现的双端队列，可以当作栈使用；
+- `LinkedList`: 基于链表实现的双端队列，可以当作栈使用。
+
+除了以上两种实现类外，还有`ConcurrentLinkedDeque`和`LinkedBlockingDeque`，这两个类都是基于链表实现的并发队列，不适合用作栈。
+
+总结来说，`ArrayDeque`和`LinkedList`可以用作栈的实现，但在性能和使用场景上存在一些差异。`ArrayDeque`基于数组实现，在频繁添加和删除元素时性能更好，适合用于需要高效的push和pop操作的场景；而`LinkedList`基于链表实现，在随机访问和迭代访问元素时性能更好，适合用于需要快速遍历栈内元素的场景。
+
+
+
+
+
+### 数组与集合
+
+#### 数组转成集合
+
+循环遍历数组，将每个元素添加到集合中。
+
+```java
+javaCopy codeString[] array = {"apple", "banana", "orange"};
+List<String> list = new ArrayList<>();
+for (String item : array) {
+    list.add(item);
+}
+```
+
+<br/>
+
+使用Arrays.asList()方法：将数组转换成List集合。需要注意的是，通过这种方式得到的List是不可变的，不能修改其大小，否则会抛出UnsupportedOperationException异常。
+
+```java
+javaCopy codeString[] array = {"apple", "banana", "orange"};
+List<String> list = Arrays.asList(array);
+```
+
+:::warning 注意
+
+Arrays.asList()返回的是一个固定大小的列表（ArrayList），不支持 `add()、remove()` 等修改操作。如果需要对该列表进行增删操作，可以将其复制到一个新的可修改列表中，例如 `new ArrayList<>(Arrays.asList(arr))`。
+
+:::
+
+```java
+public static <T> List<T> asList(T... a) {
+    return new ArrayList<>(a);
+}
+```
+
+:::info 特别说明
+
+上述参数中 `...` 被称为可变参数或者参数列表（varargs）。
+
+当使用可变参数时，可以在方法中使用任意数量的相同类型的参数，这些参数将被封装为一个数组传递给方法。在上述代码中，T... a 表示这是一个可变参数，a是一个T类型的数组，它可以接受任意数量的T类型参数。
+
+:::
+
+<br/>
+
+使用Collections.addAll()方法：可以将数组元素添加到任何实现了Collection接口的集合中。
+
+```java
+javaCopy codeString[] array = {"apple", "banana", "orange"};
+List<String> list = new ArrayList<>();
+Collections.addAll(list, array);
+```
+
+<br/>
+
+使用`Arrays`类中的`stream()`方法可以将数组转换成流，然后使用`Stream`中的`collect()`方法可以将流转换成集合。例如：
+
+```
+javaCopy codeInteger[] array = {1, 2, 3};
+List<Integer> list = Arrays.stream(array).collect(Collectors.toList());
+```
+
+
+
+
+
+#### 集合转换数组
+
+:::warning 注意
+
+从集合转换到数组，可以使用集合类的 `toArray()` 方法，但需要注意 `toArray()` 方法有多个重载，需要指定目标数组的类型。例如 `List<Integer> list = new ArrayList<>(); Integer[] arr = list.toArray(new Integer[0])`。
+
+:::
+
+```java
+List<Integer> list = new ArrayList<>();
+// 添加元素到list中
+Integer[] arr = list.toArray(new Integer[0]); // 指定数组大小
+
+// 或者
+List<Integer> list = new ArrayList<>();
+// 添加元素到list中
+Integer[] arr = new Integer[list.size()];
+arr = list.toArray(arr);
+
+// 注意，toArray() 不指定的话返回的是一个 Object 数组
+List<Integer> list = new ArrayList<>();
+// 添加元素到list中，需要进行强制类型转换
+Object[] arr = list.toArray();
+```
+
+也可以使用 Stream 进行转换：
+
+```java
+List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+Integer[] array = list.stream().toArray(Integer[]::new);
+```
+
