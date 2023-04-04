@@ -81,9 +81,15 @@ export default hopeTheme({
         children: [
             "/article/git/",
             "/article/docker/",
+            "/article/k8s/",
             "/article/jenkins/",
             "/article/linux/",
         ]
+    },
+    {
+        text: "大数据",
+        icon: "qita",
+        link: "/article/data/"
     },
     {
         text: "数学建模",
@@ -106,8 +112,10 @@ export default hopeTheme({
         "/article/java/": "structure",
         "/article/go/": "structure",
         "/article/js/": "structure",
+        "/article/k8s/": "structure",
         "/article/python/": "structure",
         "/article/algorithm/": "structure",
+        "/article/data/": "structure",
         "/article/tomcat/": "structure",
         "/article/springs/": "structure",
         "/article/vue/": "structure",

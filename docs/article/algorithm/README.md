@@ -1361,3 +1361,39 @@ B 中的数前 15 - 10 - 1 = 4 不可能是，后 17 - 15 = 2 个不可能是，
 
 
 
+
+## 技巧
+
+1. [二分法查找的套路](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247491336&idx=1&sn=dbcbb07b05ebc7889f944d54d2acebd4&scene=21#wechat_redirect)
+2. [滑动窗口套路](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485141&idx=1&sn=0e4583ad935e76e9a3f6793792e60734&scene=21#wechat_redirect)
+3. [前缀和技巧](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484488&idx=1&sn=848f76e86fce722e70e265d0c6f84dc3&scene=21#wechat_redirect) 和 [差分数组](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247487011&idx=1&sn=5e2b00c1c736fd7afbf3ed35edc4aeec&scene=21#wechat_redirect)
+4. [回溯剪枝技巧](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247496080&idx=1&sn=a2ae8c8ebf13c7ea704ffb6b16018f08&scene=21#wechat_redirect)
+5. [链表技巧（双指针、左右指针、快慢指针，滑动窗口）](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247492022&idx=1&sn=35f6cb8ab60794f8f52338fab3e5cda5&scene=21#wechat_redirect)
+6. [Dijkstra 寻找最短路径套路](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247492167&idx=1&sn=bc96c8f97252afdb3973c7d760edb9c0&scene=21#wechat_redirect)
+7. 暴力递归到严格表查询的 DP（递归黑盒拆包）
+8. DFS（回溯，决策树） 和 BFS（队列，多叉树） 的套路
+9. 子串匹配（KMP）与子序列匹配（滑动窗口）
+
+
+
+
+
+### 字符串
+
+> https://www.pdai.tech/md/outline/x-outline.html#%E9%A2%86%E5%9F%9F%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3
+
+[朴素的字符串匹配算法（Naive String Matching Algorithm)]()
+
+- 朴素的字符串匹配算法又称为**暴力匹配算法**（Brute Force Algorithm），最为简单的字符串匹配算法
+
+[Knuth-Morris-Pratt 字符串匹配算法（即 KMP 算法）]()
+
+- Knuth-Morris-Pratt算法（简称KMP）是最常用的字符串匹配算法之一
+
+[Boyer-Moore 字符串匹配算法]()
+
+- 各种文本编辑器的"查找"功能（Ctrl+F），大多采用Boyer-Moore算法，效率非常高
+
+[字符串匹配 - 文本预处理：后缀树（Suffix Tree）]()
+
+- 上述字符串匹配算法(朴素的字符串匹配算法, KMP 算法, Boyer-Moore算法)均是通过对**模式（Pattern）字符串进行预处理**的方式来加快搜索速度。对 Pattern 进行预处理的最优复杂度为 O(m)，其中 m 为 Pattern 字符串的长度。那么，有没有对文本（Text）进行预处理的算法呢？本文即将介绍一种**对 Text 进行预处理**的字符串匹配算法：后缀树（Suffix Tree）

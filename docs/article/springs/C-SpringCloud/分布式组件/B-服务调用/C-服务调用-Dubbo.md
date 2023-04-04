@@ -92,7 +92,7 @@ Dubbo 是一个高性能、轻量级的开源 RPC 框架，主要用于构建分
 
 
 
-### 部署架构
+## 部署架构
 
 ![//imgs/v3/concepts/threecenters.png](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//dubbo/20230319/%E9%83%A8%E7%BD%B2%E6%9E%B6%E6%9E%84.png)
 
@@ -254,6 +254,21 @@ Service Mesh 的典型架构是通过部署独立的 Sidecar 组件来拦截所�
 5. Weighted Random Load Balance 加权随机负载均衡策略：在随机负载均衡策略的基础上，根据每个服务提供者的权重进行加权选择。
 6. Weighted Round Robin Load Balance 加权轮询负载均衡策略：在轮询负载均衡策略的基础上，根据每个服务提供者的权重进行加权选择。
 7. Sticky Load Balance 粘滞会话负载均衡策略：将同一个消费者的请求路由到同一个服务提供者，实现会话粘滞。
+
+
+
+
+
+## 容错策略
+
+1. Failover Cluste：失败自动切换，当出现失败，重试其它服务器。通常用于读操作，但重试会带来更长延迟。可通过 `retries="2"` 来设置重试次数(不含第一次)。默认容错机制
+2. Failfast Cluster：快速失败，只发起一次调用，失败立即报错。通常用于非幂等性的写操作，比如新增记录。
+3. Failsafe Cluster：失败安全，出现异常时，直接忽略。通常用于写入审计日志等操作。
+4. Failback Cluster ：失败自动恢复，后台记录失败请求，定时重发。通常用于消息通知操作。
+5. Forking Cluster：并行调用多个服务器，只要一个成功即返回。通常用于实时性要求较高的读操作，但需要浪费更多服务资源。可通过 `forks="2"` 来设置最大并行数。
+6. Broadcast Cluster：广播调用所有提供者，逐个调用，任意一台报错则报错。通常用于通知所有提供者更新缓存或日志等本地资源信息。
+
+
 
 
 

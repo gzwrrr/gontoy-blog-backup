@@ -208,3 +208,71 @@ public static SingleNode reverseLinkedList(SingleNode cur) {
 ```
 
 <br/>
+
+### 3.2 求素数
+
+只需要任何一个非质素肯定能拆出一个比该数的根号还小的数，所以只需要看 2 ~ 根号下该数范围内的数是否能整除该数即可。
+
+```java
+public static boolean isPrime(int num) {
+    if (num < 2) {
+        return false;
+    }
+    boolean flag = true;
+    for (int i = 2; i < Math.sqrt(num); i++) {
+        if (num % i == 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+```
+
+
+
+
+
+### 3.3 约瑟夫环
+
+```java
+/**
+ * 使用数组实现，增删操作比较耗时
+ */
+public int lastRemaining(int n, int m) {
+    List<Integer> list = new ArrayList<Integer>(n);
+    for (int i = 0; i < n; i++) {
+        list.add(i);
+    }
+    int index = 0;
+    while (list.size() > 1) {
+        index = (index + m - 1) % list.size();
+        list.remove(index);
+    }
+    return list.get(0);
+}
+
+/**
+ * 直接利用递推式
+ */
+public int lastRemaining02(int n, int m) {
+    int[] dp = new int[n + 1];
+    dp[1] = 0;
+    for (int i = 2; i <= n; i++) {
+        dp[i] = (dp[i - 1] + m) % i;
+    }
+    return dp[n];
+}
+
+/**
+ * 递推式空间优化
+ */
+public int lastRemaining03(int n, int m) {
+    int dp = 0;
+    for (int i = 2; i <= n; i++) {
+        dp = (dp + m) % i;
+    }
+    return dp;
+}
+```
+
