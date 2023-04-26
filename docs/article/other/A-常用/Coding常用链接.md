@@ -111,6 +111,7 @@ feed:
 - [黑马 IO](https://www.bilibili.com/video/BV1gz4y1C7RK/?spm_id_from=333.337.search-card.all.click&vd_source=e356fec025b50061af78324a814f8da0)
 - [黑马 SkyWalking](https://www.bilibili.com/video/BV1ZJ411s7Mn/?spm_id_from=333.337.search-card.all.click&vd_source=e356fec025b50061af78324a814f8da0)
 - [尚硅谷 Netty](https://www.bilibili.com/video/BV1DJ411m7NR/?spm_id_from=333.337.search-card.all.click&vd_source=e356fec025b50061af78324a814f8da0)
+- [K8S](https://www.bilibili.com/video/BV13Q4y1C7hS?p=31&vd_source=e356fec025b50061af78324a814f8da0)
 
 <br/>
 

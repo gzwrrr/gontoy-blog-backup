@@ -69,7 +69,7 @@ Docker 常用命令速查
 ### 安装与启动
 
 | 序号 |                         命令                         |       解释       |
-|:----:|:----------------------------------------------------:|:----------------:|
+| :--: | :--------------------------------------------------: | :--------------: |
 |  1   |                `yum remove docker \`                 |    卸载旧版本    |
 |  2   |              `yum install -y yum-utils`              |    下载工具包    |
 |  3   | `yum install docker-ce doceker-ce-cli containerd.io` |   安装 docker    |
@@ -79,6 +79,7 @@ Docker 常用命令速查
 |  7   |  `yum remove docker-ce docker-ce-cli containerd.io`  |   卸载 docker    |
 |  8   |            `sudo systemctl daemon-reload`            | 重新加载守护进程 |
 |  9   |           `sudo systemctl restart docker`            |   重启 docker    |
+|  10  |          `systemctl enable docker.service`           |     开机自启     |
 
 
 
@@ -101,7 +102,7 @@ Docker 常用命令速查
 |  2   | `docker images -aq`                                          | 列出所有的镜像（id）                                         |
 |  3   | `docker search images名 (--filter=字段=限定值)`              | 搜索镜像（如: --filter=STARS=300 指显示 stars 不小于 3000 的结果） |
 |  4   | `docker pull 镜像(:版本)`                                    | 下载镜像（默认下载最新版，下载指定版本如: docker pull mysql:5.7） |
-|  5   | `docker rmi -f (id)`                                         | 删除所有镜像（加上 id 则删除对应的镜像）                     |
+|  5   | `docker rmi -f (id)`                                         | 删除镜像（加上 id 则删除对应的镜像）                         |
 |  6   | docker build -t image_name:tag .                             | 从当前目录的 Dockerfile 构建一个镜像，指定名称和标签         |
 |  7   | docker build -t image_name:tag -f /path/to/Dockerfile .      | 从指定的 Dockerfile 构建一个镜像，指定名称和标签             |
 |  8   | docker build -t image_name:tag --build-arg key=value .       | 在构建镜像的过程中传递一个参数，指定名称和标签               |
@@ -113,8 +114,9 @@ Docker 常用命令速查
 |  14  | docker rmi image_name:tag                                    | 删除本地的镜像，指定名称和标签                               |
 |  15  | docker save image_name:tag -o image.tar                      | 将镜像保存为 tar 包，指定名称和标签                          |
 |  16  | docker load -i image.tar                                     | 从 tar 包中加载镜像                                          |
+|  17  | docker rmi $(docker images -q)                               | 删除所有镜像                                                 |
 
-
+补充：删除所有 untagged 镜像 `docker rmi $(docker images | grep "^<none>" | awk "{print $3}")`
 
 
 
@@ -141,6 +143,10 @@ Docker 常用命令速查
 |  16  | `docker exec -it 容器id ip addr`                    | 查看容器的内部网络地址                             |
 |  17  | `docker attach 容器id`                              | 进入容器但不会开启新的终端                         |
 |  18  | `docker cp 容器id:容器内的路径 主机目录 `           | 拷贝文件到主机                                     |
+|  19  | `docker stop $(docker ps -a -q)`                    | 停止所有容器                                       |
+|  20  | `docker rm $(docker ps -a -q)`                      | 删除所有容器                                       |
+|  21  | `docker run --restart=always`                       | 容器启动时指定自动重启                             |
+|  22  | `docker update --restart=always <CONTAINER ID>`     | 修改运行中的容器自动重启                           |
 
 
 
@@ -153,7 +159,7 @@ Docker 常用命令速查
 | 1    | `docker update --restart=unless-stopped $(docker ps -q)`    | 将所有容器设置为自启动 |
 | 2    | `docker run --rm --registry-mirror=<mirror-url> image_name` | 指定镜像地址           |
 
-常用的 Docker 镜像源：
+常用的 Docker 镜像源（修改 `/etc/docker/daemon.json`，完成后 `service docker restart` ）：
 
 1. Docker Hub：https://hub.docker.com/
 2. 阿里云镜像库：https://cr.aliyun.com/
@@ -165,7 +171,7 @@ Docker 常用命令速查
 ```jso
 {
     "dns": ["8.8.8.8", "8.8.4.4"],
-    "registry-mirrors": ["http://hub-mirror.c.163.com","https://lbrfsxqk.mirror.aliyuncs.com"]
+    "registry-mirrors": ["https://hub.docker.com","https://lbrfsxqk.mirror.aliyuncs.com"]
 }
 ```
 

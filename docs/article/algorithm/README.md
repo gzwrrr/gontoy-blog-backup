@@ -46,6 +46,15 @@ feed:
 
 [[toc]]
 
+
+:::info 相关资源
+1. [代码随想录](https://www.programmercarl.com/)
+2. [小浩算法](https://www.geekxh.com/)
+3. [B 站左程云左神](https://space.bilibili.com/1899706498)
+4. [labuladong](https://mp.weixin.qq.com/s/sT6_sHuptgwg9A4KxQfGSg)
+:::
+
+
 ## 什么是算法？
 
 算法是对特定问题求解步骤的一种描述，它是指令的优先序列，其中每一条指令表示一个或多个操作，此外，一个算法还有以下五个重要特性：

@@ -3,7 +3,7 @@ notPage: true
 home: true
 layout: BlogHome
 heroImage: /logo.png
-bgImage: /bg.jpgXZ
+bgImage: /bg.jpg
 heroText: Gzw's blog
 tagline: 极简主义 | Java 全栈
 actionText: 快速上手 →

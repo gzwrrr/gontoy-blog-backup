@@ -3130,5 +3130,3 @@ CAP：Consistency（一致性）、Availability（可用性）、Partition Toler
 | Consul    | Go       | CP    | 支持         | HTTP/DNS     | 已集成           |
 | Nacos     | Java     | AP/CP | 支持         | HTTP         | 已集成           |
 
-p107
-
