@@ -1196,6 +1196,8 @@ public class RedisConfig {
 
 
 
+
+
 ### Lettuce
 
 :::info 说明
@@ -1266,6 +1268,20 @@ public class RedisConfig {
         return template;
     }
 }
+```
+
+
+
+
+
+### Redission
+
+```xml
+<dependency>
+    <groupId>org.redisson</groupId>
+    <artifactId>redisson</artifactId>
+    <version>3.21.0</version>
+</dependency>
 ```
 
 

@@ -47,10 +47,36 @@ feed:
 # Redis 高可用
 
 
+
 [[toc]]
 
 
-## 1.Redis 主从复制
+
+
+
+## Redis 读写分离
+
+> 读写分离相关参数如下
+
+| 参数名                     | 默认值 | 描述                                                         |
+| -------------------------- | ------ | ------------------------------------------------------------ |
+| `slave-read-only`          | `yes`  | 如果设置为 `yes`，则从服务器将只能进行只读操作               |
+| `slave-priority`           | `100`  | 如果主服务器下线，从服务器会被提升为主服务器，`slave-priority` 用于决定哪个从服务器将被提升 |
+| `repl-disable-tcp-nodelay` | `no`   | 如果设置为 `yes`，则从服务器将禁用 Nagle 算法（TCP_NODELAY），以提高性能 |
+| `repl-diskless-sync`       | `no`   | 如果设置为 `yes`，则主服务器将使用 `bgsave` 命令创建一个 RDB 快照，并在同步到从服务器时，使用 `psync` 命令进行在线复制 |
+| `repl-diskless-sync-delay` | `5`    | `repl-diskless-sync` 为 `yes` 时，从服务器使用 `psync` 命令复制数据的延迟时间（以秒为单位） |
+| `repl-backlog-size`        | `1mb`  | 从服务器可以请求的主服务器复制缓冲区的大小。可以使用 K、M、G 等后缀指定大小 |
+| `repl-backlog-ttl`         | `3600` | 主服务器将日志保存在复制缓冲区中的时间（以秒为单位），过期的日志将从缓冲区中删除 |
+| `min-slaves-to-write`      | `0`    | 如果从服务器的数量少于 `min-slaves-to-write`，则主服务器将停止接受写操作 |
+| `min-slaves-max-lag`       | `10`   | `min-slaves-to-write` 为非零值时，如果从服务器滞后于主服务器超过 `min-slaves-max-lag` 秒，则主服务器将停止接受写操作 |
+
+
+
+
+
+
+
+## Redis 主从复制
 
 :::info 说明
 
@@ -59,6 +85,12 @@ feed:
 这种模式下，客户端直接连接主库或者从库，但是当主库或者从库宕机后，客户端需要手动修改 IP。但是这种模式比较难进行扩容，整个集群所能存储的数据受到某台机器的内存容量的限制，所以不能支持特大量的数据
 
 :::
+
+
+
+### 主从复制概述
+
+![主从模式](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//redis/20230504/redis%E4%B8%BB%E4%BB%8E%E6%A8%A1%E5%BC%8F.png)
 
 - 将一台 redis 服务器的数据复制到其他 redis 服务器。前者称为主节点 master/leader，后者称为从节点 slave/follower
 - 数据的复制时单向的，只有由主节点到从节点。master 以写为主，slave 以读为主
@@ -97,17 +129,201 @@ feed:
 
 
 
+### 主从复制环境搭建
+
+1. 设置：`repl-disable-tcp-nodelay no`，如果是 yes，那么 TCP 连接发送的数据块会尽可能大，会降低网络延迟，但是会有延迟，所以这里要设置成 no
+2. 设置密码时全部节点都必须相同，同时主节点必须设置 `masterauth`
+
+创建不同配置文件搭建伪集群，目录为：`<path>/redis/cluster`，包含四个文件：
+
+1. logs 目录
+2. redis.conf
+3. redis6380.conf
+4. redis6381.conf
+5. redis6382.conf
+
+```shell
+# 包含共同的配置
+include redis.conf
+
+# pid 文件
+pidfile /var/run/redis_6381.pid
+
+# 启动端口
+port 6381
+
+# 持久化文件名
+dbfilename dump6381.rdb
+
+# aof 文件名
+appendfilename "appendonly6381.aof"
+
+# 日志文件名
+logfile "logs/redis6381.log"
+
+# 优先级
+replica-priority 90
+```
+
+```shell
+# 启动
+<path>/redis/redis-7.0.11/src/redis-server ./redis6380.conf
+<path>/redis/redis-7.0.11/src/redis-server ./redis6381.conf
+<path>/redis/redis-7.0.11/src/redis-server ./redis6382.conf
+```
+
+一主二从：
+
+```shell
+# redis6381、redis6382 设置主从关系
+slaveof 127.0.0.1 6380
+
+# 查看信息
+info replication
+
+# redis6380
+role:master
+connected_slaves:2
+slave0:ip=127.0.0.1,port=6381,state=online,offset=266,lag=0
+slave1:ip=127.0.0.1,port=6382,state=online,offset=266,lag=0
+master_failover_state:no-failover
+master_replid:ae84679f409d5a278446eb62312ad14b62f60d78
+master_replid2:0000000000000000000000000000000000000000
+master_repl_offset:266
+second_repl_offset:-1
+repl_backlog_active:1
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:1
+repl_backlog_histlen:266
+
+# redis6381
+role:slave
+master_host:127.0.0.1
+master_port:6380
+master_link_status:up
+master_last_io_seconds_ago:1
+master_sync_in_progress:0
+slave_read_repl_offset:196
+slave_repl_offset:196
+slave_priority:90
+slave_read_only:1
+replica_announced:1
+connected_slaves:0
+master_failover_state:no-failover
+master_replid:ae84679f409d5a278446eb62312ad14b62f60d78
+master_replid2:0000000000000000000000000000000000000000
+master_repl_offset:196
+second_repl_offset:-1
+repl_backlog_active:1
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:29
+repl_backlog_histlen:168
+```
+
+一主一从（+一从），即三级关系，让 6382 成为 6381 的从节点，这样可以分摊主节点的压力：
+
+```shell
+# 6382 改变主从关系
+slaveof 127.0.0.1 6381
+
+# 6380
+role:master
+connected_slaves:1
+slave0:ip=127.0.0.1,port=6381,state=online,offset=1566,lag=0
+master_failover_state:no-failover
+master_replid:ae84679f409d5a278446eb62312ad14b62f60d78
+master_replid2:0000000000000000000000000000000000000000
+master_repl_offset:1566
+second_repl_offset:-1
+repl_backlog_active:1
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:1
+repl_backlog_histlen:1566
+
+# 6381
+role:slave
+master_host:127.0.0.1
+master_port:6380
+master_link_status:up
+master_last_io_seconds_ago:3
+master_sync_in_progress:0
+slave_read_repl_offset:1524
+slave_repl_offset:1524
+slave_priority:90
+slave_read_only:1
+replica_announced:1
+connected_slaves:1
+slave0:ip=127.0.0.1,port=6382,state=online,offset=1524,lag=1
+master_failover_state:no-failover
+master_replid:ae84679f409d5a278446eb62312ad14b62f60d78
+master_replid2:0000000000000000000000000000000000000000
+master_repl_offset:1524
+second_repl_offset:-1
+repl_backlog_active:1
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:15
+repl_backlog_histlen:1510
+
+# 不是任何一个节点的从节点，晋升为主节点
+slaveof no one
+```
 
 
-## 2.Redis 哨兵模式
+
+### 主从复制同步过程
+
+![主从复制过程](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//redis/20230505/redis%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%E8%BF%87%E7%A8%8B.png)
+
+**sync 同步：**
+
+1. Redis 2.8 之前，主从同步过程中进行的是全量复制，过程中可能会因为网络抖动导致复制过程中断，当网络恢复后又会从头开始全量复制。
+2. 全量复制过程非常耗时，期间发生网络抖动的概率很大。
+
+**psync 同步：**
+
+Redis 2.8 之后，全量复制采用不完全同步策略（psync），当断开连接重连后可以进行「断点续传」，即从断开处继续复制，大大提高了性能。psync 中有三个关键点：
+
+1. 复制偏移量（offset）：主从节点都会维护这个变量以支持断点续传
+2. 主节点复制 ID：master 启动时动态生成的 ID，数据同步时供 slave 识别。不使用 ip + port 的形式标识，而是使用 ID（每次重启重新生成），这样可以预防主节点挂掉后数据丢失，但从节点不知道而继续复制
+3. 复制积压缓冲区：当 master 连接 slave 时，master 会维护 backlog 队列，默认大小为 1 MB。主节点写入数据时会写入三处：本地内存、发送数据给 slave 的缓冲区、复制积压缓冲区。复制积压缓冲区的作用就是用于保存最近操作的数据，以备「断点续传」时进行「数据补充」，防止数据丢失
+
+注意：psync 过程中可能出现 slave 节点「重启」或者「易主」，这样都会导致全量复制，Redis 4.0 之后解决了这两个问题（将 master ID 写到了持久化文件中）
+
+
+
+### 主从复制数据同步优化
+
+**无盘操作：**
+
+Redis 6.0 对同步过程进行了改进，提出了「无盘全量同步」和「无盘加载」策略，避免耗时的 IO 操作：
+
+1. 无盘全量同步：master 主进程 fork 子进程，直接将内存中的数据发送给 slave
+2. 无盘加载：slave 接收到 master 发送过来的数据直接写入内存中完成数据恢复
+3. **注意：**无盘操作时虽然是直接发送内存中的数据，但是发送过程中是网络操作耗时较长，数据会持续堆积到复制积压缓冲区，传输完成后再写入内存中，这样可能反而会**降低性能**（如果是写入磁盘再发送，那么数据积压就不会很多，因为一旦写入到磁盘中就可以写入内存，同时再将持久化数据发送出去），在高并发的写操作中使用无盘操作并不是好的选择
+
+**共享复制积压缓冲区：**
+
+Redis 7.0 对复制积压缓冲区进行了优化，让各个 slave 的发送缓冲区变为同一个共享复制积压缓冲区，注意由于共享数据并且需要发送数据，所以共享复制积压缓冲区是只读的，这也意味着还是需要一个缓冲区进行写操作。所以从整体上看，实际上是把各个 slave 发送缓冲区合并成了一个共享复制积压缓冲区
+
+
+
+
+
+
+
+## Redis 哨兵模式
 
 :::info 说明
 
-Redis 2.8 之后引入的，核心功能是主节点自动故障转移
+Redis 2.6 之后引入的，核心功能是主节点自动故障转移
 
 在主从模式的基础上新增了 **哨兵节点**，主库宕机后哨兵会发现这一情况，然后从从库中选择一个作为新的主库。此外哨兵本身也可以做集群，从而保证某一个哨兵挂掉后还有其他的可以工作。这种模式能够较好地保证 Redis 集群的高可用，但是==仍然不能很好解决 Redis 容量上限的问题==
 
 :::
+
+
+
+### 哨兵模式概述
 
 **关注点：**
 
@@ -117,7 +333,7 @@ Redis 2.8 之后引入的，核心功能是主节点自动故障转移
   - 当哨兵检测到 master 宕机时会将 slave 切换成 master，然后通过发布订阅模式通知其他的从服务器修改配置文件，以此让它们自动切换主节点
 - 主从切换：当主服务器宕机后，使用哨兵模式会根据投票数自动将某一个从节点变成主节点。主库选举做法：
   - 过滤掉不健康的（下线或断线），没有回复过哨兵ping响应的从节点
-  - 选择`salve-priority`从节点优先级最高（redis.conf）的
+  - 选择 `salve-priority` 从节点优先级最高（redis.conf）的
   - 选择复制偏移量最大，只复制最完整的从节点
 - Leader 选举：通常哨兵也会搭建一个集群形成多哨兵模式保证高可用，哨兵的选举机制就是一个Raft选举算法： **选举的票数大于等于 num(sentinels) / 2 + 1 时，将成为领导者，如果没有超过，继续选举**，同时拿到的票数同时还需要大于等于哨兵配置文件中的 quorum 值
 - 下线检测：在多哨兵模式下，要是其中一个哨兵检测到主节点宕机，并不会立即执行 failover（故障转移）过程，因为这仅仅是这个哨兵认为主节点不可用，这称为 **主观下线**。之后的哨兵也检测到主节点不可用并且达到一定数量时，哨兵之间会进行一次投票，投票结果由一个哨兵发起并进行 failover 操作。切换成功后就会通过发布订阅模式让各个哨兵切换主节点，这个过程称为 **客观下线**
@@ -133,27 +349,309 @@ Redis 2.8 之后引入的，核心功能是主节点自动故障转移
 
 
 
-## 3.Redis 读写分离
+### 哨兵模式环境搭建
 
-> 读写分离相关参数如下
+将 `sentinel.conf` 文件复制到先前创建的 `<path>/redis/cluster` 伪集群目录下，之后修改文件配置：
 
-| 参数名                     | 默认值 | 描述                                                         |
-| -------------------------- | ------ | ------------------------------------------------------------ |
-| `slave-read-only`          | `yes`  | 如果设置为 `yes`，则从服务器将只能进行只读操作               |
-| `slave-priority`           | `100`  | 如果主服务器下线，从服务器会被提升为主服务器，`slave-priority` 用于决定哪个从服务器将被提升 |
-| `repl-disable-tcp-nodelay` | `no`   | 如果设置为 `yes`，则从服务器将禁用 Nagle 算法（TCP_NODELAY），以提高性能 |
-| `repl-diskless-sync`       | `no`   | 如果设置为 `yes`，则主服务器将使用 `bgsave` 命令创建一个 RDB 快照，并在同步到从服务器时，使用 `psync` 命令进行在线复制 |
-| `repl-diskless-sync-delay` | `5`    | `repl-diskless-sync` 为 `yes` 时，从服务器使用 `psync` 命令复制数据的延迟时间（以秒为单位） |
-| `repl-backlog-size`        | `1mb`  | 从服务器可以请求的主服务器复制缓冲区的大小。可以使用 K、M、G 等后缀指定大小 |
-| `repl-backlog-ttl`         | `3600` | 主服务器将日志保存在复制缓冲区中的时间（以秒为单位），过期的日志将从缓冲区中删除 |
-| `min-slaves-to-write`      | `0`    | 如果从服务器的数量少于 `min-slaves-to-write`，则主服务器将停止接受写操作 |
-| `min-slaves-max-lag`       | `10`   | `min-slaves-to-write` 为非零值时，如果从服务器滞后于主服务器超过 `min-slaves-max-lag` 秒，则主服务器将停止接受写操作 |
+```shell
+# 指定监控的 master，最后一个参数是 quorum，这里具体含义就是：如果有 2 个哨兵认为 master 下线了，那么就是客观下线
+# 源文件中先注释掉下面这一行，之后 include 进来后再做特定配置
+sentinel monitor mymaster 127.0.0.1 6379 2
+```
+
+新增三个文件：sentinel26380.conf、sentinel26381.conf、sentinel26382.conf，下面对应的数字做修改即可：
+
+```shell
+# 引入文件
+include sentinel.conf
+
+# 指定 pid 文件名
+pidfile /var/run/sentinel_26380.pid
+
+# 端口
+port 26380
+
+# 指定 master
+sentinel monitor mymaster 127.0.0.1 6380 2
+
+# 日志文件
+logfile sentinel26380.log
+```
+
+启动哨兵集群：
+
+![image-20230505202753207](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//redis/20230505/sentinel%E9%9B%86%E7%BE%A4%E5%90%AF%E5%8A%A8.png)
+
+```shell
+# 可以使用下面的命令启动
+<path>/redis/redis-7.0.11/src/redis-server sentinel26380.conf --sentinel
+<path>/redis/redis-7.0.11/src/redis-server sentinel26381.conf --sentinel
+<path>/redis/redis-7.0.11/src/redis-server sentinel26382.conf --sentinel
+
+# 或者使用
+<path>/redis/redis-7.0.11/src/redis-sentinel sentinel26380.conf
+<path>/redis/redis-7.0.11/src/redis-sentinel sentinel26381.conf
+<path>/redis/redis-7.0.11/src/redis-sentinel sentinel26382.conf
+
+# 注意：哨兵也是一个特殊的 redis 数据库，也可以使用 redis-cli 或者其他客户端连接并查看信息，使用下面的命令查看哨兵信息
+./redis-cli -p 26380 info sentinel
+
+# 输出：
+sentinel_masters:1
+sentinel_tilt:0
+sentinel_tilt_since_seconds:-1
+sentinel_running_scripts:0
+sentinel_scripts_queue_length:0
+sentinel_simulate_failure_flags:0
+master0:name=mymaster,status=ok,address=127.0.0.1:6380,slaves=2,sentinels=3
+```
+
+启动后 sentinel26380.conf 文件发生改变：
+
+```shell
+# 引入文件
+include sentinel.conf
+
+# 指定 pid 文件名
+pidfile "/var/run/sentinel_26380.pid"
+
+# 端口
+port 26380
+
+# 指定 master
+sentinel monitor mymaster 127.0.0.1 6380 2
+
+# 日志文件
+logfile "sentinel26380.log"
+
+# 下面的内容与选举有关
+# Generated by CONFIG REWRITE
+dir "/tmp"
+latency-tracking-info-percentiles 50 99 99.9
+protected-mode no
+user default on nopass sanitize-payload ~* &* +@all
+sentinel myid efa7599f998f209a5e2c96992ebebc193177a301
+sentinel config-epoch mymaster 0
+sentinel leader-epoch mymaster 0
+sentinel current-epoch 0
+
+sentinel known-replica mymaster 127.0.0.1 6382
+
+sentinel known-replica mymaster 127.0.0.1 6381
+
+sentinel known-sentinel mymaster 127.0.0.1 26382 da95b20712c4fe5c45ac54bfddf5ac36ce02961b
+
+sentinel known-sentinel mymaster 127.0.0.1 26381 08a2b224ce22cdd5f90a55c39d622226fe9f10b1
+```
+
+让当前 master 下线：
+
+```shell
+# 在 redis-cli 中关闭 master
+shutdown
+
+# 查看 6381 和 6382 节点上的信息
+info replication
+
+# 发现 6382 成为了 master
+role:master
+connected_slaves:1
+slave0:ip=127.0.0.1,port=6381,state=online,offset=219496,lag=1
+master_failover_state:no-failover
+master_replid:340d1f14e7f8f83cd46a8c42735c1e8006d6460a
+master_replid2:ad9090ecd7d98f94db838d58d5c8535c2e631e72
+master_repl_offset:219643
+second_repl_offset:210906
+repl_backlog_active:1
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:5515
+repl_backlog_histlen:214129
+
+# 6381
+role:slave
+master_host:127.0.0.1
+master_port:6382
+master_link_status:up
+master_last_io_seconds_ago:1
+master_sync_in_progress:0
+slave_read_repl_offset:217354
+slave_repl_offset:217354
+slave_priority:90
+slave_read_only:1
+replica_announced:1
+connected_slaves:0
+master_failover_state:no-failover
+master_replid:340d1f14e7f8f83cd46a8c42735c1e8006d6460a
+master_replid2:ad9090ecd7d98f94db838d58d5c8535c2e631e72
+master_repl_offset:217354
+second_repl_offset:210906
+repl_backlog_active:1
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:5515
+repl_backlog_histlen:211840
+```
+
+查看 6381 和 6382 节点的配置文件，可以发现被动态修改了：
+
+6381 配置文件如下：
+
+```shell
+# 包含共同的配置
+include redis.conf
+# pid 文件
+pidfile "/var/run/redis_6381.pid"
+# 启动端口
+port 6381
+# 持久化文件名
+dbfilename "dump6381.rdb"
+# aof 文件名
+appendfilename "appendonly6381.aof"
+# 日志文件名
+logfile "logs/redis6381.log"
+# 优先级
+replica-priority 90
+
+# Generated by CONFIG REWRITE
+dir "/usr/local/redis/cluster"
+bind 0.0.0.0
+daemonize yes
+protected-mode no
+replicaof 127.0.0.1 6382
+latency-tracking-info-percentiles 50 99 99.9
+save 3600 1
+save 300 100
+save 60 10000
+user default on nopass ~* &* +@all
+```
+
+6382 配置文件如下：
+
+```shell
+# 包含共同的配置
+include redis.conf
+# pid 文件
+pidfile "/var/run/redis_6382.pid"
+# 启动端口
+port 6382
+# 持久化文件名
+dbfilename "dump6382.rdb"
+# aof 文件名
+appendfilename "appendonly6382.aof"
+# 日志文件名
+logfile "logs/redis6382.log"
+# 优先级
+replica-priority 90
+
+# Generated by CONFIG REWRITE
+dir "/usr/local/redis/cluster"
+latency-tracking-info-percentiles 50 99 99.9
+bind 0.0.0.0
+protected-mode no
+daemonize yes
+save 3600 1
+save 300 100
+save 60 10000
+user default on nopass ~* &* +@all
+```
+
+查看任意一个 sentinel 配置文件，发现也有动态修改的内容（mymaster 变成了 6382）：
+
+26380 配置文件如下：
+
+```shell
+# 引入文件
+include sentinel.conf
+# 指定 pid 文件名
+pidfile "/var/run/sentinel_26380.pid"
+# 端口
+port 26380
+# 指定 master
+sentinel monitor mymaster 127.0.0.1 6382 2
+# 日志文件
+logfile "sentinel26380.log"
+
+# Generated by CONFIG REWRITE
+dir "/tmp"
+latency-tracking-info-percentiles 50 99 99.9
+protected-mode no
+user default on nopass sanitize-payload ~* &* +@all
+sentinel myid efa7599f998f209a5e2c96992ebebc193177a301
+sentinel config-epoch mymaster 1
+sentinel leader-epoch mymaster 1
+sentinel current-epoch 1
+
+sentinel known-replica mymaster 127.0.0.1 6380
+
+sentinel known-replica mymaster 127.0.0.1 6381
+
+sentinel known-sentinel mymaster 127.0.0.1 26382 da95b20712c4fe5c45ac54bfddf5ac36ce02961b
+
+sentinel known-sentinel mymaster 127.0.0.1 26381 08a2b224ce22cdd5f90a55c39d622226fe9f10b1
+```
+
+此时将 6380 重新启动，会发现：
+
+```shell
+# 6380 成为了 6382 的从节点
+role:slave
+master_host:127.0.0.1
+master_port:6382
+master_link_status:up
+master_last_io_seconds_ago:0
+master_sync_in_progress:0
+slave_read_repl_offset:317778
+slave_repl_offset:317778
+slave_priority:100
+slave_read_only:1
+replica_announced:1
+connected_slaves:0
+master_failover_state:no-failover
+master_replid:340d1f14e7f8f83cd46a8c42735c1e8006d6460a
+master_replid2:0000000000000000000000000000000000000000
+master_repl_offset:317778
+second_repl_offset:-1
+repl_backlog_active:1
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:316678
+repl_backlog_histlen:1101
+```
 
 
 
 
 
-## 4.Redis Cluster 分布式方案
+### 哨兵模式原理
+
+**定时任务：**
+
+Sentinel 维护着三个定时任务以监控 Redis 节点和其他 Sentinel 节点的状态
+
+1. info 任务：每 10 秒就向 Redis 集群中的每个节点发送 info命令，以获取最新的 Redis 拓扑结构
+2. 心跳任务：每个 Sentinel 节点每 1 秒向 Redis 节点以及 Sentinel 节点发送 ping 命令，用于检测这些节点的存活状态，这是判断在线的重要依据
+3. 发布/订阅任务：Sentinel 每两秒会向 Redis 节点发送一条 `__sentinel__:hello` 主题信息，由于所有的 Redis 节点以及 Sentinel 都是订阅者，所以每一个节点包括自身都会收到信息，当 Sentinel 接收到信息后，会进行：
+   1. 如果有新的 Sentinel 加入，那么就记录下 Sentinel 节点的信息并进行连接
+   2. 如果发现有 Sentinel Leader 选举的选票，就执行 Leader 选举过程
+   3. 汇总其他 Sentinel 节点对当前 Redis 节点在线情况的判断结果，作为 Redis 客观下线的判断依据
+
+**Leader 选举：**
+
+Leader 选举出来后会由该 Leader 进行「故障转移」，故障转移算法通过 Raft 算法实现
+
+每个选举着都具有当选 Leader 的资格，当其完成了客观下线的判断之后，会自荐自己成为 Leader，然后将提案发送给每个 Sentinel 节点
+
+其他参与者在收到提案后，如果自己还有选票就会立刻投出，后续其他再来的提案会因为没有选票而被拒绝
+
+当提案者收到的同意数量大于等于 max(quorum, sentinelNum / 2 + 1) 时，该提案者会成为 Leader
+
+**master 选举：**
+
+> TODO
+
+
+
+
+
+## Redis Cluster 分布式方案
 
 :::info 说明
 
@@ -180,7 +678,188 @@ Redis Cluster是Redis提供的分布式集群解决方案，可以将数据分�
 
 
 
-### 4.1 主要模块
+
+
+### 环境搭建
+
+创建 `cluster-dis` 目录，将主从复制中的 `redis.conf` 和 `redis6380.conf` 文件拷贝到该目录下，用于伪集群的搭建，最终该目录下的文件包括：
+
+1. logs 目录
+2. redis.conf
+3. redis6390.conf、redis6391.conf、redis6392.conf、redis6393.conf、redis6394.conf、redis6395.conf
+4. start-cluster.sh、shutdown-cluster.sh
+
+```shell
+# 修改 redis.conf 目录的配置
+# 设置工作目录
+dir "/usr/local/redis/cluster-dis"
+
+# 设置集群模式
+cluster-enabled yes
+
+# 节点超时设置
+cluster-node-timeout 15000
+
+# 修改 redis6380.conf 文件为 redis6390.conf，并添加配置 cluster-config-file nodes-6390.conf，完整配置如下：
+# 包含共同的配置
+include redis.conf
+# pid 文件
+pidfile "/var/run/redis_6390.pid"
+# 启动端口
+port 6390
+# 持久化文件名
+dbfilename "dump6390.rdb"
+# aof 文件名
+appendfilename "appendonly6390.aof"
+# 日志文件名
+logfile "logs/redis6390.log"
+# 优先级
+replica-priority 100
+# 集群节点配置文件，只能由 redis 修改，不能手动修改
+cluster-config-file nodes-6390.conf
+```
+
+完成上面的配置后，再根据 `redis6390.conf` 复制多 5 个配置文件，也即最终要启动 6 个节点
+
+配置文件完成后，创建启动脚本 `start-cluster.sh`
+
+```shell
+#!/bin/bash
+
+rm -rf dump639*.rdb
+
+rm -rf appendonlydir
+
+rm -rf nodes-639*.conf
+
+# 这里可以改成循环，redis-server 也可以加到环境变量中
+../redis-7.0.11/src/redis-server redis6390.conf
+../redis-7.0.11/src/redis-server redis6391.conf
+../redis-7.0.11/src/redis-server redis6392.conf
+../redis-7.0.11/src/redis-server redis6393.conf
+../redis-7.0.11/src/redis-server redis6394.conf
+../redis-7.0.11/src/redis-server redis6395.conf
+
+../redis-7.0.11/src/redis-cli --cluster create --cluster-replicas 1 192.168.30.201:6390 192.168.30.201:6391 192.168.30.201:6392 192.168.30.201:6393 192.168.30.201:6394 192.168.30.201:6395
+```
+
+创建关闭脚本 `shutdown-cluster.sh`
+
+```shell
+#!/bin/bash
+
+# 这里可以改成循环，redis-cli 也可以加到环境变量中
+../redis-7.0.11/src/redis-cli -p 6390 shutdown
+../redis-7.0.11/src/redis-cli -p 6391 shutdown
+../redis-7.0.11/src/redis-cli -p 6392 shutdown
+../redis-7.0.11/src/redis-cli -p 6393 shutdown
+../redis-7.0.11/src/redis-cli -p 6394 shutdown
+../redis-7.0.11/src/redis-cli -p 6395 shutdown
+
+ps -aux | grep redis
+```
+
+```shell
+# 记得给脚本赋予执行权限
+chmod 755 start-cluster.sh
+chmod 755 shutdown-cluster.sh
+
+# 启动集群
+./start-cluster.sh
+
+# 成功启动
+>>> Performing hash slots allocation on 6 nodes...
+Master[0] -> Slots 0 - 5460
+Master[1] -> Slots 5461 - 10922
+Master[2] -> Slots 10923 - 16383
+Adding replica 192.168.30.201:6394 to 192.168.30.201:6390
+Adding replica 192.168.30.201:6395 to 192.168.30.201:6391
+Adding replica 192.168.30.201:6393 to 192.168.30.201:6392
+>>> Trying to optimize slaves allocation for anti-affinity
+[WARNING] Some slaves are in the same host as their master
+M: ce256073cdeac46161646fd30d780b82d554bfe3 192.168.30.201:6390
+   slots:[0-5460] (5461 slots) master
+M: 3a1c540f396a3a8cab51b036441715da0e8a2fd8 192.168.30.201:6391
+   slots:[5461-10922] (5462 slots) master
+M: cc668b504326bdf302030da99fe45b9759ab753c 192.168.30.201:6392
+   slots:[10923-16383] (5461 slots) master
+S: 96a06843686d9a72fa7fe78d1c4ce34c89158ef7 192.168.30.201:6393
+   replicates ce256073cdeac46161646fd30d780b82d554bfe3
+S: 76e9e51c42c951b3290dd61daf60a77b69ac8b03 192.168.30.201:6394
+   replicates 3a1c540f396a3a8cab51b036441715da0e8a2fd8
+S: e0a8858d0c07d42c4d71a33bacf495b9682c6842 192.168.30.201:6395
+   replicates cc668b504326bdf302030da99fe45b9759ab753c
+Can I set the above configuration? (type 'yes' to accept): yes
+>>> Nodes configuration updated
+>>> Assign a different config epoch to each node
+>>> Sending CLUSTER MEET messages to join the cluster
+Waiting for the cluster to join
+
+>>> Performing Cluster Check (using node 192.168.30.201:6390)
+M: ce256073cdeac46161646fd30d780b82d554bfe3 192.168.30.201:6390
+   slots:[0-5460] (5461 slots) master
+   1 additional replica(s)
+M: cc668b504326bdf302030da99fe45b9759ab753c 192.168.30.201:6392
+   slots:[10923-16383] (5461 slots) master
+   1 additional replica(s)
+S: e0a8858d0c07d42c4d71a33bacf495b9682c6842 192.168.30.201:6395
+   slots: (0 slots) slave
+   replicates cc668b504326bdf302030da99fe45b9759ab753c
+M: 3a1c540f396a3a8cab51b036441715da0e8a2fd8 192.168.30.201:6391
+   slots:[5461-10922] (5462 slots) master
+   1 additional replica(s)
+S: 96a06843686d9a72fa7fe78d1c4ce34c89158ef7 192.168.30.201:6393
+   slots: (0 slots) slave
+   replicates ce256073cdeac46161646fd30d780b82d554bfe3
+S: 76e9e51c42c951b3290dd61daf60a77b69ac8b03 192.168.30.201:6394
+   slots: (0 slots) slave
+   replicates 3a1c540f396a3a8cab51b036441715da0e8a2fd8
+[OK] All nodes agree about slots configuration.
+>>> Check for open slots...
+>>> Check slots coverage...
+[OK] All 16384 slots covered.
+```
+
+![image-20230506190518205](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//redis/20230506/%E6%88%90%E5%8A%9F%E5%90%AF%E5%8A%A8cluster%E9%9B%86%E7%BE%A4.png)
+
+```shell
+# 查看节点信息
+../redis-7.0.11/src/redis-cli -c -p 6390 cluster nodes
+
+# 输出如下
+ce256073cdeac46161646fd30d780b82d554bfe3 192.168.30.201:6390@16390 myself,master - 0 1683371217000 1 connected 0-5460
+cc668b504326bdf302030da99fe45b9759ab753c 192.168.30.201:6392@16392 master - 0 1683371220643 3 connected 10923-16383
+e0a8858d0c07d42c4d71a33bacf495b9682c6842 192.168.30.201:6395@16395 slave cc668b504326bdf302030da99fe45b9759ab753c 0 1683371220000 3 connected
+3a1c540f396a3a8cab51b036441715da0e8a2fd8 192.168.30.201:6391@16391 master - 0 1683371220000 2 connected 5461-10922
+96a06843686d9a72fa7fe78d1c4ce34c89158ef7 192.168.30.201:6393@16393 slave ce256073cdeac46161646fd30d780b82d554bfe3 0 1683371220000 1 connected
+76e9e51c42c951b3290dd61daf60a77b69ac8b03 192.168.30.201:6394@16394 slave 3a1c540f396a3a8cab51b036441715da0e8a2fd8 0 1683371221651 2 connected
+
+# 添加新节点
+../redis-7.0.11/src/redis-cli -c --cluster add-node <ip>:<port> <ip>:<port> ...
+
+# 添加完成后需要重新分配哈希槽
+../redis-7.0.11/src/redis-cli -c --cluster reshard <ip>:<任意port>
+
+# 添加新 slave
+../redis-7.0.11/src/redis-cli -c --cluster add-node <ip>:<slaveport> <ip>:<clusterport> --cluster-master-id <targetmasterid>
+
+# 移除 slave 节点缩容
+../redis-7.0.11/src/redis-cli --cluster del-node <ip>:<port> <targetid>
+
+# 移除 master 节点时需要重新分配哈希槽，否则集群不对外提供服务
+../redis-7.0.11/src/redis-cli -c --cluster reshard <ip>:<任意port>
+../redis-7.0.11/src/redis-cli --cluster del-node <ip>:<port> <targetid>
+```
+
+
+
+
+
+
+
+
+
+### 主要模块
 
 1. 哈希槽：没有使用一致性 hash 而是新引入哈希槽，Cluster 中的每个节点负责一部分槽（槽位默认有 $2^{14}=16384$ 个）
 
@@ -199,7 +878,7 @@ Redis Cluster是Redis提供的分布式集群解决方案，可以将数据分�
 
 
 
-### 4.2 请求重定向
+### 请求重定向
 
 > Redis cluster采用去中心化的架构，集群的主节点各自负责一部分槽，客户端如何确定key到底会映射到哪个节点上呢？这就是我们要讲的请求重定向。
 
@@ -225,7 +904,7 @@ graph LR;
 
 
 
-### 4.3 状态检测与通信状态
+### 状态检测与通信状态
 
 状态维护：底层协议使用 Gossip，通讯机制是心跳检测机制，Cluster中的每个节点都维护一份在自己看来当前整个集群的状态，主要包括：
 
@@ -243,7 +922,7 @@ graph LR;
 
 
 
-### 4.4 故障恢复
+### 故障恢复
 
 当slave发现自己的master变为FAIL状态时，便尝试进行Failover，以期成为新的master。由于挂掉的master可能会有多个slave。Failover的过程需要经过类Raft协议的过程在整个集群内达到一致， 其过程如下：
 
@@ -254,11 +933,13 @@ graph LR;
 - 超过半数后变成新Master
 - 广播Pong通知其他集群节点
 
+当原本的 master 重新启动后会自动变为当前 master 的 slave
 
 
 
 
-### 4.5 扩容与缩容
+
+### 扩容与缩容
 
 **扩容：**
 
@@ -293,8 +974,18 @@ cluster setslot 10 node B.nodeId
 
 
 
-### 4.6 常见高可用方案
+### 常见高可用方案
 
 1. Redis Sentinel 集群 + Keepalived/Haproxy
 2. Twemproxy
 3. Codis
+
+
+
+### Claster 的限制
+
+1. 仅支持 0 号数据库
+2. 不支持批量 key 操作
+3. 分区仅限于 key
+4. 对事务支持有限制
+5. 不支持分级管理

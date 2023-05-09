@@ -400,7 +400,7 @@ public static int process(int limit, int colLim, int leftDiaLim, int rightDiaLim
 
 ## 并查集
 
-> Union-Find 并查集
+> Union-Find 并查集，相关文章：https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247497087&idx=1&sn=6d68414edf4a19e2d1fba94210851eeb&scene=21#wechat_redirect
 
 **连通与连通量：**
 
@@ -425,7 +425,7 @@ public static int process(int limit, int colLim, int leftDiaLim, int rightDiaLim
 
 
 
-**核心 API：**
+### 核心 API
 
 ```java
 class UF {
@@ -515,6 +515,10 @@ public static class UnionFindSet<V> {
     }
 }
 ```
+
+
+
+### 数组优化
 
 使用数组优化的具体实现：
 
@@ -646,6 +650,39 @@ class UF {
 ```
 
 注意：Union-Find 算法的复杂度可以这样分析：构造函数初始化数据结构需要 O(N) 的时间和空间复杂度；连通两个节点`union`、判断两个节点的连通性`connected`、计算连通分量`count`所需的时间跟树高有关，高度压缩后复杂度均为 O(1)。
+
+
+
+
+
+### 最简模板
+
+```java
+int[] set;
+
+public void init(int size) {
+    set = new int[size];
+    for (int i = 0; i < size; i++) {
+        set[i] = i;
+    }
+}
+
+public int find(int i) {
+    return i == set[i] ? i : (set[i] = find(set[i]));
+}
+
+public void union(int i, int j) {
+    set[find(i)] = find(j);
+}
+
+public boolean same(int i, int j) {
+    return find(i) == find(j);
+}
+```
+
+
+
+
 
 
 
@@ -1380,10 +1417,6 @@ public ListNode reverseN(ListNode head, int n) {
     return last;
 }
 ```
-
-
-
-
 
 
 

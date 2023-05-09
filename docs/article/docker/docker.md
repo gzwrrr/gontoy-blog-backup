@@ -96,6 +96,12 @@ Docker 常用命令速查
 
 ### 常用镜像命令
 
+:::note 相关文章
+
+1. 推送镜像：https://blog.csdn.net/lxy___/article/details/105821141
+
+:::
+
 | 序号 | 命令                                                         | 解释                                                         |
 | :--: | ------------------------------------------------------------ | ------------------------------------------------------------ |
 |  1   | `docker images`                                              | 查看镜像                                                     |
@@ -103,18 +109,22 @@ Docker 常用命令速查
 |  3   | `docker search images名 (--filter=字段=限定值)`              | 搜索镜像（如: --filter=STARS=300 指显示 stars 不小于 3000 的结果） |
 |  4   | `docker pull 镜像(:版本)`                                    | 下载镜像（默认下载最新版，下载指定版本如: docker pull mysql:5.7） |
 |  5   | `docker rmi -f (id)`                                         | 删除镜像（加上 id 则删除对应的镜像）                         |
-|  6   | docker build -t image_name:tag .                             | 从当前目录的 Dockerfile 构建一个镜像，指定名称和标签         |
-|  7   | docker build -t image_name:tag -f /path/to/Dockerfile .      | 从指定的 Dockerfile 构建一个镜像，指定名称和标签             |
-|  8   | docker build -t image_name:tag --build-arg key=value .       | 在构建镜像的过程中传递一个参数，指定名称和标签               |
-|  9   | docker build -t image_name:tag --no-cache .                  | 禁止使用缓存构建镜像，指定名称和标签                         |
-|  10  | docker build -t image_name:tag --pull .                      | 在构建镜像的过程中尝试拉取最新的基础镜像，指定名称和标签     |
-|  11  | docker buildx build -t image_name:tag --platform linux/arm64/v8,linux/amd64 . | 从当前目录的 Dockerfile 使用 Buildx 构建一个镜像，指定多个平台 |
-|  12  | docker tag source_image:source_tag target_image:target_tag   | 给现有的镜像打标签，将源镜像的标签改为目标镜像的标签         |
-|  13  | docker push image_name:tag                                   | 将本地的镜像推送到远程仓库，指定名称和标签                   |
-|  14  | docker rmi image_name:tag                                    | 删除本地的镜像，指定名称和标签                               |
-|  15  | docker save image_name:tag -o image.tar                      | 将镜像保存为 tar 包，指定名称和标签                          |
-|  16  | docker load -i image.tar                                     | 从 tar 包中加载镜像                                          |
-|  17  | docker rmi $(docker images -q)                               | 删除所有镜像                                                 |
+|  6   | `docker build -t image_name:tag .`                           | 从当前目录的 Dockerfile 构建一个镜像，指定名称和标签         |
+|  7   | `docker build -t image_name:tag -f /path/to/Dockerfile .`    | 从指定的 Dockerfile 构建一个镜像，指定名称和标签             |
+|  8   | `docker build -t image_name:tag --build-arg key=value .`     | 在构建镜像的过程中传递一个参数，指定名称和标签               |
+|  9   | `docker build -t image_name:tag --no-cache .`                | 禁止使用缓存构建镜像，指定名称和标签                         |
+|  10  | `docker build -t image_name:tag --pull .`                    | 在构建镜像的过程中尝试拉取最新的基础镜像，指定名称和标签     |
+|  11  | `docker buildx build -t image_name:tag --platform linux/arm64/v8,linux/amd64 .` | 从当前目录的 Dockerfile 使用 Buildx 构建一个镜像，指定多个平台 |
+|  12  | `docker tag source_image:source_tag target_image:target_tag` | 给现有的镜像打标签，将源镜像的标签改为目标镜像的标签         |
+|  13  | `docker push image_name:tag`                                 | 将本地的镜像推送到远程仓库，指定名称和标签                   |
+|  14  | `docker rmi image_name:tag`                                  | 删除本地的镜像，指定名称和标签                               |
+|  15  | `docker save image_name:tag -o image.tar`                    | 将镜像保存为 tar 包，指定名称和标签                          |
+|  16  | `docker load -i image.tar`                                   | 从 tar 包中加载镜像                                          |
+|  17  | `docker rmi $(docker images -q)`                             | 删除所有镜像                                                 |
+|  18  | `docker tag old_image_tag new_image_tag`                     | 为镜像打标签                                                 |
+|  19  | `docker push image_tag`                                      | 推送镜像（要提前登录）                                       |
+|  20  | `docker save -o image_name real_image_name`                  | 打包镜像                                                     |
+|  21  | `docker load -i image_name`                                  | 载入镜像                                                     |
 
 补充：删除所有 untagged 镜像 `docker rmi $(docker images | grep "^<none>" | awk "{print $3}")`
 

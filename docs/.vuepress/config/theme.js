@@ -31,7 +31,8 @@ export default hopeTheme({
             "/article/java/",
             "/article/go/",
             "/article/js/",
-            "/article/python/"
+            "/article/python/",
+            "/article/lua/"
         ]
     },
     {
@@ -129,6 +130,7 @@ export default hopeTheme({
         "/article/docker/": "structure",
         "/article/jenkins/": "structure",
         "/article/linux/": "structure",
+        "/article/lua/": "structure",
         "/article/mongodb/": "structure",
         "/article/netty/": "structure",
         "/article/quartz/": "structure",
