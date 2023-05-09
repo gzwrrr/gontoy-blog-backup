@@ -1,7 +1,7 @@
 ---
-title: "Java并发面试常见问题"
-shortTitle: "Z-Java并发面试常见问题"
-description: "Java并发面试常见问题"
+title: "Java并发常见问题"
+shortTitle: "Z-Java并发常见问题"
+description: "Java并发常见问题"
 icon: ""
 author: 
   name: gzw
@@ -20,7 +20,7 @@ star: true
 article: true
 timeline: true,
 dir:
-  text: "Java并发面试常见问题"
+  text: "Java并发常见问题"
   icon: ""
   collapsible: true
   index: true
@@ -33,8 +33,8 @@ copy:
   disableCopy: false
   disableSelection: false
 feed:
-  title: "Java并发面试常见问题"
-  description: "Java并发面试常见问题"
+  title: "Java并发常见问题"
+  description: "Java并发常见问题"
   author:
     name: gzw
     email: 1627121193@qq.com
@@ -42,7 +42,7 @@ feed:
 
 
 
-# Java 并发面试常见问题
+# Java 并发常见问题
 
 
 [[toc]]

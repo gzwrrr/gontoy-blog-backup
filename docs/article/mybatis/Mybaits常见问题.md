@@ -1,7 +1,7 @@
 ---
-title: "Mybatis 面试常见问题"
-shortTitle: "Mybatis 面试常见问题"
-description: "Mybatis 面试常见问题"
+title: "Mybatis 常见问题"
+shortTitle: "Mybatis 常见问题"
+description: "Mybatis 常见问题"
 icon: ""
 author: 
   name: gzw
@@ -18,7 +18,7 @@ star: false
 article: true
 timeline: true,
 dir:
-  text: "Mybatis 面试常见问题"
+  text: "Mybatis 常见问题"
   icon: ""
   collapsible: true
   index: true
@@ -31,8 +31,8 @@ copy:
   disableCopy: false
   disableSelection: false
 feed:
-  title: "Mybatis 面试常见问题"
-  description: "Mybatis 面试常见问题"
+  title: "Mybatis 常见问题"
+  description: "Mybatis 常见问题"
   author:
     name: gzw
     email: 1627121193@qq.com
@@ -41,7 +41,7 @@ feed:
 
 
 
-# Mybatis 面试常见问题
+# Mybatis 常见问题
 
 ## Mybatis 的优缺点
 

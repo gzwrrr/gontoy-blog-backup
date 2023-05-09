@@ -57,6 +57,7 @@ export default hopeTheme({
             "/article/redis/",
             "/article/elasticsearch/",
             "/article/mongodb/",
+            "/article/mybatis/"
         ]
     },
     {
@@ -121,6 +122,7 @@ export default hopeTheme({
         "/article/springs/": "structure",
         "/article/vue/": "structure",
         "/article/design/": "structure",
+        "/article/mybatis/": "structure",
         "/article/mysql/": "structure",
         "/article/redis/": "structure",
         "/article/rabbitmq/": "structure",

@@ -1,7 +1,7 @@
 ---
-title: "Java 基础面试常见问题"
-shortTitle: "Z-Java 基础面试常见问题"
-description: "Java 基础面试常见问题"
+title: "Java 基础常见问题"
+shortTitle: "Z-Java 基础常见问题"
+description: "Java 基础常见问题"
 icon: ""
 author: 
   name: gzw
@@ -20,7 +20,7 @@ star: false
 article: true
 timeline: true,
 dir:
-  text: "Java 基础面试常见问题"
+  text: "Java 基础常见问题"
   icon: ""
   collapsible: true
   index: true
@@ -33,8 +33,8 @@ copy:
   disableCopy: false
   disableSelection: false
 feed:
-  title: "Java 基础面试常见问题"
-  description: "Java 基础面试常见问题"
+  title: "Java 基础常见问题"
+  description: "Java 基础常见问题"
   author:
     name: gzw
     email: 1627121193@qq.com
@@ -44,7 +44,7 @@ feed:
 
 
 
-# Java 基础面试常见问题
+# Java 基础常见问题
 
 [[toc]]
 
