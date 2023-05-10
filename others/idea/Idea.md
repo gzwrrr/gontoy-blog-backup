@@ -81,7 +81,8 @@
 
 ## 技术学习规划
 
-- [ ] K8S
+- [ ] Guava：https://mp.weixin.qq.com/s/0cH36pNX_2O82H27rKlCXw
+- [ ] K8S（1/3）
 - [ ] Go 与大数据学习
 - [ ] 缓存 [caffeine](https://github.com/ben-manes/caffeine) 学习
 - [ ] GraphQL

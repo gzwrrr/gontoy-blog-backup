@@ -45,7 +45,17 @@ feed:
 # Spring IOC
 
 
+
 [[toc]]
+
+
+
+:::info 相关文章
+
+1. [面试问烂的 Spring IOC 过程](https://www.iocoder.cn/Fight/Interview-poorly-asked-Spring-IOC-process-1/)
+
+:::
+
 
 
 核心概念：控制反转、依赖注入
@@ -53,7 +63,7 @@ feed:
 1. **控制反转：**对象或资源交由 IOC 容器管理，以此反转对对象的控制权（没有反转时控制权在我们开发者手中）
 2. **依赖注入：**依赖注入就是控制反转的一种具体实现，即控制反转是一种思想，依赖注入是这种思想的具体实现方式
 
-
+Spring 中的 IoC 实现简单说就是「工厂模式」+「反射机制」
 
 
 
@@ -71,7 +81,7 @@ feed:
 
 1. 构造方法注入
 2. Setter 注入
-3. 字段注入
+3. 接口注入（Spring 中没有提供）
 
 推荐使用 **构造器** 的注入方式，这样能够保证注入的组件不变，而且也能确保需要的依赖不为空
 
@@ -128,7 +138,20 @@ BeanFactory： 工厂模式定义了IOC容器的基本功能规范，其下的�
 3. ConfiguarableBeanFactory：是一个重要的接口，增强了 IoC 容器的可定制性，它定义了设置类装载器、属性编辑器、容器初始化后置处理器等方法
 4. AutowireCapableBeanFactory：定义了按某种规则进行自动装配的方法
 
-注：ApplicationCentext 也实现了 BeanFactory，因为上下文对象对资源、应用事件等的控制也必须遵守 BeanFactory 的 Bean 规范
+注：ApplicationCentext 也实现了 BeanFactory（这是 Spring 中的两种 IoC 容器），因为上下文对象对资源、应用事件等的控制也必须遵守 BeanFactory 的 Bean 规范
+
+| BeanFactory                | ApplicationContext       |
+| :------------------------- | :----------------------- |
+| 它使用懒加载               | 它使用即时加载           |
+| 它使用语法显式提供资源对象 | 它自己创建和管理资源对象 |
+| 不支持国际化               | 支持国际化               |
+| 不支持基于依赖的注解       | 支持基于依赖的注解       |
+
+BeanFactory 最常用的是 XmlBeanFactory 。它可以根据 XML 文件中定义的内容，创建相应的 Bean
+
+ApplicationContext 最常用的是：ClassPathXmlApplicationContext、FileSystemXmlApplicationContext、XmlWebApplicationContext、ConfigServletWebServerApplicationContext（Spring Boot 中使用，也最常用）
+
+
 
 <br/>
 
@@ -142,7 +165,17 @@ BeanDefinition 定义了 Bean 对象之间的关系，BeanDefinitionReader 用�
 
 
 
+
+
+
+
+
+
 ## 小结
+
+- Spring 容器使用**依赖注入**来管理组成应用程序的 Bean 对象
+- 容器通过读取提供的**配置元数据** Bean Definition 来接收对象进行实例化，配置和组装的指令
+- 该配置元数据 Bean Definition 可以通过 XML，Java 注解或 Java Config 代码**提供**
 
 **总览：**
 

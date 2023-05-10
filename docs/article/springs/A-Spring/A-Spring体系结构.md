@@ -143,3 +143,13 @@ feed:
 4. Spring 4.x：注解配置称为主流
 5. Spring 5.x：函数式 + 异步响应式编程
 
+
+
+
+
+## Spring 设计模式
+
+1. 解释器模式：SpEL 模块
+2. 建造者模式：BeanDefinitionBuilder，Bean 工厂后置处理器中有使用到
+3. 工厂模式：可以指定对象的静态方法进行构造
+4. 抽象工厂：BeanFoctory
