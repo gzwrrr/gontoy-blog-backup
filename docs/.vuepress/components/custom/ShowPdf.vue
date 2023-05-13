@@ -11,7 +11,6 @@ const { filePath, fileName } = props;
 
 const url = `/pdf/${filePath}/${fileName}.pdf`;
 
-
 const props = defineProps({
     filePath: String,
     fileName: String

@@ -5,6 +5,7 @@
   "scripts": {
     "vite:vue": "vite",
     "vite:build": "vue-tsc --noEmit && vite build",
+    "vbuild": "vite build",
     "vite:serve": "vite preview",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",

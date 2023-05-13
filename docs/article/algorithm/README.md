@@ -1176,6 +1176,12 @@ B 中的数前 15 - 10 - 1 = 4 不可能是，后 17 - 15 = 2 个不可能是，
 
 此时 一共排除了 4 + 2 + 1 = 7，还需要 5 个，剩下的子数组正好可以求出
 
+
+
+
+
+
+
 ## 技巧
 
 1. [二分法查找的套路](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247491336&idx=1&sn=dbcbb07b05ebc7889f944d54d2acebd4&scene=21#wechat_redirect)
@@ -1190,6 +1196,10 @@ B 中的数前 15 - 10 - 1 = 4 不可能是，后 17 - 15 = 2 个不可能是，
 10. 并查集
 11. 线段树、树状数组
 12. 单调栈、单调队列
+
+
+
+
 
 ### 字符串
 
@@ -1211,8 +1221,37 @@ B 中的数前 15 - 10 - 1 = 4 不可能是，后 17 - 15 = 2 个不可能是，
 
 - 上述字符串匹配算法(朴素的字符串匹配算法, KMP 算法, Boyer-Moore算法)均是通过对**模式（Pattern）字符串进行预处理**的方式来加快搜索速度。对 Pattern 进行预处理的最优复杂度为 O(m)，其中 m 为 Pattern 字符串的长度。那么，有没有对文本（Text）进行预处理的算法呢？本文即将介绍一种**对 Text 进行预处理**的字符串匹配算法：后缀树（Suffix Tree）
 
+
+
+
+
 ### 数据结构
 
 LinkedHashMap
 
 LinkedHashSet
+
+
+
+
+
+### 图
+
+:::info 相关文章
+
+1. Prim：https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247494915&idx=1&sn=715b2e0cba127d61bb2e6637b8f5a46b&scene=21#wechat_redirect
+
+:::
+
+最小生成树：
+
+1. Prim
+2. Kruskal
+
+最短路径：
+
+1. Dijkstra
+2. Floyd
+
+
+

@@ -8,18 +8,18 @@ import theme from "./config/theme";
 import markdown from "./config/markdown";
 import plugins from "./config/plugins";
 import bundler from './config/bundler';
-import wrapTable from './plugins/tablePlugin'
+import wrapTable from './plugins/tablePlugin';
 
 export default defineUserConfig({
     base: '/',
     shouldPrefetch: false,
     bundler: bundler,
     alias: alias,
-    theme: theme,
-    markdown: markdown,
+    // @ts-ignore
     plugins: plugins,
+    markdown: markdown,
+    theme: theme,
     onInitialized: (app) => {
-        // console.log(app)
     },
     extendsMarkdown: (md, app) => {
         md.use(wrapTable);

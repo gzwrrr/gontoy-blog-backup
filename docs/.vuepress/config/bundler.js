@@ -5,6 +5,9 @@ import {
 
 export default viteBundler({
     viteOptions: {
+        build: {
+            emptyOutDir: false,
+        }
     },
     vuePluginOptions: {},
 })

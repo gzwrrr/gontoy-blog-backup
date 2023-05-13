@@ -13,20 +13,17 @@ export default hopeTheme({
     navbar: [{
         text: "主页",
         link: "/README.md",
-        icon: "zhuye",
         // 仅在 `/zh/guide/` 激活
         activeMatch: "^/zh/guide/$",
     },
     {
         text: "导航",
         link: "/guide/",
-        icon: "tubiaozhuanqu-16",
         // 仅在 `/zh/guide/` 激活
         activeMatch: "^/zh/guide/$",
     },
     {
         text: "编程语言",
-        icon: "code",
         children: [
             "/article/java/",
             "/article/go/",
@@ -37,12 +34,10 @@ export default hopeTheme({
     },
     {
         text: "算法",
-        icon: "jichengsuanfa",
         link: "/article/algorithm/"
     },
     {
         text: "框架",
-        icon: "database-full",
         children: [
             "/article/tomcat/",
             "/article/springs/",
@@ -51,7 +46,6 @@ export default hopeTheme({
     },
     {
         text: "数据库",
-        icon: "database-full",
         children: [
             "/article/mysql/",
             "/article/redis/",
@@ -62,7 +56,6 @@ export default hopeTheme({
     },
     {
         text: "设计/架构",
-        icon: "sheji1",
         children: [
             "/article/design/",
             "/article/framework/",
@@ -70,7 +63,6 @@ export default hopeTheme({
     },
     {
         text: "中间件",
-        icon: "zhongjianjian",
         children: [
             "/article/rabbitmq/",
             "/article/netty/",
@@ -79,7 +71,6 @@ export default hopeTheme({
     },
     {
         text: "运维",
-        icon: "yunwei-yunweirizhi",
         children: [
             "/article/git/",
             "/article/docker/",
@@ -90,22 +81,18 @@ export default hopeTheme({
     },
     {
         text: "大数据",
-        icon: "qita",
         link: "/article/data/"
     },
     {
         text: "数学建模",
-        icon: "qita",
         link: "/article/modeling/"
     },
     {
         text: "其他文章",
-        icon: "qita",
         link: "/article/other/"
     },
     {
         text: "关于",
-        icon: "guanyu1",
         link: "/about/"
     },
     ],
