@@ -49,7 +49,14 @@ feed:
 [[toc]]
 
 
+
+
+
+:::info 说明
+
 最早由 AOP 联盟提出的一套规范，Spring 引入后通过 **预编译** 和 **运行时动态代理** 实现了 **面向切面编程**
+
+:::
 
 
 
@@ -104,6 +111,269 @@ feed:
 | @After-Throwing | 用于定义异常通知来处理程序中未处理的异常，相当于ThrowAdvice。在使用时可指定pointcut / value和throwing属性。其中pointcut/value用于指定切入点表达式，而throwing属性值用于指定-一个形参名来表示Advice方法中可定义与此同名的形参，该形参可用于访问目标方法抛出的异常。 |
 | @After          | 用于定义最终final 通知，不管是否异常，该通知都会执行。使用时需要指定一个value属性，该属性用于指定该通知被植入的切入点。 |
 | @DeclareParents | 用于定义引介通知，相当于IntroductionInterceptor (不要求掌握)。 |
+
+
+
+
+
+## AOP 实战
+
+:::info 相关文章
+
+1. [彻底征服 Spring AOP 之 理论篇](https://segmentfault.com/a/1190000007469968)
+2. [彻底征服 Spring AOP 之 实战篇](https://segmentfault.com/a/1190000007469982)
+
+:::
+
+依赖如下：
+
+```xml
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.4.0.RELEASE</version>
+    <relativePath/>
+</parent>
+
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-aop</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+```
+
+配置如下：
+
+```yaml
+server:
+  port: 8080
+
+spring:
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+```
+
+
+
+### 认证
+
+定义注解用于 AOP Ponit Cut：
+
+```java
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface AuthChecker {
+}
+```
+
+定义切面：
+
+```java
+@Component
+@Aspect
+public class HttpAopAdviseDefine {
+    /**
+     * 定义一个 Pointcut, 使用 切点表达式函数 来描述对哪些 Join point 使用 advise
+     */
+    @Pointcut("@annotation(com.gontoy.spring.annotation.AuthChecker)")
+    public void pointcut() {}
+    /**
+     * 定义 advice
+     */
+    @Around("pointcut()")
+    public Object checkAuth(ProceedingJoinPoint joinPoint) throws Throwable {
+        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes())
+                .getRequest();
+
+        // 检查用户所传递的 token 是否合法
+        String token = getUserToken(request);
+        if (!token.equalsIgnoreCase("userxxx")) {
+            return "权限不合法!";
+        }
+
+        return joinPoint.proceed();
+    }
+    /**
+     * 获取 Token
+     */
+    private String getUserToken(HttpServletRequest request) {
+        Cookie[] cookies = request.getCookies();
+        if (cookies == null) {
+            return "";
+        }
+        for (Cookie cookie : cookies) {
+            if (cookie.getName().equalsIgnoreCase("user_token")) {
+                return cookie.getValue();
+            }
+        }
+        return "";
+    }
+
+}
+```
+
+暴露接口时加上注解即可：
+
+```java
+@RestController
+@RequestMapping("/aop")
+public class HttpController {
+    @GetMapping("/userInfo")
+    @AuthChecker
+    public String getUserInfo() {
+        return "获取用户信息...";
+    }
+    @GetMapping("/status")
+    @AuthChecker
+    public String getStatus() {
+        return "服务正常运行...";
+    }
+}
+```
+
+
+
+### 日志
+
+定义切面，对指定的 Service 输出额外日志：
+
+```java
+@Component
+@Aspect
+public class LogAopAdviseDefine {
+    private Logger logger = LoggerFactory.getLogger(getClass());
+    /**
+     * 定义一个 Pointcut, 使用 切点表达式函数 来描述对哪些 Join point 使用 advise.
+     */
+    @Pointcut("within(com.gontoy.spring.service.NeedLogService)")
+    public void pointcut() {
+    }
+    /**
+     * 定义 advice
+     */
+    @Before("pointcut()")
+    public void logMethodInvokeParam(JoinPoint joinPoint) {
+        logger.info("--- Before method {} invoke, param: {} ---", 
+                    joinPoint.getSignature().toShortString(), joinPoint.getArgs());
+    }
+    @AfterReturning(pointcut = "pointcut()", returning = "retVal")
+    public void logMethodInvokeResult(JoinPoint joinPoint, Object retVal) {
+        logger.info("--- After method {} invoke, result: {} ---", 
+                    joinPoint.getSignature().toShortString(), joinPoint.getArgs());
+    }
+    @AfterThrowing(pointcut = "pointcut()", throwing = "exception")
+    public void logMethodInvokeException(JoinPoint joinPoint, Exception exception) {
+        logger.info("--- method {} invoke exception: {} ---", 
+                    joinPoint.getSignature().toShortString(), exception.getMessage());
+    }
+}
+```
+
+Controller 和 Service 正常编写即可，无任何入侵：
+
+```java
+@Service
+public class NeedLogService {
+    private Logger logger = LoggerFactory.getLogger(getClass());
+    private Random random = new Random(System.currentTimeMillis());
+    public int logMethod(String someParam) {
+        logger.info("--- NeedLogService: logMethod invoked, param: {} ---", someParam);
+        return random.nextInt();
+    }
+    public void exceptionMethod() throws Exception {
+        logger.info("--- NeedLogService: exceptionMethod invoked ---");
+        throw new Exception("Something bad happened!");
+    }
+}
+```
+
+
+
+
+
+### 统计方法耗时
+
+定义切面对指定的 Service 中的所有方法都统计方法耗时：
+
+```java
+@Component
+@Aspect
+public class ExpiredAopAdviseDefine {
+    private Logger logger = LoggerFactory.getLogger(getClass());
+    /**
+     * 定义一个 Pointcut, 使用 切点表达式函数 来描述对哪些 Join point 使用 advise
+     */
+    @Pointcut("within(com.gontoy.spring.service.SomeService)")
+    public void pointcut() {
+    }
+    /**
+     * 定义 advise
+     */
+    @Around("pointcut()")
+    public Object methodInvokeExpiredTime(ProceedingJoinPoint pjp) throws Throwable {
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start();
+
+        // 开始统计
+        Object retVal = pjp.proceed();
+        stopWatch.stop();
+        // 结束统计
+
+        // 上报到公司监控平台
+        reportToMonitorSystem(pjp.getSignature().toShortString(), stopWatch.getTotalTimeMillis());
+
+        return retVal;
+    }
+    public void reportToMonitorSystem(String methodName, long expiredTime) {
+        logger.info("--- method {} invoked, expired time: {} ms ---", methodName, expiredTime);
+    }
+}
+```
+
+Controller 和 Service 正常编写即可，也是没有任何入侵：
+
+```java
+@Service
+public class SomeService {
+    private Logger logger = LoggerFactory.getLogger(getClass());
+    public void someMethod() {
+        logger.info("--- someMethod invoke ---");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
