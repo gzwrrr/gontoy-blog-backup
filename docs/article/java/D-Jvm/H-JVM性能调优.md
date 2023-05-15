@@ -181,12 +181,21 @@ feed:
 
 常见的日志分析工具：
 
-1. GCViewer
-2. GCEasy
-3. GCHisto
+1. GCViewer：离线工具，比较老
+2. GCEasy：在线工具，官网 https://gceasy.io/
+3. GCHisto：和 GCViewer 类似，不怎么维护了
 4. GCLogViewer
 5. Hpjmeter
 6. garbagecat
+
+其他工具：
+
+1. Flame Graphs 火焰图：查看方法占用 CPU 的情况
+2. Tprofiler
+3. Btrace
+4. YourKit
+5. JProbe
+6. Spring Insight
 
 
 
@@ -366,11 +375,25 @@ MAT 功能较为强大，可以很容易看出内存情况，比如给出了支�
 
 与 Visual VM 类似，功能强大的商业软件，但是需要付费
 
+1. 跨平台、使用简单、界面友好
+2. 对分析的应用影响小
+3. 对 CPU、线程、内存的分析功能强大
+4. 对 JDBC、NoSQL、JSP、Servlet 等也提供分析功能
+5. 支持在线和离线模式，可以监控本地、远程环境
+
+包含的功能：
+
+1. 遥感监测数据视图分析
+2. 内存视图分析
+3. Heap Walker
+4. CPU 视图分析
+5. 线程视图分析
+
 
 
 #### Arthas
 
-Alibaba 开源 Java 诊断工具
+Alibaba 开源 Java 诊断工具（用的比较多）
 
 
 
