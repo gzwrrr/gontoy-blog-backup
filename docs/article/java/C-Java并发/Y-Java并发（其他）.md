@@ -120,6 +120,46 @@ AQS 的实现中使用 CAS 作为底层原子操作，通过 CAS 原子地修改
 
 
 
+## ThreadLocal
+
+在多线程并发的场景下，ThreadLocal 用于：
+
+1. 传递数据：可以通过 ThreadLocal 在同一线程的不同组件之间传递公共变量
+2. 线程隔离：每个线程的变量都是独立的，不会互相影响
+
+```java
+public class MyThreadLocal {
+    public static void main(String[] args) {
+        Demo2 demo = new Demo2();
+        for (int i = 0; i < 5; i++) {
+            new Thread(() -> {
+                demo.setContent(Thread.currentThread().getName() + "的数据");
+                System.out.println("--------------------------");
+                System.out.println(Thread.currentThread().getName() + " --------> " + demo.getContent());
+            }, String.valueOf(i)).start();
+        }
+    }
+}
+class Demo1 {
+    String content;
+    public String getContent() {
+          return content;
+    }
+    public void setContent(String content) {
+        this.content = content;
+    }
+}
+class Demo2 {
+    ThreadLocal<String> t = new ThreadLocal();
+    public String getContent() {
+        return t.get();
+    }
+    public void setContent(String content) {
+        t.set(content);
+    }
+}
+```
+
 
 
 

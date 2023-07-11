@@ -115,3 +115,46 @@ RequestCondition是一个接口，它继承了springframework的Conditional接�
 
 总的来说，RequestCondition在Spring MVC中扮演着重要的角色，用于处理请求匹配逻辑。同时，它还有多个子接口，用于定义不同类型的请求匹配规则。
 
+
+
+
+
+# HttpServletRequest/Request
+
+:::info 相关文章
+
+http://c.biancheng.net/servlet2/httpservletrequest.html
+
+:::
+
+
+
+
+
+## WebMvcConfigurer
+
+:::info 相关文章
+
+[SpringBoot---WebMvcConfigurer详解](https://blog.csdn.net/zhangpower1993/article/details/89016503)
+
+:::
+
+
+
+
+
+
+
+## 拦截器
+
+:::info 相关文章
+
+https://blog.csdn.net/Herishwater/article/details/103544342
+
+:::
+
+自定义 Interceptor 的话必须实现 `org.springframework.web.servlet.HandlerInterceptor` 接口或继承 `org.springframework.web.servlet.handler.HandlerInterceptorAdapter` 类，并且需要重写下面下面 3 个方法：
+
+1. `preHandler(HttpServletRequest request, HttpServletResponse response, Object handler)` 方法在请求处理之前被调用。该方法在 Interceptor 类中最先执行，用来进行一些前置初始化操作或是对当前请求做预处理，也可以进行一些判断来决定请求是否要继续进行下去。该方法的返回至是 Boolean 类型，当它返回 false 时，表示请求结束，后续的 Interceptor 和 Controller 都不会再执行；当它返回为 true 时会继续调用下一个 Interceptor 的 preHandle 方法，如果已经是最后一个 Interceptor 的时候就会调用当前请求的 Controller 方法。
+2. `postHandler(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView)` 方法在当前请求处理完成之后，也就是 Controller 方法调用之后执行，但是它会在 DispatcherServlet 进行视图返回渲染之前被调用，所以我们可以在这个方法中对 Controller 处理之后的 ModelAndView 对象进行操作。
+3. `afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handle, Exception ex)` 方法需要在当前对应的 Interceptor 类的 postHandler 方法返回值为 true 时才会执行。顾名思义，该方法将在整个请求结束之后，也就是在 DispatcherServlet 渲染了对应的视图之后执行。此方法主要用来进行资源清理。

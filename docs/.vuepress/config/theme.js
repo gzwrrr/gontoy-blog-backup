@@ -26,6 +26,7 @@ export default hopeTheme({
         text: "编程语言",
         children: [
             "/article/java/",
+            "/article/c/",
             "/article/go/",
             "/article/js/",
             "/article/python/",
@@ -67,6 +68,7 @@ export default hopeTheme({
             "/article/rabbitmq/",
             "/article/netty/",
             "/article/quartz/",
+            "/article/kafaka/"
         ]
     },
     {
@@ -99,9 +101,11 @@ export default hopeTheme({
     sidebar: {
         "/guide/": "structure",
         "/article/java/": "structure",
+        "/article/c/": "structure",
         "/article/go/": "structure",
         "/article/js/": "structure",
         "/article/k8s/": "structure",
+        "/article/kafaka/": "structure",
         "/article/python/": "structure",
         "/article/algorithm/": "structure",
         "/article/data/": "structure",

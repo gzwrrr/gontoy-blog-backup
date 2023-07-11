@@ -348,9 +348,78 @@ Mysql的主从复制中主要有三个线程： master（binlog dump thread）�
 
 
 
+## 变量
+
+### 系统变量
+
+系统变量分为：
+
+1. 全局变量：针对所有会话（连接）有效，可以跨连接，但不能跨重启，重启之后，mysql服务器会再次为所有系统变量赋初始值
+2. 会话变量：针对当前会话（连接）有效，不能跨连接，会话变量是在连接创建时由mysql自动给当前会话设置的变量
+
+```mysql
+// 查看系统所有变量
+show [global | session] variables;
+// 查看全局变量
+show global variables;
+// 查看会话变量
+show session variables;
+show variables;
+// 查看满足条件的系统变量(like模糊匹配)
+show [global|session] like '%变量名%';
+// 查看指定的系统变量的值
+select @@[global.|session.]系统变量名称;
+// 赋值 1
+set [global|session] 系统变量名=值;
+// 赋值 2
+set @@[global.|session.]系统变量名=值;
+```
+
+
+
+### 自定义变量
+
+自定义变量分为：
+
+1. 用户变量：针对当前会话（连接）有效，作用域同会话变量，用户变量可以在任何地方使用也就是既可以在begin end里面使用，也可以其外面使用
+2. 局部变量：declare用于定义局部变量变量，在存储过程和函数中通过declare定义变量在begin…end中，且在语句之前。并且可以通过重复定义多个变量，declare变量的作用范围同编程里面类似，在这里一般是在对应的begin和end之间。在end之后这个变量就没有作用了，不能使用了。这个同编程一样
+
+```mysql
+// 注意自定义变量只有 1 个 @
+// 声明新的变量或者赋值变量
+// 方式 1
+set @变量名=值;
+// 方式 2
+set @变量名:=值;
+// 方式 3
+select @变量名:=值;
+// 另一种变量赋值的方式
+select 字段 into @变量名 from 表;
+// 查看
+select 变量名
+```
+
+```mysql
+// 注意局部变量不用 @，赋值与自定义用户变量一致
+declare 变量名 变量类型;
+declare 变量名 变量类型 [default 默认值];
+// 查看
+select 局部变量名;
+```
 
 
 
 
 
+
+
+## 日志
+
+:::info 相关文章
+
+https://zhuanlan.zhihu.com/p/213770128
+
+https://blog.csdn.net/huangzhilin2015/article/details/115396599?ydreferer=aHR0cHM6Ly9jbi5iaW5nLmNvbS8%3D
+
+:::
 

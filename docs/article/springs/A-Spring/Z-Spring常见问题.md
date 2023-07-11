@@ -170,6 +170,13 @@ Spring 框架中应用了多种设计模式，下面是一些常见的设计模�
 
 ## Spring 中如何解决循环依赖?
 
+:::info 相关文章
+
+1. [spring 循环依赖以及解决方案(吊打面试官)](https://mp.weixin.qq.com/s?__biz=MzA5MTkxMDQ4MQ==&mid=2648934322&idx=1&sn=647edffeedeb8978c18ad403b1f3d8d7&chksm=88621f8cbf15969af1c5396903dcce312c1f316add1af325327d287e90be49bbeda52bc1e736&token=718443976&lang=zh_CN&scene=21#wechat_redirect)
+2. [年薪50万的一个面试题，看着不难，却刷掉了99%的人！](https://mp.weixin.qq.com/s/pQaX2-BqFsO3pzPELWIDfQ)
+
+:::
+
 Spring 中只是解决了单例 Bean 循环依赖的问题，解决方案是三级缓存
 
 **第一层缓存（singletonObjects）**：单例对象缓存池，已经实例化并且属性赋值，这里的对象是**成熟对象**；

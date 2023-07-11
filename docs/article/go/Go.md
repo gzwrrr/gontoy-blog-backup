@@ -559,6 +559,153 @@ s : = make([]int,len,cap)
 
 
 
+## Map
+
+> Map 是一种无序的键值对的集合。Map 最重要的一点是通过 key 来快速检索数据，key 类似于索引，指向数据的值
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+   var countryCapitalMap map[string]string
+   /* 创建集合 */
+   countryCapitalMap = make(map[string]string)
+   
+   /* map 插入 key-value 对，各个国家对应的首都 */
+   countryCapitalMap["France"] = "Paris"
+   countryCapitalMap["Italy"] = "Rome"
+   countryCapitalMap["Japan"] = "Tokyo"
+   countryCapitalMap["India"] = "New Delhi"
+   
+   /* 使用 key 输出 map 值 */
+   for country := range countryCapitalMap {
+      fmt.Println("Capital of",country,"is",countryCapitalMap[country])
+   }
+   
+   /* 查看元素在集合中是否存在 */
+   captial, ok := countryCapitalMap["United States"]
+   /* 如果 ok 是 true, 则存在，否则不存在 */
+   if(ok){
+      fmt.Println("Capital of United States is", captial)  
+   }else {
+      fmt.Println("Capital of United States is not present") 
+   }
+}
+```
+
+
+
+
+
+## 结构体
+
+> 结构体没有构造函数，通常使用工厂模式解决
+
+```go
+type Student struct {
+    Name string
+    Age int
+}
+
+// 和属性顺序无关
+var stu1 = Student {
+    Name: "zhangsan",
+    Age: 10,
+}
+
+// 和属性顺序有关
+var stu2 = Student {"lisi", 12,}
+
+// 指针
+var stu3 *Student = &Student {"wangwu", 14,}
+// 也可以写成下面的形式
+var stu4 = &Student {
+    Name: "zhaoliu",
+    Age: 10,
+}
+```
+
+```go
+type student struct {
+    Name string
+    Age int
+}
+
+// 工厂模式，只不过是创建单个
+// 下面的函数可以看成是构造函数
+func Student(name string, age int) *student {
+    return &student {
+        Name: "zhangsan",
+    	Age: 10,
+    }
+}
+```
+
+
+
+
+
+### 方法
+
+> 跟指定类型进行绑定，只能由指定的类型进行调用
+
+```go
+type A struct {
+    Name string
+}
+// 和 A 类型绑定，只能由 A 类型调用
+func (a A) test() {}
+
+func mian() {
+    var a A
+    // 调用方法，a 的拷贝被传入方法中
+    a.test()
+}
+```
+
+
+
+## 面向对象
+
+三大特性：
+
+1. 封装
+2. 继承
+3. 多态
+
+```go
+type Student struct {
+    Name string
+    Age int
+}
+func (stu *Student) ShowInfo() {...}
+func (stu *Student) ShowDetails() {...}
+
+type Pupil struct {
+    // 继承，匿名结构体
+    Student
+}
+
+type Graduate struct {
+    // 继承，匿名结构体
+    Student
+}
+
+func main() {
+    pupil := &Pupil{
+        &Student {
+            Name: "zhangsan",
+            Age: 18,
+        },
+    }
+    // 通用调用写法
+    pupil.Student.ShowInfo()
+	// 也可以写成下面的形式
+    pupil.ShowInfo()
+}
+```
 
 
 
@@ -566,6 +713,126 @@ s : = make([]int,len,cap)
 
 
 
+## 接口
+
+> Go 语言提供了另外一种数据类型即接口，它把所有的具有共性的方法定义在一起，任何其他类型只要实现了这些方法就是实现了这个接口
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+type Phone interface {
+    call()
+}
+
+type NokiaPhone struct {
+}
+
+func (nokiaPhone NokiaPhone) call() {
+    fmt.Println("I am Nokia, I can call you!")
+}
+
+type IPhone struct {
+}
+
+func (iPhone IPhone) call() {
+    fmt.Println("I am iPhone, I can call you!")
+}
+
+func main() {
+    var phone Phone
+
+    phone = new(NokiaPhone)
+    phone.call()
+
+    phone = new(IPhone)
+    phone.call()
+
+}
+```
+
+
+
+
+
+## 反射
+
+```go
+package main
+
+import (
+	"fmt"
+	"reflect"
+)
+
+func reflectsetvalue1(x interface{}){
+	value:=reflect.ValueOf(x)
+	if value.Kind() == reflect.String{
+		value.SetString("欢迎来到W3Cschool")
+	}
+} 
+func reflectsetvalue2(x interface{}){
+	value:=reflect.ValueOf(x)
+    // 反射中使用Elem()方法获取指针所指向的值
+	if value.Elem().Kind() == reflect.String{
+		value.Elem().SetString("欢迎来到W3Cschool")
+	}
+} 
+
+func main() {
+	address := "www.w3cschool.cn"
+	// reflectsetvalue1(address) 
+    // 反射修改值必须通过传递变量地址来修改。若函数传递的参数是值拷贝，则会发生下述错误。
+    // panic: reflect: reflect.Value.SetString using unaddressable value
+	reflectsetvalue2(&address)
+	fmt.Println(address)
+}
+```
+
+
+
+
+
+## 并发
+
+> Go语言中的并发程序主要是通过基于CSP（communicating sequential processes）的goroutine和channel来实现，当然也支持使用传统的多线程共享内存的并发方式
+>
+> Go语言中使用goroutine非常简单，只需要在函数或者方法前面加上go关键字就可以创建一个goroutine，从而让该函数或者方法在新的goroutine中执行
+>
+> 操作系统的线程一般都有固定的栈内存（通常为2MB），而 Go 语言中的 goroutine 非常轻量级，一个 goroutine 的初始栈空间很小（一般为2KB），所以在 Go 语言中一次创建数万个 goroutine 也是可能的。并且 goroutine 的栈不是固定的，可以根据需要动态地增大或缩小， Go 的 runtime 会自动为 goroutine 分配合适的栈空间。
+
+```go
+package main
+
+import (
+	"fmt"
+	"sync"
+)
+
+var wg sync.WaitGroup
+
+func hello(i int) {
+	fmt.Printf("hello,欢迎来到编程狮%v\n", i)
+	defer wg.Done()//goroutine结束计数器-1
+}
+
+func main() {
+	for i := 0; i < 10; i++ {
+		go hello(i)
+		wg.Add(1)//启动一个goroutine计数器+1
+	}
+	wg.Wait()//等待所有的goroutine执行结束
+}
+```
+
+在经过数个版本迭代之后，目前Go语言的调度器采用的是GPM调度模型
+
+- G: 表示goroutine，存储了goroutine的执行stack信息、goroutine状态以及goroutine的任务函数等；另外G对象是可以重用的。
+- P: 表示逻辑processor，P的数量决定了系统内最大可并行的G的数量（前提：系统的物理cpu核数>=P的数量）；P的最大作用还是其拥有的各种G对象队列、链表、一些cache和状态。
+- M: M代表着真正的执行计算资源。在绑定有效的p后，进入schedule循环；而schedule循环的机制大致是从各种队列、p的本地队列中获取G，切换到G的执行栈上并执行G的函数，调用goexit做清理工作并回到m，如此反复。M并不保留G状态，这是G可以跨M调度的基础。
 
 
 
@@ -573,15 +840,26 @@ s : = make([]int,len,cap)
 
 
 
+## 库
+
+[中文文档](https://studygolang.com/pkgdoc)
 
 
 
 
 
+## 其他
+
+### 文章
+
+[Go 学习路线（2022）](https://juejin.cn/post/7061980386640789540#heading-19)
+
+[Go 语言设计与实现](https://draveness.me/golang)
 
 
 
+### 注意点
 
-
-
-
+1. 函数小写包私有，大写共有
+2. go 有垃圾收集器
+3. 自定义类型用 type 开头，函数也可以用 type 创建别名

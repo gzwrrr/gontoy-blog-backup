@@ -58,6 +58,16 @@ feed:
 
 :::
 
+:::info 相关文章
+
+[SpringBoot使用AOP，PointCut表达式详解以及使用](https://blog.csdn.net/LuQiaoYa/article/details/88233846)
+
+[SpringBoot整合AOP超详细教程](https://blog.csdn.net/XiongHuyi/article/details/118417301)
+
+[Spring Validation最佳实践及其实现原理，参数校验没那么简单！](https://www.cnblogs.com/chentianming/p/13424303.html)
+
+:::
+
 
 
 

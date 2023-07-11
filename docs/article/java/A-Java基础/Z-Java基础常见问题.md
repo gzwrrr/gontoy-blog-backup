@@ -124,6 +124,12 @@ feed:
 
 ## ConcurrentHashMap 的扩容机制
 
+:::info 相关文章
+
+[ConcurrentHashMap 1.7和1.8区别](https://blog.csdn.net/xingxiupaioxue/article/details/88062163)
+
+:::
+
 :::tabs#fruit
 
 @tab JDK7
@@ -267,3 +273,25 @@ Java中的所有异常都来自顶级父类Throwable，Throwable下有两个子�
 JVM 在加载一个类时，会先从 AppClassLoader -> ExtClassLoader -> bootstrap ClassLoader 的顺序一直找到最上层，如果到了 bootstrap ClassLoader 无法加载，就交给 ExtClassLoader，还处理不了就交给 AppClassLoader
 
 所以双亲委派是指，在加载类时，先委派给 Ext 和 Bootstrap 进行加载，加载不了再自己加载
+
+
+
+
+
+## 枚举类
+
+:::info 相关文章
+
+[枚举的底层原理是什么？](https://developer.aliyun.com/article/782278)
+
+:::
+
+
+
+## 集合框架
+
+:::info 相关文章
+
+[吃透Java集合框架！](https://zhuanlan.zhihu.com/p/143700575)
+
+:::

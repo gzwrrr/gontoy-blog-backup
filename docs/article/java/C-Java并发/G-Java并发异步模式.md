@@ -189,3 +189,7 @@ final class Message {
 - 在任务调度线程池加入之前，可以使用 Timer 来实现定时功能，Timer 的优点在于简单易用，但是由于所有任务都是由一个线程来调度，因此所有任务都是串行的。同一时间只能有一个任务执行，异常或延迟都会影响后续任务
 - 应当使用 Executors.newScheduledThreadPool 代替 Timer 实现任务调度线程池
 
+
+
+
+

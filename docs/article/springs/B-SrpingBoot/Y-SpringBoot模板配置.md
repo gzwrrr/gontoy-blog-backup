@@ -1369,6 +1369,14 @@ void indexData() throws IOException {
 
 
 
+## 缓存
+
+
+
+
+
+
+
 ## 文件
 
 ### POI – Word/PDF/Excel
@@ -1502,6 +1510,8 @@ void indexData() throws IOException {
 
 ### 热重启
 
+> https://www.cnblogs.com/pkukhq/p/17202760.html
+
 ```xml
 <!-- 热部署 -->
 <dependency>
@@ -1531,6 +1541,8 @@ server:
 
 
 ### thymeleaf
+
+> https://www.cnblogs.com/pkukhq/p/17202760.html
 
 ```xml
 <!-- thymeleaf 场景启动 -->

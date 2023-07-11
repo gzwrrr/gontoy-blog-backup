@@ -149,7 +149,7 @@ feed:
 docker network create kong-net
 
 # 启动 PostgreSQL
-sudo docker run -d --name kong-database \
+docker run -d --name kong-database \
  --network=kong-net \
  -v /opt/pgdata:/var/lib/postgresql/data \
  -p 5432:5432 \
@@ -168,7 +168,7 @@ sudo docker run -d --name kong-database \
  -e "KONG_PG_USER=kong" \
  -e "KONG_PG_PASSWORD=kong" \
  -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
- kong:latest kong migrations bootstrap
+ kong:3.1.0 kong migrations bootstrap
 
 
 # 启动 Kong
@@ -184,12 +184,12 @@ sudo docker run -d --name kong-database \
  -e "KONG_PROXY_ERROR_LOG=/dev/stderr" \
  -e "KONG_ADMIN_ERROR_LOG=/dev/stderr" \
  -e "KONG_ADMIN_LISTEN=0.0.0.0:8001, 0.0.0.0:8444 ssl" \
- -p 80:8000 \
- -p 443:8443 \
+ -p 8000:8000 \
+ -p 8443:8443 \
  -p 8001:8001 \
  -p 8444:8444 \
  --restart always \
- kong:latest
+ kong:3.1.0
  
  
  # 启动 KongA

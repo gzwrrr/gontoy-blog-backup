@@ -1424,3 +1424,398 @@ public ListNode reverseN(ListNode head, int n) {
 
 
 
+## 树状数组
+
+```java
+public class BitArray {
+    /**
+     * 树状数组
+     */
+    int[] array;
+
+    public BitArray(int length) {
+        int len = length + 1;
+        this.array = new int[len];
+    }
+
+    /**
+     * 初始化
+     */
+    public void init(int[] nums) {
+        int len = nums.length + 1;
+        this.array = new int[len];
+        for (int i = 1; i < len; i++) {
+            update(i, nums[i - 1]);
+        }
+    }
+
+    /**
+     * 获取 index 最低位 1
+     * @param index 索引
+     * @return index 最低位 1
+     */
+    public int lowbit(int index) {
+        return (index) & (-index);
+    }
+
+    /**
+     * 单点修改
+     * @param index 目标左营
+     * @param num 操作数
+     */
+    public void update(int index, int num) {
+        for (int pos = index; pos < array.length; pos += lowbit(pos)) {
+            array[pos] += num;
+        }
+    }
+
+    /**
+     * 前 N 项和
+     * @param index 右边界
+     * @return 前 N 项和
+     */
+    public int query(int index) {
+        int res = 0;
+        for (int pos = index; pos > 0; pos -= lowbit(pos)) {
+            res += array[pos];
+        }
+        return res;
+    }
+
+    /**
+     * 区间查询
+     * @param l 左边界
+     * @param r 右边界
+     * @return 区间和
+     */
+    public int query(int l, int r) {
+        return query(r) - query(l - 1);
+    }
+
+}
+```
+
+
+
+## 线段树
+
+> 相关文章：https://zhuanlan.zhihu.com/p/106118909
+
+```java
+public class SegmentTree {
+    /**
+     * 原数组长度
+     */
+    int len;
+
+    /**
+     * 原数组
+     */
+    int[] nums;
+
+    /**
+     * 线段树
+     */
+    int[] array;
+
+    /**
+     * 懒标记
+     */
+    int[] mark;
+
+    public SegmentTree(int length) {
+        this.len = length;
+        this.array = new int[len << 2];
+        this.mark = new int[len << 2];
+    }
+
+    /**
+     * 初始化
+     */
+    public void init(int[] nums) {
+        this.len = nums.length;
+        this.nums = nums;
+        this.array = new int[len << 2];
+        this.mark = new int[len << 2];
+        // 初始化
+        build();
+    }
+
+    /**
+     * 打印
+     */
+    public void print() {
+        System.out.println(Arrays.toString(array));
+    }
+
+    /**
+     * 向下更新懒标
+     * @param index 当前索引
+     * @param len 目标区间长度
+     */
+    public void pushDown(int index, int len) {
+        // 更新子区间的标记
+        mark[index << 1] = mark[index];
+        mark[index << 1 | 1] = mark[index];
+        // 更新区间的值
+        array[index << 1] += mark[index] * (len - (len >> 1));
+        array[index << 1 | 1] += mark[index] * (len >> 1);
+        // 更新完当前的区间就把懒标记清除
+        mark[index] = 0;
+    }
+
+    /**
+     * 默认构建
+     */
+    public void build() {
+        /**
+         * index: 当前索引(1)
+         * 目标左边界(1)
+         * 目标右边界(len)
+         */
+        build(1, 1, len);
+    }
+
+    /**
+     * 构建
+     * @param index 当前索引
+     * @param l 目标左边界
+     * @param r 目标有边界
+     */
+    public void build(int index, int l, int r) {
+        if (l == r) {
+            array[index] = nums[l - 1];
+            return;
+        }
+        int mid = l + ((r - l) >> 1);
+        build(index << 1, l, mid);
+        build(index << 1 | 1, mid + 1, r);
+        array[index] = array[index << 1] + array[index << 1 | 1];
+    }
+
+
+    /**
+     * 区间更新
+     * @param l 目标左边界
+     * @param r 目标右边界
+     * @param num 操作数
+     */
+    public void update(int l, int r, int num) {
+        /**
+         * cl: 当前左边界(1)
+         * cr: 当前右边界(len)
+         * index: 当前索引(1)
+         */
+        update(l, r, 1, len, 1, num);
+    }
+
+    /**
+     * 更新区间值
+     * @param l 目标左边界
+     * @param r 目标右边界
+     * @param cl 当前左边界
+     * @param cr 当前右边界
+     * @param index 当前索引
+     * @param num 操作数
+     */
+    public void update(int l, int r, int cl, int cr, int index, int num) {
+        if (cl > r || cr < l) {
+            return;
+        }
+        if (cl >= l && cr <= r) {
+            array[index] += (cr - cl + 1) * num;
+            // 非叶子节点更新
+            if (cr > cl) {
+                mark[index] += num;
+            }
+            return;
+        }
+        int mid = cl + ((cr - cl) >> 1);
+        pushDown(index, cr - cl + 1);
+        update(l, r, cl, mid, index << 1, num);
+        update(l, r, mid + 1, cr, index << 1 | 1, num);
+        array[index] = array[index << 1] + array[index << 1 | 1];
+    }
+
+    /**
+     * 单点查询
+     * @param index 目标
+     * @return 区间查询结果
+     */
+    public int query(int index) {
+        /**
+         * cl: 当前左边界(1)
+         * cr: 当前右边界(len)
+         * index: 当前索引(1)
+         */
+        return query(index, index, 1, len, 1);
+    }
+
+    /**
+     * 区间查询
+     * @param l 目标左边界
+     * @param r 目标右边界
+     * @return 区间查询结果
+     */
+    public int query(int l, int r) {
+        /**
+         * cl: 当前左边界(1)
+         * cr: 当前右边界(len)
+         * index: 当前索引(1)
+         */
+        return query(l, r, 1, len, 1);
+    }
+
+    /**
+     * 查询
+     * @param l 目标左边界
+     * @param r 目标有边界
+     * @param cl 当前左边界
+     * @param cr 当前右边界
+     * @param index 当前索引
+     * @return 区间查询结果
+     */
+    public int query(int l, int r, int cl, int cr, int index) {
+        if (cl >= l && cr <= r) {
+            return array[index];
+        }
+        int mid = cl + ((cr - cl) >> 1);
+        int res = 0;
+        // 更新懒标记
+        pushDown(index, cr - cl + 1);
+        if (mid >= l) {
+            res += query(l, r, cl, mid, index << 1);
+        }
+        if (mid < r) {
+            res += query(l, r, mid + 1, cr, index << 1 | 1);
+        }
+        return res;
+    }
+}
+```
+
+
+
+
+
+## 最近最少使用 （LRUCache）
+
+:::info 相关文章
+
+[Java集合之LinkedHashMap](https://www.cnblogs.com/xiaoxi/p/6170590.html)
+
+[Leetcode 题解](https://leetcode.cn/problems/lru-cache/solutions/259678/lruhuan-cun-ji-zhi-by-leetcode-solution/)
+
+:::
+
+```java
+class LRUCache {
+
+    class DLinkedNode {
+        int key;
+        int value;
+        DLinkedNode pre;
+        DLinkedNode next;
+
+        public DLinkedNode(int k, int v) {
+            key = k;
+            value = v;
+        }
+    }
+
+    Map<Integer, DLinkedNode> cache;
+    int capacity;
+    int size;
+    DLinkedNode head;
+    DLinkedNode tail;
+
+    public LRUCache(int cap) {
+        capacity = cap;
+        size = 0;
+        head = new DLinkedNode(-1, -1);
+        tail = new DLinkedNode(-1, -1);
+        cache = new HashMap<>();
+        head.next = tail;
+        tail.pre = head;
+    }
+
+    public int get(int key) {
+        DLinkedNode res = cache.get(key);
+        if (res == null) {
+            return -1;
+        }
+        moveToHead(res);
+        return res.value;
+    }
+
+    public void put(int key, int value) {
+        DLinkedNode res = cache.get(key);
+        if (res == null) {
+            DLinkedNode node = new DLinkedNode(key, value);
+            cache.put(key, node);
+            addToHead(node);
+            size++;
+            if (size > capacity) {
+                DLinkedNode remove = removeTail();
+                cache.remove(remove.key);
+                size--;
+            }
+        } else {
+            res.value = value;
+            moveToHead(res);
+        }
+    }
+
+    // 添加头节点
+    public void addToHead(DLinkedNode node) {
+        node.pre = head;
+        node.next = head.next;
+        head.next.pre = node;
+        head.next = node;
+    }
+
+    // 将节点移动到头部
+    public void moveToHead(DLinkedNode node) {
+        removeNode(node);
+        addToHead(node);
+    }
+
+    // 移除节点
+    public void removeNode(DLinkedNode node) {
+        node.pre.next = node.next;
+        node.next.pre = node.pre;
+    }
+
+    // 移除尾节点
+    public DLinkedNode removeTail() {
+        DLinkedNode res = tail.pre;
+        removeNode(res);
+        return res;
+    }
+}
+
+/**
+ * 使用 LinkedHashMap 实现
+ */
+class LRUCache01 extends LinkedHashMap<Integer, Integer> {
+    private int capacity;
+
+    public LRUCache01(int capacity) {
+        super(capacity, 0.75F, true);
+        this.capacity = capacity;
+    }
+
+    public int get(int key) {
+        return super.getOrDefault(key, -1);
+    }
+
+    public void put(int key, int value) {
+        super.put(key, value);
+    }
+
+    @Override
+    protected boolean removeEldestEntry(Map.Entry<Integer, Integer> eldest) {
+        return size() > capacity;
+    }
+}
+```

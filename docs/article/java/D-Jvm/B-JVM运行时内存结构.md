@@ -48,11 +48,9 @@ feed:
 
 # JVM 运行时内存结构
 
-
-
 [[toc]]
 
-
+![运行时内存结构](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//jvm/20230516/%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84.png)
 
 
 

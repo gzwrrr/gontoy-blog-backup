@@ -91,6 +91,12 @@
 - [ ] Apollo
 - [ ] 参与开源项目
 
+- [x] spi、javaagent、动态代理
+- [x] maven 插件
+- [x] kong
+
+
+
 
 
 
