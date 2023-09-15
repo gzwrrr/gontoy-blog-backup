@@ -84,3 +84,28 @@ InnoDB 是通过 `Buffer Pool`、`LogBuffer`、`RedoLog`、`UndoLog` 来实现�
 
 
 
+
+
+## Spring 事务注解
+
+:::info 相关文章
+
+1. [带你读懂Spring 事务——事务的传播机制](https://zhuanlan.zhihu.com/p/148504094)
+
+2. https://mp.weixin.qq.com/s/LbyGTAiCmFy4esNdCJREJQ
+3. https://mp.weixin.qq.com/s/mdqVNmPfFphagrrB7EMegA
+
+:::
+
+事务传播行为：所谓事务的传播行为是指，如果在开始当前事务之前，一个事务上下文已经存在，此时有若干选项可以指定一个事务性方法的执行行为。在`TransactionDefinition`定义中包括了如下几个表示传播行为的常量：
+
+| 常量                        | 说明                                                         |
+| --------------------------- | ------------------------------------------------------------ |
+| `PROPAGATION_REQUIRED`      | 如果当前存在事务，则加入该事务；如果当前没有事务，则创建一个新的事务。这是默认值。 |
+| `PROPAGATION_REQUIRES_NEW`  | 创建一个新的事务，如果当前存在事务，则把当前事务挂起。       |
+| `PROPAGATION_MANDATORY`     | 如果当前存在事务，则加入该事务；如果当前没有事务，则抛出异常。 |
+| `PROPAGATION_NESTED`        | 如果当前存在事务，则创建一个事务作为当前事务的嵌套事务来运行；如果当前没有事务，则该取值等价于`TransactionDefinition.PROPAGATION_REQUIRED`。 |
+| `PROPAGATION_SUPPORTS`      | 如果当前存在事务，则加入该事务；如果当前没有事务，则以非事务的方式继续运行。 |
+| `PROPAGATION_NOT_SUPPORTED` | 以非事务方式运行，如果当前存在事务，则把当前事务挂起。       |
+| `PROPAGATION_NEVER`         | 以非事务方式运行，如果当前存在事务，则抛出异常。             |
+

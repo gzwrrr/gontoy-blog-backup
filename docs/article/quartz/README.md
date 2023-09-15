@@ -14,6 +14,14 @@ Quartz 简单使用
 
 :::
 
+:::info 相关文章
+
+[springboot的schedule和quartz到底怎么选以及如何支持并发和避坑](https://blog.csdn.net/qq_35808136/article/details/89704539)
+
+[简洁明了看懂cron表达式](https://zhuanlan.zhihu.com/p/437328366)
+
+:::
+
 
 
 [[toc]]

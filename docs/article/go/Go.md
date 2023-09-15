@@ -1,5 +1,5 @@
 ---
-title: "Go 简单使用"
+「」title: "Go 简单使用"
 shortTitle: "Go 简单使用"
 description: "Go 简单使用"
 icon: ""
@@ -102,6 +102,23 @@ GO 的缺陷：
 | consul     | 分布式服务发现系统           | [github.com/hashicorp/consul](https://github.com/hashicorp/consul) |
 | nsq        | 亿级消息队列                 | [github.com/nsqio/nsq](https://github.com/nsqio/nsq)         |
 | TiDB       | 分布式数据库, go + rust 打造 | [github.com/pingcap/tidb](https://github.com/pingcap/tidb)   |
+
+
+
+## 常量
+
+```go
+// 常量配合 iota 关键字
+const (
+	a, b = iota + 1, iota + 2 // iota = 0, a = 1, b = 2
+    c, d					  // iota = 1, c = 2, d = 3
+    e, f					  // iota = 2, e = 3, f = 4
+)
+```
+
+
+
+
 
 
 
@@ -477,7 +494,7 @@ func printArrInfo() {
 数组的注意事项：
 
 1. 数组是多个「相同类型」的数据的组合，一旦声明了数组的长度，之后就不能改变
-2. `var arr[]int` 是声明了一个切片而不是数组
+2. `var arr[]int` 是声明了一个切片而不是数组（指定大小才是数组）
 3. 数组中的元素可以是任意数据类型，包括值类型和引用类型，但是不能二者混用
 4. 数组创建后，如果没有赋值则有默认零值
 5. 特别注意：GO 的数组属于「值类型」，再默认情况下进行的是值传递，因此会进行值拷贝，所以数组之间不会互相影响
@@ -495,7 +512,7 @@ func editArr(arr *[3]int) {
 
 ## 切片
 
-切片是数组的一个引用，因此切片是引用类型，在进行传递时遵守引用传递机制
+切片（动态数组）是数组的一个引用，因此切片是引用类型，在进行传递时遵守引用传递机制
 
 切片长度可变，可以理解成可以动态变化的数组
 
@@ -602,10 +619,12 @@ func main() {
 ## 结构体
 
 > 结构体没有构造函数，通常使用工厂模式解决
+>
+> 结构体中还有「标签」，可以描述字段的含义
 
 ```go
 type Student struct {
-    Name string
+    Name string `学生名称` // 标签
     Age int
 }
 
@@ -680,6 +699,8 @@ type Student struct {
     Name string
     Age int
 }
+
+// * 传递引用，不加 * 则是拷贝值
 func (stu *Student) ShowInfo() {...}
 func (stu *Student) ShowDetails() {...}
 
@@ -754,11 +775,29 @@ func main() {
 }
 ```
 
+注意：空接口称为万能数据类型，因为空接口可以是任意类型的父类型
+
+```go
+func myFunc(arg interface{}) {
+    // 断言数据类型，断言该类型是一个 string 类型
+    value, ok := arg.(string)
+    if (ok) {
+        fmt.Println("arg is string")
+    }
+}
+```
+
 
 
 
 
 ## 反射
+
+:::info 说明
+
+Go 中每一个变量都对应一个 pair，存储了变量的「类型」和「值」，例如字符串为 `pair<type: string, value: "xxx">`
+
+:::
 
 ```go
 package main
@@ -796,6 +835,10 @@ func main() {
 
 
 
+
+
+
+
 ## 并发
 
 > Go语言中的并发程序主要是通过基于CSP（communicating sequential processes）的goroutine和channel来实现，当然也支持使用传统的多线程共享内存的并发方式
@@ -803,6 +846,14 @@ func main() {
 > Go语言中使用goroutine非常简单，只需要在函数或者方法前面加上go关键字就可以创建一个goroutine，从而让该函数或者方法在新的goroutine中执行
 >
 > 操作系统的线程一般都有固定的栈内存（通常为2MB），而 Go 语言中的 goroutine 非常轻量级，一个 goroutine 的初始栈空间很小（一般为2KB），所以在 Go 语言中一次创建数万个 goroutine 也是可能的。并且 goroutine 的栈不是固定的，可以根据需要动态地增大或缩小， Go 的 runtime 会自动为 goroutine 分配合适的栈空间。
+
+![go的gpm](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//go/20230730/go%E7%9A%84gpm.png)
+
+在经过数个版本迭代之后，目前Go语言的调度器采用的是GPM调度模型
+
+- G: 表示goroutine，存储了goroutine的执行stack信息、goroutine状态以及goroutine的任务函数等；另外G对象是可以重用的。
+- P: 表示逻辑processor，P的数量决定了系统内最大可并行的G的数量（前提：系统的物理cpu核数>=P的数量）；P的最大作用还是其拥有的各种G对象队列、链表、一些cache和状态。
+- M: M代表着真正的执行计算资源。在绑定有效的p后，进入schedule循环；而schedule循环的机制大致是从各种队列、p的本地队列中获取G，切换到G的执行栈上并执行G的函数，调用goexit做清理工作并回到m，如此反复。M并不保留G状态，这是G可以跨M调度的基础。
 
 ```go
 package main
@@ -828,11 +879,142 @@ func main() {
 }
 ```
 
-在经过数个版本迭代之后，目前Go语言的调度器采用的是GPM调度模型
+GPM 的机制：
 
-- G: 表示goroutine，存储了goroutine的执行stack信息、goroutine状态以及goroutine的任务函数等；另外G对象是可以重用的。
-- P: 表示逻辑processor，P的数量决定了系统内最大可并行的G的数量（前提：系统的物理cpu核数>=P的数量）；P的最大作用还是其拥有的各种G对象队列、链表、一些cache和状态。
-- M: M代表着真正的执行计算资源。在绑定有效的p后，进入schedule循环；而schedule循环的机制大致是从各种队列、p的本地队列中获取G，切换到G的执行栈上并执行G的函数，调用goexit做清理工作并回到m，如此反复。M并不保留G状态，这是G可以跨M调度的基础。
+1. work stealing：可以偷取其他 P 中的 G
+
+3. hand off：阻塞时分离 P 到其他的 M 中
+
+调度器的设计策略：
+
+1. 复用线程
+2. 利用并行
+3. 抢占
+4. 全局队列（配合 work stealing）
+
+ 
+
+
+
+### Channel
+
+Channel 基本使用
+
+```go
+func NoBufferChannel() {
+   c := make(chan int)
+   go func() {
+      defer fmt.Println("go finish")
+      fmt.Println("go running...")
+
+      // 同步阻塞发送数据
+      c <- 1
+   }()
+
+   // 接收之后才能继续运行
+   num := <- c
+
+   fmt.Printf("num = %v", num)
+}
+
+func BufferChannel()  {
+   // 带有缓存的 channel
+   bc := make(chan int, 3)
+
+   fmt.Printf("len = %v\n", len(bc))
+
+   go func() {
+      defer fmt.Println("go finish")
+      for i := 0; i < 3; i++ {
+         bc <- i
+         fmt.Println("len = ", len(bc), "cap = ", cap(bc))
+      }
+   }()
+
+   time.Sleep(1 * time.Second)
+
+   for i := 0; i < 3; i++ {
+      num := <- bc
+      fmt.Println("num = ", num)
+   }
+
+   fmt.Println("func finish")
+}
+
+func CloseChannel()  {
+   c := make(chan int)
+   go func() {
+      for i := 0; i < 5; i++ {
+         c <- i
+      }
+      // 关闭 channel
+      close(c)
+   }()
+
+   for i := 0; i < 5; i++ {
+      if data, ok := <- c; ok {
+         fmt.Println(data)
+      } else {
+         // channel 关闭之后就退出循环
+         // 如果向一个已经关闭的 channel 写入数据则会抛异常
+         break
+      }
+   }
+
+   fmt.Println("main finish")
+}
+```
+
+Channel 配合 range
+
+```go
+func ChannelWithRange()  {
+   c := make(chan int)
+   go func() {
+      for i := 0; i < 5; i++ {
+         c <- i
+      }
+      // 关闭 channel
+      close(c)
+   }()
+
+   for data := range c {
+      fmt.Println(data)
+   }
+
+   fmt.Println("main finish")
+}
+```
+
+Channel 配合 select
+
+```go
+func ChannelWithSelect()  {
+	c := make(chan int)
+	quit := make(chan int)
+
+	go func() {
+		x, y := 1, 1
+		for {
+			select {
+			case c <- x:
+				x = y
+				y = x + y
+			case <- quit:
+				fmt.Println("finish")
+				return
+			}
+
+		}
+	}()
+
+	for i := 0; i < 6; i++ {
+		fmt.Println(<-c)
+	}
+	quit <- 0
+
+}
+```
 
 
 
@@ -863,3 +1045,72 @@ func main() {
 1. 函数小写包私有，大写共有
 2. go 有垃圾收集器
 3. 自定义类型用 type 开头，函数也可以用 type 创建别名
+
+
+
+### 项目管理
+
+1. go path：无版本控制，无法同步第三方版本号，无法指定当前项目使用的第三方版本号
+2. go mod：相比 go path 进行一定的改进
+
+**go mod 命令：**
+
+| 命令            | 说明                             |
+| --------------- | -------------------------------- |
+| go mod init     | 生成 go.mod 文件                 |
+| go mod download | 下载 go.mod 文件中指定的所有依赖 |
+| go mod tidy     | 整理现在所有依赖                 |
+| go mod graph    | 查看现有的依赖结构               |
+| go mod edit     | 编辑 go.mod 文件                 |
+| go mod vendor   | 导出项目所有的依赖到 vendor 目录 |
+| go mod verify   | 校验一个模块是否被篡改过         |
+| go mod why      | 查看为什么需要依赖某模块         |
+
+**查看环境变量：**
+
+1. 只有当 GO111MODULE=on 时 go mod 才会生效
+2. GOPROXY 代理，国内镜像常用：
+   1. 阿里云：https://mirrors.aliyun.com/goproxy/,direct
+   2. 七牛云：https://goproxy.cn,direct
+
+```shell
+# go env
+set GO111MODULE=off
+set GOARCH=amd64
+set GOBIN=
+set GOCACHE=C:\Users\gzw\AppData\Local\go-build
+set GOENV=C:\Users\gzw\AppData\Roaming\go\env
+set GOEXE=.exe
+set GOEXPERIMENT=
+set GOFLAGS=
+set GOHOSTARCH=amd64
+set GOHOSTOS=windows
+set GOINSECURE=
+set GOMODCACHE=C:\MyDisk\A-Code\Go\Study\pkg\mod
+set GONOPROXY=
+set GONOSUMDB=
+set GOOS=windows
+set GOPATH=C:\MyDisk\A-Code\Go\Study
+set GOPRIVATE=
+set GOPROXY=https://goproxy.io,direct
+set GOROOT=C:\MyDisk\A-Config\Golang\1.17.7
+set GOSUMDB=sum.golang.org
+set GOTMPDIR=
+set GOTOOLDIR=xxx
+set GOVCS=
+set GOVERSION=go1.17.7
+set GCCGO=gccgo
+set AR=ar
+set CC=gcc
+set CXX=g++
+set CGO_ENABLED=1
+set GOMOD=
+set CGO_CFLAGS=-g -O2
+set CGO_CPPFLAGS=
+set CGO_CXXFLAGS=-g -O2
+set CGO_FFLAGS=-g -O2
+set CGO_LDFLAGS=-g -O2
+set PKG_CONFIG=pkg-config
+set GOGCCFLAGS=-m64 -mthreads -fmessage-length=0 -fdebug-prefix-map=xxxx -gno-record-gcc-switches
+```
+

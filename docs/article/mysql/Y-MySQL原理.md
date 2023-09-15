@@ -46,9 +46,15 @@ feed:
 [[toc]]
 
 
+
+![mysql工作原理](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//mysql/20230729/mysql%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png)
+
+
+
+
 ## 工作原理
 
-1. MySQL 是使用 C 写的
+1. MySQL 是使用 C/C++ 写的
 
 2. 对于数据库而言，重要的不是数据量，而是当数据量增加时运算如何增加
 

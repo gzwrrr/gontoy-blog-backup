@@ -56,6 +56,14 @@ feed:
 
 
 
+:::info 说明
+
+[Netty 学习手册](https://dongzl.github.io/netty-handbook/)
+
+:::
+
+
+
 - Netty 是一个异步的、基于事件驱动的网络应用框架，用以快速开发高性能、高可靠的网络 IO 程序，简化了 NIO 的开发流程
 - Netty 主要针对在 TCP 协议下，面向 Clients 端的高并发应用，或者 Peer-to-Peer 场景下的大量数据持续传输的应用
 - Netty 本质是一个 NIO 框架，适用于服务器通讯相关的多种应用场景

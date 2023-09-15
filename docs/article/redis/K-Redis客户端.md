@@ -50,6 +50,40 @@ feed:
 
 # Redis 客户端
 
+[[toc]]
+
+
+
+:::info
+
+相关文档：
+
+1. https://springdoc.cn/spring-data-redis/#redis
+
+:::
+
+
+
+## 概述
+
+Spring Boot 提供了多种方式来使用 Redis，以便在应用程序中进行缓存、存储和数据处理。以下是一些常见的 Spring Boot 使用 Redis 的方式：
+
+1. **Spring Data Redis：** Spring Boot 集成了 Spring Data Redis，它简化了与 Redis 数据库的交互。通过定义 Repositories，您可以使用类似于 JPA 的方式来访问和操作 Redis 数据。Spring Data Redis 支持多种数据结构，如字符串、哈希、列表、集合和有序集合。
+2. **RedisTemplate：** Spring Boot 通过 `RedisTemplate` 提供了一种编程式的方式来与 Redis 进行交互。它提供了一组方法来执行常见的 Redis 操作，如获取、设置、删除等。您可以通过 `RedisTemplate` 直接操作 Redis 数据结构。
+3. **Spring Cache：** Spring Boot 提供了缓存抽象，允许您通过在方法上添加注解来轻松地将方法调用的结果缓存到 Redis 中。您可以使用 `@Cacheable`、`@CachePut` 和 `@CacheEvict` 等注解来控制缓存的行为。
+4. **Message Queue 和 Pub/Sub：** Spring Boot 可以将 Redis 用作消息队列，实现异步消息传递。您可以使用 Spring 的 `RedisMessageListenerContainer` 来订阅和处理 Redis 发布/订阅消息。
+5. **Spring Session：** Spring Session 是一个用于管理用户会话的项目，它可以将会话数据存储在 Redis 中。这使得应用程序可以在多个实例之间共享会话数据，从而实现更好的可伸缩性。
+6. **Spring Integration with Redis：** Spring Boot 通过 Spring Integration 提供了集成 Redis 的能力，以实现企业集成模式。您可以使用 Spring Integration 来构建复杂的消息处理流程，将数据从一个系统传输到另一个系统。
+7. **Spring Data Redis Reactive：** 如果您的应用程序采用了响应式编程模型，Spring Boot 也提供了与 Redis 进行响应式交互的能力。您可以使用 Spring Data Redis 的响应式 API 来实现异步和非阻塞的操作。
+
+客户端包括：
+
+1. **Lettuce：** Lettuce 是一个高性能、可扩展的 Redis 客户端库，支持异步和同步操作。它基于 Netty 构建，提供了可靠的连接池、集群支持以及响应式编程模型。在 Spring Boot 中，Lettuce 是默认的 Redis 客户端。
+2. **Jedis：** Jedis 是一个流行的 Redis 客户端库，它提供了简单的 API 用于与 Redis 进行交互。Jedis 在多个版本的 Spring Boot 中都得到了支持，但在较新的版本中，Lettuce 更为推荐，因为它更加现代化且性能更好。
+3. **Redisson：** Redisson 是一个基于 Redis 的分布式和高级 Java 数据结构库。它提供了许多高级特性，如分布式锁、分布式集合、分布式地图等。虽然 Redisson 可以用作 Redis 客户端，但它的重点更多地放在了分布式数据结构和功能之上。
+
+
+
 
 
 ## Jedis
@@ -66,7 +100,7 @@ feed:
 
 :::info 说明
 
-Jedis是Redis的Java客户端，在SpringBoot 1.x版本中也是默认的客户端。在SpringBoot 2.x版本中默认客户端是Luttuce。
+Jedis是Redis的Java客户端，在SpringBoot 1.x版本中也是默认的客户端。在SpringBoot 2.x版本中默认客户端是Lettuce。
 
 :::
 
@@ -111,13 +145,6 @@ spring:
 ```
 
 ```java
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.data.redis.connection.RedisConnectionFactory;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
-import org.springframework.data.redis.serializer.StringRedisSerializer;
-
 @Configuration
 public class RedisConfig {
 

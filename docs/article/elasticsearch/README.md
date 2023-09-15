@@ -46,3 +46,11 @@ docker 安装 Kibana：
 
 - `docker pull kibana:7.5.1`
 - `docker run --name kibana -e ELASTICSEARCH_HOSTS=http://192.168.30.100:9200 -p  5601:5601 -d kibana:7.5.1`
+
+
+
+
+
+
+
+ 

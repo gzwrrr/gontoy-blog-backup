@@ -70,7 +70,7 @@ jar 包中包含四大模块：
 1. META-INF：`MANIFEST.MF` 文件提供了 `jar` 包的元数据，其中声明了 jar 包的启动类
 2. org：spring-boot-loader 模块，是 Spring Boot 启动的关键，解决了 jar 包嵌套的问题
 3. BOOT-INF/lib：项目中引入的依赖
-4. BOOT-INF/lclasses：项目源文件（.class 文件、配置文件）
+4. BOOT-INF/classes：项目源文件（.class 文件、配置文件）
 
 
 

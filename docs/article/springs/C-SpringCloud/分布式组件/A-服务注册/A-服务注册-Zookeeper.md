@@ -132,7 +132,7 @@ LF：Leader 和 Follower
 | 4    | dataDir    | 保存 Zookeeper 中的数据       |
 | 5    | clientPort | 客户端连接端口号（默认 2181） |
 
-
+   
 
 
 

@@ -90,6 +90,20 @@ TCP 无消息保护边界（UDP 有），可能出现粘包拆包问题，大致
 
 
 
+## 其他
+
+除了TCP (Transmission Control Protocol) 和 UDP (User Datagram Protocol)，还有一些其他传输层协议。以下是一些常见的传输层协议：
+
+1. SCTP (Stream Control Transmission Protocol)：SCTP 是一种类似于TCP的可靠传输协议，但它支持多流的传输，提供了更高的传输效率和更好的拥塞控制，适用于一些特殊的应用场景。
+2. DCCP (Datagram Congestion Control Protocol)：DCCP 也是类似于TCP和UDP的传输层协议，旨在提供面向连接和面向无连接的服务，并且具备拥塞控制功能。
+3. RSVP (Resource Reservation Protocol)：RSVP 是一种用于控制网络资源预留的传输层协议，主要用于提供服务质量（QoS）保障，如实时音频和视频传输。
+4. RUDP (Reliable User Datagram Protocol)：RUDP 是对UDP的扩展，提供了可靠的数据传输，通过添加重传和确认机制，使得数据在不可靠的网络环境中可以可靠地传输。
+5. MPTCP (Multipath TCP)：MPTCP 允许同时使用多个网络路径传输数据，以提高数据传输的效率和可靠性。
+
+这些传输层协议在不同的应用场景下有不同的优势，选择合适的协议取决于具体的需求和网络条件。通常，TCP 和 UDP 是最常见和广泛使用的传输层协议，用于大多数的应用层通信。
+
+
+
 
 
 

@@ -44,7 +44,29 @@ feed:
 
 # Spring Web MVC
 
+
+
 [[toc]]
+
+
+
+![请求处理过程](https://www.pdai.tech/images/spring/springframework/spring-springframework-mvc-5.png)
+
+Spring MVC 是一种用于构建 Web 应用程序的框架，它的处理流程涉及到多个组件和阶段。下面是 Spring MVC 接收到一个请求后的完整处理流程：
+
+1. **请求到达 DispatcherServlet：** 当客户端发送一个 HTTP 请求到应用程序，请求首先到达 DispatcherServlet。DispatcherServlet 是 Spring MVC 的核心控制器，它负责拦截所有的请求并将其分发到适当的处理器（Controller）。
+2. **处理器映射器（Handler Mapping）：** DispatcherServlet 使用处理器映射器来确定请求应该由哪个 Controller 处理。处理器映射器将请求的 URL 映射到相应的处理器类。
+3. **执行处理器（Controller）：** 一旦确定了请求应该由哪个 Controller 处理，DispatcherServlet 会调用相应的 Controller 的方法来处理请求。Controller 执行逻辑，可能包括业务处理、数据获取等。
+4. **模型与视图的准备：** Controller 处理请求后，会产生一个包含模型数据的数据结构。这个模型数据将被传递给视图，用于渲染页面。Controller 还要选择一个视图来展示模型数据。
+5. **视图解析器（View Resolver）：** 视图解析器将逻辑视图名解析为实际的视图。它将根据视图名找到合适的视图模板，并返回给 DispatcherServlet。
+6. **视图渲染：** 一旦找到视图模板，DispatcherServlet 将模型数据传递给视图，并调用视图的渲染方法。视图将模型数据填充到模板中，生成最终的 HTML 页面。
+7. **响应发送给客户端：** 渲染后的 HTML 页面将作为 HTTP 响应返回给客户端。这个响应包含了生成的页面内容以及适当的 HTTP 状态码。
+
+总结：Spring MVC 的处理流程从请求到达 DispatcherServlet 开始，然后经过处理器映射器、Controller 处理、模型与视图准备、视图解析器、视图渲染，最终将响应发送给客户端。这个过程中涉及多个组件的协作，用于处理客户端的请求并生成响应。
+
+
+
+也可以理解为：
 
 Spring Web MVC是Spring Framework的一个模块，它提供了一种基于MVC架构的Web应用程序开发方式。以下是Spring Web MVC的核心内容：
 
@@ -59,8 +81,6 @@ Spring Web MVC是Spring Framework的一个模块，它提供了一种基于MVC�
 9. 异常处理（Exception Handling）：异常处理是在控制器中捕获异常并进行处理的过程。在Spring Web MVC中，可以使用注解或XML配置来定义异常处理器。
 
 总之，Spring Web MVC提供了一个完整的Web应用程序开发框架，包括请求处理、模型管理、视图管理、拦截器、数据绑定、表单处理和异常处理等方面。
-
-![请求处理过程](https://www.pdai.tech/images/spring/springframework/spring-springframework-mvc-5.png)
 
 
 
@@ -105,7 +125,9 @@ Spring Web MVC是Spring Framework的一个模块，它提供了一种基于MVC�
 
 
 
-## RequestCondition
+## 组件说明
+
+**RequestCondition**
 
 RequestCondition是Spring MVC中的一个组件，它用于定义请求匹配规则，包括请求的路径、请求方法、请求参数等信息。它属于Spring MVC的控制层，用于处理Web请求。
 
@@ -115,11 +137,9 @@ RequestCondition是一个接口，它继承了springframework的Conditional接�
 
 总的来说，RequestCondition在Spring MVC中扮演着重要的角色，用于处理请求匹配逻辑。同时，它还有多个子接口，用于定义不同类型的请求匹配规则。
 
+<br/>
 
-
-
-
-# HttpServletRequest/Request
+**HttpServletRequest**
 
 :::info 相关文章
 
@@ -127,11 +147,9 @@ http://c.biancheng.net/servlet2/httpservletrequest.html
 
 :::
 
+<br/>
 
-
-
-
-## WebMvcConfigurer
+**WebMvcConfigurer**
 
 :::info 相关文章
 
@@ -141,11 +159,24 @@ http://c.biancheng.net/servlet2/httpservletrequest.html
 
 
 
+## 过滤器与拦截器
+
+过滤器（Filter）和拦截器（Interceptor）是在 Spring MVC 处理流程的不同阶段执行的。它们都用于在请求进入 Controller 之前或之后执行一些逻辑。
+
+**过滤器（Filter）：** 过滤器是 Java Servlet 规范中定义的一种组件，可以在请求进入 Servlet 或 JSP 之前、之后，对请求进行预处理或后处理。过滤器是在 Servlet 容器层面执行的，与 Spring MVC 框架本身独立，也可以在 Spring MVC 中使用。
+
+过滤器在整个请求处理流程中的位置是在 DispatcherServlet 之前，即请求还未进入 Spring MVC 框架之前执行。过滤器可以用来进行请求和响应的处理、修改请求头、编码解码等操作。过滤器是 Web 应用程序级别的。
+
+**拦截器（Interceptor）：** 拦截器是 Spring MVC 框架提供的一种拦截请求和响应的机制。拦截器是在 Spring MVC 的上下文中执行的，它们更具备对 Spring 的感知能力，可以访问 Spring 容器中的 Bean。拦截器主要用于对 Controller 的请求进行预处理和后处理。
+
+拦截器在 Spring MVC 处理流程中的位置是在请求进入 Controller 之前和之后，可以分别对应请求的预处理和后处理。拦截器可以用来进行权限验证、日志记录、性能监控等操作。拦截器是 Spring MVC 框架级别的。
+
+总结：
+
+- 过滤器是在 Servlet 容器层面执行的，位于请求进入 Spring MVC 之前。
+- 拦截器是在 Spring MVC 框架层面执行的，位于请求进入 Controller 之前和之后。
 
 
-
-
-## 拦截器
 
 :::info 相关文章
 
@@ -158,3 +189,48 @@ https://blog.csdn.net/Herishwater/article/details/103544342
 1. `preHandler(HttpServletRequest request, HttpServletResponse response, Object handler)` 方法在请求处理之前被调用。该方法在 Interceptor 类中最先执行，用来进行一些前置初始化操作或是对当前请求做预处理，也可以进行一些判断来决定请求是否要继续进行下去。该方法的返回至是 Boolean 类型，当它返回 false 时，表示请求结束，后续的 Interceptor 和 Controller 都不会再执行；当它返回为 true 时会继续调用下一个 Interceptor 的 preHandle 方法，如果已经是最后一个 Interceptor 的时候就会调用当前请求的 Controller 方法。
 2. `postHandler(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView)` 方法在当前请求处理完成之后，也就是 Controller 方法调用之后执行，但是它会在 DispatcherServlet 进行视图返回渲染之前被调用，所以我们可以在这个方法中对 Controller 处理之后的 ModelAndView 对象进行操作。
 3. `afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handle, Exception ex)` 方法需要在当前对应的 Interceptor 类的 postHandler 方法返回值为 true 时才会执行。顾名思义，该方法将在整个请求结束之后，也就是在 DispatcherServlet 渲染了对应的视图之后执行。此方法主要用来进行资源清理。
+
+
+
+
+
+## 参数解析
+
+对请求参数进行解析、转换等步骤是在 Spring MVC 的处理器方法执行之前的阶段执行的，主要涉及到拦截器和参数解析器。
+
+具体来说，在 Spring MVC 的处理流程中，这些步骤是在以下位置执行的：
+
+1. **拦截器（Interceptor）的预处理阶段：** 在拦截器中，你可以对请求进行预处理，包括对请求参数的解析、转换等操作。拦截器的 `preHandle` 方法会在请求进入 Controller 之前被调用，因此你可以在这个方法中对请求参数进行预处理。
+2. **参数解析器（HandlerMethodArgumentResolver）：** 参数解析器是一种机制，用于在处理器方法执行前，将请求中的参数解析并转换成方法的参数类型。Spring MVC 内置了许多参数解析器，用于处理不同类型的参数，如请求参数、路径变量、请求体等。参数解析器会在拦截器的 `preHandle` 方法之后执行，处理器方法执行之前。
+
+综合来说，对请求参数的解析、转换等步骤主要涉及到拦截器的预处理阶段和参数解析器，在请求进入 Controller 之前进行。这样可以确保在处理器方法执行之前，请求参数已经被正确解析和转换成处理器方法的参数类型。
+
+
+
+
+
+## 处理器
+
+在 Spring MVC 中，"handler" 是一个通用的术语，用于指代处理请求的组件。主要的 handler 包括 Controller、处理器方法、处理器适配器和视图解析器等。下面是这些 handler 的具体内容、作用以及常用的一些实现：
+
+1. **Controller：** Controller 是 Spring MVC 中处理请求的核心组件。它负责处理特定请求，并返回适当的视图或数据。Controller 可以是类级别的，也可以是方法级别的。通常，Controller 类包含多个处理器方法，每个方法处理一个具体的请求。
+2. **处理器方法（Handler Method）：** 处理器方法是 Controller 类中的方法，用于处理特定的请求。每个处理器方法负责执行相应的业务逻辑，并返回数据模型和逻辑视图名。处理器方法的参数可以通过参数解析器来获取。
+3. **处理器适配器（Handler Adapter）：** 处理器适配器是用来将不同类型的 handler（例如 Controller、处理器方法等）适配到 Spring MVC 的处理器链中。处理器适配器根据 handler 的类型执行相应的处理逻辑，使得不同类型的 handler 可以无缝地与 Spring MVC 集成。
+4. **视图解析器（View Resolver）：** 视图解析器负责将逻辑视图名解析为实际的视图对象。视图解析器在处理器方法返回逻辑视图名后，根据配置来找到对应的视图模板。它是将数据模型和视图进行结合的关键一步。
+
+常用的处理器有：
+
+- **`@Controller` 类：** 这是常见的 Controller，用于处理请求并返回视图或数据。通常使用 `@RequestMapping` 等注解来映射请求路径到处理器方法。
+- **`@RequestMapping` 注解：** 用于将请求路径映射到特定的处理器方法。可以用于类级别和方法级别，方便指定不同的路径。
+- **`@RestController` 类：** 这是 Spring 4.0 以后引入的注解，结合了 `@Controller` 和 `@ResponseBody`，用于处理 RESTful 请求，直接将方法的返回值序列化为 JSON 或其他格式的数据。
+- **`HandlerInterceptor` 接口：** 这是拦截器的接口，用于在处理器方法执行前后执行自定义的逻辑。常用于权限验证、日志记录等。
+- **`HandlerMethodArgumentResolver` 接口：** 参数解析器，用于将请求参数解析为处理器方法的参数类型，方便在处理器方法中获取请求参数。
+
+使用场景：
+
+- `@Controller` 和 `@RestController` 用于处理 Web 请求，返回视图或数据，适用于构建 Web 应用程序和 RESTful API。
+- `@RequestMapping` 用于映射请求路径到处理器方法，定制化请求的处理流程。
+- `HandlerInterceptor` 用于拦截请求并执行预处理和后处理操作，例如权限验证、日志记录等。
+- `HandlerMethodArgumentResolver` 用于处理参数解析，将请求参数转换为处理器方法的参数类型。
+
+不同的 handler 用于不同的场景和需求，它们共同构成了 Spring MVC 处理请求的灵活机制。

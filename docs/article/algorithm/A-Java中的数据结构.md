@@ -344,7 +344,7 @@ Java中`Deque`接口有以下实现类：
 循环遍历数组，将每个元素添加到集合中。
 
 ```java
-javaCopy codeString[] array = {"apple", "banana", "orange"};
+int[] array = {"apple", "banana", "orange"};
 List<String> list = new ArrayList<>();
 for (String item : array) {
     list.add(item);
@@ -356,7 +356,7 @@ for (String item : array) {
 使用Arrays.asList()方法：将数组转换成List集合。需要注意的是，通过这种方式得到的List是不可变的，不能修改其大小，否则会抛出UnsupportedOperationException异常。
 
 ```java
-javaCopy codeString[] array = {"apple", "banana", "orange"};
+int[] array = {"apple", "banana", "orange"};
 List<String> list = Arrays.asList(array);
 ```
 

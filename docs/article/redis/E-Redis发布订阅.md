@@ -89,3 +89,4 @@ feed:
 
 - 底层是pubsubPattern 节点的链表，链表中保存着所有和模式相关的信息
 - pubsubPattern 节点中的 client 属性保存着订阅模式的客户端，而 pattern 属性则保存着被订阅的模式
+

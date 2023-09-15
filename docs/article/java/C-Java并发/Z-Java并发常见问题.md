@@ -340,5 +340,9 @@ public class SemaphoreDemo {
 
 
 
+## 其他
+
+1. [Future and FutureTask](https://www.geeksforgeeks.org/future-and-futuretask-in-java/)
+
 
 

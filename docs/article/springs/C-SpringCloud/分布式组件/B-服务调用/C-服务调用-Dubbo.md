@@ -66,7 +66,9 @@ Dubbo 从设计上是完全遵循云原生微服务开发理念的，这体现�
 
 
 
-## 架构设计
+## 架构
+
+### 架构设计
 
 > 从抽象架构上分为两层：**服务治理抽象控制面（包含多个协调服务）** 和 **Dubbo 数据面（发起与接收 RPC 调用）**
 
@@ -80,19 +82,56 @@ Dubbo 是一个高性能、轻量级的开源 RPC 框架，主要用于构建分
 4. 服务端异步处理：Dubbo 的架构设计采用了服务端异步处理的思想，支持异步调用和响应处理，提高了服务的并发性和吞吐量。此外，Dubbo 还支持多线程模型和线程池调度，可以快速响应大量并发请求。
 5. 多种容错机制：Dubbo 的架构设计具有多种容错机制，包括服务降级、失败重试、熔断器等，可以有效提高服务的可用性和稳定性。此外，Dubbo 还支持多种负载均衡策略和路由策略，可以根据不同的应用场景进行灵活配置。
 
+<br/>
+
+
+
 **不同层次的方案：**
 
-1. Proxy 服务代理层：支持 JDK 动态代理、javassist 等代理机制
-2. Registry 注册中心层：支持 Zookeeper 、Redis 等作为注册中心
-3. Protocal 远程过程调用：支持 Dubbo、Http 等调用协议
-4. Transport 网络传输层：支持 Netty、Mina 等网络传输框架
-5. Serialize 数据序列化层：支持 JSON、Hessian 等序列化机制
+1. Servive：业务层
+2. Config：配置层，可以使用：JavaConfig、XML、Properties
+3. Proxy 服务代理层：支持 JDK 动态代理、javassist 等代理机制
+4. Registry 注册中心层：支持 Zookeeper 、Redis 等作为注册中心
+5. Cluster：路由层
+6. Protocal 远程过程调用：支持 Dubbo、Http 等调用协议
+7. Exchange：数据交换曾 
+8. Transport 网络传输层：支持 Netty、Mina 等网络传输框架
+9. Serialize 数据序列化层：支持 JSON、Hessian 等序列化机制
+
+![/dev-guide/images/dubbo-framework.jpg](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//dubbo/20230727/dubbo%E6%9E%B6%E6%9E%84.jpg)
+
+<br/>
+
+
+
+**一切皆可扩展：**
+
+- **协议与编码扩展**。通信协议、序列化编码协议等
+- **流量管控扩展**。集群容错策略、路由规则、负载均衡、限流降级、熔断策略等
+- **服务治理扩展**。注册中心、配置中心、元数据中心、分布式事务、全链路追踪、监控系统等
+- **诊断与调优扩展**。流量统计、线程池策略、日志、QoS 运维命令、健康检查、配置加载等
+
+![Dubbo 一切皆可扩展](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//dubbo/20230725/dubbo%E4%B8%80%E5%88%87%E7%9A%86%E5%8F%AF%E6%89%A9%E5%B1%95.png)
+
+<br/>
+
+
+
+**微内核+插件设计：**
+
+该设计从三个层次来展开：
+
+- 协议通信层
+- 流量管控层
+- 服务治理层
+
+![微内核+插件](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//dubbo/20230725/dubbo%E5%BE%AE%E5%86%85%E6%A0%B8%E4%B8%8E%E6%8F%92%E4%BB%B6.png)
 
 
 
 
 
-## 部署架构
+### 部署架构
 
 ![//imgs/v3/concepts/threecenters.png](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//dubbo/20230319/%E9%83%A8%E7%BD%B2%E6%9E%B6%E6%9E%84.png)
 
@@ -108,7 +147,7 @@ Dubbo 是一个高性能、轻量级的开源 RPC 框架，主要用于构建分
 
 
 
-## 通信协议
+## 通信
 
 > Dubbo3 提供了 Triple(Dubbo3)、Dubbo2 协议，这是 Dubbo 框架的原生协议。除此之外，Dubbo3 也对众多第三方协议进行了集成，并将它们纳入 Dubbo 的编程与服务治理体系， 包括 gRPC、Thrift、JsonRPC、Hessian2、REST 等。
 
@@ -167,11 +206,22 @@ Dubbo 提供更丰富的通信模型：
 - Tracing-RPC-ID → “tri-trace-rpcid” {_span id _}
 - Cluster-Info → “tri-unit-info” {cluster infomation}
 
+Triple 协议的核心特性如下：
+
+- 支持 TLS 加密、Plaintext 明文数据传输
+- 支持反压与限流
+- 支持 Streaming 流式通信
+- 同时支持 HTTP/1 和 HTTP/2 传输协议
 
 
 
 
-## 服务治理能力
+
+
+
+## 服务
+
+### 服务治理
 
 ![governance](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//dubbo/20230315/dubbo%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E8%83%BD%E5%8A%9B.png)
 
@@ -187,7 +237,23 @@ Dubbo 服务治理生态还提供了对 **API 网关**、**限流降级**、**�
 
 
 
-## 服务发现
+### 服务引入
+
+Dubbo完成服务引入的过程如下：
+
+1. 消费者引入依赖：在消费者端的项目中，需要引入 Dubbo 相关依赖，如 dubbo、dubbo-spring-boot-starter 等。
+2. 配置消费者信息：在消费者端的项目中，需要配置 Dubbo 的消费者信息，包括注册中心地址、服务超时时间、服务调用重试次数等等。
+3. 编写消费者代码：编写调用 Dubbo 服务的消费者代码，一般可以通过 @Reference 注解注入服务代理对象，然后像调用本地方法一样调用服务即可。
+4. 启动消费者应用：启动消费者应用，Dubbo 将自动从注册中心订阅服务提供者的地址列表，并建立连接。
+5. 远程调用：Dubbo 将消费者的请求通过网络协议发送给服务提供者，服务提供者接收请求并返回响应结果，Dubbo 再将响应结果返回给消费者端。
+
+总的来说，Dubbo完成服务引入的过程就是将服务的代理对象注入到消费者的代码中，并通过网络协议实现远程调用。
+
+
+
+
+
+### 服务发现
 
 > 服务发现，即消费端自动发现服务地址列表的能力，是微服务框架需要具备的关键能力，借助于自动化的服务发现，微服务之间可以在无需感知对端部署位置与 IP 地址的情况下实现通信。
 
@@ -201,22 +267,44 @@ Dubbo 服务治理生态还提供了对 **API 网关**、**限流降级**、**�
 
 :::
 
-Dubbo 的服务发现机制，让微服务组件之间可以独立演进并任意部署，消费端可以在无需感知对端部署位置与 IP 地址的情况下完成通信。Dubbo 提供的是 Client-Based 的服务发现机制，使用者可以有多种方式启用服务发现：
-
-- 使用独立的注册中心组件，如 Nacos、Zookeeper、Consul、Etcd 等。
-- 将服务的组织与注册交给底层容器平台，如 Kubernetes，这被理解是一种更云原生的方式
-
-
-
 **注册中心：**
 
 服务发现的一个核心组件是注册中心，Provider 注册地址到注册中心，Consumer 从注册中心读取和订阅 Provider 地址列表。
 
+Dubbo 的服务发现机制，让微服务组件之间可以独立演进并任意部署，消费端可以在无需感知对端部署位置与 IP 地址的情况下完成通信。Dubbo 提供的是 Client-Based 的服务发现机制，使用者可以有多种方式启用服务发现：
+
+- 使用独立的注册中心组件，如 Nacos、Zookeeper、Consul、Etcd、Redis 等。
+- 将服务的组织与注册交给底层容器平台，如 Kubernetes，这被理解是一种更云原生的方式
 
 
 
+:::info 说明
 
-## 服务网格
+区别于其他很多微服务框架的是，**Dubbo3 的服务发现机制诞生于阿里巴巴超大规模微服务电商集群实践场景，因此，其在性能、可伸缩性、易用性等方面的表现大幅领先于业界大多数主流开源产品**。是企业面向未来构建可伸缩的微服务集群的最佳选择。
+
+:::
+
+![service-discovery](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//dubbo/20230725/dubbo%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8.png)
+
+- 首先，Dubbo 注册中心以应用粒度聚合实例数据，消费者按消费需求精准订阅，避免了大多数开源框架如 Istio、Spring Cloud 等全量订阅带来的性能瓶颈。
+- 其次，Dubbo SDK 在实现上对消费端地址列表处理过程做了大量优化，地址通知增加了异步、缓存、bitmap 等多种解析优化，避免了地址更新常出现的消费端进程资源波动。
+- 最后，在功能丰富度和易用性上，服务发现除了同步 ip、port 等端点基本信息到消费者外，Dubbo 还将服务端的 RPC/HTTP 服务及其配置的元数据信息同步到消费端，这让消费者、提供者两端的更细粒度的协作成为可能，Dubbo 基于此机制提供了很多差异化的治理能力。
+
+![service-discovery](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//dubbo/20230725/dubbo%E6%8C%89%E9%9C%80%E8%AE%A2%E9%98%85.png)
+
+:::info 工作流程
+
+消费者从注册中心接收到地址 (ip:port) 信息，然后与提供者建立连接并通过元数据服务读取到对端的元数据配置信息，两部分信息共同组装成 Dubbo 消费端有效的面向服务的地址列表。
+
+以上两个步骤都是在实际的 RPC 服务调用发生之前。
+
+:::
+
+![service-discovery](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//dubbo/20230725/dubbo%E6%8F%90%E4%BE%9B%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B.png)
+
+
+
+### 服务网格
 
 Service Mesh 在业界得到了广泛的传播与认可，并被认为是下一代的微服务架构，这主要是因为它解决了很多棘手的问题，包括透明升级、多语言、依赖冲突、流量治理等。	
 
@@ -243,54 +331,7 @@ Service Mesh 的典型架构是通过部署独立的 Sidecar 组件来拦截所�
 
 
 
-
-
-## 负载均衡策略
-
-1. Random Load Balance 随机负载均衡策略：随机选择一个可用的服务提供者。
-2. Round Robin Load Balance 轮询负载均衡策略：按照顺序轮询选择可用的服务提供者。
-3. Least Active Load Balance 最小活跃数负载均衡策略：选择当前活跃数最少的可用服务提供者，活跃数指当前处理请求的线程数。
-4. Consistent Hash Load Balance 一致性哈希负载均衡策略：将每个服务提供者映射到一个哈希环上，根据请求的哈希值选择距离该哈希值最近的服务提供者。
-5. Weighted Random Load Balance 加权随机负载均衡策略：在随机负载均衡策略的基础上，根据每个服务提供者的权重进行加权选择。
-6. Weighted Round Robin Load Balance 加权轮询负载均衡策略：在轮询负载均衡策略的基础上，根据每个服务提供者的权重进行加权选择。
-7. Sticky Load Balance 粘滞会话负载均衡策略：将同一个消费者的请求路由到同一个服务提供者，实现会话粘滞。
-
-
-
-
-
-## 容错策略
-
-1. Failover Cluste：失败自动切换，当出现失败，重试其它服务器。通常用于读操作，但重试会带来更长延迟。可通过 `retries="2"` 来设置重试次数(不含第一次)。默认容错机制
-2. Failfast Cluster：快速失败，只发起一次调用，失败立即报错。通常用于非幂等性的写操作，比如新增记录。
-3. Failsafe Cluster：失败安全，出现异常时，直接忽略。通常用于写入审计日志等操作。
-4. Failback Cluster ：失败自动恢复，后台记录失败请求，定时重发。通常用于消息通知操作。
-5. Forking Cluster：并行调用多个服务器，只要一个成功即返回。通常用于实时性要求较高的读操作，但需要浪费更多服务资源。可通过 `forks="2"` 来设置最大并行数。
-6. Broadcast Cluster：广播调用所有提供者，逐个调用，任意一台报错则报错。通常用于通知所有提供者更新缓存或日志等本地资源信息。
-
-
-
-
-
-
-
-## 服务引入
-
-Dubbo完成服务引入的过程如下：
-
-1. 消费者引入依赖：在消费者端的项目中，需要引入 Dubbo 相关依赖，如 dubbo、dubbo-spring-boot-starter 等。
-2. 配置消费者信息：在消费者端的项目中，需要配置 Dubbo 的消费者信息，包括注册中心地址、服务超时时间、服务调用重试次数等等。
-3. 编写消费者代码：编写调用 Dubbo 服务的消费者代码，一般可以通过 @Reference 注解注入服务代理对象，然后像调用本地方法一样调用服务即可。
-4. 启动消费者应用：启动消费者应用，Dubbo 将自动从注册中心订阅服务提供者的地址列表，并建立连接。
-5. 远程调用：Dubbo 将消费者的请求通过网络协议发送给服务提供者，服务提供者接收请求并返回响应结果，Dubbo 再将响应结果返回给消费者端。
-
-总的来说，Dubbo完成服务引入的过程就是将服务的代理对象注入到消费者的代码中，并通过网络协议实现远程调用。
-
-
-
-
-
-## 服务导出
+### 服务导出
 
 在Dubbo中，服务的导出是通过`Protocol`和`Exporter`两个关键组件来实现的。
 
@@ -312,23 +353,136 @@ Dubbo完成服务引入的过程如下：
 
 
 
-## 流量管理
-
-> 流量管理的本质是将请求根据制定好的路由规则分发到应用服务上
-
-1. 应用实例可以是单例，也可以是集群
-2. 路由规则可以有多个，不同的路由规则之间存在优先级
-3. 多个不同的路由规则可以到同一个服务；一个路由也可以到不同服务；路由也可以不路由到任何服务
-
-Dubbo提供了支持mesh方式的流量管理策略，可以很容易实现 [A/B测试](https://www.w3cschool.cn/dubbo/ab-testing-deployment.html)、[金丝雀发布](https://www.w3cschool.cn/dubbo/canary-deployment.html)、[蓝绿发布](https://www.w3cschool.cn/dubbo/blue-green-deployment.html)等能力。
 
 
+## 流量
+
+### 负载均衡
+
+1. Random Load Balance 随机负载均衡策略：随机选择一个可用的服务提供者。
+2. Round Robin Load Balance 轮询负载均衡策略：按照顺序轮询选择可用的服务提供者。
+3. Weighted Random Load Balance 加权随机负载均衡策略：在随机负载均衡策略的基础上，根据每个服务提供者的权重进行加权选择。
+4. Weighted Round Robin Load Balance 加权轮询负载均衡策略：在轮询负载均衡策略的基础上，根据每个服务提供者的权重进行加权选择。
+5. Consistent Hash Load Balance 一致性哈希负载均衡策略：将每个服务提供者映射到一个哈希环上，根据请求的哈希值选择距离该哈希值最近的服务提供者。
+6. Least Active Load Balance 最小活跃数负载均衡策略：选择当前活跃数最少的可用服务提供者，活跃数指当前处理请求的线程数。
+7. Sticky Load Balance 粘滞会话负载均衡策略：将同一个消费者的请求路由到同一个服务提供者，实现会话粘滞。
+
+| 算法                          | 特性                    | 说明                                                 |
+| :---------------------------- | :---------------------- | :--------------------------------------------------- |
+| Weighted Random LoadBalance   | 加权随机                | 默认算法，默认权重相同                               |
+| RoundRobin LoadBalance        | 加权轮询                | 借鉴于 Nginx 的平滑加权轮询算法，默认权重相同，      |
+| LeastActive LoadBalance       | 最少活跃优先 + 加权随机 | 背后是能者多劳的思想                                 |
+| Shortest-Response LoadBalance | 最短响应优先 + 加权随机 | 更加关注响应速度                                     |
+| ConsistentHash LoadBalance    | 一致性哈希              | 确定的入参，确定的提供者，适用于有状态请求           |
+| P2C LoadBalance               | Power of Two Choice     | 随机选择两个节点后，继续选择“连接数”较小的那个节点。 |
+| Adaptive LoadBalance          | 自适应负载均衡          | 在 P2C 算法基础上，选择二者中 load 最小的那个节点    |
 
 
 
 
 
-## 配置管理
+### 容错策略
+
+| 策略              | 说明                                                         |
+| ----------------- | ------------------------------------------------------------ |
+| Failover Cluste   | 失败自动切换，当出现失败，重试其它服务器。通常用于读操作，但重试会带来更长延迟。可通过 `retries="2"` 来设置重试次数(不含第一次)。默认容错机制 |
+| Failfast Cluster  | 快速失败，只发起一次调用，失败立即报错。通常用于非幂等性的写操作，比如新增记录。 |
+| Failsafe Cluster  | 失败安全，出现异常时，直接忽略。通常用于写入审计日志等操作。 |
+| Failback Cluster  | 失败自动恢复，后台记录失败请求，定时重发。通常用于消息通知操作。 |
+| Forking Cluster   | 并行调用多个服务器，只要一个成功即返回。通常用于实时性要求较高的读操作，但需要浪费更多服务资源。可通过 `forks="2"` 来设置最大并行数。 |
+| Broadcast Cluster | 广播调用所有提供者，逐个调用，任意一台报错则报错。通常用于通知所有提供者更新缓存或日志等本地资源信息。 |
+
+
+
+
+
+
+
+### 路由规则
+
+:::info 说明
+
+流量管理的本质是将请求根据制定好的路由规则分发到应用服务上
+
+Dubbo 提供了丰富的流量管控策略
+
+- **地址发现与负载均衡**，地址发现支持服务实例动态上下线，负载均衡确保流量均匀的分布到每个实例上。
+- **基于路由规则的流量管控**，路由规则对每次请求进行条件匹配，并将符合条件的请求路由到特定的地址子集。
+
+:::
+
+应用实例可以是单例，也可以是集群
+
+路由规则可以有多个，不同的路由规则之间存在优先级
+
+多个不同的路由规则可以到同一个服务；一个路由也可以到不同服务；路由也可以不路由到任何服务
+
+Dubbo提供了支持mesh方式的流量管理策略，可以很容易实现 [A/B测试](https://www.w3cschool.cn/dubbo/ab-testing-deployment.html)、[金丝雀发布](https://www.w3cschool.cn/dubbo/canary-deployment.html)、[蓝绿发布](https://www.w3cschool.cn/dubbo/blue-green-deployment.html)等能力
+
+<br/>
+
+
+
+Dubbo 的流量管控规则可以基于应用、服务、方法、参数等粒度精准的控制流量走向，根据请求的目标服务、方法以及请求体中的其他附加参数进行匹配，符合匹配条件的流量会进一步的按照特定规则转发到一个地址子集。流量管控规则有以下几种：
+
+1. 标签路由规则：
+   - 标签路由规则是一个非此即彼的流量隔离方案，也就是匹配`标签`的请求会 100% 转发到有相同`标签`的实例，没有匹配`标签`的请求会 100% 转发到其余未匹配的实例。
+   - `标签`主要是指对 Provider 端应用实例的分组，目前有两种方式可以完成实例分组，分别是`动态规则打标`和`静态规则打标`。`动态规则打标` 可以在运行时动态的圈住一组机器实例，而 `静态规则打标` 则需要实例重启后才能生效，其中，动态规则相较于静态规则优先级更高，而当两种规则同时存在且出现冲突时，将以动态规则为准。
+2. 条件路由规则：
+   - 条件路由与标签路由的工作模式非常相似，也是首先对请求中的参数进行匹配，符合匹配条件的请求将被转发到包含特定实例地址列表的子集。相比于标签路由，条件路由的匹配方式更灵活。
+   - 在标签路由中，一旦给某一台或几台机器实例打了标签，则这部分实例就会被立马从通用流量集合中移除，不同标签之间不会再有交集。
+   - 从条件路由的视角，所有的实例都是一致的，路由过程中不存在分组隔离的问题，每次路由过滤都是基于全量地址中执行
+
+3. 动态配置规则：
+   - 可以动态的修改 Dubbo 服务进程的运行时行为，整个过程不需要重启，配置参数实时生效。基于这个强大的功能，基本上所有运行期参数都可以动态调整，比如超时时间、临时开启 Access Log、修改 Tracing 采样率、调整限流降级参数、负载均衡、线程池配置、日志等级、给机器实例动态打标签等。
+   - 动态配置规则支持应用、服务两个粒度，也就是说一次可以选择只调整应用中的某一个或几个服务的参数配置。
+   - 出于系统稳定性、安全性的考量，有些特定的参数是不允许动态修改的，但除此之外，基本上所有参数都允许动态修改，很多强大的运行态能力都可以通过这个规则实现，您可以找个示例应用去尝试一下。通常 URL 地址中的参数均可以修改，这在每个语言实现的参考手册里也记录了一些更详细的说明。
+4. 脚本路由规则：
+   - 脚本路由是最直观的路由方式，同时它也是当前最灵活的路由规则，因为可以在脚本中定义任意的地址筛选规则。
+   - 如果我们为某个服务定义一条脚本规则，则后续所有请求都会先执行一遍这个脚本，脚本过滤出来的地址即为请求允许发送到的、有效的地址集合。
+
+
+
+:::info 说明
+
+通常，在 Dubbo 中，多个路由器组成一条路由链共同协作，前一个路由器的输出作为另一个路由器的输入，经过层层路由规则筛选后，最终生成有效的地址集合。
+
+- Dubbo 中的每个服务都有一条完全独立的路由链，每个服务的路由链组成可能不通，处理的规则各异，各个服务间互不影响。
+- 对单条路由链而言，即使每次输入的地址集合相同，根据每次请求上下文的不同，生成的地址子集结果也可能不同。
+
+:::
+
+![Dubbo Router](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//dubbo/20230725/dubbo%E8%B7%AF%E7%94%B1%E9%93%BE%E8%B7%AF.png)
+
+
+
+
+
+### 限流熔断
+
+根据服务的具体部署情况，服务所能处理的流量上限是一定的，当对服务的请求数量保持在合理的范围时，系统运行正常；而当请求数量严重超过服务处理能力时，如大促期间的流量洪峰等场景，就可能造成服务提供者端的资源过度消耗、负载过高，进而出现响应延迟、请求无应答、系统假死等情况。
+
+如何确定服务所能处理的流量最大值：
+
+1. 一种模式是由用户预先设定一个固定的限流值，如 Dubbo 通过集成 Sentinel 等产品实现的限流能力即是这种模式
+2. 另一种方式是 Dubbo 框架自动根据系统或集群负载情况执行限流，相比用户预先设置限流值更加灵活方便，Dubbo 目前内置了[自适应限流模式](https://cn.dubbo.apache.org/zh-cn/overview/mannual/java-sdk/advanced-features-and-usage/performance/adaptive-concurrency-control/)
+
+
+
+内置的自适应限流算法设置方法与静态的最大并发值设置类似，只需在服务端设置 flowcontrol 参数即可，可选值有以下两种：
+
+- heuristicSmoothingFlowControl。当服务端收到一个请求时，首先判断CPU的使用率是否超过50%。如果没有超过50%，则接受这个请求进行处理。如果超过50%，说明当前的负载较高，便从 HeuristicSmoothingFlowControl 算法中获得当前的 maxConcurrency 值。如果当前正在处理的请求数量超过了 maxConcurrency，则拒绝该请求。
+- autoConcurrencyLimiter。与 HeuristicSmoothingFlowControl 的最大区别是，AutoConcurrencyLimiter 是基于窗口的，每当窗口内积累了一定量的采样数据时，才利用窗口内的数据来更新得到 maxConcurrency，其次，利用exploreRatio来对剩余的容量进行探索。
+
+
+
+
+
+
+
+## 其他
+
+### 配置管理
 
 1. API 配置
 2. XML 配置
@@ -339,7 +493,7 @@ Dubbo提供了支持mesh方式的流量管理策略，可以很容易实现 [A/B
 
 
 
-## 生命周期
+### 生命周期
 
 Dubbo 微服务要支持 Kubernetes 平台调度，最基础的就是实现 dubbo 服务生命周期与容器生命周期的对齐，这包括 Dubbo 的启动、销毁、服务注册等生命周期事件。
 
@@ -349,7 +503,80 @@ Dubbo 微服务要支持 Kubernetes 平台调度，最基础的就是实现 dubb
 
 
 
-## 安全
+### 安全措施
 
 1. Token 检测，防止绕过注册中心
 2. 提供黑白名单，控制服务方允许的调用方
+
+
+
+
+
+## 实战
+
+:::info 说明
+
+使用官网提供的示例代码：dubbo-samples
+
+:::
+
+
+
+### 注解驱动
+
+#### Provider Configuration
+
+First, there have to be an overall configuration of provider:
+
+```Java
+@Configuration
+@EnableDubbo(scanBasePackages = "org.apache.dubbo.samples.annotation.impl")
+@PropertySource("classpath:/spring/dubbo-provider.properties")
+static class ProviderConfiguration {
+}
+```
+
+`@EnableDubbo` will enable Spring `org.apache.dubbo.samples.annotation.impl` package to find anything annotated by Dubbo annotation.
+
+As a provider, the interface implementation class have to be annotated by `@DubboService`:
+
+```Java
+@DubboService
+public class AnnotatedGreetingService implements GreetingService {
+
+    public String sayHello(String name) {
+        System.out.println("greeting service received: " + name);
+        return "hello, " + name;
+    }
+
+}
+```
+
+
+
+### Consumer Configuration
+
+The overall configuration for consumer is very smilier to provider's:
+
+```Java
+@Configuration
+@EnableDubbo(scanBasePackages = "org.apache.dubbo.samples.annotation.action")
+@PropertySource("classpath:/spring/dubbo-consumer.properties")
+@ComponentScan(value = {"org.apache.dubbo.samples.annotation.action"})
+static class ConsumerConfiguration {
+
+}
+```
+
+And you can use `@DubboReference` annotation to autowire the provider into consumer:
+
+```Java
+@Component("annotatedConsumer")
+public class GreetingServiceConsumer {
+
+    @DubboReference
+    private GreetingService greetingService;
+    
+    ...
+}
+```

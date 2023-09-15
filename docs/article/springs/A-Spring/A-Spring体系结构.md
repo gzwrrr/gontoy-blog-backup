@@ -46,8 +46,23 @@ feed:
 
 # Spring 体系结构
 
-
 [[toc]]
+
+
+
+:::info 相关资源
+
+[Spring 官网](https://spring.io/)
+
+[Spring 教程1](https://www.w3schools.cn/spring/index.asp)
+
+[Spring 教程2](https://www.w3cschool.cn/wkspring/)
+
+[Spring框架总结【无比详细】](https://blog.csdn.net/itcats_cn/article/details/81479185)
+
+:::
+
+
 
 1. 依赖注入：Spring框架通过依赖注入（Dependency Injection，DI）来管理Java对象之间的依赖关系，使得程序的耦合度降低，更易于测试和维护。Spring提供了多种方式来实现依赖注入，包括基于构造函数的注入、基于Setter方法的注入、基于注解的注入等。
 2. AOP：Spring框架提供了AOP（Aspect-Oriented Programming，面向切面编程）的支持，通过AOP可以实现日志记录、事务管理、性能监控、安全控制等功能，将应用程序的业务逻辑与系统级服务解耦。Spring的AOP采用了基于代理的方式实现，支持JDK动态代理和CGLIB动态代理两种方式。

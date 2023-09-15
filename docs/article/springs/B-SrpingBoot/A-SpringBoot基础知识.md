@@ -52,8 +52,19 @@ SpringBoot不是对Spring功能上的增强，而是提供了一种快速使用S
 
 :::
 
-
 [[toc]]
+
+
+
+:::info 相关资源
+
+[Spring 官网](https://spring.io/)
+
+[Spring Boot 教程](https://www.w3schools.cn/spring_boot/index.html)
+
+:::
+
+
 
 
 Spring Boot 是基于 Spring 框架的一个全新的框架，它主要对 Spring 框架做了以下封装：

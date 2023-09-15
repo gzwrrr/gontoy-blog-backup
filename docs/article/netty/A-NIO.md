@@ -50,6 +50,22 @@ feed:
 
 
 
+:::info 相关资源
+
+[NIO 实现](https://www.bilibili.com/video/BV1zX4y1G7LE/?p=3&spm_id_from=333.880.my_history.page.click&vd_source=e356fec025b50061af78324a814f8da0)
+
+[软件设计杂谈——事件驱动](https://zhuanlan.zhihu.com/p/184618651)
+
+[IO多路复用——深入浅出理解select、poll、epoll的实现](https://zhuanlan.zhihu.com/p/367591714)
+
+:::
+
+
+
+![image-20230728130047363](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//netty/20230728/NIO%E6%A8%A1%E5%9E%8B.png)
+
+
+
 - NIO 有三大核心部分：Selector：选择器、Channel：管道、Buffer：缓冲区
 - 三大核心的关系：
   - 每个 Selector 都会对应一个 线程，而一个线程会对应多个 Channel

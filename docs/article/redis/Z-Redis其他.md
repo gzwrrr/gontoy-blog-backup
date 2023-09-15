@@ -169,7 +169,7 @@ public class RedisConfig {
    2. 收集管道：logstash
    3. DB: elasticSearch
    4. view和告警: kibana及插件
-2. fluent + Prometheus + Grafana：
+2. fluent + Prometheus + Grafana
    1. 采集指标来源: redis-export
    2. 收集管道：fluentd
    3. DB: Prometheus

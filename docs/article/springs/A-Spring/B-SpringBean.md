@@ -44,7 +44,11 @@ feed:
 
 # Spring Bean
 
+
+
 [[toc]]
+
+
 
 ## 作用域
 
@@ -59,6 +63,65 @@ feed:
 
 
 ## 创建的生命周期步骤
+
+所以创建bean的整个步骤为：
+
+1. 从配置文件中读取 `Bean` 配置并生成 `BeanDefinition`
+2. 如果有 `BeanFactoryPostProcessor` 实现类，那么执行 `postProcessBeanFactory` 对 `BeanDefinition` 做出修改
+3. 实例化 `Bean`
+4. `Bean` 属性赋值，如果有 `InitializingBean` 实现类，那么执行 `@PostConstruct` 或者 `afterPropertiesSet` 方法对 `Bean` 做出修改
+5. 初始化 `Bean`，如果有 `BeanPostProcessor` 实现类，执行 `postProcessBeforeInitialization` 和 `postProcessAfterInitialization`，用于在 `Bean` 初始化前后执行自定义的处理逻辑。它允许你在初始化阶段对 Bean 进行修改，例如代理对象、添加额外的处理等
+6. 使用 `Bean`
+7. 销毁 `Bean`，如果有 `DisposableBean` 实现类，那么先执行 `@PreDestroy` 或者 `destroy` 方法
+
+
+
+### 概览
+
+在 Spring Framework 中，每个 Bean 都有其生命周期，即它从被创建到被销毁的整个过程。Spring 提供了一系列回调方法，允许你在不同的生命周期阶段执行自定义的逻辑。以下是典型的 Spring Bean 生命周期阶段：
+
+1. **实例化（Instantiation）：** 在这个阶段，容器根据配置元数据或编程方式创建 Bean 的实例。这可以通过构造函数或工厂方法来完成。
+2. **属性赋值（Population）：** 在这个阶段，容器将依赖项和属性值注入到 Bean 实例中。这可以通过 setter 方法、字段注入或构造函数参数注入来完成。
+3. **初始化（Initialization）：** 在这个阶段，容器对 Bean 进行初始化。这包括执行自定义的初始化逻辑，以及实现 `InitializingBean` 接口的 `afterPropertiesSet()` 方法或使用 `@PostConstruct` 注解。
+4. **使用（In Use）：** 在这个阶段，Bean 已经初始化，可以正常使用。
+5. **销毁（Destruction）：** 在容器关闭或显式调用销毁方法时，容器会触发 Bean 的销毁过程。这包括实现 `DisposableBean` 接口的 `destroy()` 方法、使用 `@PreDestroy` 注解以及在 XML 配置中指定销毁方法。
+
+下面是一个简化的示例，展示了 Bean 生命周期的不同阶段：
+
+```java
+import javax.annotation.PreDestroy;
+
+public class MyBean {
+
+    public MyBean() {
+        System.out.println("Bean instantiated");
+    }
+
+    // Property Injection
+    
+    // 也可以使用 InitializingBean
+    @PostConstruct
+    public void initMethod() {
+        System.out.println("Bean initialized");
+    }
+
+    public void someBusinessLogic() {
+        System.out.println("Bean in use");
+    }
+
+    // 也可以使用 InitializingBean
+    @PreDestroy
+    public void destroyMethod() {
+        System.out.println("Bean destroyed");
+    }
+}
+```
+
+请注意，虽然这个示例使用了 `@PostConstruct` 和 `@PreDestroy` 注解，但 Spring 还支持使用接口实现和 XML 配置来定义初始化和销毁方法。
+
+
+
+### 详细
 
 大概分为 7 个步骤：
 

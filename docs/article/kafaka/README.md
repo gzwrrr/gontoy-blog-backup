@@ -4,11 +4,33 @@
 
 :::info 相关资源
 
-[Kafaka 官网](https://kafka.apache.org/)
+[Kafaka 官网](https://kafka.apache.org/documentation/)
 
 [kafka一小时入门精讲课程（高清重制无废话版）](https://www.bilibili.com/video/BV1h94y1Q7Xg?p=7&spm_id_from=pageDriver&vd_source=e356fec025b50061af78324a814f8da0)
 
+[Kafka3.x教程（从入门到调优，深入全面）](https://www.bilibili.com/video/BV1vr4y1677k?p=11&vd_source=e356fec025b50061af78324a814f8da0)
+
 :::
+
+![image-20230731192719833](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//kafaka/20230731/kafaka%E6%9E%B6%E6%9E%84.png)
+
+**相关概念：**
+
+1. Producer：生产者即数据的发布者，该角色将消息发布到 Kafka 的 topic 中。broker 接收到生产者发送的消息后，broker将该消息追加到当前用于追加数据的 segment 文件中。生产者发送的消息，存储到一个 partition 中，生产者也可以指定数据存储的 partition
+2. Consumer：消费者可以从broker中读取数据，消费者可以消费多个topic中的数据
+3. Topic：在Kafka中，使用一个类别属性来划分数据的所属类，划分数据的这个类称为 topic。如果把 Kafka 看做为一个数据库，topic可以理解为数据库中的一张表，topic 的名字即为表名
+4. Partition：topic 中的数据分割为一个或多个 partition。每个 topic 至少有一个 partition。每个 partition 中的数据使用多个 segment 文件存储。partition中的数据是有序的，partition 间的数据丢失了数据的顺序。如果 topic 有多个 partition，消费数据时就不能保证数据的顺序。在需要严格保证消息的消费顺序的场景下，需要将 partition 数目设为 1
+5. Partition offset：每条消息都有一个当前 Partition 下唯一的 64 字节的 offset，它指明了这条消息的起始位置
+6. Replicas of partition：副本是一个分区的备份。副本不会被消费者消费，副本只用于防止数据丢失，即消费者不从为 follower 的 partition 中消费数据，而是从为 leader 的 partition 中读取数据。副本之间是一主多从的关系
+7. Leader：每个 partition 有多个副本，其中有且仅有一个作为 Leader，Leader 是当前负责数据的读写的 partition
+8. Follower：Follower 跟随 Leader，所有写请求都通过 Leader 路由，数据变更会广播给所有 Follower，Follower 与 Leader 保持数据同步。如果Leader失效，则从 Follower 中选举出一个新的 Leader，当 Follower 与 Leader 挂掉、卡住或者同步太慢，leader 会把这个 follower，从 "in sync replicas" （ISR）列表中则除，重新创建一个Follower
+9. Zookeeper：Zookeeper 负责维护和协调 broker。当 Kafka 系统中新增了 broker 或者某个 broker 发生故障失效时，由 ZooKeeper 通知生产者和消费者。生产者和消费者依据 Zookeeper 的 broker 状态信息与 broker 协调数据的发布和订阅任务。
+10. AR（Assigned Replicas）：分区中的所有的副本
+11. ISR（In-Sync Replicas）：所有与 Leader 部分保持一定程度的副本组成 ISR（包括 Leader 副本在内）
+12. OSR（Out-of-Sync-Replicas）：与 Leader 副本同步滞后过多的副本
+13. HW（High Watermark）：高水位，标识了一个特定的 offset，消费者只能拉取到这个 offset 之前的消息
+14. LEO（Log End Offset）：即日志未端位移（log end offset），记录了该副本底层日志中下一条消息的位移值，注意是下一条消息！也就是
+    说，如果 LEO = 10，那么表示该副本保存了 10 条消息，位移值范围是 [0,9]
 
 **Kafaka 特点：**
 
@@ -31,15 +53,11 @@
 2. Cloudera Kafaka
 3. Hortonworks Kafaka
 
-
-
 **相关的消息模型/协议：**
 
 1. JMS 规范（限于 Java）
 2. AMQP 协议（例如 RabbitMQ）
 3. MQTT
-
-
 
 
 
@@ -98,8 +116,6 @@ Topic 中可以包含多个分区 Partition
 Kafaka 集群由多个消息代理 Broker 组成
 
 Broker 负责消息的读写请求，并将数据写入到磁盘中
-
-
 
 
 
@@ -165,12 +181,12 @@ log.dirs=/tmp/kafka-logs
 # 修改完成后就可以启动，首先启动 Zookeeper
 # 启动脚本全部放在 bin 目录下
 cd ../bin
-./zookeeper-server-start.sh ../etc/zookeeper.properties
+nohup ./zookeeper-server-start.sh ../etc/zookeeper.properties &
 
 # 启动 kafaka 实例
-./kafka-server-start.sh ../etc/server-0.properties
-./kafka-server-start.sh ../etc/server-1.properties 
-./kafka-server-start.sh ../etc/server-2.properties 
+nohup ./kafka-server-start.sh ../etc/server-0.properties &
+nohup ./kafka-server-start.sh ../etc/server-1.properties &
+nohup ./kafka-server-start.sh ../etc/server-2.properties &
 
 # 查看主题启动参数
 ./kafka-topics.sh

@@ -46,6 +46,8 @@ feed:
 
 [[toc]]
 
+
+
 ## 位运算
 
 - 与：&
@@ -315,6 +317,63 @@ public class ArithmeticOperation {
 
 <br/>
 
+### 大小写转换
+
+利用或操作 `|` 和空格将英文字符转换为小写
+
+```java
+('a' | ' ') = 'a'
+('A' | ' ') = 'a'
+```
+
+利用与操作 `&` 和下划线将英文字符转换为大写
+
+```java
+('b' & '_') = 'B'
+('B' & '_') = 'B'
+```
+
+利用异或操作 `^` 和空格进行英文字符大小写互换
+
+```java
+('d' ^ ' ') = 'D'
+('D' ^ ' ') = 'd'
+```
+
+
+
+
+
+### 判断两个数是否异号
+
+```java
+int x = -1, y = 2;
+bool f = ((x ^ y) < 0); // true
+
+int x = 3, y = 2;
+bool f = ((x ^ y) < 0); // false
+```
+
+
+
+### 加减
+
+```java
+int n = 1;
+n = -~n;
+// 现在 n = 2
+
+int n = 2;
+n = ~-n;
+// 现在 n = 1
+```
+
+
+
+
+
+
+
 ## 优化
 
 **入手点：**
@@ -383,9 +442,7 @@ public class ArithmeticOperation {
 
 <br/>
 
-## 小技巧
-
-###  求中点
+##  求中点
 
 ```java
 int l = 0;
@@ -401,7 +458,7 @@ mid = l + ((r - l) >> 1);
 
 
 
-### 等概率返回
+## 等概率返回
 
 ```java
 /**
@@ -443,6 +500,63 @@ public class randomTest {
     public static int f() {
         return (int)(Math.random() * 5) + 1;
     }
+}
+```
+
+
+
+## 取模 & 快速幂
+
+防止乘法溢出
+
+```java
+// (a * b) % k = (a % k) * (b % k) % k
+    
+int base = 1337;
+
+// 计算 a 的 k 次方然后与 base 求模的结果
+int mypow(int a, int k) {
+    // 对因子求模
+    a %= base;
+    int res = 1;
+    for (int _ = 0; _ < k; _++) {
+        // 这里有乘法，是潜在的溢出点
+        res *= a;
+        // 对乘法结果求模
+        res %= base;
+    }
+    return res;
+}
+```
+
+快速幂，相关文章：https://mp.weixin.qq.com/s?__biz=MzA5MTM1NTc2Ng==&mid=2458321758&idx=1&sn=e92e7a72d245831c29acb3d2a29607da&scene=21#wechat_redirect
+
+```java
+int base = 1337;
+
+int mypow(int a, int k) {
+    if (k == 0) return 1;
+    a %= base;
+
+    if (k % 2 == 1) {
+        // k 是奇数
+        return (a * mypow(a, k - 1)) % base;
+    } else {
+        // k 是偶数
+        int sub = mypow(a, k / 2);
+        return (sub * sub) % base;
+    }
+}
+
+// 递推
+int qpow(int x, int n) {
+    int res = 1;
+    while (n) {
+        if (n & 1) res *= x;
+        x *= x;
+        n >>= 1;
+    }
+    return res;
 }
 ```
 

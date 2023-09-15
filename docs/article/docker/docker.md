@@ -557,3 +557,20 @@ export HTTPS_PROXY="http://proxy.example.com:8080"
 
 然后重新运行构建命令。
 
+
+
+
+
+
+
+### Docker 清理缓存
+
+> 长时间未清理缓存会过大，曾经出现过 overlay 文件沾满磁盘的情况
+
+::info 相关文章
+
+[docker清理Overlay2占用磁盘空间](https://blog.csdn.net/Small_StarOne/article/details/123655176)
+
+[Linux Docker容器磁盘出现日志/var/lib/docker/overlay2占用100%](https://blog.csdn.net/yhk19970220/article/details/113504458)
+
+:::
