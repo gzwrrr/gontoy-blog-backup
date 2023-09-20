@@ -82,6 +82,12 @@ export default hopeTheme({
         ]
     },
     {
+        text: "移动端",
+        children: [
+            "/article/mp/",
+        ]
+    },
+    {
         text: "大数据",
         link: "/article/data/"
     },
@@ -125,6 +131,7 @@ export default hopeTheme({
         "/article/linux/": "structure",
         "/article/lua/": "structure",
         "/article/mongodb/": "structure",
+        "/article/mp/": "structure",
         "/article/netty/": "structure",
         "/article/quartz/": "structure",
         "/article/modeling/": "structure",
