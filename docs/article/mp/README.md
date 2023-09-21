@@ -131,17 +131,17 @@ WebView是一种用于在移动应用中嵌入Web内容的组件或控件。它�
 ### 官方文档
 
 1. [Uniapp 官方教程](https://uniapp.dcloud.net.cn/tutorial/)
-
-2. [微信小程序文档](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/)
-3. [Uniapp Gitee 仓库](https://gitee.com/dcloud/uni-app)
+2. [Uniapp 官方推荐](https://uniapp.dcloud.net.cn/resource.html#%E4%B8%89%E6%96%B9%E5%9F%B9%E8%AE%AD%E6%9C%BA%E6%9E%84%E8%A7%86%E9%A2%91)
+3. [微信小程序文档](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/)
+4. [Uniapp Gitee 仓库](https://gitee.com/dcloud/uni-app)
 
 
 
 ### 视频教程
 
 1. [黑马程序员前端微信小程序开发教程](https://www.bilibili.com/video/BV1834y1676P?p=114&vd_source=e356fec025b50061af78324a814f8da0)
-
 2. [Uni-App从入门到实战](https://www.bilibili.com/video/BV1BJ411W7pX/?spm_id_from=333.788.recommend_more_video.0&vd_source=e356fec025b50061af78324a814f8da0)
+3. [Uniapp 与 Vue 合作教程（简单介绍）](https://learning.dcloud.io/#/)
 
 
 
@@ -180,6 +180,26 @@ WebView是一种用于在移动应用中嵌入Web内容的组件或控件。它�
 
 ## 常用组件库
 
+:::info 官方推荐
+
+1. **uni-app 中可使用的 UI 框架：**https://ask.dcloud.net.cn/article/35489
+
+2. **uni-app 导航栏开发指南：** https://ask.dcloud.net.cn/article/34921
+
+3. **uni-app 实现全局变量：** https://ask.dcloud.net.cn/article/35021
+
+4. **uni-app 引用 npm 第三方库：** https://ask.dcloud.net.cn/article/19727
+
+5. **uni-app 中使用微信小程序第三方 SDK 及资源汇总：**https://ask.dcloud.net.cn/article/35070
+
+6. **原生控件层级过高无法覆盖的解决方案：**https://uniapp.dcloud.io/component/native-component
+
+7. **国际化/多语言/i18n方案：**https://ask.dcloud.net.cn/article/35872
+
+8. **本地存储详解：**https://ask.dcloud.net.cn/article/166
+
+:::
+
 * [Grace UI](https://www.graceui.com/)
 * [uView](https://www.uviewui.com/)
 * [ThorUI](https://thorui.cn/doc/)
@@ -190,6 +210,8 @@ WebView是一种用于在移动应用中嵌入Web内容的组件或控件。它�
 * [Varlet](https://varlet.gitee.io/varlet-ui/#/zh-CN/home)
 * [nutui-bingo](https://nutui.jd.com/bingo/#/)
 * [uni-ui](https://uniapp.dcloud.net.cn/component/uniui/uni-ui.html)
+
+
 
 
 
@@ -205,7 +227,9 @@ WebView是一种用于在移动应用中嵌入Web内容的组件或控件。它�
 
 :::
 
-- [uni-request](https://uniapp.dcloud.net.cn/api/request/request.html)：发起HTTP请求[uniapp-router-patch](https://www.npmjs.com/package/uniapp-router-patch)：路由兼容插件
+- [uni-request](https://uniapp.dcloud.net.cn/api/request/request.html)：发起HTTP请求
+- [uni-simple-router-v3](https://ask.dcloud.net.cn/article/40621)：vue3 + vite 路由
+- [uniapp-router-patch](https://www.npmjs.com/package/uniapp-router-patch)：路由兼容插件
 - [uni-icons](https://ext.dcloud.net.cn/plugin?id=28)：丰富图标集
 - [popup](https://ext.dcloud.net.cn/plugin?id=11792)：弹出框和提示框
 - [uni-calendar](https://ext.dcloud.net.cn/plugin?id=56)：日历组件
@@ -227,6 +251,10 @@ WebView是一种用于在移动应用中嵌入Web内容的组件或控件。它�
 :::warning 说明
 
 可能会踩的一些坑…
+
+1. [官方说明，遇到问题可以先看这](https://uniapp.dcloud.net.cn/matter.html)
+
+2. [官方总结](https://uniapp.dcloud.net.cn/faq.html)
 
 :::
 

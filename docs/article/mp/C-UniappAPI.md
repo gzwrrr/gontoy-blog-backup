@@ -1,6 +1,6 @@
 ---
 title: "Uniapp API"
-shortTitle: "B-Uniapp API"
+shortTitle: "C-Uniapp API"
 description: "Uniapp API"
 icon: ""
 author: 
@@ -54,9 +54,21 @@ feed:
 
 :::info 说明
 
+[Uniapp 官方 API 文档](https://uniapp.dcloud.net.cn/api/)
+
 相关的 API 会陆续补充完整…（还会补上微信小程序原生的 API）
 
 :::
+
+
+
+## 概览
+
+小程序中分为三类 API：
+
+1. 事件监听类 API
+2. 同步 API
+3. 异步 API
 
 
 

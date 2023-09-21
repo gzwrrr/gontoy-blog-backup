@@ -1,6 +1,6 @@
 ---
 title: "Uniapp 知识点"
-shortTitle: "A-Uniapp 知识点"
+shortTitle: "B-Uniapp 知识点"
 description: "Uniapp 知识点"
 icon: ""
 author: 
