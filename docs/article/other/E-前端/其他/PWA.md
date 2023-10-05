@@ -20,7 +20,7 @@ tag:
 sticky: 1
 star: false
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "PWA 基本介绍"
   icon: ""

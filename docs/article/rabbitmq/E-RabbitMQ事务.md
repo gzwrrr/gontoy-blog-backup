@@ -20,7 +20,7 @@ tag:
 sticky: 1
 star: false
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "RabbitMQ 事务"
   icon: ""

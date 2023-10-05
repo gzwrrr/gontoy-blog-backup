@@ -1,13 +1,18 @@
 <template>
     <div class="Collapse" :style="{ backgroundColor: bgColor, width: width }">
-        <div class="CollapseHead" :style="{
+        <!-- :style="{
             color: headColor, borderLeftColor: headColor,
-        }" @click="collapse = !collapse">
-            <span class="title">{{ title }}</span>
+        }" -->
+        <div class="CollapseHead" @click="collapse = !collapse">
+
+            <span class="title">
+                {{ title }}
+            </span>
             <span style="float: right">
                 <i v-if="collapse" class="el-icon-arrow-down"></i>
                 <i v-else class="el-icon-arrow-right"></i>
             </span>
+
         </div>
         <transition name="content">
             <div class="content" v-if="collapse">
@@ -59,66 +64,84 @@ export default {
 </script>
  
 <style lang="scss" scoped>
+// 
 .content-enter-from,
 .content-leave-to {
     opacity: 0;
+    transform-origin: top;
+    top: 0%;
+    transform: scale(0);
 }
+
+// 
 
 .content-enter-to,
 .content-leave-from {
     opacity: 1;
+    transform-origin: bottom;
+    top: -100%;
+    transform: scale(1);
 }
 
 .content-enter-active,
 .content-leave-active {
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .Collapse {
     color: var(--theme-white);
     background-color: var(--theme-deep-blue);
-    padding: 10px;
     box-sizing: border-box;
     user-select: none;
     cursor: pointer;
     border: 1px solid var(--theme-grey);
     border-radius: 5px;
 
-    CollapseHead {
+    .CollapseHead {
         line-height: 30px;
-        border-left: 5px solid;
         font-weight: bold;
         padding-left: 10px;
         font-size: 20px;
         caret-color: transparent;
+        padding: 5px 0;
+        background-color: var(--theme-dark-light);
 
         &:hover {
             cursor: pointer;
+            background-color: var(--theme-dark);
+        }
+
+        &:active {
+            cursor: pointer;
+            color: var(--theme-dark-brightness);
         }
     }
 }
 
 .content {
-    margin-top: 10px;
+    position: relative;
     font-size: 18px;
     border-top: 1px solid var(--theme-grey);
+    background-color: var(--theme-dark-brightness);
 }
 
 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
     position: relative;
     font-weight: bold;
     font-size: 20px;
     padding: 0 15px;
 }
 
-.title::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 7px;
-    height: 90%;
-    background-color: var(--theme-white);
-
-}
-</style>
+// .title::after {
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     width: 7px;
+//     height: 90%;
+//     background-color: var(--theme-white);
+// }</style>

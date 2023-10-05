@@ -16,7 +16,7 @@ tag:
 sticky: 1
 star: false
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "暴力递归算法"
   icon: ""

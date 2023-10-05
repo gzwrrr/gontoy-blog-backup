@@ -16,7 +16,7 @@ tag:
 sticky: 1
 star: false
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "Spring Boot 基础知识"
   icon: ""

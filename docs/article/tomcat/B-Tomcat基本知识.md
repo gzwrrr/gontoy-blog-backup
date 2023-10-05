@@ -18,7 +18,7 @@ tag:
 sticky: 1
 star: false
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "Tomcat 基本知识"
   icon: ""

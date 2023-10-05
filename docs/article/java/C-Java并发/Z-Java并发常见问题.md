@@ -18,7 +18,7 @@ tag:
 sticky: 998
 star: true
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "Java并发常见问题"
   icon: ""

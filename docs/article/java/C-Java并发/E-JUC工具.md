@@ -18,7 +18,7 @@ tag:
 sticky: 998
 star: true
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "JUC 工具"
   icon: ""

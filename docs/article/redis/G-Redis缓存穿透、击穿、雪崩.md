@@ -20,7 +20,7 @@ tag:
 sticky: 1
 star: false
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "Redis 缓存穿透、击穿、雪崩"
   icon: ""

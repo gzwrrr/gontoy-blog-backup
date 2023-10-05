@@ -18,7 +18,7 @@ tag:
 sticky: 1
 star: false
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "ElasticSearch 简单使用"
   icon: ""

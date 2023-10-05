@@ -16,7 +16,7 @@ tag:
 sticky: 996
 star: true
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "基础排序"
   icon: ""

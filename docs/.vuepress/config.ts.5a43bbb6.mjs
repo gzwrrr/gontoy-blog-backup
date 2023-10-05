@@ -173,6 +173,7 @@ var theme_default = hopeTheme({
     red: "#f26d6d",
     green: "#3eaf7c",
     orange: "#fb9b5f"
+
   },
   plugins: {
     blog: {
@@ -447,13 +448,13 @@ var bundler_default = viteBundler({
 // docs/.vuepress/plugins/tablePlugin.js
 import MarkdownIt from "markdown-it";
 function wrapTable(md) {
-  const defaultRender = md.renderer.rules.table_open || function(tokens, idx, options, env, self) {
+  const defaultRender = md.renderer.rules.table_open || function (tokens, idx, options, env, self) {
     return self.renderToken(tokens, idx, options);
   };
-  md.renderer.rules.table_open = function(tokens, idx, options, env, self) {
+  md.renderer.rules.table_open = function (tokens, idx, options, env, self) {
     return `<div class="table-wrapper ">${defaultRender(tokens, idx, options, env, self)}`;
   };
-  md.renderer.rules.table_close = function(tokens, idx, options, env, self) {
+  md.renderer.rules.table_close = function (tokens, idx, options, env, self) {
     return `${defaultRender(tokens, idx, options, env, self)}</div>`;
   };
 }

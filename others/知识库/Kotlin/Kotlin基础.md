@@ -101,3 +101,31 @@ Java 基本类型在 Kotlin 中都是类，编译后会重新转换成基本类�
 18. 委托 by
 19. 注解：@JvmName、@JvmField、@JvmOverloads、@JvmStatic
 
+
+
+
+
+| 语法糖表达式                 | 实际调用函数   |
+| ---------------------------- | -------------- |
+| a + b                        | a.plus(b)      |
+| a - b                        | a.minus(b)     |
+| a * b                        | a.times(b)     |
+| a / b                        | a.div(b)       |
+| a % b                        | a.rem(b)       |
+| a++                          | a.inc()        |
+| a--                          | a.dec()        |
+| +a                           | a.unaryPlus()  |
+| -a                           | a.unaryMinus() |
+| !a                           | a.not()        |
+| a == b                       | a.equals(b)    |
+| a > b、a < b、a >= b、a <= b | a.compareTo(b) |
+| a..b                         | a.rangeTo(b)   |
+| a[b]                         | a.get(b)       |
+| a[b] = c                     | a.set(b, c)    |
+| a in b                       | b.contains(a)  |
+
+
+
+
+
+## 类委托和委托属性

@@ -1,3 +1,6 @@
+// import { seoPlugin } from "vuepress-plugin-seo2";
+// import { readingTimePlugin } from "vuepress-plugin-reading-time2";
+// import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
 import {
     searchProPlugin
 } from "vuepress-plugin-search-pro";
@@ -26,28 +29,14 @@ import {
     getDirname,
     path
 } from "@vuepress/utils";
-// import { seoPlugin } from "vuepress-plugin-seo2";
-// import { readingTimePlugin } from "vuepress-plugin-reading-time2";
-// import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
-import { tocPlugin } from '@vuepress/plugin-toc'
+import { tocPlugin } from '@vuepress/plugin-toc';
+import { navPlugin } from '../vuepress-plugin-code/index';
 
 const __dirname = getDirname(
     import.meta.url)
 
 export default [
-    // readingTimePlugin({
-    //     // 你的选项
-    // }),
-    // seoPlugin({
-    //     // 你的选项
-    //     hostname: "gzwrrr.github.io",
-    //     author: {
-    //         name: "Gzw",
-    //         url: "https://gzwrrr.github.io",
-    //         email: "1627121193@qq.com"
-    //     },
-    //     autoDescription: true
-    // }),
+    // navPlugin(),
     tocPlugin({
         // 配置项
         componentName: 'Toc',
@@ -62,10 +51,6 @@ export default [
             linkChildrenActiveClass: 'active',
         }
     }),
-    // autoCatalogPlugin({
-    //     //插件选项
-    //     index: true
-    // }),
     mdEnhancePlugin({
         stylize: [{
             matcher: /^不/,
@@ -111,17 +96,17 @@ export default [
         components: ["PDF", "Badge"]
     }),
     containerPlugin({
-        type: 'para',
+        type: 'hide',
         locales: {
             '/': {
-                defaultInfo: 'TIP',
+                defaultInfo: 'HIDE',
             },
             '/zh/': {
-                defaultInfo: '提示',
+                defaultInfo: '隐藏',
             },
         },
         before: (info) =>
-            `<div class="custom-container">${info ? `<p class="custom-container-title">${info}</p>` : ''}\n`,
+            `<div class="hide-container">${info ? `<p class="hide-container-title">${info}</p>` : ''}\n`,
         after: () => '</div>\n'
     }),
     registerComponentsPlugin({
@@ -171,7 +156,7 @@ export default [
             name: "Gzw's Blog",
             short_name: "Gzw's Blog",
             description: "Gzw's Blog",
-            theme_color: "#21332d",
+            theme_color: "#474748",
         },
         favicon: "https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/Individual/logo.png",
         // 最大缓存：5M
@@ -180,6 +165,23 @@ export default [
         cachePic: false,
         maxPicSize: 1024,
         update: "available",
-        themeColor: "#21332d"
+        themeColor: "#474748"
     }),
+    // autoCatalogPlugin({
+    //     //插件选项
+    //     index: true
+    // }),
+    // readingTimePlugin({
+    //     // 你的选项
+    // }),
+    // seoPlugin({
+    //     // 你的选项
+    //     hostname: "gzwrrr.github.io",
+    //     author: {
+    //         name: "Gzw",
+    //         url: "https://gzwrrr.github.io",
+    //         email: "1627121193@qq.com"
+    //     },
+    //     autoDescription: true
+    // }),
 ]

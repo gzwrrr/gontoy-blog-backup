@@ -20,7 +20,7 @@ tag:
 sticky: 1
 star: false
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "JVM 运行时内存结构"
   icon: ""

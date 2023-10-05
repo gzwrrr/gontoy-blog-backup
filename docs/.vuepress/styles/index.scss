@@ -2,18 +2,101 @@
 a.header-anchor {
     // background-color: #21332d;
 }
+
+a:hover {
+    color: var(--theme-color-light);
+}
+
+.theme-hope-content a {
+    color: var(--theme-blue-light) !important;
+}
+
+.table-of-contents a {
+    color: var(--theme-grey-light) !important;
+}
+
+.theme-hope-content > ul, .theme-hope-content > ol {
+    border: 1px dashed var(--theme-grey);
+    border-radius: 2px;
+    padding: 5px 1rem 5px 2rem;
+}
+
+.theme-hope-content > p {
+    position: relative;
+    display: block;
+    margin: .8em 0 !important;
+    padding: 0.2rem 0.8rem;
+    // border-radius: 2px;
+    // border: 1px solid var(--theme-grey);
+    font-size: 16px;
+}
+
+.theme-hope-content > ul, ol {
+    position: relative;
+    display: block;
+    margin: .8em 0px !important;
+}
+
+.theme-hope-content > ul li, ol li {
+    margin: 0 0 .5em !important;
+}
+
+.theme-hope-content > img {
+    box-shadow: 0px 0px 20px -5px #0e0e0eac !important;
+}
+
+.table-of-contents > ul, ol {
+
+}
+
+blockquote {
+    position: relative;
+    border-left: 0.5rem solid #333333 !important;
+    background-color: #454545;
+    padding: 20px;
+    color: var(--theme-color-light);
+    font-weight: bold;
+    width: auto;
+}
+blockquote::before {
+    color: var(--theme-color-light);
+    content: "\201C";
+    position:absolute;
+    font-size: 30px;
+    left: 8px;
+    top: 15px;
+    line-height: 0.1em;
+}
+blockquote::after {
+    color: var(--theme-color-light);
+    content: "\201D";
+    position:absolute;
+    font-size: 2rem;
+    right: 8px;
+    bottom: 15px;
+    line-height: 0.1em;
+}
+
+strong {
+    color: var(--theme-color);
+}
+
 li > p {
     margin: 0;
 }
+
 table {
     margin: 0 auto !important;
     width: auto !important;
 }
+
 thead, tbody {
 }
+
 thead tr {
     background-color: var(--theme-deep-blue) !important;
 }
+
 tr:nth-child(2n) {
     background-color: var(--theme-blue) !important;
 }
@@ -23,11 +106,15 @@ tr:nth-child(2n) {
 
 // 标题样式 -- 开始
 .straight-line {
-    background-image: linear-gradient(to bottom , #7A88FF, #7AFFAF);
+    // background-image: linear-gradient(to bottom , #7A88FF, #58309e);
     background-position: 0 100%;
     background-repeat: repeat-x;
     background-size: 100% 3px;
     padding-bottom: 2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--theme-color);
 }
 
 h2, h3 {
@@ -69,11 +156,7 @@ h4::after {
 // 默认标签样式修改 -- 结束
 
 
-
-
 // ==========================================================================================================
-
-
 
 // 文章样式 -- 开始
 .main-content {
@@ -93,67 +176,8 @@ h4::after {
 //     border-bottom: 1px solid var(--theme-grey);
 // }
 
-.sidebar-links .router-link-active {
-    background-color: var(--deep-theme-color) !important;
-}
-
-// hr {
-//    display: none;
-// }
-
-
 #toc {
     width: 500px !important;
-}
-
-.theme-hope-content > p {
-    position: relative;
-    display: block;
-    // margin-block-start: .7em;
-    // margin-block-end: .7em;
-    // margin-inline-start: 0px;
-    // margin-inline-end: 0px;
-    margin: .8em 0 !important;
-    font-size: 16px;
-}
-
-.theme-hope-content > ul, ol {
-    position: relative;
-    display: block;
-    // margin-block-start: .7em;
-    // margin-block-end: .7em;
-    // margin-inline-start: 0px;
-    // margin-inline-end: 0px;
-    margin: .8em 0px !important;
-}
-
-.theme-hope-content > ul li, ol li {
-    margin: 0 0 .5em !important;
-}
-
-// .theme-hope-content > p::after {
-//     // content: '\2725';
-//     content: '';
-//     position: absolute;
-//     left: 0;
-//     top: 50%;
-//     transform: translate(0, -50%);
-//     justify-content: center;
-//     align-items: center; 
-//     display: -webkit-flex;
-//     width: 10px;
-//     height: 100%;
-//     border-radius: 2px;
-//     background-color: #333333;
-// }
-
-// p, ul, ol {
-//     line-height: 1.5;
-//     overflow-wrap: break-word;
-// }
-
-.theme-hope-content > img {
-    box-shadow: 0px 0px 20px -5px #0e0e0eac !important;
 }
 
 .header-anchor {
@@ -181,7 +205,7 @@ h4::after {
     top: 0;
     width: 5px;
     height: 100%;
-    background-color: var(--deep-theme-color);
+    background-color: var(--theme-color);
 }
 
 .table-of-contents {
@@ -204,8 +228,6 @@ h4::after {
 }
 
 .table-of-contents .router-link-exact-active:hover {
-    background-color: var(--deep-theme-color);
-    padding: 0 20px;
 }
 
 
@@ -220,6 +242,9 @@ figure {
     // padding: 20px 10px 10px;
     // border-radius: 5px;
     margin-bottom: 50px !important;
+    border: 1px solid var(--theme-grey);
+    border-radius: 2px;
+    padding: 15px 5px;
 }
 
 figcaption {
@@ -231,10 +256,11 @@ figcaption {
 
 // 标记样式 -- 开始
 mark {
-    background-color: var(--deep-theme-color);
-    padding: 2px 7px;
-    border-radius: 5px;
+    background-color: var(--theme-grey);
+    padding: 4px 8px;
+    border-radius: 2px;
     color: var(--theme-white);
+    box-sizing: border-box;
 }
 
 .em {
@@ -249,9 +275,10 @@ mark {
 
 // mermaid -- 开始
 .mermaid-wrapper {
-    background-color: var(--theme-blue);
-    border-radius: 3px;
+    background-color: var(--theme-color);
+    border-radius: 5px;
     margin: 20px 0;
+    border: 1px solid var(--theme-grey);
 }
 // mermaid -- 结束
 
@@ -260,16 +287,30 @@ mark {
 // 文章样式 -- 结束
 
 
+// 侧边栏
+.sidebar-links a.active {
+    background-color: transparent !important;
+    border: 1px dashed var(--theme-color);
+}
+
+// 面包屑
+li.is-active {
+    background-color: transparent !important;
+    border: 0px solid transparent !important;
+}
 
 
 
 // markdown -- 开始
 .table-wrapper {
-    // display: flex;
-    // width: 100%;
-    // justify-content: flex-start;
-    // align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
     margin-top: 10px;
+    border: 1px solid var(--theme-grey);
+    padding: 10px 0;
+    border-radius: 3px;
 } 
 
 // markdown -- 结束
@@ -283,3 +324,40 @@ mark {
     box-shadow: 0 0 1px 1px var(--card-shadow);
 }
 // 主页 -- 结束
+
+
+.hide-container {
+    display: none;
+}
+
+// #toc {
+//     position: relative;
+// }
+
+// // 右侧导航栏
+// #toc::before {
+//     position: absolute;
+//     display: flex;
+//     content: "";
+//     height: calc(100% - 44px);
+//     width: 10px;
+//     text-align: center;
+//     align-items: center;
+//     bottom: 0;
+//     right: -20px;
+//     justify-content: center;
+//     padding: 2px;
+//     border-right: 1px solid var(--theme-grey);
+//     color: var(--theme-grey);
+//     z-index: 999;
+// }
+
+// #toc:hover::before {
+//     content: ">";
+//     border: 1px solid var(--theme-grey);
+//     border-top: none;
+//     border-bottom: none;
+//     cursor: pointer;
+//     transition: all 5s ease-in-out;
+//     color: var(--theme-white) !important;
+// }

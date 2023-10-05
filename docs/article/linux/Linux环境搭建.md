@@ -18,7 +18,7 @@ tag:
 sticky: 1
 star: false
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "Linux 环境搭建"
   icon: ""

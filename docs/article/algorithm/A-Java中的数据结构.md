@@ -18,7 +18,7 @@ tag:
 sticky: 999
 star: true
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "Java 中的数据结构"
   icon: ""

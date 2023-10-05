@@ -1,30 +1,46 @@
+// 主题色
+$theme-color-light: #adadad;
+$theme-color: #8b8b8b;
+$theme-color-deep: #444444;
+// $theme-color: #99b3b6;
+// $theme-color-light: #7e9496;
+// $theme-color-deep: #475456;
+// $theme-color: #a6a5c4;
+// $theme-color-light: #a6a5c4;
+// $theme-color-deep: #8988a3;
+// $theme-color: #34343f;
+// $theme-color-light: #34343f;
+// $theme-color-deep: #34343f;
+// $theme-color: #ad7e4e;
+// $theme-color-light: #ad7e4e;
+// $theme-color-deep: #ad7e4e;
+
+// $themeColor: #b33939;
+// $accentColor: #b33939;
+$dark-theme-color: #21123b;
+$dark-color: #1d1e1f;
+$theme-grey: #302d28;
+$theme-grey-light: #8b8b8b;
+$theme-blue-light: #b0d3d5;
+$theme-blue: #282c34;
+$theme-deep-blue: #282c34;
+$theme-white: #cfcfcf;
+$theme-red: #ce4631;
+$theme-dark-brightness: #323437;
+$theme-dark-light: #26282a;
+$theme-dark: #1d1e1f;
+
+$theme-font-color-dark: #4d4f52;
+$theme-font-color: #9e9e9e;
+
 // 内容的宽度
 $contentWidth: 870px;
 
 // 颜色
-$themeColor: #3eaf7c;
-$accentColor: #3eaf7c;
-// $themeColor: #7f8ca6;
-// $accentColor: #7f8ca6;
 $textColor: #2c3e50;
 $borderColor: #eaecef;
 $codeBgColor: #282c34;
 
-
-// theme
-$dark-theme-color: #121e1a66;
-$deep-theme-color: #21332d;
-// $deep-theme-color: #282c34;
-$dark-color: #1d1e1f;
-$theme-grey: #302d28;
-$theme-blue: #282c34a0;
-$theme-deep-blue: #282c34;
-$theme-white: #cfcfcf;
-$theme-red: #7d2222;
-
-
-
-// $theme-color: #3eaf7c !default;
 $text-color: (
   light: #2c3e50,
   dark: #9e9e9e,

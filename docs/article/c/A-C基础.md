@@ -18,7 +18,7 @@ tag:
 sticky: 1
 star: false
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "C 基础"
   icon: ""

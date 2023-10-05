@@ -16,7 +16,7 @@ tag:
 sticky: 1
 star: false
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "Vue3 基础知识"
   icon: ""

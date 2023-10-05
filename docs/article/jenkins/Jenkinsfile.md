@@ -3,22 +3,22 @@ title: "Jenkinsfile 配置"
 shortTitle: "Jenkinsfile 配置"
 description: "Jenkinsfile 配置"
 icon: ""
-author: 
+author:
   name: gzw
-  url: 
+  url:
   email: 1627121193@qq.com
 isOriginal: false
 date: 2022-07-12
-category: 
-- "jenkins"
-- "运维"
+category:
+  - "jenkins"
+  - "运维"
 tag:
-- "jenkins"
-- "运维"
+  - "jenkins"
+  - "运维"
 sticky: 1
 star: false
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "Jenkinsfile 配置"
   icon: ""
@@ -40,19 +40,9 @@ feed:
     email: 1627121193@qq.com
 ---
 
-
-
-
-
 # Jenkinsfile 简单使用
 
-
-
 [[toc]]
-
-
-
-
 
 ## 声明式流水线
 
@@ -74,31 +64,31 @@ pipeline {
 			customWorkspace "${workspace}"
 		}
 	}
-    
+
     // 全局工具
     tool {
         xxx
     }
-    
+
     // 环境，全局变量
     environment {
         xxx
     }
-    
+
     options {
         // 日志时间
         timestamps()
-        // 删除隐式 checkout scm 语句 
+        // 删除隐式 checkout scm 语句
         skipDefaultCheckout()
         // 禁止并行
         disableConcurrentBuilds()
         // 流水线超时设置为 30 分钟
         timeout(time: 30, unit: 'MINUTES')
     }
-    
+
     stages {
         input {
-        	xxx    
+        	xxx
         }
         stage {
             when {
@@ -117,7 +107,7 @@ pipeline {
             }
         }
     }
-    
+
     post {
         always {
             echo 'xxx'
@@ -125,8 +115,6 @@ pipeline {
     }
 }
 ```
-
-
 
 ### 2.各部分解释
 

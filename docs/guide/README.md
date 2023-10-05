@@ -18,7 +18,7 @@ tag:
 sticky: 1
 star: 1
 article: false
-timeline: true,
+timeline: true
 dir:
   text: "说明"
   icon: "home"
@@ -46,10 +46,10 @@ feed:
 
 # 说明
 
-::: note 说明
+::: info 说明
 这里主要介绍博客内容的编排
 
-此外，这里还提供了某些常用工具网站的导航
+此外，这里还提供了「某些常用工具网站的导航」
 :::
 
 

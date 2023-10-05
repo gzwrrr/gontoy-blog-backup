@@ -16,7 +16,7 @@ tag:
 sticky: 995
 star: true
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "基础查找"
   icon: ""

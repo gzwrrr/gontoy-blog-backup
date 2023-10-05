@@ -16,7 +16,7 @@ tag:
 sticky: 997
 star: true
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "其他经典算法"
   icon: ""

@@ -16,7 +16,7 @@ tag:
 sticky: 998
 star: true
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "数据结构知识点"
   icon: ""

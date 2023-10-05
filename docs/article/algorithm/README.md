@@ -16,7 +16,7 @@ tag:
 sticky: 999
 star: true
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "数据结构与算法"
   icon: ""

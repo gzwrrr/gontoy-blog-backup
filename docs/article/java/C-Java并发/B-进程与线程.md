@@ -18,7 +18,7 @@ tag:
 sticky: 998
 star: true
 article: true
-timeline: true,
+timeline: true
 dir:
   text: "进程与线程"
   icon: ""
