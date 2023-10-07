@@ -1,7 +1,7 @@
 <template>
   <div class="Container">  
     <Collapse :title="typeName" headColor="var(--theme-white)" width="100%" bgColor="var(--dark-color)"
-      :isCollapse="true">
+      :isCollapse="false">
       <div id="list-container">
         <div class="list">
           <div @click="to(item.url)" class="item" v-for="(item, index) in list" :index="index">
@@ -45,8 +45,6 @@ const loadFail = (id) => {
 }
 
 onMounted(() => {
-  console.log(props);
-  // console.log(typeName.value);
 })
 
 const to = (url) => {

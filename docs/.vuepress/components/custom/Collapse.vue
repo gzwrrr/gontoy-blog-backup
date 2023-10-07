@@ -46,7 +46,7 @@ export default {
         },
         isCollapse: {
             type: Boolean,
-            default: true,
+            default: false,
         },
     },
     data() {
@@ -98,13 +98,11 @@ export default {
     border-radius: 5px;
 
     .CollapseHead {
-        line-height: 30px;
-        font-weight: bold;
         padding-left: 10px;
-        font-size: 20px;
         caret-color: transparent;
         padding: 5px 0;
         background-color: var(--theme-dark-light);
+        color: var(--theme-white) !important;
 
         &:hover {
             cursor: pointer;
@@ -129,11 +127,9 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    letter-spacing: 5px;
     position: relative;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 0 15px;
+    font-weight: 100;
+    font-size: 15px;
 }
 
 // .title::after {

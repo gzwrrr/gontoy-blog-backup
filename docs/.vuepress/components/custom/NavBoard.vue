@@ -1,10 +1,10 @@
 <template>
     <div>
-        <nav id="vuepress-toc">
+        <!-- <nav id="vuepress-toc">
             <span v-for="(data, index) in dataList" :class="{'vuepress-toc-item': true, 'vuepress-toc-link-active': selectedIndex === index}">
                 <RouterLink class="vuepress-toc-link" :to="'#' + data.typeName" @click="changeIndex(index)">{{ data.typeName }}</RouterLink>
             </span>
-        </nav>
+        </nav> -->
         <template v-for="(data, index) in dataList" :key="index">
             <LinkNavigation :id="data.typeName" :typeName="data.typeName" :list="data.list" />
         </template>
@@ -36,7 +36,7 @@ onMounted(async () => {
     content = document.querySelector('.theme-hope-content');
     content.style.overflow = 'visible';
     toc = document.querySelector('#toc');
-    toc.style.display = 'none';
+    // toc.style.display = 'none';
     document.documentElement.style.setProperty("--content-right", content.getBoundingClientRect().right + 'px');
     document.documentElement.style.setProperty("--content-top", content.getBoundingClientRect().top + 'px');
 })

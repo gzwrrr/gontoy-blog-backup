@@ -113,11 +113,21 @@ tr:nth-child(2n) {
     padding-bottom: 2px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.theme-hope-content h1, 
+.theme-hope-content h2, 
+.theme-hope-content h3, 
+.theme-hope-content h4, 
+.theme-hope-content h5, 
+.theme-hope-content h6 {
     color: var(--theme-color);
 }
 
-h2, h3 {
+.blog-hero h1 {
+    color: white !important;
+}
+
+.theme-hope-content h2, 
+.theme-hope-content h3 {
     // background-image: linear-gradient(to right , var(--theme-grey), transparent 80%);
     // background-position: 0% 100%;
     // background-size: 40% 10%;
@@ -129,7 +139,9 @@ h2, h3 {
     border-bottom: 1px solid var(--theme-grey);
 }
 
-h2::after, h3::after, h4::after  {
+.theme-hope-content h2::after, 
+.theme-hope-content h3::after, 
+.theme-hope-content h4::after  {
     position: absolute;
     bottom: 5px;
     right: 5px;
@@ -140,15 +152,15 @@ h2::after, h3::after, h4::after  {
     padding: 0 5px;
 }
 
-h2::after {
+.theme-hope-content h2::after {
     content: 'H2';
 }
 
-h3::after {
+.theme-hope-content h3::after {
     content: 'H3';
 }
 
-h4::after {
+.theme-hope-content h4::after {
     content: 'H4';
 }
 // 标题样式 -- 结束
@@ -361,3 +373,28 @@ li.is-active {
 //     transition: all 5s ease-in-out;
 //     color: var(--theme-white) !important;
 // }
+
+
+.auto-catalog-wrapper .main-title {
+    display: none;
+}
+
+.auto-catalog-wrapper h3 {
+    text-decoration: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0;
+}
+
+.auto-catalog-wrapper h3::after {
+    content: '' !important;
+}
+
+.auto-catalog-wrapper ul {
+    margin-left: 1rem !important;
+    list-style-type: none;
+}
+
+.auto-catalog-wrapper li {
+    
+}

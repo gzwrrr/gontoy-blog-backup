@@ -1,0 +1,254 @@
+[
+    {
+        "typeName": "开发工具箱",
+        "list": [
+            {
+                "title": "CodeGen - 面向开发人员的高效工具箱",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACJklEQVQ4jaVSPWsUURQ99857O7MhyUYTwgbRFVwTFFS0EoQ0fiEEUSt/gb9jWhsrCyGVxvQWNgqxNCAEtVBRsmDiZ4JiBrM7szvv3Wsxs3EhTdADr7gX7nnn3nOA/wQNFqp6HsC0iAQegHhAAHD5rGUP4AMRLQ0Okaqy935e9wjv/Xwcx6yqRACQZdmlMAyfAPCiEIazGx3OV77n1HGKiSHWs1MWETurbD0BQbfbvRxF0VNTCpkGIKIqTLD33zq59zo139qKzCtGKoTDI6y3Z4flzKQAYAHzNICCQMQFQEgMZx+1ROLlDkJSOj3Benw/4cWGopMrqmZnc3LOBQBQtrhoSuAevGkHBMW5A0bvzA5RrcpY/9UFBRYHRw2JiGMGcclUKiiKjbbHZkdAAK43Q6pVDbJccWhfFYCSqCoVZwMz//26D4aAVOBdjp7zAAgB991mQHfngAu2oqgPG9QrPbgsxcOXP/Bpq4eACSuft7G0migzkWrBIqVsM0CmRGpunazKcusnnn/0uLH4G42xCt5tpljf6unizaZePVYLMKCFAcAY4wGoIMgvHq3x3SuTODIC+pJkeNbaQjvLaW5mFM3xEAB5AFrOFArSNF211jITqSjl106M2wvNsfzV123a7immRit6ql41ICKAFACnabq6E+U4jk2SJAt7jXKSJAtxHJudKPextrY2F0XRjHPOOBHq29s/dFSp5FmWvW80Go93+/GP+AMfKlGdo6wOEAAAAABJRU5ErkJggg==",
+                "desc": "CodeGen - 面向开发人员的高效工具箱",
+                "url": "https://codegen.work7z.com/"
+            },
+            {
+                "title": "在线接口文档管理工具",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACAUlEQVQ4jY2Sy2tTQRTGvzsz9+ZqLvGSmFpKo8aIlai1BusjlmJR3KhYpG7cuKkbXblwIQhi3WXRf8GCaNGliiuXLWgVhLaKgtRoMfXRQh8muZnOneOmSZPQGL/VcM53ft+8OBqLmaZ5iHO+Q2v9C4D/D2+tTuyxex4NBj99z4To93CIHtw4MB51nd6NvLy+cL7L6h8esJ+lE6xlk2nA4gaSkZVYel9k5vGEx5RS2UaAlBsUL0eu2Fc1UWD0zSqOxsttQrvjHYu4gSdjM6JVSjlbOef6vCUzF63k3lZmv5v1cX9cgqg6izYPHvHvmCbgOE5LuWqUF9dP2vcyA4HbBprI4Je23vS8QqHwvHoH9tlOfq3pMACQviWEmHdd160ADscDZ9IJEf6feYBS2SG7oJRKVQD9neKUVXWdH3IaX+Y1APx5+1X/qEfY5movEbEKIBamZLUh2caQXdDILmhr7LMeWfGolsBYrLIEADKg6lP6OgSWimTFI7g8nSNZ0/T9OSHEOuDFlH64XJ8C4GA7x4Uusf34LmZVlRVj9DSfzwtg7SO9z6nJ5SJbCjvoadvCLKPxc6iPc3S3Y0hRqVR6DaBQY3UBt3u/fa4vwbsNTqltIS5LioQn9aLy8W36pzk1OlF8JaWcbBhRVjAYPA0A0Wh0N4CdTQc2UHgN4ABwGpn+AuvAr2lfG/QsAAAAAElFTkSuQmCC",
+                "desc": "在线接口文档管理工具",
+                "url": "http://www.docway.net/"
+            },
+            {
+                "title": "即时工具-致力打造即用即走型在线工具箱",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACxElEQVQ4jW2TS2icZRSGn3O+uWQSJxFjvMQwk4CFNq2KC0EQREFwYYsLcxEDDQrBhQvBG0gVfwStoEmhGxdWFETrjFZEXCiC0IUboeimSivUpFBrQByrZmYy83/f62JMBfWsz3k5POc8xk5JBoCZAGZO6Pm8w1lTLHsljK/P2REAMjkZgkGfAzCvgJkw09Rx3VVv6oswyouIYRGuCWOszTT1aa2hO8gsgYl5BQDbWWCiqRsr4rlQZJlBdIpbPKzIeGGMVRKmCOrzRjdweHPBfhy0ralSb+ipEXSqOM6y+pxNXb71IQxHXsC8BLHN18pZL0ywUoFT9YaeZE0Vn6yxu1DlVclC3uLlVs7tck5aGUsxSpHoIyhGjnd77Ou3OIq4IlR57fpJ9nhw+rHN0Zhz68a8Hbq0ZC2DERJASHJGtY0XCjxgQ9TPz9vj/S77Yps33UmGZDvkyVQgI9beT6+XJvzR7U0eyXN+Kld514uMpy16yVndXuelzadti0zul4cBZgfncRwNWI9ePGif//krN8ctjkj0S2M8W5nmdK2h5QHETF5r6MD0B3qbLkM7WWaA077hHd2S9yhtLNoTPXq39VscQ9TdeWtqlr1+3Sy7Q+ATEnfzGzmZPJHAQYk/3Nh/VZ1vJt/TgYsPlr/fWLQVJc4g+kq4h0RRkY5gi4+IZJYcNwAX7uJSqHJlSNz7N6eSIUfIEnIcw6mY2DPzGB9PNXVTgrYZJEfy5EQSiZ+nPtSu6b00MduFUZZjfqHLDymR4fzuo9xXSJw0sT91kIQj99TBvMhcIeerMMb9ZvyixDMXOpy5/Mq1pmYNDrnzkAw8kHrtuOwpXB2qrBJxRVDiWDfn8OaSnftHpkx+fsG+21iwpSjuUeJLG8Zdwc1xH8aV81nMuXNj0VY2l+zcf2T6t861E3ohdjjtTjWUuHZ9zl75P53/ArYVUQxgxZh9AAAAAElFTkSuQmCC",
+                "desc": "即时工具-致力打造即用即走型在线工具箱",
+                "url": "https://www.67tool.com/"
+            },
+            {
+                "title": "在线工具",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAXklEQVQ4je2SwQmAQAwEJ4dlXTMRbCqCzXjWFR9yPxVMQHy4n+Sxs7CwgukKVGJqJQED1JKAARj649PyCJR5PC6mfmXqod18pnSFP+ALAWDqUWHqt0N6pUIBWhyXbQcIJUqOEqpEdgAAAABJRU5ErkJggg==",
+                "desc": "在线工具",
+                "url": "https://tool.lu/"
+            },
+            {
+                "title": "软件替换品",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADE0lEQVQ4jW2TXWxTdRjGf+ecf3tOz7bWfsLCQBI2x3BlH07itsQIEm+MHwlRkQtjQjKiI34szhmNhmiiAokm6kzGhVcKemFG/EggIkpMispwFNlkbOKwLJ3d2rQ6T3vanvP3Ap0KPNfv73nzvnkehav1wplNwACasgWfiCqqgrSrCxTd4zi8wb727/87rlwFjwRXBvruagrSH/fRGFCZX6oylXc4Me9y6GyWwnz+AK927LrW4MVk4s7e1u5Os8DOm02ipuDZo2lQFeIxnXURnYDpY9+kxmdfJk/yWkcPgLiyOTl8R29rd9y7yFLRIWPprH/nAlRchN9DzbRKg1/QtsKgPx6iSnv3ETk+zOsd/QqD4+3+NcHxl3pDDH2RYnpXE1s+nGU2XQRDg5ILjgQVECphv+CbR5vpef9X8jOZDoGuDt7TEuSjHxfoqvehKlyBHQlll7bVJvfdVEfEp+HXNW5ZadASUHgoHmYklRtUMbWtjabDqZTFhrCOlIALD3eGuLC7mTM711F2YTJdpMar0ho1ANi21gNebaswdC2GU4Wyy0y+zNqAh8knmmmJ6Mv/fbIrRK7okPytxO6jaYSm0NNgYvi9MeFKECrgVfl2zsJ25DJ8NlPi7VNZPpn+g0yuDFKC7YJQmOkM4QKiXKpmhMcT8+gqlaUqf1ZcLhUcHjmc4ruURddqk4HbIrSvMKiv9eBVYWLRZuhElnKxmhGU3GMXLbHj3sY6trcEeP74PO+dzvFMb5TRB2+kvlYsn/LmWJanu8KsD+t8Oqfw88X8MUHO3v/xZG7H4mNreOBwil8yNom+Jqay9v9ggPMLNnsTC0RuqGH0pxy41f3K3ykcvn/zxsfrrDRP3Rpk28FZLldcKoMbAPhgosDJyxarTI2xxTKnK1EunZt6l1fa+v+1f248cfsRR949mpYM/SCjb52XUkpZcVz5+czvUkopbSllw0FLsieZuH6ZXj43gmH0ITz4sPl6ewOragVzFhyaLjMylqFYWDrAno3XKdM/2juxSYUBCZulSwwA28lgVb8C9Zo6/wVifUWWmua/mgAAAABJRU5ErkJggg==",
+                "desc": "软件替换品",
+                "url": "https://alternativeto.net/"
+            },
+            {
+                "title": "程序员福利网 - 一个给程序员谋福利的网站",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC+0lEQVQ4jZWSS2hUdxTGv/P//+e+cpvJJGMDo0ZNS134qImtUsSSTWmFOj4gBWmhoAtBcKHQLFpCfS902xaUkkULlRroQ2sWfYAVaXWhIoldiB0mqVkkppk7d+beuTP33v9xEQOhFMFvd/jO7zuL7xDABBCvHuAO4WAPGK+C4KWEnyev0h8AsOodfkMKvM0aOSLc0w18V75GHsBEANC7k19n5pNg+MT0FwhZImxi6GsAQBADrHEPQIXB66ConZP40/KYcYtW7o5eUkKd1gm+nrysruKp+nbUltVM52MmLUipUw9H6fGit2o37xBCf5ho8Qmtfi89AuJS+Vv1I55DawaTohb0smIzbSX16AYAXNl83unK5taHcz09tbB7hZ83sl5ewMsbXqVLTs+/aEzdb3gTt48VwhjBDWnaK1TGiKcmv3/BLx8+0BfW/h2pzdgbLCuRMspAtFxoLZFoiWaq0Wjp9JVC9/jyi7z/8j6623Mg+keKvtM0tOui3igmvmkT7a+FkeIkloibUseRTCNKdEvFaCmNVALI2oUGWn16+9APfl2GYm4Ef+9yvtpitXtb6zSTZhyPlOOTcjwydTPjBDpjhSnZgSazwSRn/NSK5ZY1nea2uc+tBwKgRLnxI23WYtP1SdpVVk41tdxQZOxqw2ykkRsKYYac2oFmOxJkVZtNGaMEAIIB2nDo13GtkgvLujxhuVXZ0REpo82vG+7sXmqJvVaAoDOyVVtIMpe4wqjpL8cOmuMAkyKAAQKl+OhhXLQMp/mWDCqlRKlT2//84DcAuOSWiyLAMNxMb1DzfoHfGAJAAPHTVpkAAMO8beOZUnGxawYTL3oA1h6rFO1z1a1LGbEwLCT15ir+rN3dvwCDaHBU0OCoYIAAoJpDf6eQ0VJGLf2ukp+7X8hX3y989vg4/Z4/gVFKAYAGWRYG5oeh2Z6+OTaxlCH8R9kvvJwj07MksJKJ7yzcon5mPArqasg/mp1/ZsCiukfm35XEbwIEYlyf3t/50//tPQFEPlGwOA0NmgAAAABJRU5ErkJggg==",
+                "desc": "程序员福利网 - 一个给程序员谋福利的网站",
+                "url": "https://www.coderfuli.com/#/home"
+            }
+        ]
+    },
+    {
+        "typeName": "Java工具",
+        "list": [
+            {
+                "title": "Java Code Examples of com.google.common.collect.Lists",
+                "icon": "",
+                "desc": "Java Code Examples of com.google.common.collect.Lists",
+                "url": "http://www.javased.com/index.php?api=com.google.common.collect.Lists"
+            }
+        ]
+    },
+    {
+        "typeName": "JavaScript工具",
+        "list": [
+            {
+                "title": "前端有用的代码小片段",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACFklEQVQ4jZ1TPWhUYRCc3f3eyyWxCBELBSsjyFmYgI2pRAXBQFSOKxQLm1jFw5R2rxMVkpDYGEwQFBHOv0uhCCLYiIho5SFBsRNMQGz08t73vl2Lu5g7AiE6zQez7DDDNwt0wAiJMcxoa3w7EuMNSx1vO7/OdQwPT1lfXwGD5rPlWqWrvsYfmrTunQUcMMWPx+O01L7TUiM7PZOPSUzXNWAbEQuR1dLvdJb7w9Goi25poO0EEpDVfnsae1ahFQBggGx0xobiXplTxQNNw7BqOMMOx12/n2Zgh6q9yzM6onk4x2LHutluN9MYOQDggK+rjTBSG3dPW87ejk7lPVEs8z7la4sVWlizfHI6zaNCfL80m+57SPSJAeDJBP1sLhshMQczErEvBgvKqxkAFJOPcblsYkxLmgfNwLtaEdp/gQwJwsAsYjBNSJewRNHlctmknhR9tUqBc0QGEAyhU2ATVDeZtTkgbUaAfL6IjCCTIQ0avL+CKoViUo/KZRN18AQYCPJX4NSU9ZVu5CeaESgHkeU+DAAsrIUYAOrJ/qwZgfeKE47hvrV6AIzOZEPdvdF7n+q85mEO4D1xjyz4RrgD0zckXMq9XBXGblfQmyGzV4/G3QjMiAGjxUr8IfvlLzBTicW9Fif31IfneSyXFLzCjg662F6yw10N9KKhjfPNGpJtrLLDoBmWaxXaUpXX8Z/HhA3DfzznP6QfCt66WhhoAAAAAElFTkSuQmCC",
+                "desc": "前端有用的代码小片段",
+                "url": "https://www.30secondsofcode.org/js/p/1"
+            }
+        ]
+    },
+    {
+        "typeName": "CSS工具",
+        "list": [
+            {
+                "title": "在线CSS代码可视化工具",
+                "icon": "",
+                "desc": "在线CSS代码可视化工具",
+                "url": "https://enjoycss.com/"
+            },
+            {
+                "title": "Fancy Border Radius Generator",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACTklEQVQ4jV2TO4hlRRRF167Pfe/Z3eMHBAfGTEwM1EREQUxEhEHQQOykBUM/kQgmwguNBGEYBCM/oLSYTjIIBgOCoGAiiKYmoozzfXOr6tY2uLdh6Arr1F51ah1KnFpbtmHLtgP8wVfnCn5mjZ9YwbkBrzP+8T7u+VS8tgPQaQDAZT5/co/4zhpeWqGz+0QGYMCsEBPlsvDhGd74N9wdNOgSX38YWV9Zs/fmRDq7w75Gm65Tp2u0dpVS99l/YYKP7u5Axxxn4c/u1fqoecdAr1mOg9HJ7ZmuAfqG4MhUoD6bwAL5BtPHD+jg6D9u1SxHm9wtEAZjIxM8n+8+YNh0OJ9AvsC35wnp7avetcFES0GSscGWNcdsJNRBrgRX9HjacjyM6INMcncDSbMOq8+hpUmwjCx1rBFo6EyC+HSRn7rpkSwiIM8EzBzExtbMkbBhFJpMSzXwXGKVi8tk0KJV9gxhUe2FKs3l5uCG/kkj4dGk0BuyvShb3jynZqI1F2Yz1h1BM3+mBrsRQoCOJM+92lq6WSAGpEUD6JabM+mXULq/vO1aKikWmKqCR1D1bLpIjILKvD/KNpk7+K8blJ/CRV690rrfqwRNDGnEvSi0EVwMFbk6uCyQgiaHQSNcepGjvwOgi7xyYdfbyyP+1Wyi2aRJKRSkYrmIXkwvuHVyvu7xZiN8AhBPPP/MN78/6Oe/OPDmt04Nlg8s7UVijOQQSCGSY8e3J7e3Dnn9e06GcvobA7zP8UOZ/FgK/ZFV98MDvn8V1NXrd+9y+MMyHv8PeWdN1SidKh8AAAAASUVORK5CYII=",
+                "desc": "Fancy Border Radius Generator",
+                "url": "https://9elements.github.io/fancy-border-radius/"
+            },
+            {
+                "title": "Neumorphism/Soft UI CSS shadow generator",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABOklEQVQ4jZWSvUoDURCFv3sJBGK5VsEHCKQSbXyCgJDWwsaARd5ECPoAPkFaSSOk8g3strDMA0gQAsqanWNx9+5u/uPc7s6cM+fMjDsf6srDg4M2B0Iwl2P0/uxe4p+7GOrNQVtGy0wnICSFcitgqGAQIs+Wvz936TiZArjLoT5kauWZnQWwBYCEEMigIIw5SSan63ScTD2AGaudt4KrHMgrW0w6/XTgo7tQYHvAazlo4nn0wdo/wYpKOG1UI14tUCl3ExwfQLBg0d9x4MJCjaA+/V1g6sSlBRrliRzwXFdVbqRSsGcTbANbqcAL5iha2NJZq5bq8gOBYyQs2zggjhgm4AC6t189T/4qye843UpBXGP+DbJAANC9+ezJFhOgWe+wLjuoWBYq3awkAOj00wGeJyDhcMzMcf8HOPx6iWMUuCsAAAAASUVORK5CYII=",
+                "desc": "Neumorphism/Soft UI CSS shadow generator",
+                "url": "https://neumorphism.io/#e0e0e0"
+            },
+            {
+                "title": "Css在线解压缩/整理/格式化 - 在线工具",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAXklEQVQ4je2SwQmAQAwEJ4dlXTMRbCqCzXjWFR9yPxVMQHy4n+Sxs7CwgukKVGJqJQED1JKAARj649PyCJR5PC6mfmXqod18pnSFP+ALAWDqUWHqt0N6pUIBWhyXbQcIJUqOEqpEdgAAAABJRU5ErkJggg==",
+                "desc": "Css在线解压缩/整理/格式化 - 在线工具",
+                "url": "https://tool.lu/css/"
+            },
+            {
+                "title": "CSS Gradient — Generator, Maker, and Background",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACPklEQVQ4jWVTPWtUQRQ9587u+5j3shEbg+CCiGBjJygI+wNMFz/qFOlEixSCqVLFLlXsUvgHTBftA4JF/oGIEMFExYQYNdm3782xmJfdGO8Uc2eYe+ecc+8lohGAAKB7+9kdVxbzzvuBlVnfvAdKv2M+3WKavdpfvvf+bAwxtodJ9+aVF1Zkj63XSy3vgnkKFjncVAHrTcNlbsgif/ntYPc5lh9VAGAx05PUXbu4QZcsAkrUVLXUhPYHKTRBo5M6BCXMy8VLl69u4M2HFBINgGzmcIVMZ9WcVBBEoENxjI4gAXWAoObXz4pT07MzP36vgBTh79+yXvHOfO7oc1qZm3kvKzPSZ5FCkcO8F8uM5n2wnpd534wSd9fQ7SxInUSEIh0JDIQ0VgoiRBGkQFB1ENM8Sc0WDEEDohEEA0VgAh2nHkOsUQgERJCm0VAiBwagD4iMFRHORmvix7QEwIinqQmgb6dPdG4/f2gZQa3KLTgZgJ2YlQJ4Br/+AcH2jhApCp2uAHw2GLdERxABksaRPBUx6hrRmwCToMBOQgVtGUb1OlFXEtuoVotxkwogIVGQKEFwRg2PKyisG/683gawRksciBpigBBLBkqRmhjLGADVrph2akZruw9ubBsAhr3vS9Jwky5LQFBUrVY2ClAkUQOgKy8k4ehwc++gWBq3MvB22Hzcn5OqVZAVXdohnYFx0cyY5B0aKx0frX798mkOT68PYytPRJ6Ms5+ad2U2sDLr03uwzHfM+y2myX/j/Bf4DwXbJZUOAwAAAABJRU5ErkJggg==",
+                "desc": "CSS Gradient — Generator, Maker, and Background",
+                "url": "https://cssgradient.io/"
+            },
+            {
+                "title": "CSS Grid Generator",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAQUlEQVQ4jWNgIBEwYgr9//8fp2pGRiZSbcCugZGRkZGREZONUwMeQLIfWPCrwAQIJ+FyNzX8QLyTKIuHoesHkgEANf8PSF1vbLwAAAAASUVORK5CYII=",
+                "desc": "CSS Grid Generator",
+                "url": "https://cssgrid-generator.netlify.app/"
+            },
+            {
+                "title": "Transition.css - easy transitions with clip-path",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC00lEQVQ4jW1TPW8rVRCduXev11lvvFG0SkLCyu6IFCRAegpCoqChAlHRRDT8AGpeh5bm/QBEm4biCUV6BR2iSX5AGiSCFCLZibzreCWvvA6s98N376EgNgG9qUYazZkzZ+YQvSbOzs7kKk/T9IMoir6cTCafXV1dbRMRAeBVnZ82AhDMbIiI4jh+j4heGGM+IqI2ETWWZd3Vdf1tr9f74bH3XyQAzMw4Pz9vHx4ePtdafy2ldJgZrusarTUvFguhlCKt9Rf7+/svwzAU/IQJRqPR+7Ztf2+MeVZVFXzf147jqNWQuq71dDqVy+VyKKV8OwiCQjzug8Fg8I5S6met9TMpZR0EARzHUWVZIooiZFmGVqtltVotAOhJKY+IiKwVum3bz5l5q9PpVN1u1waANE2RpikbY1AUBQGAMYaYWQohJBGRxcy4vLxUWut3pZRmc3NT1XWN8XhMVVVxt9vFxsYGVVVF0+nU2LYtmfkmy7Lf1wwGg4HZ3d2tH6/QACAhBB8cHMB13bXQnU4HeZ7DGPNrr9f7k4iYwjAURER3d3ffJUmC+Xxe40mUZWniODZ5nhsAJkkSMxgMxjc3N10iIisMQ4RhKJj5La01TSYTLopiTXs2m7EQAp7nERExADRN4xCRvVoBJycn+8vl8kOlFPm+L9I0pSzLCABvbW3B932yLIvLslwCsNrt9h+np6fp+hNHo9FBURTXnuc5Ozs7/PDwgCzLsL29zSsN5vP5Mssy5TgOVVX1eRAEr8Iw/OcUnuflx8fHnzLzm0op3el0pOd53Gq1uKqqJkkSNE1jKaXu8zz/qt/v/0hEfHFxgbWIt7e3n9zf3yOKIsxmM71YLJbT6VRHUYQ4jjEej18Oh8P+a8208sFwODxpt9svtNZ9IQQBMJZl/UZE3+zt7f30f8P9x40rkOvra9/zvI/LsnzDdd3bJEl+OTo6+ms1lZnx1MF/A7Jhq1w35rjeAAAAAElFTkSuQmCC",
+                "desc": "Transition.css - easy transitions with clip-path",
+                "url": "https://www.transition.style/#in:circle:hesitate"
+            },
+            {
+                "title": "loading.io - Your SVG + GIF + PNG Ajax Loading Icons and Animation Generator",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACwklEQVQ4jW2SS29bRRiGnxmf43PxJW7IxYlporSApeBIKSCVCtFWvUC7QSB2lSrBgjUr+BP5DyyRkFiwAFWVAl20UiqRTdI0oeklidpFmtpx7fic45MzZ6YLp05T8UmvZvG93+id+R7x4/fXvuyG7TmMnjHGAIas4zJxsoqddWg3GzTrO0RhQK/fqyRR94zWP1tR0J4rFd2ZnO/2mxnL4sLlL5j99BzBXovtZ1v8+dsv7LWaCCEACMN4Zqf+ck4K0prvuwgh+lLJPv8tL6J1iufn2Hy4yn4cIaXse3zfwbYzH1rGcHDnmyWIwg6pUuhU8eTBCnG3i5TybZ+QYI68DcAYw+j4cbKOi+fnOX/1W/LFAYwxaH3UK4fH3qVcmUTrFJ32VK5M8Mnnl5FSsvFwlacb66gkwXMdpt+bJGtb6IMPt4ZGxvj6+g88WF6k8WKb0uAwtY/PMFyuEIUBywvzeCYg79lMjI9y5tQ0Qgq2X+wSBjGWMYbBoVHOXvnmSLRWs0GqNeWxCidKhtnp93GdLFYmw6XPPiIIu/z6x99YzzYf8XRjncrkSVq7dYrHBmnsbLNw83fKI8MMFhxcJ4dlZQijmL0gwnOyFHIeQgisTuslG+urbD1a49/b88yePovj5UijFtXxKVzHwQBLa49ZWntCEHUp5DxmqifQxmAhBHdv3ejtXyUs3pnHAJYUtDsRed9nZX2TW3eXSBKFENAJIhrNNs93mlgAaaoOIVIK33OoTh1noJBjXynWHm+RJEmfAyFgP1GEcczbZGCAUrHAqdoHuE4WpVKibtxH+BAhEAjkwcwhGELwvN7kr38WaHcCnKzN0LGB/4Gtd8gkUffDMMYY05dSKUHUJQhjtDbUqlOUigW01n0aoyhGwH3x3VcXrwgp52w7U4PXMQ3FfI6Rd0r96PXdFrvtPcSBR8CKY9k/vQLHDEq6f3EdiAAAAABJRU5ErkJggg==",
+                "desc": "loading.io - Your SVG + GIF + PNG Ajax Loading Icons and Animation Generator",
+                "url": "https://loading.io/"
+            },
+            {
+                "title": "Get Waves – Create SVG waves for your next design",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACk0lEQVQ4jV2Ty0tVURTGf2uf7X1amuajNDITw2ZJo5AwiCiaFI2qgeOCXtAkmgjRIIom0SCC6E+ICIqICIQCyyQnQdqDHlq3srLjvfe89mpwjhYt2LBZj289+D5h2UYNjDoAiqe6wA6BdqUx845abQyufM2SBdClzz+OEx0UC2cQPQjaDjYLxwrMgneDauUi3Pi9VCPLxbmTA3iFW0hDPwSAOhCXIRgQAzkgmKQq++DCe0CyCY61USo/BulD6yFiLRgB93dAI4pzEVLIY8Jn/E6G4VLVpDuXzqLaB0kgtrUBFcEtgjrBGEhi8BcF1RyhH7DotlI2x9MVSufXoJUXXr6/tdi0G7xGIfE1rE6ZsDau1BeEcrOyeyf0bYQocIxNCBPjbwhXbrHo3Hbx2toKzXscUhBNaojkJN80pJ7XLfXGJ6oj+4XebqgDBo/DffDl03reTA1aoqDLlDcocegSs+AJVpXE4IdQLsOBI8JqC3MxWOtIHJSMsKrTwmSPJQ5IelYQoXjTFbTBgjpca5OGu9aJljyYd4rxhCg7qACxA0QtJG/xvxHu7fdMRxHxa6IrS+o2dgr5HCyoIiIgusybUGG+EkE8Y6E8xofXn/nhd7iB9YY4S4uA0IGIoFlX5yBnoDKnVGZnYNOkBxNVos1NBN4wnQPgx0pdITYQS/aAKIFEUu6N3TJ8nT4Hlx97ab9tE/x4uwctd9LeKyRGCDUtTFCilEmowNN7wvTDB+jgKbijGcB4QG7HXWanhljwu8i3gG0kJZQIkRPmP8Hz28LrR/cptR0iPO3/K6bUui8X+fjyJIWWEZrX9lBoyaMOat/r/Jp7RfDrOly7mh2U/wGWJQpHG+HnINgNmahmwEzCzfr/uX8AQi4cHDIUqEkAAAAASUVORK5CYII=",
+                "desc": "Get Waves – Create SVG waves for your next design",
+                "url": "https://getwaves.io/"
+            },
+            {
+                "title": "CSS Tricks",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADQUlEQVQ4jWVTbUybVRR+7vtx276FQhkFlQVqnFuCmjnoIChlZaMydOoyxtQswxhjjJnLRubXFn9c//jLiAYjYVnMwpIZSzITYXw5WOWrQbaFVZ2JZsrQDTYE7Pqua9/2vdcfMunqSU5yc849T87H8wAZFmhqkgHgzPH9NWNfvmMGT7zxeVqaZP6/J8AYJMbAT3/66qMFrrzRZGL5gi31RwWnBd1PvPzQPoDxTADp7kMIEMbAv+nYV3zfGnswmbgzVfvK8bpE7MZ2i5R4fqRzbmig860CARDBVuskABAAIQTi1Ecv5edbs4JJw7iqh67uFMynbDk4PbF0bb5KU1Nu8ISfAIIwcLZSS1ZcdLBntdK1+eOyrDrm5+IVu452Lma2O+H11udw+v6f0Whzffj73wOATFbmFuPHmvtVqmyKzEc9/ve6Zsc2b37ETu2Pq0I2HVaLzWKQ735duB635Tn6HCq9P5JMbPOERn4gABDqePEkperupb/1Mn/L1z8DwPnKmsMaVT8AIXo+tWpxbr5bPNzX3l3+gLZOKz2drSge3eR7SKijsY3K6t4lXX/Of6hnbLpqfZGT0y/+Skqt3RfDwyVut2TMzJivA8n/9gWIK776Qbui+hUq4U0jaXzrP9QzBgApIyXHaY4rJoSzurLS6eCcWgrd4qfozZully8nCSCmn/RVa4riMYHPJF2PbbNTUjbZvqv/45Yqm+fCb7MbQlNlNmtWSYnmmM3RcsNFOVlXsguL90MA4aqaxwqtWYOmEGeKzvYckLa09A0vRyK1NkrKqjcUjgSOeF0AIOTbAc7NnbJMGkHEM8q1+ElCILKt2mBKmBNrh3qbBSCRQBPkPV0wz7X63E4td4gTIm4s3qlrONI/k37C3t69DteMqFjz1YLTjN8aeHhy8tbKPgDBIBEG3vuh11WQl9tPFblocTlWV/v24I/nfD7ll/VRurF83agkyah47VT5/6hMGLhgkJ4+OrowN3/dmzCMSy6nbXL0k+3VtcFgauOmki4qiwdvR/UXAmiSWZoE7hGTEP9SGgAutjecEEJqNIUUUi1K5XIkVrP18MClu8zNZOkqSBroVFtDW/jYDj7e+tRWYFXq6fYP3NFVlJniye8AAAAASUVORK5CYII=",
+                "desc": "CSS Tricks",
+                "url": "https://lhammer.cn/You-need-to-know-css/#/"
+            },
+            {
+                "title": "零代码-前端工具箱",
+                "icon": "",
+                "desc": "零代码-前端工具箱",
+                "url": "https://www.lingdaima.com/"
+            },
+            {
+                "title": "\"clip-path\" | Can I use... Support tables for HTML5, CSS3, etc",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAACV0lEQVQ4jU3Rv4tcVRjG8ed5z7n33DszqzFxDagEFLuo2FgpiliKaJ3GMmCZwkawsxIEfxSCYCOmCFhYaCliIhb+AF1wCxfNxiQ76242k3Fn5t4757yPhSn8/AVf+PK3X69EY9XP1Wzc6MtmbeYe+96BWVFrqPqcx6FHKXlEWEzRRD+xcd+P3fU3pxfffujcU6NHVkYjT5KRjK2rMTeUkswY7x3XDhgTnYyLVIe2SaVWoDWSQIcoQmIQqZhdgpKFIDNUktyl4k4AAigJJAAJBI1gke8Of899CcDhgggQxP/wLsUKdpCPX7/6/tnxow0rgo3VS+8FkZRIQoDkpFE0Sw3qOiIQlljN8vL37oZLJP5rkZQYW0uQRFl/9c98cw9mrjIKzRe3v7+w+9GggaDcJQXazfWt7dU1QQBt+u47h599GpuWEoCI0FiVrG6sZtN4tLE1l44uv3Ht40E5yKLqSnVwuUOQF8+Q/ljtNVadnnbaGGnzjDkMlMvN43jQIlNG0uAhhFDn9OHsq/EiX/hgJ770Ynrt6bBvFmxSj0aW4g/3l1m7wswWfqf3xTG807Kt4Yv1kQ84PKwvf9MtbpHlyl8/3VNPQn7rme0TCH32+Zq09axb58F64M7yyf00PTrov/1uq+2mE/9lf3unm/J4d+sgz9+7/vnDzenb6/nJuFGglQ+txfNnXl2VflyNvj78eeufnfMPvpwsRqZAY6nEKhx7/8oDzz4xeeyTvS8TqxQCGKH186fOPnfqcSMFREgUJtZWDAlVQqTnc5svGK0rA0EnKCPufvwXys1FbkTZ2O0AAAAASUVORK5CYII=",
+                "desc": "\"clip-path\" | Can I use... Support tables for HTML5, CSS3, etc",
+                "url": "https://caniuse.com/?search=clip-path"
+            },
+            {
+                "title": "切换动画",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABl0lEQVQ4jY2TvW4TQRSFvzuzXoeGghegocEKCRISxGsihYaNiJDTREI8BCDnAWweJgTRgCgQIEVEoghpUBRCzxNQ0OD9PRRrgxeyxrecmXPunPvNwIIlcIKWwM2uB4saWEf3yVihxSlfeY2ZFulrvJCnq71oII32pWggEemAHYX/EzuBcVXb0UBKM+XSWGmmvDeQ6KgvMNeo38ABnpQb8S3KVpD47z/aagWJ3+ySM2YV8M0Gh5RPUYnx8f0RSvN2eeliYlneLt4eEXCBE6D4+9qeDQUgB6oGHGuLdaXRY2k4nUFXe4wUgMxq8gqRA0qDkju6h+M5nod8o6DkJkuccmYvp5qaAde0zU9W8RxzmYCCZ5Q84IO9+cd8pm+Faq1CNdyXokcS60qJtTU5U8Wq4vl6ajA66vdmUCWZit4T5VzR3VE1j8ZhT1Fdj9fIp6jCIHFxF0PcHmJugrTRoCDk5N0ngixvF79RHeMI+QwUHNYyn1M7Col0EO1OnutuHdU86Z9NyVihz5hlljjji72a3/Wcavqy8+oXUxLXLWV4zJQAAAAASUVORK5CYII=",
+                "desc": "切换动画",
+                "url": "https://easings.co/"
+            },
+            {
+                "title": "Shape Divider App",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB+ElEQVQ4jXWTP2sUURTFz7l3dnaTQCJrk0JcC1FhU9ioTVpRwVZJkdI/XyBfww8g1rrapQ0WlookYBMLxSUo2GomO/OW2Tf3WrgzTMLmwene77xz7uURZ467S57nQ3ffInmX5BWSLiLfAYy63e4bkn/q+2zDWZZdVNXn7v4UwIAkRQQka5UAdjudzg7JX6cMxuPxdVV9kSTJg6WlJel2uzgDNwIwUtUnJAsCwP7+/mVVfU1ykyTSNEW/38fa2tp5BpmI3Cf5UQCA5DaATZJQVbg7sixDCGERDJI9ABcAQA4PD1MRuSMiUNVG85lgNpstSvETwDcAEABIkoQ12DZyd5ycnCDG2N4SYoxvSf4AABkOh6WqfhYRtFWbmBmyLMNkMkFRFCiKAiGEeyGEQZOgqqqRqn7p9XpYXV3FysoKkiRpEpFEjLFJoqq33P0xACQAsLGxMc7z/H2apjdFBGaGsiwRQqiBJlUr3W13T2Re7dry8vKjGnZ3qCp6vd5CuE7VJKiq6gaAS2bWGJjZqdcXmHwiGWU+2b9mNq0NFunM6x8AjNprPDCzvfPg2WyGoiiQ53lVFMVuWZbPSP5uKpCchBB2qqoSd39oZp26xrySmdnRdDp9GWN8NRgMFv/G4+PjPoBtd9+KMV71/+SRme0BeLe+vv6VpLeZf60mHHrDUL+DAAAAAElFTkSuQmCC",
+                "desc": "Shape Divider App",
+                "url": "https://www.shapedivider.app/"
+            },
+            {
+                "title": "Animista - CSS Animations on Demand",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACvklEQVQ4jWWTv0tsRxTHP+fM3Lss/kDBFfS5KKsQLEzjk0RZsLJMpyTNIyFVQHhpExu7FKkChjT+A5YJBJNORZJNodiIoMWy+OQtrlEXlF333jszKXTlvZdTHWY+35k5c75H+CDK5fInqvoFMB9CKHrvxRjzxntfsdZu7e7u/vMuL91kfn4+H0XRDyKyaq2NvPeEEB4hEVSVLMtS59wvzrnvK5VKG8B0xdbarTiOvwwhmCzLSJKELMtwzpFlGSEERMTEcfwp8PHQ0NBv9Xo9NQCTk5M/RlH0VZZleO9J05RisUipVKJQKCAiNJtNrLWEEIii6CMR6T0/P//TlMvlWWAT0K54ZWWF2dlZjo6O8N6ztraGiHBycoIxBoAQwstSqfSHAq/iOLbdmo0xLC0t0Ww2OT095fj4mOvra1ZXV+nt7cU5h/eeOI5tCOGVisiC9x4AVcU5x+bmJu12m76+PjqdDldXVwwODpLP558/9unCBQu86C4CxHHMzs4Ow8PDzM3NcX9/z8jICM6599r9pHmhH/qg0+mwvLzMxsYGURRxdnbG3d0dqv9DH18tIm9FHu2QJAljY2Osr69TrVbZ3t7m5uaGh4cHusyzgUQIIbxV7/1f3dOdcxQKBQAajQZJktDT08PAwMDzfrfcJ83fplgs/uu9/9oYoyLC7e0tU1NTlEolGo0GExMTVKtVpqenqdVq1Ot1RATnnFPV1/Lk/59yudy3WZaRpinGGGZmZlBVarUal5eXjI+P09/fT7VaRVVJ03Rjf3//tQVot9trxpiStfYzESFNUw4ODlBVjDHk83kuLi5QVfL5PEmS/N5qtb57noV6vZ6Ojo7+6r3vDSG8zOVyGkUR1lqMMagquVyOEELmvf+51Wp9c3h42HpvGruxuLg4LyKfO+cWvPdjgKjqG1WtAFt7e3uVd/n/ABm4T2QjfJR6AAAAAElFTkSuQmCC",
+                "desc": "Animista - CSS Animations on Demand",
+                "url": "https://animista.net/play/basic/rotate"
+            },
+            {
+                "title": "Bennett Feely",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAC10lEQVQ4jQXBSW8bVQAA4Jm3zb7ZHtvN4NRum7hKWhKpKWpZUlEh4AScOPU38Bc4cOJ3wKGHniJxgFMOBZXSSKFgJTaJ44AdJ473mWe/2d7wfeK333/HaKdQ8YrVJ62D55NxS9VyTqkgGe8QdVuTxYv+27W1R7riNg7eXF22ETJsDW0M+40F/SUMWZQELl4lHJlQdyxzRheJn5wd/+04Tr4EkV1Ho+5hrbJ9fR4H0wbW1GrxbtW9Px0vf/zhRW31pWXg68nEcKyzLCx5ZQAh3Ni8A2Cs6BgpU5DqnePl3t7+Tz/vN5otgpTdJ4+hG6/tfNTv9duHfyKgww+fbku2ifVixSs13/63v7dPQj+JIlOVaDBnUeZVzMbr3wiw3vvq6/rjj+Hu0ypSVMZTGVffvHrpZeIXO5s1x7A1Oc3A67+aCtEhTj999g2RcyGjwFTXkYSTKOmcHcqatUyS894lXS5Go7FlqCDjs2Bq37nXvfjHtgxV1pFd2HZWLICV0+avc6uTFVxDQYtULJmpUsiTTbL+YLf27gem4chYioiPMoBCGis2rG99xgZTfXEkBjSc0IQFmOHyarl0d8MxciyKRYyH4yEa9FsONxec1DdrmexQKECfgohzAQRx2p/79mSQIVnTtIt+b71+D3A2Wvrnw0F7eNkur9z6N8rUG66iEE1XU6KVsKbMouFVVzPU0fByMp2iRdIV57kxm3grg2LpRr7+8I9Xv9+EnPIsoWGtUrS9B58/ur2MuWcVnZwE6w/1uT+XjeTspCOIztbWJyfN7nHzyDUIUN1eUu2NRbYk7ZM5BoDOIiRBa8amUhzk3cL1qBAyev/9Lydj5i9OBX1dADpfBgcHR5Ztn7ZPGYtR0annjHkQt7hwM0ryV9djkafl2zuh72VckABBikkkDQJAg0iWMHJXahIKr0a029cFISNIhFyEqpZxK00hxrIoAs4TzrMkCiWM/wcklGEduqlTOgAAAABJRU5ErkJggg==",
+                "desc": "Bennett Feely",
+                "url": "https://bennettfeely.com/"
+            },
+            {
+                "title": "Magnetic Buttons with Hover Effects | Demo 1 | Codrops",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACHklEQVQ4jW2Sz0tUURiGn+9cbRLMsdFQ5k4zEE4lQiEurAn6sWkjSKRhyzZZVAtb52IWtrdFRPkPVDgR/QUhGClI4CZjajF2R5Qa05HSi977tXCu3Znpg7M4nO99v/c85wg11Tf6vHGtva1bLeucoGkARfLieR87fpY+L7y4sxvul/AmMT6dVrXGEB0EOhUaKk17wCoq70S8SWdiOF9nEH/0NiPiP1M4U5uqeqJ8UpUHK4+vfTgwSIxPpxUzXStuaYoAUN5260wEb8SZGM4bbry2VK2xWrER4eHlk9zNnKhLoWgvYkZBxRxPN3RX7lw1+eKpJAM9NsO9KU53tuGr1pgwmBjPdRnfkgzQGZ4cjzZzNNoKgB1tYqQ3jpEq3qCkEKvfCGoHtAGaDx8iFjvG2pbL7PJvAAZ6bJKxlqoUChH1/aQJm/qqtFbAAXxb3zlIcaWrvY4FgAHJC7hB/I0K8Y4jEfrs5v+KAARcwXwxqDeHUAgONv7s4KyucOtsjKtd+xyKm9vMLW/WOhQQb9Eqz7z6Fb20lFTIAIgIm9suX3+U2XL3WPi+zuT7JRaL60gIpBGeOhNDuQYQVSv3RPbkvMKFoGG+UGK+UAoJql5hRi2dqjCAYnbIEd+/JzAbFoRXWGz53C9mh5wKi39lZ3MJ8eS2wk2UlEIkAIZQEHiplk4F4jqD/VKxs29s2TX9KpoEEJVlbfTnitnrRZCqL/kXXHvH91ON+IUAAAAASUVORK5CYII=",
+                "desc": "Magnetic Buttons with Hover Effects | Demo 1 | Codrops",
+                "url": "https://tympanus.net/Development/MagneticButtons/index.html"
+            },
+            {
+                "title": "CSS Background Patterns by MagicPattern",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB30lEQVQ4jZWTMUwTYRTHf9/H3fVo0xjTFo21S7nFYExUMCwF25EYJCZuOHbRSQfd3MGkmw4WEw3uJYQ4QoQRnF0OllJjWoyWWrjele9zaEuqcWj/8/vlvZf3foK+aK3jwAzg+L6K+SfYANYonhWSPwAX2BFC1HqM0QVD1cpZ4f3Sr/zupmce7gf8riuU6hRJCZELkpRjMpm1g2qlXUxcGXkmhGgJgGql/frp/e+PKwdtBkkybVBYu/zm0lXjidRaJzZWG/lBYYDKQZtPHxt5rXVcApm9Lc8cmO5md9MzgRkJOGU3GJanvB8AOIbfUrFmXSElvHwXPy/wW5pSsUHuQYQPy3WyC2GuT9usrRzz9YtPs67wfRUz/FNspUCOwOx85K8uNzM2sTGDiTshrt0KAXB71ubhxCFKgX+CLYee/Z8YVhhPSkDD5/Vm3wpQenvcWeFVnbsLYW5M25RWjtG68xvWKJ7QWj+fd8pLjZ9qqM7Ri5J1N/VCAm5qfOgrknJMAFcC21M5e+g7TmbtANiRQoijucVoMZk2BoaTaYN7j6JFIURNQEem2rezwsZqI7+35ZllN6D5P5nGTaZydjC3GC2OJftk6kVrnQAygOO3VMw/7eocxrOsc523hRBHPeYPaFbBxTNATPsAAAAASUVORK5CYII=",
+                "desc": "CSS Background Patterns by MagicPattern",
+                "url": "https://www.magicpattern.design/tools/css-backgrounds"
+            },
+            {
+                "title": "Svg Wave - A free & beautiful gradient SVG wave Generator.",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5ElEQVQ4ja2SzWsTURTFz70zTRM/sNqKCHEj1K8RFBXBfRcibv0LXLhwIYIbaRfjxo3+AYJIXbsSwVoKYiqiiKVQKVpKSyuBJhlrTdo4k+nMe8eFppA0EUHP6nG49/feve8A/yino0sIfarneep5nhQKBf41kaR08n3f105+azEpEOHr0th+p1fPO4osgaULfRen23q4HUAIBBxfHR8S1REBBiAWpCSNSObfP918cPf65VedX/D75tHvE6ddo49IuFSEpsHsRpDmVaS/Fpjo5b3q8+JM/fZCcG2xCfg1lwgBIIh7rpZS3VGyTlhO1F2qmHw5wq6V0G4kB130n+KQoH7nxJUnmSbAbR5uFt/myoxPwmokDjSNbG8UmhwAA1LdWISHEKpdP2refToG4CMA2QLMNap2b253BKAPljCWiBMCKhBLqCFqNJL+WBMYsa0jAPJi8FJcosyWjebKiWO+ZjKNbz1OuBobJ9ikDeCw9OZLNo4qM4s39s01V9+yxMHlyeMuM48hslMUdcRpxqys5ykyYGcrtejW2LMorI6sYaLY/M5todmzPHXGoR22FoehoqBNnCj5kN6ffFgbHZ5ur++YOpCK+alzUB4AnQUcOfu5recP0e4SZXSJcnf5voLUrsD/pZ+pBOxYhJCkhwAAAABJRU5ErkJggg==",
+                "desc": "Svg Wave - A free & beautiful gradient SVG wave Generator.",
+                "url": "https://svgwave.in/"
+            },
+            {
+                "title": "免费的渐变背景CSS3样式 | oulu.me",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAACK0lEQVQ4jXXSwWpTYRAF4HPmv6Zpblqb0GCIKGlFsRVbXYnuFPQRBBW71CeQiuhSq+Baxa2lgm9QIl0rrtpGi0pMW7BR0ja1vTfJDff/x0VIUdBZDZzhLIaPKJVBAICqkA6AdVAFABJGBHCqIAFA4YHoxiRdbEEeS/cdTyYU+NrqfAsjB6Ux2qvw0F0Aje2FbPpuMXcpk/I9AyCI7cJ2OLNWf7cd0hNVQEGUlklqbKcOZ5+NFXwjkXWLQRvAmYFkQiSI7e2VjbmNBjwDVa97fT6bfj5WSBl5Vdt5ulovNyMoT/uJOyO5G/mhl+OFSqvzvhGKZ0RVQd4rDqeMzNYaU8vrS7stp3DQxd3WzaX11z92fGOmi8MgVFXgdNTvu5jxm9Y9qm5CYTwDAIDxjCoeVutN6y5n06N+Up0KnDuRSvieKQftz80IRqwqQIBWFUZWwuhj0E57Jp/w4JwAvafjv/NnJBD50uoEsT2VTp70+2CdIQEF1JCwbtxPjqeTQWxrnRgiQmG1GS00wpSR+yM5kja23TIbWxE+GMmljMxvBdWwTaGQhNOZaj209lp+aHbiyORgvwACnh3sn5s4ejV/cC+2j1c3oSBJlJZBIrbXC5kXY4UBz0TOLe21AUwO9CeEv2J769P3N7UdekZViVIZUBIau3MZf7qYu5L192nMbwVP1jY/NHo0QOJteR+f9vAdOmAA/OzYShjhH/hIAKoqnlGgEkSVXkwj/Jv3b+RwHkbOP/WhAAAAAElFTkSuQmCC",
+                "desc": "免费的渐变背景CSS3样式 | oulu.me",
+                "url": "https://color.oulu.me/"
+            },
+            {
+                "title": "CSS 样式集合",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACWElEQVQ4jaWSMYhVRxSGv5l73759e+97ZE3CLhLQ2IhuJSFgilSBIBHbCBEMJIVCtgkWgoq8yiaNIGwhKTaFCxbZLQKBuISArQiCnQGbWMiquPi8786Ze+ecFHddLEQE/2r4OfMxZ/jgPeMAbv1gXw/6fLtV89/T+1w5c9c1AFdP2nIv58izmr8vr7u1cyfso1a5kBzlS2FlddPdywEETs33Od1UWO8AK9zlyfiwzbTK+UHOJ41xEFiLkUN+hp+zPjQZD4EdQKLamtJKYrvJMYA9+3AvEtuxZlESLwCCkdqGoEPyuq8BoAMozidyMTJpu7V2+swpuSgeoAViYVkaurxx3VwOEBVQqBOu2rn8LzCrmE8gqeuqsnVt4VwqM6bWOKAjSzdkUTFadIx52UIl4YNi8upFc1golXoIMlJ2AUGpRDFR5qrE0hin5YcsRmUhODQUaQIgI7wUZqHE4lz3Vx6gavhrEvEt9COsLh+3ay8dG9EzX5dkoeAPACnIpFTCEJNC/S7g4obb3BYu1Q2VOT6d7bPMgM+mhcnEt79sTNdvAMjQpnWpPfkAPy0t7ooE5sDZ2WO2n4yjdWIUBqmazGR3/rzpHuxqN/4nX1r4/KtY+OJxvn178t3ep69Jaf7Nspp7c9/FAfx03L538OMEWilST+bMhcJMhqp1oRYKRQpDCkxKQz6enQm+uj75Yv63zoPEN+U8X9IDN8qwIVgJWtKdh5BKaEtoBhAPgDzSR0AHqD2/Cjyf+MbEcHVKTpISk1JHiCFR5xAzLLjW5PnIxVl+f9tq75z/AVuiO5MaxQulAAAAAElFTkSuQmCC",
+                "desc": "CSS 样式集合",
+                "url": "https://uiverse.io/"
+            },
+            {
+                "title": "Your favorites - copy CSS & HTML!",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACWElEQVQ4jaWSMYhVRxSGv5l73759e+97ZE3CLhLQ2IhuJSFgilSBIBHbCBEMJIVCtgkWgoq8yiaNIGwhKTaFCxbZLQKBuISArQiCnQGbWMiquPi8786Ze+ecFHddLEQE/2r4OfMxZ/jgPeMAbv1gXw/6fLtV89/T+1w5c9c1AFdP2nIv58izmr8vr7u1cyfso1a5kBzlS2FlddPdywEETs33Od1UWO8AK9zlyfiwzbTK+UHOJ41xEFiLkUN+hp+zPjQZD4EdQKLamtJKYrvJMYA9+3AvEtuxZlESLwCCkdqGoEPyuq8BoAMozidyMTJpu7V2+swpuSgeoAViYVkaurxx3VwOEBVQqBOu2rn8LzCrmE8gqeuqsnVt4VwqM6bWOKAjSzdkUTFadIx52UIl4YNi8upFc1golXoIMlJ2AUGpRDFR5qrE0hin5YcsRmUhODQUaQIgI7wUZqHE4lz3Vx6gavhrEvEt9COsLh+3ay8dG9EzX5dkoeAPACnIpFTCEJNC/S7g4obb3BYu1Q2VOT6d7bPMgM+mhcnEt79sTNdvAMjQpnWpPfkAPy0t7ooE5sDZ2WO2n4yjdWIUBqmazGR3/rzpHuxqN/4nX1r4/KtY+OJxvn178t3ep69Jaf7Nspp7c9/FAfx03L538OMEWilST+bMhcJMhqp1oRYKRQpDCkxKQz6enQm+uj75Yv63zoPEN+U8X9IDN8qwIVgJWtKdh5BKaEtoBhAPgDzSR0AHqD2/Cjyf+MbEcHVKTpISk1JHiCFR5xAzLLjW5PnIxVl+f9tq75z/AVuiO5MaxQulAAAAAElFTkSuQmCC",
+                "desc": "Your favorites - copy CSS & HTML!",
+                "url": "https://uiverse.io/favorites"
+            },
+            {
+                "title": "调色板",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB/0lEQVQ4jc1SP2gTYRx93/fd5ZIzNpW0kWKxlOIg6WClIiJoBBFbEHS4dLVLh2rpYqWo1E/ngoN2UMEMIkKik7umWNQGabskgohCwdb+SUJKL7m75O7nUKINYsVJ3/bj/Xg83nvAvwbbiTQMEtG1NAMAmY65AKO/EvgVxOoiSSMpclGDfi9AYCNX5wZbC077pubR10jt+RN5IhdLfPGnL3baYKAfDgwjKVKpuFt3de7++0B0wXkWpmAfcz0ADKbibCy2oN/TvJ62vIgz25ld30MvOACWSsVd0JB66M58MwA6kLNHIhTqc8yCXbE3HMsqWXqFmvauWI8TN47eM1WaDNX0K/vy6jQDgPHRzMCHTmEsd+vX+me+fbZW1dfhsu+I5VnEwARoKzvi8JYi/HZLEcf8TDtb9DsP+dilmcSuCp6G16sPMqcPfpTyVI04+wTOCQABBDCA4HmCKaJ9U78FTd2/3FS9MHn3+BCbGHpDQQRQYmZWeN4CPJQ5sTMh0dxRrhSJGKuCXB7QQkpeMWdLbf7hqZu98/UQ+WKH0rOqmBPcpWxN8K6ayrs9jpcrrPDI1njVpwd9Qt+t5DVreqnLd35K9s6BgQwjKf7Y+qB8e/jy2Lvx4euZAdBWY1JK3vglJZexV4rET0KC+Pa7cUiN2HmJUvIYTvLW7Bpt28l/hu801tVYDif9mgAAAABJRU5ErkJggg==",
+                "desc": "调色板",
+                "url": "https://mycolor.space/?hex=%23845EC2&sub=1"
+            },
+            {
+                "title": "CSS 教程 英文",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB/ElEQVQ4jYWSwUtUURjFf+fepzOOTjGatQjKXSC0qE2rBCFaBAYtFMJFBC3a9gck0y5aJu0CkxiCJ7iYiogWum7VGGERES4Co6xBsmamefdr8d6Moonf5nK53N8959wDAGYCII49nbGyw8qOAya9+C7uJcndBp1HtgZujtMTy13o5GRAsv0BteoNxCywDvRlR89JuMuZiY9Y2bEwqv+BIgAc5zDqQANoggm4hGeMWvURb5IHTF2pp7aMnZDUoxFlagR4JIG2kOUQt4j8S2rVqyyMCsm6mXUB28kJYWA5XHIMWQkXDOwEYpZT+Qqri0M7IXtTNjMgn6kJQB5ZPy60EJdpRTMALC/77Qz2HwEdvwOpGi6wOT/EofENzHTgP3d0AUZQRF8r4S/3+Pb4LJIdBEgvmnoAT39zlcONFYINQrjJ57l8ZkEC212UgOFBjt72OsXGKvn2BokcuB5kvxkZaacA2RaGA7VT3wamHD75wUDzPYXmF1CgrQIiD/YBH91H4xnAeAZMA0cyoFForVD88wlvTRLlgCLOvhLCQ4b7X6GpBDNFmAnpBW+fXieEi5h7zfCvQXKtMRIfSNwQokFgEecWOHptM2ukkLJGZZvu+rNykqQ9g1kBqYaPnlCaXkvLc0eoHPbmHceeOPYsLaW26pUS3+ePd2vbeXXX/APId9fAm84bLAAAAABJRU5ErkJggg==",
+                "desc": "CSS 教程 英文",
+                "url": "https://cssreference.io/property/align-content/"
+            },
+            {
+                "title": "CSS-Tricks CSS 教程 较少内容",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcElEQVQ4jZVTz0tUURg9b97Mu/fO+yU1YwNlBIVGm0CLwAKjZW0issDWTTsJWjQZyqBgPygIN2V/QRgNLmrVIoRwUVbaqohwMaOpmL43Mzrvvvve3BYzWkYz0Flezvd95zvnu0ATyHRXTKa7Ys04kYbFmdQBX1/7UZTh4mLvyf3/3SCsRjsFZ7sFpwlU9c5GvGhNKmJIps5Dqt+U0YVZAPB9shxwAsEJfK4tbxU8u3zz6EKypb2U4C+y2Ww1CgBIpDKQGAbCUA6kRqEtDXuLJC98isCnEGUt/+Z0NrphFYcKJhtYN6lasFpvAbhbW0FKUR+gAhj01tqn/JBqASeh4CTwIiaJaCtTrkkGXZ2qjk7h6Kz624M7y/cAeQXA58AnCHzSzT06IzgNA05DwWMfXJ11OzqDY7A5R2d9k9f67gOA8rcplf72U17Z7q+UzAte2VIrJRMrhh3mk3ZusdUcyzzMvG2YggQUzjXmVygRdQM3VYqaZKKt6QaDlDuGKgAge6Hi4N6rlZJ5vbJhdXglE17Zcitliy3Zlswnba+QtO180kYhYX1ZtcxH7y6efQpFkTUFh1K3fU4eC5901KKj01WhdZU1qjoGU9d1/Zijs2lXZ3CM+GEo8smJ3MvM9gpVGeWBTyA4DQWnI/PljR4viPt1x6ObVOOmstrjmHQkUCNhLTglsn1Ike+FB6Klcz7k8a/7cq/nAGD6zJE2x6BwDYoVi7aNZW/kAQwdn3iVi6jVQ2yXMbndQHmOEPg48ac5rkn21PNG0Yi3br2/v3RuFsDsjlP+FxxGPrkG++kYNCjasZlGvKZIp8dj6fHxpt/5F3FiEAQkJRrxAAAAAElFTkSuQmCC",
+                "desc": "CSS-Tricks CSS 教程 较少内容",
+                "url": "https://css-tricks.com/author/harshilpatel/"
+            },
+            {
+                "title": "CSS Tricks",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADF0lEQVQ4jXWTz2tcVRTHz7n33fdrJu/NzEt8TJIuJiYjMm5CMAOJZiMTcFPbRRYp5B+IVQpupKuhf0FQkJZ2WQ1MVhrRir8GQdFYoyJjmoUEEpDBzI8wk/jy5r17Txd9o6HQLxy493DPgXvO5wvwRAgAPDkDESERicXFxfFyuTxJRIKIEP4XT2rgYhKISJRKpdl2u33l9PT0qlJqAhElIv5t2/a253kf7+3tPUTE6GIdzs/PF3zffzedTv9hmiYhInmet1UoFF4tFosv5/P5e4wxMgyD0ul0w/f9mwsLC88DAPLV1dXRnZ2dB0EQvKLr+jf5fP6mlDIXRdHUzMzMfQAQzWbzbdu2v5yYmLgRhuFIEATXOp3OG5VKZYvFcdzNZrO/LC0tXel0Om/pui5LpVLVtu0Hu7u7v+3v7/+QSqU+LBaL9/r9fqHdbl9fXl5+bXx8/NO1tbUu1Go1btv2r6ZpPnJd9zPTNMmyrHeIiFuWtZ3JZO4TEc/lclUhBLmu+7lpmn+mUqldIuJsZWUFOOcR5/ynKIq2pZSPGGMKEYmIekqpPiIS5zwCgL8A4BPO+Y+MsbheryMDAGKMab7v3z07O7ttGEaTMYYAoBBRQ0QNAFQYhpqu662Tk5M7juN8gIj8+PiYGACglJJardab2Wz2PQCYHR0d/TrZkEoCMpnMV4g4l8vl3u/3+zeUUjQ2NoasXq8jIqrz8/MXlFIZz/OuHhwc/J5wIYkoBgA4PDz83vf9y1LK7GAweJGIaAgPc1334fT09OWEOD43N+c2Gg3dsqyPXNe9XavV9HK57BARJyIxOTn5uuM4P1erVQ2r1aq+sbHxxcjIyKDVar0EADoASESUURQ9h4hK07QWEWkJudJxnGYYhr1KpVLRAEAppUwhxNbU1NStOI51RFQAAIwxCU8eDH2CjLG41+vNBkFwbX19XWnJN+zBYHDp6OjoX865PhzcBa/Q8C6ljD3Pu0RE9ubmJmqNRoMcx/nWMIysEGIVABjifx672ACTlZNhGP8IIb7rdrsKh4NERPWUZZ+pBDKGiOoxjFhk5R5t7NQAAAAASUVORK5CYII=",
+                "desc": "CSS Tricks",
+                "url": "https://qishaoxuan.github.io/css_tricks/createTriangle/"
+            },
+            {
+                "title": "调色盘",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACi0lEQVQ4jXWTzWuUVxTGf+fe+87HG2femTTxAxV0KX4Ua1tqqwt3QhB3ghRXpcvqRhfixpXbbrSlLbgsrbT5F7IstEQCVok1TjSiwTFlxmRmkpl37j0u5n3tIPWBs7rnec5zPi5ABEiSJOcmJyd71Wr1S0aw/AcLkCTJV1nOaUCAyAApoKrqVHUAhOzxXUgIYZjlaBapVCqVz0MIj7vd7sv/Ib0XcRzvcs7tlVqttgLsVJXfIZ1L03C3XrfLMzMb6z+cRwEuzmJnZyvbmi2zP474SETOADPAfSmXy3uiKDprjLlsjN0nommn6zcHA32uQQOghaKJjWE6LksZxIWgf6vqrRDCb+O9Xjn28akbt787oY2HP0Xt11Var1NUYbJu+KBu2LPb+q8v/avzC5sXoPMLgAMKgAcmisWyPXJ4lxz5sAySgPMj6WE2167aQiQKsi3bjHHZ1D2gIQTxaUi1p9HIfcjMKdaiwROCYsFrxsGNtaAgSEGxxuODR2TkQFWxRkQ9IApYzUlubOeCDSrNWHk2hZgaIpkDVTCCeFUzWFPwMi6Qqw0kVuTulHDnkGqlKoS3Aoo16odDaTeXoBSUrVFRkwtYePJy9YWsbnpDJGJdinHDPATnzWq/a5r9LSk518iKBpMPY+/09NzTxYftnx89kP6BL/w/LyzLnQld7kzwpJfwKt0+/HaxQbu/9fRgtfpnLpB/GNPu9TZKUXHw1/2F0/EnJ6RfODpcbNak0dseFntJ+v2D+cKvj/+Q2JhvGmtr84ABdPyQBNBSqXS9UIquffbpcbdDdtB63mKptcRKZ6VTVHe1tb5+M8/NSbwrUq9UTrY2Ni7gOGAjS2TdvZIr/9hutxfGyQBvAMnmJ56TYt0JAAAAAElFTkSuQmCC",
+                "desc": "调色盘",
+                "url": "https://colorhunt.co/%EF%BC%89%EF%BC%9A%E6%8F%90%E4%BE%9B%E5%85%8D%E8%B4%B9%E7%9A%84%E9%A2%9C%E8%89%B2%E8%B0%83%E8%89%B2%E6%9D%BF%EF%BC%8C%E5%8F%AF%E7%94%A8%E4%BA%8E%E8%AE%BE%E8%AE%A1"
+            }
+        ]
+    },
+    {
+        "typeName": "Nginx工具",
+        "list": [
+            {
+                "title": "在线Nginx配置工具",
+                "icon": "",
+                "desc": "在线Nginx配置工具",
+                "url": "https://www.digitalocean.com/community/tools/nginx#?"
+            }
+        ]
+    },
+    {
+        "typeName": "Linux工具",
+        "list": [
+            {
+                "title": "搜索 命令，Linux 搜索 命令详解：最专业的Linux命令大全，命令搜索引擎，内容包含Linux命令手册、详解、学习，值得收藏的Linux命令速查手册。 - Linux 命令搜索引擎",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACS0lEQVQ4jX1SQWsTQRT+3szW2IY1SA0aBBGsFtPSg5VWLUil287sQnoyd5Hi3auH4m9QED15LeTiZZMtIqwHBaGlUASxXlSkUCsG2irpZDLjwZ0SY/Xd3nvf++Z73zzC38EAmEqlckJrfdcYcwpAbXl5OXG9XnBvWABQSr3o7++/l8/nb+dyuUYURZcBmGq1yv9HwABYIcQQEe3t7+83W63WI6XUTyK6CQDb29vUPeAdouC3DGuTTqfznDH2CcBFrXXpMFyvAgsAjDFLRO0kSe4bY14DOE1EBgB2d3fpnwTT09McAIholHM+IIQYUUrtEdEzABUAWF1dbQP4g8TFQTEMwzUhxITLgyA4Mz8/b6WUjwGg10j3upcNP5RSrri6A0spn2Yk1W68W4GlaaqllMPW2lsAFrtB2VpPlFLfGGOLAChNU31AMD4+7iQtAFjb3Nx8CQBpmnZqtVoHABqNxhsiWjLGDEdRNOHUscwYDQCc87PGmI319fUfvd4EQTCqtV6y1r7TWud6jWNzc3NXOOcfrLUB5/xGHMd3sr4dGxvLl0qlq0R0nIgsEX2s1+srB/NhGJajKLrgWKWUb4UQCy6fmpryZ2dnz7tcCDEyMzNzEsgusd1u8+ziAADGmNDzvEvlcvmI7/tHfd+PjDGvXL+vr8/TWg8C2KKMcYiIikT0lTH2PY7jppTyAREVrbUtAOeSJLlerVb5zs7ONc75Vr1e3+j2AJOTk8cKhULB87xBrfWAUupzmqZfsl8qFIvFMhFZxtj7OI6bzp9fzTHopQMcCA8AAAAASUVORK5CYII=",
+                "desc": "搜索 命令，Linux 搜索 命令详解：最专业的Linux命令大全，命令搜索引擎，内容包含Linux命令手册、详解、学习，值得收藏的Linux命令速查手册。 - Linux 命令搜索引擎",
+                "url": "https://wangchujiang.com/linux-command/list.html#!kw=ps"
+            }
+        ]
+    }
+]

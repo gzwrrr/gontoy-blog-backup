@@ -88,8 +88,12 @@ export const navbar = [{
     text: "其他文章",
     link: "/article/other/"
 },
+// {
+//     text: "演示",
+//     link: "/slide/"
+// },
 {
-    text: "关于",
+    text: "关于我",
     link: "/about/"
 },
 ];
@@ -127,6 +131,7 @@ export const sidebar = {
     "/article/quartz/": "structure",
     "/article/modeling/": "structure",
     "/article/other/": "structure",
+    "/slide/": "structure",
     "/about/": "structure",
     "/": [
         "" /* / */,

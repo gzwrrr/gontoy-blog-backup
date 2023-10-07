@@ -1,6 +1,9 @@
 // import { seoPlugin } from "vuepress-plugin-seo2";
 // import { readingTimePlugin } from "vuepress-plugin-reading-time2";
 // import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
+// import {
+//     mdEnhancePlugin
+// } from "vuepress-plugin-md-enhance";
 import {
     searchProPlugin
 } from "vuepress-plugin-search-pro";
@@ -20,9 +23,6 @@ import {
     pwaPlugin
 } from "vuepress-plugin-pwa2";
 import {
-    mdEnhancePlugin
-} from "vuepress-plugin-md-enhance";
-import {
     componentsPlugin
 } from "vuepress-plugin-components";
 import {
@@ -30,13 +30,12 @@ import {
     path
 } from "@vuepress/utils";
 import { tocPlugin } from '@vuepress/plugin-toc';
-import { navPlugin } from '../vuepress-plugin-code/index';
+// import { navPlugin } from '../vuepress-plugin-code/index';
 
 const __dirname = getDirname(
     import.meta.url)
 
 export default [
-    // navPlugin(),
     tocPlugin({
         // 配置项
         componentName: 'Toc',
@@ -51,50 +50,7 @@ export default [
             linkChildrenActiveClass: 'active',
         }
     }),
-    mdEnhancePlugin({
-        stylize: [{
-            matcher: /^不/,
-            replacer: ({
-                tag,
-                attrs,
-                content
-            }) => {
-                if (tag === "em")
-                    return {
-                        tag: "span",
-                        attrs: {
-                            ...attrs,
-                            class: "em"
-                        },
-                        content,
-                    };
-            },
-        },],
-        mermaid: true,
-        presentation: true,
-        tabs: true,
-        chart: true,
-        vuePlayground: true,
-        codetabs: true,
-        tasklist: true,
-        imgLazyload: true,
-        figure: true,
-        include: true,
-        attrs: true,
-        mark: true,
-        container: true,
-        align: true,
-        // 启用下角标功能
-        sub: true,
-        // 启用上角标
-        sup: true,
-        // 启用脚注
-        footnote: true,
-    }),
-    componentsPlugin({
-        // 插件选项
-        components: ["PDF", "Badge"]
-    }),
+
     containerPlugin({
         type: 'hide',
         locales: {
@@ -141,7 +97,6 @@ export default [
         mapping: "title",
         strict: false
     }),
-    // autoCatalogPlugin(),
     feedPlugin({
         hostname: "https://gzwrrr.github.io",
         atom: true,
@@ -150,38 +105,57 @@ export default [
         icon: "https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/Individual/logo.png",
         // rssOutputFilename: "rss.xml"
     }),
-    pwaPlugin({
-        showInstall: true,
-        manifest: {
-            name: "Gzw's Blog",
-            short_name: "Gzw's Blog",
-            description: "Gzw's Blog",
-            theme_color: "#474748",
-        },
-        favicon: "https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/Individual/logo.png",
-        // 最大缓存：5M
-        maxSize: 4096,
-        cacheHTML: false,
-        cachePic: false,
-        maxPicSize: 1024,
-        update: "available",
-        themeColor: "#474748"
-    }),
-    // autoCatalogPlugin({
-    //     //插件选项
-    //     index: true
+    // componentsPlugin({
+    //     // 插件选项
+    //     components: ["PDF", "Badge"]
     // }),
-    // readingTimePlugin({
-    //     // 你的选项
-    // }),
-    // seoPlugin({
-    //     // 你的选项
-    //     hostname: "gzwrrr.github.io",
-    //     author: {
-    //         name: "Gzw",
-    //         url: "https://gzwrrr.github.io",
-    //         email: "1627121193@qq.com"
+    // pwaPlugin({
+    //     showInstall: true,
+    //     manifest: {
+    //         name: "Gzw's Blog",
+    //         short_name: "Gzw's Blog",
+    //         description: "Gzw's Blog",
+    //         theme_color: "#474748",
     //     },
-    //     autoDescription: true
+    //     favicon: "https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/Individual/logo.png",
+    //     // 最大缓存：5M
+    //     maxSize: 4096,
+    //     cacheHTML: false,
+    //     cachePic: false,
+    //     maxPicSize: 1024,
+    //     update: "available",
+    //     themeColor: "#474748"
     // }),
 ]
+
+// mdEnhancePlugin(),
+// autoCatalogPlugin(),
+// readingTimePlugin({
+//     // 你的选项
+// }),
+// seoPlugin({
+//     // 你的选项
+//     hostname: "gzwrrr.github.io",
+//     author: {
+//         name: "Gzw",
+//         url: "https://gzwrrr.github.io",
+//         email: "1627121193@qq.com"
+//     },
+//     autoDescription: true
+// }),
+
+// mdEnhance: {
+// presentation: true,
+// tabs: true,
+// chart: true,
+// vuePlayground: true,
+// codetabs: true,
+// tasklist: true,
+// imgLazyload: true,
+// figure: true,
+// include: true,
+// attrs: true,
+// mark: true,
+// container: true,
+// align: true,
+// },

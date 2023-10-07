@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, onBeforeUnmount } from 'vue'
 
 let flag = false;
 let tip = ref('Pure');
@@ -17,6 +17,10 @@ let newWidth = '1000px';
 onMounted(() => {
     let pageTitleHeight = document.querySelector('.page-title').clientHeight;
     document.documentElement.style.setProperty('--page-title', pageTitleHeight + 'px');
+})
+
+onBeforeUnmount(() => {
+    
 })
 
 const hide = (element) => {
@@ -50,14 +54,14 @@ const pure = () => {
         hide(navbar);
         moveToTop(navbar);
         tip.value = 'Exit';
-        // launchFullScreen(document.documentElement);
+        launchFullScreen(document.documentElement);
     } else {
         toc.removeAttribute('style');
         sidebar.removeAttribute('style');
         navbar.removeAttribute('style');
         tip.value = 'Pure';
         try {
-            // exitFullscreen(document);
+            exitFullscreen(document);
         } catch (_) {
 
         }

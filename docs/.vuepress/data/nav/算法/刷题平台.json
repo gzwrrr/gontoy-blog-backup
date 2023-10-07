@@ -1,0 +1,43 @@
+[
+    {
+        "typeName": "刷题平台",
+        "list": [
+            {
+                "title": "力扣（LeetCode）官网 - 全球极客挚爱的技术成长平台",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACRUlEQVQ4jY1TzWsTcRB9+5H96u7m17SmraZxI4GlFaVSKj0KelCIxwYPFRQxN0H/BPWieLGXIoskqS1Vk4oILSpVKihIRIt4EDxJKT20UPqRppu22R0PKqYhqZ3T/GbeezO84Qf8JxizWJOuz+imOVxV5v4m4l7kHstixc2ll4Lk9XtcYGljfTd5zzjVYzFdUz8CAQKUB/siVU9uNdUCIJBzmdFm2hqiz73avsgWY6wzpBQAie5daF4tZyLrNBWlUjr6nXJ97bV4vvrBGGPL2+Xp+SKdjIXFZ1fP6r1ym9LtLmJMC1PXVmnxnfvIjtWdHImYIVVVCooik6apE7uaRFxp5HiW3h6l0siJW3UFTEN7oSgyqar6hIjqOk0PcZpuQK2ucQDQ3t7St7ZW+sRx3Ozg4MV+x3F2RkdHO1oYS3jwNRFEFXD+qsBWDHJVydtmPs9/TSQSb0QA8H2K/tF77TjODgCEgsEzBw91OJWdCnwiiDyPWIBHeUuCommYm5tbyOVyR0QAEAT+5++d/cTAwMDtfD7vLi0vT/M8f6lCnsr7HjxOrKyIbNXwNjTZW2S+IHxLJpPb/y5g6BOyLFHQ0J+nUqlAAw/O0x0E65oYj8dN09A/BGSZDjQ3Tdb23aw9RjNd5GaP3awrAAC2bRvhZu09IBE4bXJh2LbpcY/lpjuf0mSUyuno7OZYPNJQAACunYubgDpzN2lSORMhGu8kmjpM5Uz0C433ttbiG/ysbml+aON6WxAJIgiA8ErypfvclR/FWuQvcBnWk4r21EgAAAAASUVORK5CYII=",
+                "desc": "力扣（LeetCode）官网 - 全球极客挚爱的技术成长平台",
+                "url": "https://leetcode-cn.com/"
+            },
+            {
+                "title": "CodeTop企业题库",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAABgElEQVQ4jXWSL29UURDFz5n32IWGBQ8VJcFASMCgMAgSBAqD4TNUYvhCJHV46ipQqCIaSPhjqiAtbXbZ3XfnV/He5W0gjJm5c+fMzJkZA/q/9J/26Gn/iRjxWc0YtCX+Bmxim+iDBIAinFkBgG2gNxKa8N771bvD7u7NZvfpJCSQ7aGabYHda/qcH77k/sfu4KiUInvg045N97FYYSFbW1Nd34qrl20bq2fe2kOXQwYlZ5+zLJvZrWRSkgIIMfAJqkhg5/mnxcHj+f4jHb/xpakpli27jrZykHO1VCJWlB/iXLmwEWhjCZJCpdg+ebv37eXz49evWHZupshygFAP4g/VFiFYff/6++iQLlgXR9ghOUJNqLEtyxKSFO65JKzXdJ3ocvUrl4VczJc+nefZAsC1Risb+8q9+7MnzyY7t+PadnvjhRc/PXvwcIfTk8md7aZp+q1JkjMTjVPYvETXVz2NyExnpiSRgNVvLSXJkdRRejw+j5seJljZDWdXfVUuAASZ+CJHizmqAAAAAElFTkSuQmCC",
+                "desc": "CodeTop企业题库",
+                "url": "https://codetop.cc/home"
+            },
+            {
+                "title": "第十七届浙大城市学院程序设计竞赛（同步赛）_ACM/NOI/CSP/CCPC/ICPC算法编程高难度练习赛_牛客竞赛OJ",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAsklEQVQ4jZ1Suw1DIQw0ERILuDIzvIIpXLw5GDESK1BnhscQNE5hid+LopCr4I6zzxYmhABb2DIg4mOvPMC/BmZulIgsh+mBziAiSskNzjlmVjMiWrXlnFNKxhgA8N6PGWqtKaWc89SBiIhoiQEAEnlU+5ZKKdd5LPNJZP98AcB1HqWUeYbISwdl9EpE2goReySlmmH0t3LdML5Y0KRpSzrGfUWjpLBftI/Y/hpWk/1ueAMlbHW0fxY3wAAAAABJRU5ErkJggg==",
+                "desc": "第十七届浙大城市学院程序设计竞赛（同步赛）_ACM/NOI/CSP/CCPC/ICPC算法编程高难度练习赛_牛客竞赛OJ",
+                "url": "https://ac.nowcoder.com/acm/contest/5954/"
+            },
+            {
+                "title": "LintCode",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACO0lEQVQ4jUWTO08VURSFv3XOHYQrD8F3xBg12oihAw3R0mi0MFoZgv4GKmys1ITK+BeMJnY0CmqMNjZAp7Ey0hg0khiUIAjMzFkWMxdOcaq9197rsQXQO+NRtXPP65zEAEiC9RI6ItVz/QvUZMGbPPh9Rc/U/cajMfBUOXJJQigAeYKhXvi4AjkQWjjGigRnuCy4HWLJQxWIkkJCjXryySZ6NQLn+mAtR1HUq9W1BYrwoOGSfiBJtJZls0CTA3hpA+Z/Q2eGU0KoRZDogmQ4GgRWjR6FlzfRtcP40kE0/gkt/UMpIQlXCmDVGkmkUDdLgiKhLOBHZ9GHXzC1CMd3w4km/C1QDBiQK0klo2AQQDBayeHuKXSsCeOfICW4fhhmRmBfBus5Cmp5AQYFuSYuLKAnqxCzAI4w/bOqfD4EuStQ7QjqljskoDuDic8wuwxTw3B6N3xZgxtzcL4PJs/ASr5jabV5jeaEYqgm35qvplw9BCpho6xIr+atPG1nQup76Rx2LIyC1Ryd6YLlHL6twfsL0N8BA+9we4QQwAZMatgVFwnZuEyEzgb+uoZWtuDmEbi4H67P4q2EujJSYQKQLNww2/GopBS2K8sOdMDjQXi7BC9+oL3tuKiz4KonBEW+q0HAlNvCBLy6hYb3oEO70MRntCvi7TmmVINAZFHd0x6LbTxRjqiPCXAyagsw2ANzy5AFnKrwmNYxldwRwJ7XHgtZfc51ylAl1L8SOhuQWucMUpOFlHP/z2U9/Q9QZvjaIeHSowAAAABJRU5ErkJggg==",
+                "desc": "LintCode",
+                "url": "https://www.lintcode.com/"
+            },
+            {
+                "title": "PTA | 程序设计类实验辅助教学平台",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACHklEQVQ4jaWSS4iNcRjGf8//+77BXI4hJhkSksuUci0lC02TcVlYUJZWsxo1SxbIAgubM6TsTRa2JEWRxdTUsHEvysLCITHN5cw53/d/LAydcYs8q/ddvL/nfZ9e+E+JA1eaW4uprdFJy98MZCF/8fnmwOtvfdpW1JcRdTyoGMGhPhtvYwlAitGoKzo8Bs59B9gxJfjN+OT8c9w7WuXQ6SbYUND11KXhUvtYiSmuD1RBbttTPghe3+iRAmB5UamSVfeVdzDOziR8uOThhWti8P7WcT/x3sElIbkwRB4N4meAiFO1udsFZ2yd+lxJxts68sMWd5pq84brWfW88+wk1j2H2N7aW+4HO53jqzMbEFyEZ6S+LnlXc0ctA3vi3dy7yaLpHuRaKMKQFZcYLQSOWKpT9Y0wE5Ym660fJ271l630ciK9ylGZ0b56kSSjLXn9xNjtYyON6X6v2nournMSzyIPCaaLqIiCAdLokMtOLRWKuQI7bXUKdVvOsxh3pxR67+AHInSZmATRgWMKEAVBsuVOoW2Y+wE/MvQC+df4GjSvd3BZgq9ZdMrEb1sCFcvPsZ4I9YFXA69Tx+60EdBUKCsSVshe/sMDrpK1FrQRvLLReBZAIbcJhfilFoAXNPR5NWSeBfiUNVda8uk+maUOcbXMFqPNwOKvZzAq89DmFdbbaqlW+Y3ZjHoH57RE1gWxKQaNTtgvuXVs+o8z/6ovemn9ubjC3vsAAAAASUVORK5CYII=",
+                "desc": "PTA | 程序设计类实验辅助教学平台",
+                "url": "https://pintia.cn/"
+            },
+            {
+                "title": "ZOJ",
+                "icon": "",
+                "desc": "ZOJ",
+                "url": "https://zoj.pintia.cn/problem-sets/91827364500/problems/91827364500"
+            }
+        ]
+    }
+]
