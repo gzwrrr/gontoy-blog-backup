@@ -66,7 +66,6 @@ feed:
 3. `FLAG_ACTIVITY_CLEAR_TASK`：跳转到新活动中时，将栈中所有的任务清除
 4. `FLAG_ACTIVITY_NEW_TASK`：开启新的任务栈
 5. `FLAG_ACTIVITY_NO_HISTORY`：栈中不保存新启动的实例
-
 6. 如要启动 Activity，可以向 `startActivity()` 或 `startActivityForResult()` 传递 `Intent`（想让 Activity 返回结果时），或者为其安排新任务。
 7. 在 Android 5.0（API 级别 21）及更高版本中，可以使用 `JobScheduler` 类来调度操作。对于早期 Android 版本，可以通过向 `startService()` 传递 `Intent` 来启动服务（或对执行中的服务下达新指令）。也可通过向将 `bindService()` 传递 `Intent` 来绑定到该服务。
 8. 可以通过向 `sendBroadcast()`、`sendOrderedBroadcast()` 或 `sendStickyBroadcast()` 等方法传递 `Intent` 来发起广播。
@@ -74,7 +73,12 @@ feed:
 
 
 
+### 启动过程
 
+- Activity启动过程的源码相当复杂，涉及Instrumentation、ActivityThread和ActivityManagerService（简称AMS）。
+- 在新Activity启动之前，桟顶的Activity需要先onPause后，新Activity才能启动。
+
+ 
 
 ### Intent
 
@@ -249,6 +253,21 @@ Activity 停止后，如果系统需要恢复内存，可能会销毁包含该 A
 4. 如果 Activity 即将结束，onDestroy() 是 Activity 收到的最后一个生命周期回调。如果由于配置变更而调用 onDestroy()，系统会立即新建 Activity 实例，然后在新配置中为新实例调用 [`onCreate()`](https://developer.android.google.cn/reference/android/app/Activity?hl=zh-cn#onCreate(android.os.Bundle))。
 
 
+
+#### 常见的情况
+
+1. 针对一个特定的Activity，第一次启动，回调如下：`onCreate `-> `onStart `-> `onResume`。
+2. 当用户打开新的Activity或者切换到桌面的时候，回调如下：`onPause `-> `onStop`。这里有一种特殊情况，如果新Activity采用了透明主题，那么当前Activity不会回调`onStop`。
+3. 当用户再次回到原Activity时，回调如下：`onRestart `-> `onStart `-> `onResume`。
+4. 当用户按back键回退时，回调如下：`onPause `-> `onStop `-> `onDestroy`。
+5. 当Activity被系统回收后再次打开，生命周期方法回调过程和第一种一样，注意只是生命周期方法一样，不代表所有过程都一样，这个问题在下一节会详细说明。
+6. 从整个生命周期来说，`onCreate`和`onDestroy`是配对的，分别标识着Activity的创建和销毁，并且只可能有一次调用。从Activity是否可见来说，`onStart`和`onStop`是配对的，随着用户的操作或者设备屏幕的点亮和熄灭，这两个方法可能被调用多次；从Activity是否在前台来说，`onResume`和`onPause`是配对的，随着用户操作或者设备屏幕的点亮和熄灭，这两个方法可能被调用多次。
+
+:::info onStart/onStop 与 onResume/onPause
+
+onStart和onStop是从Activity是否可见这个角度来回调的，而onResume和onPause是从Activity是否位于前台这个角度来回调的，除了这种区别，在实际使用中没有其他明显区别。
+
+:::
 
 
 

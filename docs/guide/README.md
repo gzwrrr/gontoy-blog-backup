@@ -18,7 +18,8 @@ tag:
 sticky: 1
 star: 1
 article: false
-timeline: true
+timeline: false
+notPage: true
 dir:
   text: "说明"
   icon: "home"

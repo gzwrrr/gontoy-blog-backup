@@ -1,9 +1,46 @@
-
+---
+title: "Kafaka 生产者"
+shortTitle: "Kafaka 生产者"
+description: "Kafaka 生产者"
+icon: ""
+author: 
+  name: gzw
+  url: 
+  email: 1627121193@qq.com
+isOriginal: false
+date: 2023-01-13
+category: 
+- "中间件"
+- "消息队列"
+tag:
+- "中间件"
+- "消息队列"
+sticky: 1
+star: false
+article: true
+timeline: true
+dir:
+  text: "Kafaka 生产者"
+  icon: ""
+  collapsible: true
+  index: true
+  comment: true
+headerDepth: 3
+index: true
+order: 2
+copy:
+  triggerWords: 100
+  disableCopy: false
+  disableSelection: false
+feed:
+  title: "Kafaka 生产者"
+  description: "Kafaka 生产者"
+  author:
+    name: gzw
+    email: 1627121193@qq.com
+---
 
 # Kafaka 生产者
-
-
-
 
 
 ## 发送流程
