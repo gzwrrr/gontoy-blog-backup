@@ -60,6 +60,12 @@
                 "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAACtUlEQVQ4jT2QQWyTZRyHf//3e0e7MpgVVoe6BVgjECUg00Q4GC4EQ2ZiNBhN1JsHlkUWFtF4MOFESCYJQjiayEkMhBGjhqbitrgubjLLwhy6LGNbgbVsdq1fW75+7/v+PAg+tyd5To9YawkIqJRkCsHpPyojqyhLAwRrjT2/Z81bZtEmdygA1opSYowVcRbSO17+KseDz8Vfj/odlYI4cye++ZWFG+rtA7F3P2g9eVpFo3ROQmOduNfSxTkX+2Z7ZeeF/uq1VD0MQUaeaC7PLzYcOhzOzMD+0341JVoLaXvGSldW1ky0zbn33vRb2zYc6WncvYeeF0z+Xvkx3dLT6SXid7r6Y3t3Pt1/DuMPqtFLK5m5wtKu5PwnfZZ0pCMtHxHMnQ2GI9WbP9xObvXHMvLO8HJp3ZPfXuy9N55NpodoDEjleQDpHOnQEDFjB/RTrfe/aIWfUyNFvL/eb/rrVqLvuDgCVJ6GCEREaVEKpNr8sVseatq/vfbbpM7Xwut5rJ64eDjZDFCUhgAARECIKACq6XlroRPCulM7NrYMFCLdt1wh4KP0PygQPhYnoECRVKPbLsy+OrVlbWyyWAfEko8rEiAcQVe+Ca3DPCSipDbxRlSXjvL6UC6fPbTRWrGAFhAAoQRUKszs1W0vLp1qZPUegvJUkI4+yP+cuFr/cLRAWvL/t6F1Jpg+Xh9tqWbT01va/V9HYMjadJ8b3DBZWHhmoN75ff7r2dJUsZpd8TPL9eB238OUFywOznS+fPdYN0lYExpraje6OJhYup/qngie/c6tG6g1XvZf+IlLy1nzS9wfO5M72hv6JWuNWGsAoZLwz0917qxueamyvmvBdThgk5uNraZRHPY6PtNbP6ezIiLOOZAEoTxbzpr5L3Ux1eD+BmlVs4vvl/aPVPM+2BDKE5F/AQ5bll/X2CASAAAAAElFTkSuQmCC",
                 "desc": "Java I tell you-爪哇我话你知",
                 "url": "https://www.injdk.cn/"
+            },
+            {
+                "title": "npm设置淘宝镜像源 - 简书",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACz0lEQVQ4jV2ST2hcZRTFf+f7vvfezOuk0cTWaYtVUEGyEhV0oaBQ0uJCpV1lUwuCBSMoLQiiIoJ/KNiCi1hdxC4UBP/gUtCNiOBG3XRRin9qaJPUUs1Mp0ln3nvfd11MI8WzvNx77uGco5VDe/bnLj9Rp3RbAoiNzHlJYhOWEmDIeQPMSWTS+SpVR4JZWADrRkjCpHZH1COsqsbX3qMsB+ewaxsSRjQsK/LbjbDgJLpDw9Kg7/KZ+7Tj5JcW7rgbTWwldHdhdc3Ui28wffQtlOfmpm+V39Z1w2Qm6Gr50L5ksZGfmLTpl9/FYiM/vZ1meYnqz1+xqwO27N1Pfe4s2Z330Px2xuqV81z5/CNZXZsjRchypl46RnNpVZdeOUz1x1mGp39i8NUntB+ZZe3k2/x9/DVsY52r33+j3uJxLCXkHbpwcNbULnFlh9a9D9J+6FHWv/uaiX0HMAlCIP1zGdcuIcuRHP1PP2D4y4+4dkmQc9jGOnE0pL5wjrL1OMpy+p8t4soOFhsUAmk0RHJMvfA6bnIKixGTCCaRRtfo7HmSyYPPs/rcASbnDtOZfYo46CM53JYO1e9n6J16b5yOJSSQGUESMgMYxxUjYftOLEXW3n8HUsPN86+S3TWDihZyjv8qIhEwAwkzGxfGedJwg/yWGW565ghgZDt30/y1AhJcf7aJMB6CpOsLCdcqaZaX6H14DARTR99EeQEpYjdymBEwM4QAI0YhEQd9wq7dbJ17FuUFKtr0P14gXemPlbtgmAnJwpjIkA+4PEd5QW/xBK7dRnkLgDTo4bftoPPEHC5kpMEaOD9WIJCct2btstZ/+BaqkVHXSk0FqTf2p6kpH7uf8oGHrf/FKQ1P/ywVLZOZtPz03tUi+O6wiYm6ElkmyfF/WNOAgKoyipa1suBGTbropDiPseQlVLRMyOxGpzcjDgE5byo75r0HY0lq5v8FS/1LVvsjW/AAAAAASUVORK5CYII=",
+                "desc": "npm设置淘宝镜像源 - 简书",
+                "url": "https://www.jianshu.com/p/c35e832a08d8"
             }
         ]
     }

@@ -1,0 +1,192 @@
+[
+    {
+        "typeName": "Java",
+        "list": [
+            {
+                "title": "Java八股文（2022最新整理） - 知乎",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcklEQVQ4jT3TTahVdRQF8N8+59yr5numZlmgQVQUUaOkkUKDoonRQIIgCMLyQYOa5CxMigZBDjIsIiyKjIqmFk0alDxq0CTpSUEiWYZUfqX3Xt85578bnFeDDXuyF2utvVbYn2PFS8aeFtbXI/oKFWqhQb0ylTQSav8Ib/vZC42pV8x5XidV9DNcI2MkhMxOBJCIaGVJ8+btdbsS9uZljTUqqVbvukd+cZLJFGNpLMT/jGikBqtQudzora1CKRPVw9vkwYfY+TFlAxrxyyW2rmf1eJDQhzhzlb+uSo35RqcgdPLRu0RTc/Qxevx6niMn2L+ds1OudOLODeL14/LFYzTrqKITZcrNm8WOW9j1AUtnefUbHjzEyXP8ORXbj7DjXb48JTeOhVZET5UdCssz7jvAsUVKEWcuMPmDi5PBwOmM9gpXe5kpdWQnGzkATGbs3sEN93PbJrmwTdy7SV7AtGWULKesioiCjuhFE5XMZbFlHXdfT92wcQ2/XVDmGtEWSiF6tEKuPLRFJ6tMjFg6ze435MKHXJzx/nfiucPy6BJrR3TLw0FfBsY6sheVHFBHYzTsfYDzE3loF089IrqW1Q2lZUSsbVYYdERHI2SEaK9w041i306eeE+c+pvPFsSTH8lrV/H9s6Ivcut6XlscjM2WJggtW67j02f4/DiffEu28uBXnPidO17m8OPywNf8cIZZhTFdq4rYkxezmNu8gVs3icWfpEpEkP2wq1doVysRbhRjhFmVvbesVp09JxZ/lOoh+2nwRAymRUU16E9FpVbrvNm4ZJ9KrbGnasyV8l/vkEMjFZFl0KwWKudNvOO0ff8CDNsVBiQlEB0AAAAASUVORK5CYII=",
+                "desc": "Java八股文（2022最新整理） - 知乎",
+                "url": "https://zhuanlan.zhihu.com/p/549668569"
+            },
+            {
+                "title": "Java基础八股文（背诵版） - 腾讯云开发者社区-腾讯云",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACJ0lEQVQ4jZWST0iTcRzGP7+977t/zilJBUJCxLophFBQHcWD0SFjRcFoTREzRcpTReihIiSkQ6c0QlKLFUhEHbp0aoamQmSHpkUXS6ZsYW5ur3u/HTbZ/EN/nt/p++V5Hh5+3we2g1+0f9r9FUFxEhTnnyhq4ygKlNApJ4HLCIcB0Ihgcpd76ulmA9sWcYf04uYZgheLmwg3yOKllDAdcrvALUbLewMRxUU5wRUROrN3tmS9JH1cF6FdziKiqBUjb1bkdkHe0CaTBWMxaFknAu3SRofUF6fOiSMzB3B6r/KdRty2OdzJXg75BjYkGJYmHPjJsBfFBzLc4pyaVkzMHkF3vmbNNNHMESytmvJdR0nEw9gTrdTUxHki/XhoJs4EFh/RaUTHwKReMRadwu6oIP7zIHXVCwC8+9KFx3WN5ZXjzO5rooLzLNFFQPUB0C+78TDOGkvwaVEYi3YDEI066JHcZZ5PVTIio7wQ4aG0AtAjNnryvRiUbkZFdNIpE0uqAPD50gA8kFKWuY+bY8QIEFJDOQNlAav5X6kijamzmhykrLyZyNxb9iw85mu1h28M46SOBEFCaoiwuPiBBYADDQen8RDiFwOKyMwOjJJHeL0NLCaSzFfacTt0VoA0KcCVuxigEBSKEiDJK1IECh2YnmtgvqyGWEUJmpXBsmlo2JH8KyCLwThn1Mv1xaZa/g/WiwQQDmvs9Ofmz5MKarfX7EeIIZxSWYDfa9nVNFgL8gwAAAAASUVORK5CYII=",
+                "desc": "Java基础八股文（背诵版） - 腾讯云开发者社区-腾讯云",
+                "url": "https://cloud.tencent.com/developer/article/1872211"
+            },
+            {
+                "title": "Java基础知识面试题大集合",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "Java基础知识面试题大集合",
+                "url": "https://mp.weixin.qq.com/s/f-qIQGbzwHcW5Ur51rCqgg"
+            },
+            {
+                "title": "Java虚拟机（JVM）面试题大集合",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "Java虚拟机（JVM）面试题大集合",
+                "url": "https://mp.weixin.qq.com/s/T2DqgJ9-0QiRZQYUeR3c8w"
+            },
+            {
+                "title": "Java并发和多线程基础面试题大集合",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "Java并发和多线程基础面试题大集合",
+                "url": "https://mp.weixin.qq.com/s/pIVf97W4DuAPNxq6zgRvsQ"
+            },
+            {
+                "title": "Spring 经典面试题汇总",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "Spring 经典面试题汇总",
+                "url": "https://mp.weixin.qq.com/s/q4CajkpSUC8TCgv55VK5aQ"
+            },
+            {
+                "title": "Spring Boot基础面试题大集合",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "Spring Boot基础面试题大集合",
+                "url": "https://mp.weixin.qq.com/s/cLh9xCDkVG0KV-uaX8PkNw"
+            },
+            {
+                "title": "https://mp.weixin.qq.com/s/g0br3PfTmm8C_nkKbzE_ig",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "https://mp.weixin.qq.com/s/g0br3PfTmm8C_nkKbzE_ig",
+                "url": "https://mp.weixin.qq.com/s/g0br3PfTmm8C_nkKbzE_ig"
+            },
+            {
+                "title": "上次是谁说要MySQL数据库面试题来着？先来30道保个底",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "上次是谁说要MySQL数据库面试题来着？先来30道保个底",
+                "url": "https://mp.weixin.qq.com/s/aBboeqEphejICklAKLqS2Q"
+            },
+            {
+                "title": "计网 TCP/UDP 部分高频面试题大集合",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "计网 TCP/UDP 部分高频面试题大集合",
+                "url": "https://mp.weixin.qq.com/s/SZ8XcOzZCVJG_P1_O4OtWQ"
+            },
+            {
+                "title": "1.3w字，操作系统高频面试题大分享",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "1.3w字，操作系统高频面试题大分享",
+                "url": "https://mp.weixin.qq.com/s/oTEMOQY1xcG8uVceW-kLDA"
+            },
+            {
+                "title": "https://mp.weixin.qq.com/s/6NobACeeKCcUy98Ikanryg",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "https://mp.weixin.qq.com/s/6NobACeeKCcUy98Ikanryg",
+                "url": "https://mp.weixin.qq.com/s/6NobACeeKCcUy98Ikanryg"
+            },
+            {
+                "title": "JVM知识点吐血整理版（参考深入理解java虚拟机第三版与尚 思维导图模板_ProcessOn思维导图、流程图",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACqElEQVQ4jU2TPWjdZRTGf8953/+9NzdfBBVppSp1UCGoBGqHgri0DgUFJ7UICkZBOgiCQwTFzUVEBAe7ORQcgkUUtHRysaBFVLSCixGNJUpbkubmfr3v4/A36oGH83A4h/MtXt28I8Xi+yqT48IWqAICwK1C9r82bCTn7vlSrr0Qifkzyr0TwhVQCJJaZ0kt/gkWYCzhqtR5JDF/Rs3a9Wq75iSNpzXqBCORO1YWFMN+FfsEqLYtRQTYEcRwUDXbyMcOJ1Zuk1zxcGSk/eC2HbVEkgLsLKHxXuXpI43ePDnrfrY6TfjnraLV9V2++rXQ7SFbFta0yiErJFejGA+rjt+T9cETc3z6w1jLb+342Dvb6mb45Jk5Di6IyciUUjUa4KyqWvFoVAVWxviVh2f45WrR8+sDk9Dvf5pTZ29w6aVFHlvu8NNW4eWHelzcmOrZo11f3a168dyev94oxExfuv9A6MuNAgX1u0GeDS7/VdkemgcOJJa6cPLeDg/ennjt44HuXArefbQnqSoLEwJjMC3+JzZMCpRqXv9sj2++m7ByOPPckQ4zPRGDAf5xyz56KEPCg3Flulu5+6ZgoRdc/G3CBAhBpxFpPrkaICzCga23vxjorpsz7z3e18HZ8H2HEmefmuOP7cL6pTELPbXrlFxKVQ45qQpV5U4/+aPvC6fP3dAbJ/p+cqVRTuHLV6Y69eEuO7vtZY4KrsVC4b2JtTvBWKhZu1YEGg/N0qJYviXYHlrfXqnGVm5gJodvnUWbO3g4haU+zHXE5ratZu16xa4pSaNpDU/aqTaNFYLqFqXIOYHCKlW1FrvJEVGVLri3kEq1m5B7PdHpgJBN+0xJcqdpB2nLWbiZW0xV6UIUdlY9HZ43CoP3Mxqw3YL/bAJXFHU6/ryws/o3CC1mVl4ZRcYAAAAASUVORK5CYII=",
+                "desc": "JVM知识点吐血整理版（参考深入理解java虚拟机第三版与尚 思维导图模板_ProcessOn思维导图、流程图",
+                "url": "https://www.processon.com/view/link/5eea141cf346fb1ae56a44e7"
+            },
+            {
+                "title": "Snailclimb/JavaGuide: 「Java学习+面试指南」一份涵盖大部分 Java 程序员所需要掌握的核心知识。准备 Java 面试，首选 JavaGuide！",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdklEQVQ4jY3TvWpUURQF4HUmk2QUCWJhoVUQBLHwByWx0aewsBV8mChBLRIQtNBaFBFsbIIvYCdEUJNCsRSMI5KJn4X74mUw4obD3eesvfb/TZKgpQSX8ADvMcb30u9jKfsJZrFahE5+1ulkjBUM+sQB5vHc/8vjCjjonNwp4CWuYQM72MKH0l8V9qJsVzryMn5ggrV6G+I4RnWOYa6w22X7DeeGSW4kmauKJphJstda+9hr0Se0wiZJZpIcTHI9eFuNGuNkry/9ybTujkV8Lc7rVH2wjdl9x/TH2Qw2y8GXQZKWRJJDSQ70I/+F3JKMkiwUbzhIsl34kSRLrTXVxOkShq01SZaTHK2gW8G9Smenyjj1jwxO4w32quz14Hxd7uJJ6U9xZor4sNev3Rr92c5gvYALuFULtdhzcKK3heP6rnZgt8obeIeruDiV+gife06eFWcwbfSoZ3S4hy1Un3axprZyejydfhk3Meq9zfv9F16Z5vwCz01H2UDrUX0AAAAASUVORK5CYII=",
+                "desc": "Snailclimb/JavaGuide: 「Java学习+面试指南」一份涵盖大部分 Java 程序员所需要掌握的核心知识。准备 Java 面试，首选 JavaGuide！",
+                "url": "https://github.com/Snailclimb/JavaGuide"
+            },
+            {
+                "title": "一文搞懂Java引用拷贝、浅拷贝、深拷贝 - bigsai - 博客园",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACUElEQVQ4jZVTMWsUQRT+3u54p7nbu40cCcFGEERDEBstBNHCWhCUgGARLAQbJYiFhVhZWFkEtFTR5hr/gHggNqZUtIuFkRweszOzO7N3l7vsPJvbcEkR9INpHh/fe9/33gAHIM/zR9baNMsy45x7dhB3F8wcAIDW+r5zbpxl2Yq1dnkwGPxSSr2c5kyD9okIrfVmkiS3y1q3213UWqfW2rlpbqnE+wQrzCy895/LjgsLCz+YedN7f8dae7psHDBzmKbp+Xa7HU7IRER9AF+EEG96vV6diLy19jERNYuiuFEUxVUA6HQ6IQAgSZInUsorAIiZQwCw1s5lWfbVOdczxmz0+32VZdnTwWDglVJr5WSlBReG4b2JFQ8AURT1Go3GGQAPmfndcDg8Ox6PT1arVRDRpXa7HRKRBwAYY05orXMp5anSBjPvCTZJkuuj0YjTNPVKqdw5N78bYhzHGwAKAHenwt21s7W1dbFWq73y3sN7P5qZmTmyvb19GQCCqZ2+r1Qqt5hZEFFBRJ6ICmPMcqvV+hQEQS3P81VmXq1WqxQEwbFy5yEAaK1XmJmllNcAIE3Tc9baNWPMz+Fw+KLb7S5O7M72+33WWj/fc0DOuXnvfRdAXhSFjOP4uDHGAXjNzN+FEN+iKFonopGU8qMQ4nAcxxdEKVCv1/8opW5GUbRkrQ2TJMmDICiI6BAz15i5IaWsAhhVKpW33vsH+4P+Z6RpetQYs87M9T2fgplDZhbTr9PpiEk9KFfcbDaV9/6DUmr2v0eYnDpba5d2dnZ+/wVUUouGcJXD1AAAAABJRU5ErkJggg==",
+                "desc": "一文搞懂Java引用拷贝、浅拷贝、深拷贝 - bigsai - 博客园",
+                "url": "https://www.cnblogs.com/bigsai/p/14153696.html"
+            },
+            {
+                "title": "面试官：重写 equals 时为什么一定要重写 hashCode？ - 腾讯云开发者社区-腾讯云",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACJ0lEQVQ4jZWST0iTcRzGP7+977t/zilJBUJCxLophFBQHcWD0SFjRcFoTREzRcpTReihIiSkQ6c0QlKLFUhEHbp0aoamQmSHpkUXS6ZsYW5ur3u/HTbZ/EN/nt/p++V5Hh5+3we2g1+0f9r9FUFxEhTnnyhq4ygKlNApJ4HLCIcB0Ihgcpd76ulmA9sWcYf04uYZgheLmwg3yOKllDAdcrvALUbLewMRxUU5wRUROrN3tmS9JH1cF6FdziKiqBUjb1bkdkHe0CaTBWMxaFknAu3SRofUF6fOiSMzB3B6r/KdRty2OdzJXg75BjYkGJYmHPjJsBfFBzLc4pyaVkzMHkF3vmbNNNHMESytmvJdR0nEw9gTrdTUxHki/XhoJs4EFh/RaUTHwKReMRadwu6oIP7zIHXVCwC8+9KFx3WN5ZXjzO5rooLzLNFFQPUB0C+78TDOGkvwaVEYi3YDEI066JHcZZ5PVTIio7wQ4aG0AtAjNnryvRiUbkZFdNIpE0uqAPD50gA8kFKWuY+bY8QIEFJDOQNlAav5X6kijamzmhykrLyZyNxb9iw85mu1h28M46SOBEFCaoiwuPiBBYADDQen8RDiFwOKyMwOjJJHeL0NLCaSzFfacTt0VoA0KcCVuxigEBSKEiDJK1IECh2YnmtgvqyGWEUJmpXBsmlo2JH8KyCLwThn1Mv1xaZa/g/WiwQQDmvs9Ofmz5MKarfX7EeIIZxSWYDfa9nVNFgL8gwAAAAASUVORK5CYII=",
+                "desc": "面试官：重写 equals 时为什么一定要重写 hashCode？ - 腾讯云开发者社区-腾讯云",
+                "url": "https://cloud.tencent.com/developer/article/1910930"
+            },
+            {
+                "title": "如何理解 String 类型值的不可变？ - 知乎",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcklEQVQ4jT3TTahVdRQF8N8+59yr5numZlmgQVQUUaOkkUKDoonRQIIgCMLyQYOa5CxMigZBDjIsIiyKjIqmFk0alDxq0CTpSUEiWYZUfqX3Xt85578bnFeDDXuyF2utvVbYn2PFS8aeFtbXI/oKFWqhQb0ylTQSav8Ib/vZC42pV8x5XidV9DNcI2MkhMxOBJCIaGVJ8+btdbsS9uZljTUqqVbvukd+cZLJFGNpLMT/jGikBqtQudzora1CKRPVw9vkwYfY+TFlAxrxyyW2rmf1eJDQhzhzlb+uSo35RqcgdPLRu0RTc/Qxevx6niMn2L+ds1OudOLODeL14/LFYzTrqKITZcrNm8WOW9j1AUtnefUbHjzEyXP8ORXbj7DjXb48JTeOhVZET5UdCssz7jvAsUVKEWcuMPmDi5PBwOmM9gpXe5kpdWQnGzkATGbs3sEN93PbJrmwTdy7SV7AtGWULKesioiCjuhFE5XMZbFlHXdfT92wcQ2/XVDmGtEWSiF6tEKuPLRFJ6tMjFg6ze435MKHXJzx/nfiucPy6BJrR3TLw0FfBsY6sheVHFBHYzTsfYDzE3loF089IrqW1Q2lZUSsbVYYdERHI2SEaK9w041i306eeE+c+pvPFsSTH8lrV/H9s6Ivcut6XlscjM2WJggtW67j02f4/DiffEu28uBXnPidO17m8OPywNf8cIZZhTFdq4rYkxezmNu8gVs3icWfpEpEkP2wq1doVysRbhRjhFmVvbesVp09JxZ/lOoh+2nwRAymRUU16E9FpVbrvNm4ZJ9KrbGnasyV8l/vkEMjFZFl0KwWKudNvOO0ff8CDNsVBiQlEB0AAAAASUVORK5CYII=",
+                "desc": "如何理解 String 类型值的不可变？ - 知乎",
+                "url": "https://www.zhihu.com/question/20618891"
+            },
+            {
+                "title": "[Java8]如何正确使用Optional | KAAAsS's blog",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAC0UlEQVQ4jQXBW2/bVAAAYJ+LL4ntuI6dS91myUjbpBe10FVF6sO4SEj8AN4QT0hIaBJvvCDe+Dv8DLYHYG23rt3o2tElbbMYXxI7Pr4dH/N94PendyISQc4VFNCSy0uaZTEEpYARo6AseZ7HJaMQcRxjjDEsZg5XchAigLiS5pDlW92VwPXf37vN1griudHohoNlUZZ5ThHHY/fd0ySNY5aUuKwbSzJEg0f1P179Obq4tozPrXbnt19/AQJiJZAkpabUsaFWBbM2dadQRIE/660N05izrP6hpDfrurlUG2z0Xpy9rEgSXdACIDzxb0XM+44LED+6m/ZWt2e5wDdWDzZ3b0bjpABSVaW0iElS5km2yOCceAVIzYau1WRNq756fSrrQvtBHQpsbb3ruPbx6SmlTBBEmqfRYoYvju/y5LppmuuDDbLIz18+6zXMzbWPeJ4PScGgrIjKe2dcEdQkBXFE0MNG13OC1/9c/Tu++c++3exb/bZWKaLJ/dto4Rn1JVmWzy/OZaWSZYSQCP380w+NlukvAs+Z7g56X3/5WFWVjZ29LGcJCef+/Ojoq7Xh3vHZSZ6nNUWDjmcDHhqGUVBWraiExBPbBhjzYjUISRhGtm0LPL66fPPh/jacewhzxfhuSpKUFeXycrvXXT083EcY6Lqh1jTHDepmy/FcADLD0JYbJg7CJKUxZVCTlf39I6NpMA5JYgUAnoNSf7AzsZ1Op/npwSe+5+5u74K94U7JQcAhQRAGgz6GWceqffftN4TEjh97s3jq2OPbdymJdV0HkEMrVg8ADmNI4ujy+uqDPfnis8daTV2QuL263rC6jw4PFtEiS3Kpopy8OMN5QbMkzDMy3Bpu731s2xPNqG9t7WSMPvvrrRukLWvJnwct68H5xeWMUOwHXkpmvU7rxyff9zc2nz8/aajViMQFLP15+PfJm0HSqVbkaJaShFEG/gcbJH4o5g39ZQAAAABJRU5ErkJggg==",
+                "desc": "[Java8]如何正确使用Optional | KAAAsS's blog",
+                "url": "https://blog.kaaass.net/archives/764"
+            },
+            {
+                "title": "一文彻底弄懂fail-fast、fail-safe机制（带你撸源码） - 知乎",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcklEQVQ4jT3TTahVdRQF8N8+59yr5numZlmgQVQUUaOkkUKDoonRQIIgCMLyQYOa5CxMigZBDjIsIiyKjIqmFk0alDxq0CTpSUEiWYZUfqX3Xt85578bnFeDDXuyF2utvVbYn2PFS8aeFtbXI/oKFWqhQb0ylTQSav8Ib/vZC42pV8x5XidV9DNcI2MkhMxOBJCIaGVJ8+btdbsS9uZljTUqqVbvukd+cZLJFGNpLMT/jGikBqtQudzora1CKRPVw9vkwYfY+TFlAxrxyyW2rmf1eJDQhzhzlb+uSo35RqcgdPLRu0RTc/Qxevx6niMn2L+ds1OudOLODeL14/LFYzTrqKITZcrNm8WOW9j1AUtnefUbHjzEyXP8ORXbj7DjXb48JTeOhVZET5UdCssz7jvAsUVKEWcuMPmDi5PBwOmM9gpXe5kpdWQnGzkATGbs3sEN93PbJrmwTdy7SV7AtGWULKesioiCjuhFE5XMZbFlHXdfT92wcQ2/XVDmGtEWSiF6tEKuPLRFJ6tMjFg6ze435MKHXJzx/nfiucPy6BJrR3TLw0FfBsY6sheVHFBHYzTsfYDzE3loF089IrqW1Q2lZUSsbVYYdERHI2SEaK9w041i306eeE+c+pvPFsSTH8lrV/H9s6Ivcut6XlscjM2WJggtW67j02f4/DiffEu28uBXnPidO17m8OPywNf8cIZZhTFdq4rYkxezmNu8gVs3icWfpEpEkP2wq1doVysRbhRjhFmVvbesVp09JxZ/lOoh+2nwRAymRUU16E9FpVbrvNm4ZJ9KrbGnasyV8l/vkEMjFZFl0KwWKudNvOO0ff8CDNsVBiQlEB0AAAAASUVORK5CYII=",
+                "desc": "一文彻底弄懂fail-fast、fail-safe机制（带你撸源码） - 知乎",
+                "url": "https://zhuanlan.zhihu.com/p/261705671"
+            },
+            {
+                "title": "一文彻底明白Spring的循环依赖 - 掘金",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACD0lEQVQ4jZWTPWhTcRTFf/f/XhNTG8wkmPdeLS0dFZwsilg/EERwExQKWigu2kFqQU1T//GLGkXBthREoYObk+DiII3g7i4i2JiCS0HaNK3Je9chSQ22lnqme8+95wz3A/4Fq2bT+H+QzmjgWfW36tnofE4dAG9cT7gxCo7wwbN6vLW2tcFrCUEF4aC00S1tdKP0gUq9tilUAFJWU/4dPdpkfasDflYHWvL+lNVUq6YlUPGtTnXlVTut5jmt8XX/YY0Ht/VRV17VtzrVqnFBtJ6I1kKdkRV6nSSjQR/7y/t0KNEOBl46SU6Fy7yrhczUNSogKt64jjgxztSWGVmYkE9c0h1BF/ecdkZqK3wREKednrDM4+IiY0zKWjqrB5wYT4h4a8SQBI65HcwFWT3PrKwWrVyvLjFoDHsxdFaXGCzmZJRJWQvG9YIboyBCv4Z0CEB6TE+6cWalDS9a5X6xgKUgtT1ZPSIGXcjJR6y6gZIzCW5plVJY4WLpgbwXrBqsRLvHtCfu8sJJ0h8u8aa8wtXFvHwH8Kz6BqadJGejZebWKgz9mJCvWDX1aTZM/GuaMLt4KDsZjip8psqARoiJ88ok6I3KPJv/yQ2eSqWpkfVVNQgAL6uXnRjTGlFFERzc6BdXSnfl+d+9Gw+q8Tjpm3o4yOl8kNNv6YweWhf+OaAt0DTJaJDOaNDKbR/bfOffVnrk9zizKkQAAAAASUVORK5CYII=",
+                "desc": "一文彻底明白Spring的循环依赖 - 掘金",
+                "url": "https://juejin.cn/post/7201785917061021751"
+            },
+            {
+                "title": "Spring Boot项目优雅的全局异常处理方式（全网最新）_全局捕获异常_DT辰白的博客-CSDN博客",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAB/klEQVQ4jU2SPWtUYRCFz5n3bvbubhISoyJiJxEsEkglghZJZUTUJkhAUoja2WihgohFQPAXaGVhk8rGRkQrURDEFOL3B2idkDXJ7t3Nve8ci7ubZOozZ2aeMyzmptAvSSBpBgkxgkQIkOQOkgCAZLeaJEi1NkBDWgeEzXUkFVZTuIPcaSjVkqPb5bEZTp/H4aPMc//0Hs+X9Psb0hrlILm9kuRw5+XbNjsPuX//yNEx239Inbbfu6IvH5jWISU9fzNlmV26FWbn/d0rf7SI5oosaPosF25gZC9iLH1ZzE0JRLeN8YnwYEl/fsSb8+xkTOvyiK0O9h3ERhMSAZAGgKTy3E6eppmePcHmOhtDgmjG2iDXVtjnAcAAyCNrDYxPSNLXZVZTxYIlZTmSBKSkciUrb0BSwfAe5DnW11DmUE7u6bhN3/opRHTbSALSGgSaARDAEOCuYmu72QAwJGq39OszLXDqhP6tKjrc6VEbTdUaHDugIufODRAt6OVTxcIWrtuZi6imCokGUkwet7sPbfExBqpy72Etc0C7xVMX7OodVCroZGquojHIoRECvvzG71+DnLRdSQPIWhiftJlzODLJ4VF1Mvz9qeXXevsCRcEQ+hN2Ps/UaaPIUWswJJKjm6EoWB8syZLsPV8PgiLTGlhHjIoFSaR10OQRpSPwH79sFlWOAVADAAAAAElFTkSuQmCC",
+                "desc": "Spring Boot项目优雅的全局异常处理方式（全网最新）_全局捕获异常_DT辰白的博客-CSDN博客",
+                "url": "https://blog.csdn.net/qq_41107231/article/details/115874974"
+            },
+            {
+                "title": "Spring Boot 自动装配原理与实现 - 知乎",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcklEQVQ4jT3TTahVdRQF8N8+59yr5numZlmgQVQUUaOkkUKDoonRQIIgCMLyQYOa5CxMigZBDjIsIiyKjIqmFk0alDxq0CTpSUEiWYZUfqX3Xt85578bnFeDDXuyF2utvVbYn2PFS8aeFtbXI/oKFWqhQb0ylTQSav8Ib/vZC42pV8x5XidV9DNcI2MkhMxOBJCIaGVJ8+btdbsS9uZljTUqqVbvukd+cZLJFGNpLMT/jGikBqtQudzora1CKRPVw9vkwYfY+TFlAxrxyyW2rmf1eJDQhzhzlb+uSo35RqcgdPLRu0RTc/Qxevx6niMn2L+ds1OudOLODeL14/LFYzTrqKITZcrNm8WOW9j1AUtnefUbHjzEyXP8ORXbj7DjXb48JTeOhVZET5UdCssz7jvAsUVKEWcuMPmDi5PBwOmM9gpXe5kpdWQnGzkATGbs3sEN93PbJrmwTdy7SV7AtGWULKesioiCjuhFE5XMZbFlHXdfT92wcQ2/XVDmGtEWSiF6tEKuPLRFJ6tMjFg6ze435MKHXJzx/nfiucPy6BJrR3TLw0FfBsY6sheVHFBHYzTsfYDzE3loF089IrqW1Q2lZUSsbVYYdERHI2SEaK9w041i306eeE+c+pvPFsSTH8lrV/H9s6Ivcut6XlscjM2WJggtW67j02f4/DiffEu28uBXnPidO17m8OPywNf8cIZZhTFdq4rYkxezmNu8gVs3icWfpEpEkP2wq1doVysRbhRjhFmVvbesVp09JxZ/lOoh+2nwRAymRUU16E9FpVbrvNm4ZJ9KrbGnasyV8l/vkEMjFZFl0KwWKudNvOO0ff8CDNsVBiQlEB0AAAAASUVORK5CYII=",
+                "desc": "Spring Boot 自动装配原理与实现 - 知乎",
+                "url": "https://zhuanlan.zhihu.com/p/384540393"
+            },
+            {
+                "title": "一口气说出9种分布式ID生成方式，阿里面试官都懵了 - 知乎",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcklEQVQ4jT3TTahVdRQF8N8+59yr5numZlmgQVQUUaOkkUKDoonRQIIgCMLyQYOa5CxMigZBDjIsIiyKjIqmFk0alDxq0CTpSUEiWYZUfqX3Xt85578bnFeDDXuyF2utvVbYn2PFS8aeFtbXI/oKFWqhQb0ylTQSav8Ib/vZC42pV8x5XidV9DNcI2MkhMxOBJCIaGVJ8+btdbsS9uZljTUqqVbvukd+cZLJFGNpLMT/jGikBqtQudzora1CKRPVw9vkwYfY+TFlAxrxyyW2rmf1eJDQhzhzlb+uSo35RqcgdPLRu0RTc/Qxevx6niMn2L+ds1OudOLODeL14/LFYzTrqKITZcrNm8WOW9j1AUtnefUbHjzEyXP8ORXbj7DjXb48JTeOhVZET5UdCssz7jvAsUVKEWcuMPmDi5PBwOmM9gpXe5kpdWQnGzkATGbs3sEN93PbJrmwTdy7SV7AtGWULKesioiCjuhFE5XMZbFlHXdfT92wcQ2/XVDmGtEWSiF6tEKuPLRFJ6tMjFg6ze435MKHXJzx/nfiucPy6BJrR3TLw0FfBsY6sheVHFBHYzTsfYDzE3loF089IrqW1Q2lZUSsbVYYdERHI2SEaK9w041i306eeE+c+pvPFsSTH8lrV/H9s6Ivcut6XlscjM2WJggtW67j02f4/DiffEu28uBXnPidO17m8OPywNf8cIZZhTFdq4rYkxezmNu8gVs3icWfpEpEkP2wq1doVysRbhRjhFmVvbesVp09JxZ/lOoh+2nwRAymRUU16E9FpVbrvNm4ZJ9KrbGnasyV8l/vkEMjFZFl0KwWKudNvOO0ff8CDNsVBiQlEB0AAAAASUVORK5CYII=",
+                "desc": "一口气说出9种分布式ID生成方式，阿里面试官都懵了 - 知乎",
+                "url": "https://zhuanlan.zhihu.com/p/152179727"
+            },
+            {
+                "title": "既然有 HTTP 请求，为什么还要用 RPC 调用？ - 知乎",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcklEQVQ4jT3TTahVdRQF8N8+59yr5numZlmgQVQUUaOkkUKDoonRQIIgCMLyQYOa5CxMigZBDjIsIiyKjIqmFk0alDxq0CTpSUEiWYZUfqX3Xt85578bnFeDDXuyF2utvVbYn2PFS8aeFtbXI/oKFWqhQb0ylTQSav8Ib/vZC42pV8x5XidV9DNcI2MkhMxOBJCIaGVJ8+btdbsS9uZljTUqqVbvukd+cZLJFGNpLMT/jGikBqtQudzora1CKRPVw9vkwYfY+TFlAxrxyyW2rmf1eJDQhzhzlb+uSo35RqcgdPLRu0RTc/Qxevx6niMn2L+ds1OudOLODeL14/LFYzTrqKITZcrNm8WOW9j1AUtnefUbHjzEyXP8ORXbj7DjXb48JTeOhVZET5UdCssz7jvAsUVKEWcuMPmDi5PBwOmM9gpXe5kpdWQnGzkATGbs3sEN93PbJrmwTdy7SV7AtGWULKesioiCjuhFE5XMZbFlHXdfT92wcQ2/XVDmGtEWSiF6tEKuPLRFJ6tMjFg6ze435MKHXJzx/nfiucPy6BJrR3TLw0FfBsY6sheVHFBHYzTsfYDzE3loF089IrqW1Q2lZUSsbVYYdERHI2SEaK9w041i306eeE+c+pvPFsSTH8lrV/H9s6Ivcut6XlscjM2WJggtW67j02f4/DiffEu28uBXnPidO17m8OPywNf8cIZZhTFdq4rYkxezmNu8gVs3icWfpEpEkP2wq1doVysRbhRjhFmVvbesVp09JxZ/lOoh+2nwRAymRUU16E9FpVbrvNm4ZJ9KrbGnasyV8l/vkEMjFZFl0KwWKudNvOO0ff8CDNsVBiQlEB0AAAAASUVORK5CYII=",
+                "desc": "既然有 HTTP 请求，为什么还要用 RPC 调用？ - 知乎",
+                "url": "https://www.zhihu.com/question/41609070?sort=created"
+            }
+        ]
+    },
+    {
+        "typeName": "Redis",
+        "list": [
+            {
+                "title": "Redis 6.0 新特性-多线程连环13问！",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "Redis 6.0 新特性-多线程连环13问！",
+                "url": "https://mp.weixin.qq.com/s/FZu3acwK6zrCBZQ_3HoUgw"
+            },
+            {
+                "title": "Redlock（redis分布式锁）原理分析 - 腾讯云开发者社区-腾讯云",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACJ0lEQVQ4jZWST0iTcRzGP7+977t/zilJBUJCxLophFBQHcWD0SFjRcFoTREzRcpTReihIiSkQ6c0QlKLFUhEHbp0aoamQmSHpkUXS6ZsYW5ur3u/HTbZ/EN/nt/p++V5Hh5+3we2g1+0f9r9FUFxEhTnnyhq4ygKlNApJ4HLCIcB0Ihgcpd76ulmA9sWcYf04uYZgheLmwg3yOKllDAdcrvALUbLewMRxUU5wRUROrN3tmS9JH1cF6FdziKiqBUjb1bkdkHe0CaTBWMxaFknAu3SRofUF6fOiSMzB3B6r/KdRty2OdzJXg75BjYkGJYmHPjJsBfFBzLc4pyaVkzMHkF3vmbNNNHMESytmvJdR0nEw9gTrdTUxHki/XhoJs4EFh/RaUTHwKReMRadwu6oIP7zIHXVCwC8+9KFx3WN5ZXjzO5rooLzLNFFQPUB0C+78TDOGkvwaVEYi3YDEI066JHcZZ5PVTIio7wQ4aG0AtAjNnryvRiUbkZFdNIpE0uqAPD50gA8kFKWuY+bY8QIEFJDOQNlAav5X6kijamzmhykrLyZyNxb9iw85mu1h28M46SOBEFCaoiwuPiBBYADDQen8RDiFwOKyMwOjJJHeL0NLCaSzFfacTt0VoA0KcCVuxigEBSKEiDJK1IECh2YnmtgvqyGWEUJmpXBsmlo2JH8KyCLwThn1Mv1xaZa/g/WiwQQDmvs9Ofmz5MKarfX7EeIIZxSWYDfa9nVNFgL8gwAAAAASUVORK5CYII=",
+                "desc": "Redlock（redis分布式锁）原理分析 - 腾讯云开发者社区-腾讯云",
+                "url": "https://cloud.tencent.com/developer/article/1431873"
+            },
+            {
+                "title": "【求锤得锤的故事】Redis锁从面试连环炮聊到神仙打架。",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "【求锤得锤的故事】Redis锁从面试连环炮聊到神仙打架。",
+                "url": "https://mp.weixin.qq.com/s?__biz=Mzg3NjU3NTkwMQ==&mid=2247505097&idx=1&sn=5c03cb769c4458350f4d4a321ad51f5a&source=41#wechat_redirect"
+            },
+            {
+                "title": "(705条消息) Redis Sentinel的故障转移过程_sentinel 是如何实现故障转移的_姜秀丽的博客-CSDN博客",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAB/klEQVQ4jU2SPWtUYRCFz5n3bvbubhISoyJiJxEsEkglghZJZUTUJkhAUoja2WihgohFQPAXaGVhk8rGRkQrURDEFOL3B2idkDXJ7t3Nve8ci7ubZOozZ2aeMyzmptAvSSBpBgkxgkQIkOQOkgCAZLeaJEi1NkBDWgeEzXUkFVZTuIPcaSjVkqPb5bEZTp/H4aPMc//0Hs+X9Psb0hrlILm9kuRw5+XbNjsPuX//yNEx239Inbbfu6IvH5jWISU9fzNlmV26FWbn/d0rf7SI5oosaPosF25gZC9iLH1ZzE0JRLeN8YnwYEl/fsSb8+xkTOvyiK0O9h3ERhMSAZAGgKTy3E6eppmePcHmOhtDgmjG2iDXVtjnAcAAyCNrDYxPSNLXZVZTxYIlZTmSBKSkciUrb0BSwfAe5DnW11DmUE7u6bhN3/opRHTbSALSGgSaARDAEOCuYmu72QAwJGq39OszLXDqhP6tKjrc6VEbTdUaHDugIufODRAt6OVTxcIWrtuZi6imCokGUkwet7sPbfExBqpy72Etc0C7xVMX7OodVCroZGquojHIoRECvvzG71+DnLRdSQPIWhiftJlzODLJ4VF1Mvz9qeXXevsCRcEQ+hN2Ps/UaaPIUWswJJKjm6EoWB8syZLsPV8PgiLTGlhHjIoFSaR10OQRpSPwH79sFlWOAVADAAAAAElFTkSuQmCC",
+                "desc": "(705条消息) Redis Sentinel的故障转移过程_sentinel 是如何实现故障转移的_姜秀丽的博客-CSDN博客",
+                "url": "https://blog.csdn.net/jiangxiulilinux/article/details/104993777"
+            },
+            {
+                "title": "[redis 源码走读] sentinel 哨兵 - 脑裂处理方案 - 知乎",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcklEQVQ4jT3TTahVdRQF8N8+59yr5numZlmgQVQUUaOkkUKDoonRQIIgCMLyQYOa5CxMigZBDjIsIiyKjIqmFk0alDxq0CTpSUEiWYZUfqX3Xt85578bnFeDDXuyF2utvVbYn2PFS8aeFtbXI/oKFWqhQb0ylTQSav8Ib/vZC42pV8x5XidV9DNcI2MkhMxOBJCIaGVJ8+btdbsS9uZljTUqqVbvukd+cZLJFGNpLMT/jGikBqtQudzora1CKRPVw9vkwYfY+TFlAxrxyyW2rmf1eJDQhzhzlb+uSo35RqcgdPLRu0RTc/Qxevx6niMn2L+ds1OudOLODeL14/LFYzTrqKITZcrNm8WOW9j1AUtnefUbHjzEyXP8ORXbj7DjXb48JTeOhVZET5UdCssz7jvAsUVKEWcuMPmDi5PBwOmM9gpXe5kpdWQnGzkATGbs3sEN93PbJrmwTdy7SV7AtGWULKesioiCjuhFE5XMZbFlHXdfT92wcQ2/XVDmGtEWSiF6tEKuPLRFJ6tMjFg6ze435MKHXJzx/nfiucPy6BJrR3TLw0FfBsY6sheVHFBHYzTsfYDzE3loF089IrqW1Q2lZUSsbVYYdERHI2SEaK9w041i306eeE+c+pvPFsSTH8lrV/H9s6Ivcut6XlscjM2WJggtW67j02f4/DiffEu28uBXnPidO17m8OPywNf8cIZZhTFdq4rYkxezmNu8gVs3icWfpEpEkP2wq1doVysRbhRjhFmVvbesVp09JxZ/lOoh+2nwRAymRUU16E9FpVbrvNm4ZJ9KrbGnasyV8l/vkEMjFZFl0KwWKudNvOO0ff8CDNsVBiQlEB0AAAAASUVORK5CYII=",
+                "desc": "[redis 源码走读] sentinel 哨兵 - 脑裂处理方案 - 知乎",
+                "url": "https://zhuanlan.zhihu.com/p/442519975"
+            },
+            {
+                "title": "【原创】为什么Redis集群有16384个槽 - 孤独烟 - 博客园",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACUElEQVQ4jZVTMWsUQRT+3u54p7nbu40cCcFGEERDEBstBNHCWhCUgGARLAQbJYiFhVhZWFkEtFTR5hr/gHggNqZUtIuFkRweszOzO7N3l7vsPJvbcEkR9INpHh/fe9/33gAHIM/zR9baNMsy45x7dhB3F8wcAIDW+r5zbpxl2Yq1dnkwGPxSSr2c5kyD9okIrfVmkiS3y1q3213UWqfW2rlpbqnE+wQrzCy895/LjgsLCz+YedN7f8dae7psHDBzmKbp+Xa7HU7IRER9AF+EEG96vV6diLy19jERNYuiuFEUxVUA6HQ6IQAgSZInUsorAIiZQwCw1s5lWfbVOdczxmz0+32VZdnTwWDglVJr5WSlBReG4b2JFQ8AURT1Go3GGQAPmfndcDg8Ox6PT1arVRDRpXa7HRKRBwAYY05orXMp5anSBjPvCTZJkuuj0YjTNPVKqdw5N78bYhzHGwAKAHenwt21s7W1dbFWq73y3sN7P5qZmTmyvb19GQCCqZ2+r1Qqt5hZEFFBRJ6ICmPMcqvV+hQEQS3P81VmXq1WqxQEwbFy5yEAaK1XmJmllNcAIE3Tc9baNWPMz+Fw+KLb7S5O7M72+33WWj/fc0DOuXnvfRdAXhSFjOP4uDHGAXjNzN+FEN+iKFonopGU8qMQ4nAcxxdEKVCv1/8opW5GUbRkrQ2TJMmDICiI6BAz15i5IaWsAhhVKpW33vsH+4P+Z6RpetQYs87M9T2fgplDZhbTr9PpiEk9KFfcbDaV9/6DUmr2v0eYnDpba5d2dnZ+/wVUUouGcJXD1AAAAABJRU5ErkJggg==",
+                "desc": "【原创】为什么Redis集群有16384个槽 - 孤独烟 - 博客园",
+                "url": "https://www.cnblogs.com/rjzheng/p/11430592.html"
+            }
+        ]
+    }
+]

@@ -44,22 +44,32 @@ feed:
 
 
 
-## Android Activity
+# Android Activity
 
 [[toc]]
 
 
 
-### 启动模式
+## 启动模式
 
-**launchMode：**
+:::info 相关视频
+
+[Android 面试黑洞——当我按下 Home 键再切回来，会发生什么？](https://www.bilibili.com/video/BV1CA41177Se/?spm_id_from=333.999.0.0&vd_source=e356fec025b50061af78324a814f8da0)（讲得很好，推荐看看~）
+
+:::
+
+> 当多次启动同一个Activity的时候，系统会创建多个实例并把它们一一放入「任务栈」中，当单击back键，会发现这些Activity会一一回退。
+>
+> 任务栈是一种「后进先出」的栈结构，每按一下back键就会有一个Activity出栈，直到栈空为止，当栈中无任何Activity的时候，系统就会「回收」这个任务栈。
+
+**启动模式 LaunchMode：**
 
 1. `standard`：先进后出
 2. `singleTop`：栈顶复用
 3. `singleInstance`：全局唯一
 4. `singleTask`：栈顶复用并清空目标活动上面的所有活动
 
-**启动标志（在 intent 种设置）：**
+**Flags 启动标志（在 intent 种设置）：**
 
 1. `FLAG_ACTIVITY_SINGLE_TOP`：当栈顶为待跳转的活动时，重用该活动
 2. `FLAG_ACTIVITY_CLEAR_TOP`：创建新的活动并销毁
@@ -80,7 +90,7 @@ feed:
 
  
 
-### Intent
+## Intent
 
 :::info 说明
 
@@ -134,9 +144,119 @@ feed:
 
 
 
+## IntentFilter
+
+> 显式调用需要明确地指定被启动对象的组件信息，包括包名和类名，而隐式调用则不需要明确指定组件信息。
+>
+> 原则上一个Intent不应该既是显式调用又是隐式调用，如果二者共存的话以显式调用为主。
+
+隐式调用需要Intent能够匹配目标组件的IntentFilter中所设置的过滤信息，如果不匹配将无法启动目标Activity。IntentFilter中的过滤信息有：
+
+1. `action`
+2. `category`
+3. `data`
+
+**注意点：**
+
+- 为了匹配过滤列表，需要同时匹配过滤列表中的action、category、data信息，否则匹配失败。一个过滤列表中的action、category和data可以有多个，所有的action、category、data分别构成不同类别，同一类别的信息共同约束当前类别的匹配过程。
+- 只有一个Intent同时匹配`action`类别、`category`类别、`data`类别才算完全匹配，只有完全匹配才能成功启动目标Activity。
+- 一个Activity中可以有多个IntentFilter，一个Intent只要能匹配任何一组IntentFilter即可成功启动对应的Activity。
+
+<br/>
+
+当我们通过隐式方式启动一个Activity的时候，可以做一下判断，看是否有Activity能够匹配我们的隐式Intent，如果不做判断就有可能出现上述的错误了。判断方法有两种：
+
+1. 采用`PackageManager`的`resolveActivity`方法或者`Intent`的`resolveActivity`方法，如果它们找不到匹配的Activity就会返回null，我们通过判断返回值就可以规避上述错误了。
+2. 采用`PackageManager`的`queryIntentActivities`方法，这个方法和`resolveActivity`方法不同的是：它不是返回最佳匹配的Activity信息而是返回所有成功匹配的Activity信息。
+
+```java
+/**
+ * 第二个参数需要注意，要使用MATCH_DEFAULT_ONLY这个标记位，这个标记位的含义是仅仅匹配那些在intent-filter中声明了		      
+ * <categoryandroid:name="android.intent.category.DEFAULT"/>这个category的Activity。
+ *
+ * 使用这个标记位的意义在于，只要上述两个方法不返回null，那么startActivity一定可以成功。
+ * 如果不用这个标记位，就可以把intent-filter中category不含DEFAULT的那些Activity给匹配出来，从而导致startActivity可能失败。
+ * 因为不含有DEFAULT这个category的Activity是无法接收隐式Intent的。
+ *
+ * 针对Service和BroadcastReceiver，PackageManager同样提供了类似的方法去获取成功匹配的组件信息。
+ */
+public abstract List<ResolveInfo> queryIntentActivities(Intent intent,intflags);
+public abstract ResolveInfo resolveActivity(Intent intent,int flags);
+```
+
+<br/>
+
+在action和category中，有一类action和category比较重要：
+
+```xml
+<action android:name="android.intent.action.MAIN" />
+<category android:name="android.intent.category.LAUNCHER" />
+```
+
+这二者共同作用是用来标明这是一个入口Activity并且会出现在系统的应用列表中，少了任何一个都没有实际意义，也无法出现在系统的应用列表中，也就是二者缺一不可。
 
 
-### Bundle
+
+### Action 匹配规则
+
+> action的匹配要求Intent中的action存在且必须和过滤规则中的其中一个action相同
+
+1. 系统预定义了一些action，同时我们也可以在应用中定义自己的action。
+2. action的匹配规则是Intent中的action必须能够和过滤规则中的action匹配，这里说的匹配是指action的字符串值完全一样。
+3. 一个过滤规则中可以有多个action，那么只要Intent中的action能够和过滤规则中的任何一个action相同即可匹配成功。Intent中如果没有指定action，那么匹配失败。
+4. action区分大小写，大小写不同字符串相同的action会匹配失败。
+
+
+
+### Category 匹配规则
+
+1. 系统预定义了一些category，同时我们也可以在应用中定义自己的category。
+2. category的匹配规则和action不同，它要求Intent中如果含有category，那么所有的category都必须和过滤规则中的其中一个category相同。换句话说，Intent中如果出现了category，不管有几个category，对于每个category来说，它必须是过滤规则中已经定义了的category。
+3. action是要求Intent中必须有一个action且必须能够和过滤规则中的某个action相同；而category要求Intent可以没有category，但是如果你一旦有category，不管有几个，每个都要能够和过滤规则中的任何一个category相同。
+4. category 可以为空的原因：系统在调用`startActivity`或者`startActivityForResult`的时候会默认为Intent加上`android.intent. category.DEFAULT`这个category（当然，为了activity能够接收隐式调用，就必须在intent-filter中指定`android.intent.category.DEFAULT`这个category）
+
+
+
+### Data 匹配规则
+
+> data的匹配规则和action类似，如果过滤规则中定义了data，那么Intent中必须也要定义可匹配的data。
+
+```xml
+<!-- data 的结构 -->
+<data android:scheme="string"
+      android:host="string"
+      android:port="string"
+      android:path="string"
+      android:pathPattern="string"
+      android:pathPrefix="string"
+      android:mimeType="string" />
+
+<!-- url 的结构 -->
+<scheme>://<host>:<port>/[<path>|<pathPrefix>|<pathPattern>]
+```
+
+Data由两部分组成：
+
+- `mimeType`：指媒体类型，比如`image/jpeg`、 `audio/mpeg4-generic`、`video/*`等，可以表示图片、文本、视频等不同的媒体格式
+- `URI`：
+  - `Scheme`：`URI`的模式，比如`http`、`file`、`content`等，如果URI中没有指定`scheme`，那么整个`URI`的其他参数无效，这也意味着`URI`是无效的。
+  - `Host`：`URI`的主机名，比如`www.baidu.com`，如果host未指定，那么整个`URI`中的其他参数无效，这也意味着`URI`是无效的。
+  - `Port`：`URI`中的端口号，比如`80`，仅当`URI`中指定了`scheme`和`host`参数的时候port参数才是有意义的。
+  - `Path`、`PathPattern`、`PathPrefix`：`path`表示完整的路径信息；`pathPattern`也表示完整的路径信息，但是它里面可以包含通配符`*`，`*`表示0个或多个任意字符，需要注意的是，由于正则表达式的规范，如果想表示真实的字符串，那么`*`要写成`\\*`，`\`要写成`\\\\`；`pathPrefix`表示路径的前缀信息。
+
+:::warning 注意
+
+如果要为Intent指定完整的data，必须要调用`setDataAndType`方法，不能先调用`setData`再调用`setType`，因为这两个方法彼此会清除对方的值，这个看源码就很容易理解。
+
+:::
+
+
+
+
+
+
+
+## Bundle
 
 1. [`Bundle`](https://developer.android.google.cn/reference/android/os/Bundle?hl=zh-cn) 对象并不适合保留大量数据，因为它需要在主线程上进行序列化处理并占用系统进程内存。如需保存大量数据，您应组合使用持久性本地存储、[`onSaveInstanceState()`](https://developer.android.google.cn/reference/android/app/Activity?hl=zh-cn#onSaveInstanceState(android.os.Bundle)) 方法和 [`ViewModel`](https://developer.android.google.cn/reference/androidx/lifecycle/ViewModel?hl=zh-cn) 类来保存数据
 2. 重建先前被销毁的 Activity 后，您可以从系统传递给 Activity 的 [`Bundle`](https://developer.android.google.cn/reference/android/os/Bundle?hl=zh-cn) 中恢复保存的实例状态。[`onCreate()`](https://developer.android.google.cn/reference/android/app/Activity?hl=zh-cn#onCreate(android.os.Bundle)) 和 [`onRestoreInstanceState()`](https://developer.android.google.cn/reference/android/app/Activity?hl=zh-cn#onRestoreInstanceState(android.os.Bundle)) 回调方法均会收到包含实例状态信息的相同 [`Bundle`](https://developer.android.google.cn/reference/android/os/Bundle?hl=zh-cn)。
@@ -145,7 +265,7 @@ feed:
 
 
 
-### 生命周期
+## 生命周期
 
 :::info 相关文章
 
@@ -157,7 +277,7 @@ feed:
 
 ![img](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//android/20231005/androidActivity%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png)
 
-#### onCreate
+### onCreate
 
 1. 在系统首次创建 Activity 时触发。Activity 会在创建后进入“已创建”状态。
 2. 在 `onCreate()` 方法中，您需执行基本应用启动逻辑，该逻辑在 Activity 的整个生命周期中**只应发生一次**。
@@ -167,7 +287,7 @@ feed:
 
 
 
-#### onStart
+### onStart
 
 1. 当 Activity 进入“已开始”状态时，系统会调用此回调。`onStart()` 调用使 Activity 对用户可见，因为应用会为 Activity 进入前台并支持互动做准备。
 2. 当 Activity 进入已开始状态时，与 Activity 生命周期相关联的所有生命周期感知型组件都将收到 [`ON_START`](https://developer.android.google.cn/reference/androidx/lifecycle/Lifecycle.Event?hl=zh-cn#ON_START) 事件。
@@ -175,7 +295,7 @@ feed:
 
 
 
-#### onResume
+### onResume
 
 :::warning 注意
 
@@ -202,7 +322,7 @@ feed:
 
 
 
-#### onPause
+### onPause
 
 1. 系统将此方法视为用户将要离开 Activity 的第一个标志（尽管这并不总是意味着 Activity 会被销毁）
 2. 此方法表示 Activity 不再位于前台（尽管在用户处于多窗口模式时 Activity 仍然可见）
@@ -224,7 +344,7 @@ feed:
 
 
 
-#### onStop
+### onStop
 
 1. 如果 Activity 不再对用户可见，说明其已进入“已停止”状态，因此系统将调用 `onStop()` 回调。
 2. 当 Activity 进入已停止状态时，与 Activity 生命周期相关联的所有生命周期感知型组件都将收到 [`ON_STOP`](https://developer.android.google.cn/reference/androidx/lifecycle/Lifecycle.Event?hl=zh-cn#ON_STOP) 事件。这时，生命周期组件可以停止在组件未显示在屏幕上时无需运行的任何功能。
@@ -243,7 +363,7 @@ Activity 停止后，如果系统需要恢复内存，可能会销毁包含该 A
 
 
 
-#### onDestroy
+### onDestroy
 
 1. 调用该方法可能的原因（可以使用 [`isFinishing()`](https://developer.android.google.cn/reference/android/app/Activity?hl=zh-cn#isFinishing()) 方法区分这两种情况）：
    1. Activity 即将结束（由于用户彻底关闭 Activity 或由于系统为 Activity 调用 [`finish()`](https://developer.android.google.cn/reference/android/app/Activity?hl=zh-cn#finish())）
@@ -254,7 +374,9 @@ Activity 停止后，如果系统需要恢复内存，可能会销毁包含该 A
 
 
 
-#### 常见的情况
+
+
+### 正常情况重建 Activity
 
 1. 针对一个特定的Activity，第一次启动，回调如下：`onCreate `-> `onStart `-> `onResume`。
 2. 当用户打开新的Activity或者切换到桌面的时候，回调如下：`onPause `-> `onStop`。这里有一种特殊情况，如果新Activity采用了透明主题，那么当前Activity不会回调`onStop`。
@@ -269,9 +391,113 @@ onStart和onStop是从Activity是否可见这个角度来回调的，而onResume
 
 :::
 
+<br/>
+
+### 异常情况重建 Activity
+
+> Activity除了受用户操作所导致的正常的生命周期方法调度，还有一些异常情况，比如当资源相关的系统配置发生改变以及系统内存不足时，Activity就可能被杀死。
 
 
-### 生命周期事件
+
+#### 配置变更
+
+- 当系统配置发生改变后，Activity会被销毁，其`onPause`、`onStop`、`onDestroy`均会被调用，同时由于Activity是在异常情况下终止的，系统会调用`onSaveInstanceState`来保存当前Activity的状态。
+
+- 这个方法的调用时机是在`onStop`之前，它和`onPause`没有既定的时序关系，它既可能在`onPause`之前调用，也可能在`onPause`之后调用。
+
+<br/>
+
+**需要强调的一点是：**
+
+- `onSaveInstanceState`只会出现在Activity被异常终止的情况下，正常情况下系统不会回调这个方法。
+- 当Activity被重新创建后，系统会调用`onRestoreInstanceState`，并且把Activity销毁时`onSaveInstanceState`方法所保存的Bundle对象作为参数同时传递给`onRestoreInstanceState`和`onCreate`方法。
+- 因此，可以通过`onRestoreInstanceState`和`onCreate`方法来判断Activity是否被重建了，如果被重建了，那么我们就可以取出之前保存的数据并恢复
+- 从时序上来说，`onRestoreInstanceState`的调用时机在`onStart`之后。
+
+<br/>
+
+:::note 系统做的额外工作
+
+- 在`onSaveInstanceState`和`onRestoreInstanceState`方法中，系统自动为我们做了一定的恢复工作。当Activity在异常情况下需要重新创建时，系统会默认为我们保存当前Activity的视图结构，并且在Activity重启后为我们恢复这些数据，比如文本框中用户输入的数据、ListView滚动的位置等，这些View相关的状态系统都能够默认为我们恢复。
+
+- 具体针对某一个特定的View系统能为我们恢复哪些数据，我们可以查看View的源码。和Activity一样，每个View都有`onSaveInstanceState`和`onRestoreInstanceState`这两个方法，看一下它们的具体实现，就能知道系统能够自动为每个View恢复哪些数据。
+
+:::
+
+<br/>
+
+**关于保存和恢复View层次结构，系统的工作流程是这样的：**
+
+- 首先Activity被意外终止时，Activity会调用`onSaveInstanceState`去保存数据，然后Activity会委托Window去保存数据，接着Window再委托它上面的顶级容器去保存数据。
+- 顶层容器是一个ViewGroup，一般来说它很可能是DecorView。最后顶层容器再去一一通知它的子元素来保存数据，这样整个数据保存过程就完成了。
+- 这是一种典型的委托思想，上层委托下层、父容器委托子元素去处理一件事情，这种思想在Android中有很多应用，比如View的绘制过程、事件分发等都是采用类似的思想。
+
+<br/>
+
+**注意点：**
+
+- 针对`onSaveInstanceState`方法还有一点需要说明，那就是系统只会在Activity即将被销毁并且有机会重新显示的情况下才会去调用它。考虑这么一种情况，当Activity正常销毁的时候，系统不会调用`onSaveInstanceState`，因为被销毁的Activity不可能再次被显示。
+- 可以对比一下旋转屏幕所造成的Activity异常销毁，这个过程和正常停止Activity是不一样的，因为旋转屏幕后，Activity被销毁的同时会立刻创建新的Activity实例，这个时候Activity有机会再次立刻展示，所以系统要进行数据存储。
+- 这里可以简单地这么理解，系统只在Activity异常终止的时候才会调用`onSaveInstanceState`和`onRestoreInstanceState`来存储和恢复数据，其他情况不会触发这个过程。
+
+
+
+#### 资源内存不足
+
+> 这种情况不好模拟，但是其数据存储和恢复过程和由配置变更引起的完全一致
+
+当系统内存不足时，系统就会按照下述优先级去杀死目标Activity所在的进程，并在后续通过`onSaveInstanceState`和`onRestoreInstanceState`来存储和恢复数数据，Activity的优先级情况（从高到低）：
+
+1. 前台Activity（正在和用户交互的Activity）
+2. 可见但非前台Activity（比如Activity中弹出了一个对话框，导致Activity可见但是位于后台无法和用户直接交互）
+3. 后台Activity（已经被暂停的Activity，比如执行了onStop）
+
+:::warning 注意
+
+如果一个进程中没有四大组件在执行，那么这个进程将很快被系统杀死，因此，一些后台工作不适合脱离四大组件而独自运行在后台中，这样进程很容易被杀死。
+
+比较好的方法是将后台工作放入Service中从而保证进程有一定的优先级，这样就不会轻易地被系统杀死。
+
+:::
+
+
+
+### 改变重建 Activity 行为
+
+系统配置中有很多内容，如果当某项内容发生改变后，我们不想系统重新创建Activity，可以给Activity指定`configChanges`属性。比如不想让Activity在屏幕旋转的时候重新创建，就可以给`configChanges`属性添加`orientation`这个值。
+
+如果我们想指定多个值，可以用`|`连接起来，比如`android:configChanges="orientation|keyboardHidden"`。可选项如下：
+
+| 项目                 | 含义                                                         |
+| -------------------- | ------------------------------------------------------------ |
+| `mcc`                | SIM卡唯一标识IMSI（国际移动用户识别码中的国家代码），由三位数字组成，中国为460 |
+| `mnc`                | SIM卡唯一标识IMSI（国际移动用户识别码）中的运营商代码，由两位数字组成，中国移动TD系统为00，中国联通为01，中国电信为03 |
+| `locale`             | 设备的本地位置发生了变化，一般指切换了系统语言               |
+| `touchscreen`        | 触摸屏发生了改变，正常情况下不发生，可以忽略                 |
+| `keyboard`           | 键盘类型发生了改变，比如用户使用了外插键盘                   |
+| `keyboardHidden`     | 键盘的可访问性发生了改变，比如用户调出了键盘                 |
+| `navigation`         | 系统导航方式发生了改变，比如采用了轨迹球导航，正常情况下很难发生，可以忽略 |
+| `screenLayout`       | 屏幕布局发生了改变，比如用户激活了另外一个显示设备           |
+| `fontScale`          | 系统字体缩放比例发生了改变，比如用户选择了一个新字号         |
+| `uiMode`             | 用户界面模式发生了改变，比如开启了夜间模式                   |
+| `orientation`        | 屏幕方向发生了改变，这个最常使用                             |
+| `screenSize`         | 屏幕的尺寸信息发生了改变，当旋转设备屏幕时，屏幕尺寸会发生变化<br />和编译选项有关，当编译选项中的 `minSdkVersion` 和 `targetSdkVersion` 均低于 13 时，此选项不会导致重建 Activity |
+| `smallestScreenSize` | 设别的物理屏幕尺寸发生改变，这个和屏幕的方向没有关系，仅仅表示在实际的物理屏幕的尺寸改变时发生，比如用户用户切换到了外部的显示设备<br />和编译选项有关，当编译选项中的 `minSdkVersion` 和 `targetSdkVersion` 均低于 13 时，此选项不会导致重建 Activity |
+| `layoutDirection`    | 布局方向发生变化，用的比较少，正常情况下无需修改布局的 `layoutDirection` 属性 |
+
+:::warning 注意
+
+当Activity的确没有重新创建，并且也没有调用`onSaveInstanceState`和`onRestoreInstanceState`来存储和恢复数据，那么系统会调用Activity的`onConfigurationChanged`方法，这个时候就可以做一些自己的特殊处理了。
+
+:::
+
+
+
+
+
+
+
+## 生命周期事件
 
 | 事件         | 说明             |
 | :----------- | ---------------- |
@@ -299,7 +525,7 @@ onStart和onStop是从Activity是否可见这个角度来回调的，而onResume
 
 
 
-### 处理生命周期
+## 处理生命周期
 
 > 基于观察者模式/监听器模式
 
@@ -315,7 +541,7 @@ onStart和onStop是从Activity是否可见这个角度来回调的，而onResume
 
 
 
-### 状态变更
+## 状态变更
 
 > TODO
 
@@ -326,7 +552,7 @@ onStart和onStop是从Activity是否可见这个角度来回调的，而onResume
 
 
 
-### ViewModel
+## ViewModel
 
 1. [`ViewModel`](https://developer.android.google.cn/reference/androidx/lifecycle/ViewModel?hl=zh-cn) 类是一种[业务逻辑或屏幕级状态容器](https://developer.android.google.cn/topic/architecture/ui-layer/stateholders?hl=zh-cn)。
 
@@ -336,7 +562,7 @@ onStart和onStop是从Activity是否可见这个角度来回调的，而onResume
 
 
 
-### 生命周期感知型组件
+## 生命周期感知型组件
 
 :::info 说明
 
@@ -348,7 +574,7 @@ onStart和onStop是从Activity是否可见这个角度来回调的，而onResume
 
 
 
-### 配置变更
+## 配置变更
 
 当发生配置变更时，系统会重新创建 `Activity`。为此，系统会调用 [`onDestroy()`](https://developer.android.google.cn/reference/android/app/Activity?hl=zh-cn#onDestroy()) 并销毁现有的 `Activity` 实例。随后，系统会使用 [`onCreate()`](https://developer.android.google.cn/reference/android/app/Activity?hl=zh-cn#onCreate(android.os.Bundle)) 创建一个新实例，并且这个新的 `Activity` 实例会使用更新后的新配置进行初始化。这也意味着，系统还会使用新配置重新创建界面。
 
@@ -400,7 +626,7 @@ onStart和onStop是从Activity是否可见这个角度来回调的，而onResume
 
 
 
-### Fragment
+## Fragment
 
 | 函数钩子              | 说明                                             |
 | --------------------- | ------------------------------------------------ |
@@ -422,3 +648,6 @@ Fragments应该作为实现UI界面默认选择。可以重复使用Fragments用
 很不幸，我们不建议广泛的使用嵌套的fragments，因为 有时会引起matryoshka bugs。我们只有当它有意义(例如，在水平滑动的ViewPager在 像屏幕一样fragment中)或者他的确是一个明智的选择的时候才广泛的使用fragment。
 
 在一个架构级别，你的APP应该有一个顶级的activity来包含绝大部分业务相关的fragment。你也可能还有一些辅助的activity ，这些辅助的activity与主activity 通信很简单限制在这两种方法 `Intent.setData()` 或 `Intent.setAction()`或类似的方法。
+
+
+

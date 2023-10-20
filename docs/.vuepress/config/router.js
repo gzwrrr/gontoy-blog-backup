@@ -14,6 +14,7 @@ export const navbar = [{
     text: "编程语言",
     children: [
         "/article/java/",
+        "/article/kotlin/",
         "/article/c/",
         "/article/go/",
         "/article/js/",
@@ -101,6 +102,7 @@ export const navbar = [{
 export const sidebar = {
     "/guide/": "structure",
     "/article/java/": "structure",
+    "/article/kotlin/": "structure",
     "/article/android/": "structure",
     "/article/c/": "structure",
     "/article/go/": "structure",

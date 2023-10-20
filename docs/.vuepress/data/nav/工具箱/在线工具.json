@@ -1099,5 +1099,45 @@
                 "url": "https://www.kanxue.com/"
             }
         ]
+    },
+    {
+        "typeName": "博客框架",
+        "list": [
+            {
+                "title": "安装指南 - 在 Linux 服务器部署 Halo - 《开源 Java 博客系统 Halo 文档》 - 书栈网 · BookStack",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAABhElEQVQ4jX2SQWsUQRCF36uumdnMDkkIXgKCxIMgKurvyP/NRdCbN4MklxwkeJQlIOsmYdnpruehWz2t3YcuqAf1vldNRQiAhBCIvcesNr2pzWj71YAkSSAdIRjn1d325huT1yEkAAgkIAjA+P61DYMkawr3Mh7kgyEv+jx0c9/N3s2edmbZfbfebD59rl4cpCQ/OV4cTXnOJAGpPSChiNR124uP5de9H03+1yWNTEYQUPPFIBgkANVIBFcEzXY/VvfXN+i8ygkKqGNgqfxc98vRDyeVYJQiUuuNre5AgwQIqqitEMAXz5EMkgsgkA+nq4eHQG1LgCqjEBLJNyWPqQfpkkh++HqtUo6nSRHVPoEaoFq6Tyqqm9n68bGUOH/7ajdnM6rhtYUo1A+DuUcESQdZ8VJKKVqebbsgIbDS/wkz52xmF5dXgk6mZUSNpyI0DALvzp4tFwMAllJIbuf5y+13ot1KYLUSjHz59HQcBgCMCElmxP/+KgBUBob0L8L9pw0lfwOo89kfpezsZgAAAABJRU5ErkJggg==",
+                "desc": "安装指南 - 在 Linux 服务器部署 Halo - 《开源 Java 博客系统 Halo 文档》 - 书栈网 · BookStack",
+                "url": "https://www.bookstack.cn/read/Halo/7a2394d4b59e1877.md"
+            },
+            {
+                "title": "Halo",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAB4ElEQVQ4jU2SMW/UVxDEf/Peu/OdHVMgJBBKYomaSEgpoICChhaJipKSjlT5CinSpcnXSJEmTToKKpSkx0qFFEMBZ/vO//d2J8XfjjLlaGZXszva/6GDsBEYMOiKsAHETAnj5jEuRXYRpTDStmZ/q0qTyCBJ0DwmzDzorJvutldaRVJY213VQuuWBlsSxTEcvWSfttOTO/z8bHV0mH0avefNVf/x0cnj22cXk4sNtl3o3aMrR55PD78uLx+sjg6dIzLz1mp8d29z/+YuBpJtA83RDTZknO9ihDfb8DbcdLrLD1uddzGrhaXGHLqIEYVoVd/csKcsLe5cz+WytSoQxXZBmjfYFhE4gZ+eCquIi1HW9XC1twSjgnRpIHEVfTgC+OO9N6epynqh+19iRCkuwqKW5j7mKzOGM4Hvf9m9fjeBvv1Kb16tsohaXHBdXIYGu4oYjhhhplP6xGLlqCMciGXLVY1Pn/3P+6bomcZi6usFrWrhwXZDv1jEF3uH1/YPlsTIv4/z5ITMyt0XOElnZG2c7cavbz9+Oh/ksKc98dtfn4//PNbm49wG6fnvzH8QTMlFsG40YUizTZpZVooEQHPvXKFU6UCZ4W5AouzLJiOIubk0YvxnyOD/MARXhb/Cv8RSRPfjOV+jAAAAAElFTkSuQmCC",
+                "desc": "Halo",
+                "url": "https://halo.run/"
+            },
+            {
+                "title": "halo-dev/halo: ✍ An excellent open source blog publishing application. | 一个优秀的开源博客发布应用。",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdklEQVQ4jY3TvWpUURQF4HUmk2QUCWJhoVUQBLHwByWx0aewsBV8mChBLRIQtNBaFBFsbIIvYCdEUJNCsRSMI5KJn4X74mUw4obD3eesvfb/TZKgpQSX8ADvMcb30u9jKfsJZrFahE5+1ulkjBUM+sQB5vHc/8vjCjjonNwp4CWuYQM72MKH0l8V9qJsVzryMn5ggrV6G+I4RnWOYa6w22X7DeeGSW4kmauKJphJstda+9hr0Se0wiZJZpIcTHI9eFuNGuNkry/9ybTujkV8Lc7rVH2wjdl9x/TH2Qw2y8GXQZKWRJJDSQ70I/+F3JKMkiwUbzhIsl34kSRLrTXVxOkShq01SZaTHK2gW8G9Smenyjj1jwxO4w32quz14Hxd7uJJ6U9xZor4sNev3Rr92c5gvYALuFULtdhzcKK3heP6rnZgt8obeIeruDiV+gife06eFWcwbfSoZ3S4hy1Un3axprZyejydfhk3Meq9zfv9F16Z5vwCz01H2UDrUX0AAAAASUVORK5CYII=",
+                "desc": "halo-dev/halo: ✍ An excellent open source blog publishing application. | 一个优秀的开源博客发布应用。",
+                "url": "https://github.com/halo-dev/halo"
+            },
+            {
+                "title": "Halo 演示站点",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACTElEQVQ4jT2Tv6peVRDFf2uffb773XuTWwRBAwoxDyAWYro0NqlsLHwE29j5AhaSgFjpa1jZiWhlKViIoFiEKN5o0Jt8f86emWVxiN0MzJq1ZhZLJw/9iYr7iuxgIQAhl0AYAwaaJcHamT4F8Jm2Hx8KQGUbNAlag8iSvQIk6FNzAeW27mgSiM4yjC2DaPB8MYxSP2n0aVUTFvs90kbe9sQgpUByIxY5glZDy27h3m30xXtnvnW9GCPIKF7ZDh7e/cvv3Hyu5Wgmp6CwS80x5FykCtdu0d1bzR/c2ej1C1MjqSpung4+fPMfvf3y0RlWE3ZZ2OrOsAHbouxnh1Ck+XefeJ9kF1cHc7kXu4EQLiOaLERf2cFdEKHGOX0Sb7xkfCzUk9s3is3cmSeBkV4QNtE9xmoSgpGsv4ZP3xXNojU4jMZ2umC7nUHGTUDDEl0Z+IXVGTgTgB8em6tdgeBsI+68auzV42rCFpoavXLgYl0ykspVwUdfHvjulwUk3npNfH//lJoaTA0aMG0ooDvSKxqR4arUyILxDGKBeYurE2ECw8ns2jbl1ZX9x+90YpFtTDNj0fmM56lpdsDuCuYjPa+xubjOtfMTE4vqt0euJ5eiku4IY5EVotnf/Pi3bpw2//rnTqggDjy6DD7/qvvbn5+Kn546cyemjRFI73+dgIzWTy4FS4rTab0XQwKHgo7ZNFBDGMDdmWtiKGPUutAsV6Uc+X+Y2plsQ2WAsGkC1Cg9oDyIARHUMsjjwDEgBuRa53FQyzpDDCgPSg/+A87JkL0ARTXIAAAAAElFTkSuQmCC",
+                "desc": "Halo 演示站点",
+                "url": "https://demo.halo.run/"
+            }
+        ]
+    },
+    {
+        "typeName": "工具库",
+        "list": [
+            {
+                "title": "Hutool",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAACFElEQVQ4jV2SvWtUQRTFz52ZfR/ubmIkQTF+IERRgihYWSqIiNgFCyWNldpbRf8AhRRB/wZBNIUgmCYGCxsbBQlRNJUJS+LHxk12s/vezD0W77kJ3mIYzsC9c+75Se6DiBgjQkKEpJIAjIiIACBZXIoSkujLJHa97ZLLE4A9fWWysbF9dKQKiADtXvb648q3tdaR4T3OGIAAygnlzOvPxqfmMp+HEEgurzXl1ov07stGq6OqvdxneVBVkj5o5oOTWhKlFSUEUFVA0locRU4AEYmc7X/PGrEQx6CWiJ0r1MHUMagGOmu2trsz859ja29fOFFL4oWl1TdL6w5Gml0/+2FFINbIj82up1RAa2Sjk92fXXaRnTx/rJbEc4vrj55+cVIxyz+ziYfvQIICZ1BPq4mQNMZE9XRfZIwRANUkcoOJo9fR4fjOtZNKqRhpdvLp+dXCEoCg6gOUJOmVXukQeLAeT109U3hotjuP3670F08ojImtFZHYCkjjrFFhN89zH3zQZju3xjhnlKwldiCyW+3wqfGn5/P5pV8ucc63ehvt2BqxZS7camWIQycPowPppeN7ny+sXpx+f2hANrPgt+nu3Rg/PBSJFDnKUDV+MHEqMqZeMSSe3Dw7tr/+9fvm5XMHxkbSV4u/S0L+I6zEqA/FrpLMhyIBoDQalADsP5BCuTECoqQoFSgk2elckNhneae//AWUiCF99EBGLAAAAABJRU5ErkJggg==",
+                "desc": "Hutool — 🍬A set of tools that keep Java sweet.",
+                "url": "http://hutool.cn/"
+            }
+        ]
     }
 ]

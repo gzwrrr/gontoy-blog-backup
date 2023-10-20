@@ -1,0 +1,307 @@
+[
+    {
+        "typeName": "APIs",
+        "list": [
+            {
+                "title": "DevDocs API Documentation",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABlElEQVQ4jZ2Tv6riQBSHvwkakRWigg9gsFpjGMHFbtEuCFYWt/BJ9iFub79ob5MHCHa7EPAfkUBAQQsbsbiFFjO3WWVF5e7dX3d+zPnmzDlzxGAw+C6EeAUafE6/KpXKz5QQ4rXRaDRs20YI8U+ZWmuSJPkWx/FXA/hUMoAQAtu2OR6PX1IX4yKlFGEYEgQBhmHQarVwXffugkuc+ttUSuH7PpvNBiklWmsmkwnb7RbP8zAM466aG0AYhqzXa/r9Pvl8HgApJcPhkOl0ipTyDnCDDIKAWq12TQYoFovU63WiKHrYjxuAEAKl1N0h0zTRWn8MaLfbzGYzDofD1TudTsznc2zbfgi46YHruux2O0ajEa7rkk6nWS6X7Pd7CoUC5/MZ0zSfA4QQeJ7HYrEgiiKUUlSrVXK5HKvVCqUUnU6HbDb7GHCBOI6D4zhXT0rJeDwmjmN836fX6z3uwTNlMhm63S7lcplms3n/BK31h185m83y8vJyjS9TMYDfSZI8HdMj/VkmLMt6E/+7zpZlvZVKpR/vZtmTrwbMUQ8AAAAASUVORK5CYII=",
+                "desc": "DevDocs API Documentation",
+                "url": "https://devdocs.io/"
+            },
+            {
+                "title": "OpenAPI 规范 (中文版)",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADf0lEQVQ4jVWTbWiVZRyHf//75TznfdtxmzM8m9laph5WmpYIcRi9qsUkllLQKkjsRQsiCvrQiSDwSysCqQ0xTYYZ+7IPFjPx9AIVONQ2zdHmtPly9naOZzvnPM95nue+7z4Epdfn34/r00W4lQwYPoABweB2COshMAwvnU53ciYPGGNIG7OXbhvh3+PrhzYu4bHwsqnvCm5p2imdGBy7DgCtra1WS/OKMwDu1UprYlQS/5kz0K/0pu+LN8r3PUd3MENVxsTFUDT04PbudaeUZ44M9p852ry8BZwzgDOmlQbv6gK/sB/64PnNu8MRemdunj8sA1SjtVksTtjzumragmHZpsnPN8XXthDH88aYi4yxq9pgDwHA1mfb300sFzue2BOZHB3lkVJZPEpcT08N5ceEEmnfOD2F8YYLgWCgz3bcXZVK8avh4WEA8PiWrlRKBtnXi/MmOXXeu7pmM/uzUBStTDJvccKeVa53snCl4WwgEOirOu7LjasKD0RqtDU2khtJpyGEkOwNAoVkULvFaf3YLwcruv1FemH0lLg5fwNzrJTYJrnsc6vuS4m75+4XPLjbE24SwLfZLJQgTp1ERDBkhWMS5QX3yrHnrGIiyQ5B18UYp4Qyzt54Sz7NKdhdXnBhjHkkvWVFU/b45ZzwXTNDpGZggKpRqlpShxNJ9ikX1GZ8QCl9zWosDMmI3K60zoooB+OkWCIRBS5DbHs7VmJERinwSK2wmFdC7y6Tj9ZygAGurXR9Kh5sbA82K9fEDIzmnCkDV2I/wLikO8K1YpMVwjq7rPT4bPTxYl69VSmqQa9MJ//6ST29dH1wJyd+l+/oetKsyXN0eCZXyAGAUL45aozZemOan8471uripP3Q6o5i5an3Yp/fnDNxOGrDbz+yJfVrIgsginLJNMgM9b82UoABMekV9p0bYZfmHesZ+7o9de2HYn0yFXrSr4rvJeMDwRqrN1yxWe73xePBOC9opZnvVHsAAB+C+OCBWXvDzpWBypSTyP28uBYBwqYdoYryzJ1VW7uMAU2rAvTHQNkhBjuWlJ981pUdAEDIwvBMBmzfq5Nnl1rhaWFZncmUuNSSkhurZSMZJ6Z8wyO1fFm4jibODZYP93/065e3hsezWRhkwMa/mBv37ciRju4Ij9TJe3zXxEGAkOxv7ZpvGlbi4543T5/IZMCy2f9z/wc0XqXSIr7R7AAAAABJRU5ErkJggg==",
+                "desc": "OpenAPI 规范 (中文版)",
+                "url": "https://openapi.apifox.cn/#%E4%B8%80%E3%80%81openapi-%E8%A7%84%E8%8C%83"
+            },
+            {
+                "title": "Quickstart for GitHub REST API - GitHub Docs",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABc0lEQVQ4jY3Sz4vNYRQG8Oe9d2ZcErKwYDWJkoVGNGPjv7CwVf4OK2lIWIwSFqzFQtnYTPMP2CnyaxZkKWau5I6Pzfnm283Iqbf3nPc5z3nPryQJWkpwBvfxDmN8L/0eFrOdYBbXi9DJrzqdjLGMQZ84wA489f/yqD4cdEFuFvAc57GKDXzA+9LXCntWvssdeQk/MMFKvc3gEEZ1DmKusBvlu4mFmSQXk8xVRRMMk2y11j72WvQJrbBJkmGSXUkuBK+rUWMc7fWlP5nW2ZjHt+K8SNUH65jddkx/gg3xqgJ8GSRpSSTZnWRn/+e/kFuSUZI99fRzkGS9jP1JFltrqonTJcy01iRZSnKgoDfBnUpno8o49o8MjuMltqrsleBkGbfwuPQnODFFfNDr1wRfcaRzuF3AKVyrhZrvBTjc28Jx3Zc6sFvlVbzFOZyeSn2Ez70gd4s3mHZ62HPa18P2Vp82cXm78XT6WVzFaCr4FSxM+/8G6VREavLwp3IAAAAASUVORK5CYII=",
+                "desc": "Quickstart for GitHub REST API - GitHub Docs",
+                "url": "https://docs.github.com/en/rest/quickstart?apiVersion=2022-11-28"
+            },
+            {
+                "title": "强大的前后端解耦方式-openapi_generator代码生成 - Toulon's BLOG",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACj0lEQVQ4jUWTP4hcVRSHv9+9982b2T8JJjpJjGazMSGgRC2CWSOiC0GI2gs26SW9gkVAArpYWFhY2QkpUqQwoM0WNqKgNoJsVlcwoBYSduNmJrPz3r0/izeL1XeLc849HL6fwtpOgxAFETBGAAa0z/0HgLoad3SyECCEZl0CkMHqKCAEKEApoNlMBGn2gXDX6jKjuwnGlNbkqaESVAF1G4AhGGzkIlzAFjaYgCVs4zOHoz99c87nH08mY/ZrhBPFsq0DCYUgRk1Ra6HgbrXWfPRqzVOPRM49Fnj95piHBSVDawhMzfsrfb54Y8D1izWXTyY+eKmmTEzOxgVubTTsTsytzYbxv4VhDz58uU8okChwbhj44c+G2xst/QXx5EHx9tMVd0dmsRYPxubr36bc/KXhk8tzDOdgYRC7GyDxsIHnjicunKmw4J8xXFiqONIXSwfFKycSR+cD775YMynw8Xd7ABRDwOZAT3z+45TP1icUw6MDsTMurC4lVo5VjBuzUIm/d82hgXh2GFnsdVpELr13bbdFmztZ9yWmRtuTwldb2cuHgzbu2et3W/4aw407DUfmA4f60pdbmc37BWltO7tBBEsp2LmIAgTBXulYAS2dNa06JwMoyQEg1SKETkUJyEDBdV8QZVo51sExqRM9d45KJqHgbAgR8hQnwWvPV1w8nah78r1R4affM+t3GvKeeeuZns8fj3zzR6vbW7korG3nIsSoaPlo8juXap19ItJkudjqRTlG8e2vDcdG5uoLPXXpgBs/T4u4vt1WUVo9m3RldeBBZT3Y+z882aZW8MqitBwlm9IWlAKWctDV7yfNqWHQyWHQNOM2g+gyuhiCTyR0ugfzQpngGPAsoC7G/wEn4j8BZDvjPwAAAABJRU5ErkJggg==",
+                "desc": "强大的前后端解耦方式-openapi_generator代码生成 - Toulon's BLOG",
+                "url": "https://toulondu.github.io/2020/07/17/%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%89%8D%E5%90%8E%E7%AB%AF%E8%A7%A3%E8%80%A6%E6%96%B9%E5%BC%8F-openapi-generator%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90/"
+            },
+            {
+                "title": "Generators List | OpenAPI Generator",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC0ElEQVQ4jW1TS2hVVxRde59z730vfZr6JcX/pyBPKA78J1hDROggJhSCIDGSiYhIJ0VKoeoVFSd+BkYK7SDW0jp4oC8omUixVRqizaATH+rA36TFb8yzeffed8/eHZgXn9ENZ7I466yzzjqL8OEhAIC+j7Q2t640vikqdJ6SfsNTmaqgCaqC6tYbjMijfWx4uaoSBKfsVDIR9PiVlhlNc6cHGqmLjaPyaMIvn5nq8V2/PQdBjTEAkElden/ygDAEE0H6h9o7fd87k8Quy5b8jGiam5NrXJGnvpa1n/9uDG+PouhHYkqrabWP6hzqG7L9hQ03iCiSSJ6o6qyZn9g/B06Xiw/+doeTKNk5NHJjoCbMNc/9w+3rrWd/VVBDNXF3s43atnhjcd5nzdL088GXF+4Ou/2LVplD+y/M2fJt39pZAAwAtoVCFwMFxzDLPY+zccWNTZubbOte9ur1htYtZ13yn4DQviCPwx1f5brHnmnLwk/tEQAOAHGpVJgIS6Mga5Utrn65bPDexrbMZeuZ3Q3Tgj0CHej96d/C6BO3QURe1L/7ZIzMxMwEgMYmrjc/raYQEbAhP8DtMVV9QYAfZBsnfwjn810EgFJoJY4cidPNg/qFHX8le43lxyJu5OYflfDpnfbm7Ed2tgKx85OaMNlSV0EBKCttTeJU2WDJ85Gg/9hfld2tdHUpADf4qCP/9B/6wfeJiMiVR221ZoEA4PytziOeb76rvE4dAHg+G+f0oefTNXH42Dlps56ZToqKiOzYua5YrEVP5252fO97Zk9l3KVEYCjUD4zxAkaQsVBRxHEKES3H5WpP76bLk2QAsKQoO1EwgVRVsznPJLE748bd9UoUMwmLYco4Su/1brpyKwzBYQh5p2Pnhzu/ZsMn2AAiONq9+uKBqSWr70o9ZkMF91Dx5LmhjiYG53rWXDoQKjhf6KL6jaVSQYneKtfmf3LnUfW9TjhMAAAAAElFTkSuQmCC",
+                "desc": "Generators List | OpenAPI Generator",
+                "url": "https://openapi-generator.tech/docs/generators"
+            },
+            {
+                "title": "Web API 接口参考 | MDN",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAACM0lEQVQ4jU2S30tUQRTHz5m5P+e6udAGrWjha/WWtGLZklIumwjVQ/W3BELQfyO95gqBmvkrfDFRelgtie3B8Mr+uPdy78yd08O4m/Mw8IXvfM+Zcz54ozRCRIg4uAEAEQEAAK5KY7CMHrg554iotdZaI6JlcQDM83xgsExGPwzb7Y6UUgjf8zytdbvdJiIhhOM4xsmD4Jp5gIh5LhcW5ufn60mctFotz/PevH09/ehhGIbn5+eWZQP0KyBimmblkZsfPrz3fN+2ra2dL5XKg8XFd1EUnf09Ozr6IYQvJVkmnjEWRb2ZmSfN5nGr9YdbHADqz2tbm9tSSc454uWnGfSPJpqbe7q9vZMkCWMcAKvV6tr6GuecIQMgAgQAZvrJsmykXJ6YuL/caIjAT+J4bHR8fPz2ysrnIBCa9GDUrN9PPDU1mWXZ3t7eUDDU7fZqtWfHzZOTk6bn+VrToJF+BZnW67Xd3W9KpZZtMc5nZ2dWV9eJFGfM7NPMnwGAlLI4XKxMVpY/LQNAHMW3xkbv3rvTaKwg2koprQkREAgAGOe814seV6dLpdLGxiaALaV8+erFRXixv//ddXzf9x3b0bqPQiAKWufF4vDXjc2Dg0PHcTudzq+fp0tLH09PfzuOHYbh4eFRt9vjnAMAlq6XETFJEqVUoVAgoCRO0jR1XVcIQURR1HNs13Ev0UBDK2MMEfM8N0NjjBHpPNcAwDknIsMiEf2n1SzSUKiUQkQjtdZXif4H9y5AmuLgRAoAAAAASUVORK5CYII=",
+                "desc": "Web API 接口参考 | MDN",
+                "url": "https://developer.mozilla.org/zh-CN/docs/Web/API"
+            },
+            {
+                "title": "Babel",
+                "icon": "",
+                "desc": "Babel",
+                "url": "http://doc.codingdict.com/babel/babeljs.io/docs/index.html"
+            },
+            {
+                "title": "MDN Web Docs",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAACM0lEQVQ4jU2S30tUQRTHz5m5P+e6udAGrWjha/WWtGLZklIumwjVQ/W3BELQfyO95gqBmvkrfDFRelgtie3B8Mr+uPdy78yd08O4m/Mw8IXvfM+Zcz54ozRCRIg4uAEAEQEAAK5KY7CMHrg554iotdZaI6JlcQDM83xgsExGPwzb7Y6UUgjf8zytdbvdJiIhhOM4xsmD4Jp5gIh5LhcW5ufn60mctFotz/PevH09/ehhGIbn5+eWZQP0KyBimmblkZsfPrz3fN+2ra2dL5XKg8XFd1EUnf09Ozr6IYQvJVkmnjEWRb2ZmSfN5nGr9YdbHADqz2tbm9tSSc454uWnGfSPJpqbe7q9vZMkCWMcAKvV6tr6GuecIQMgAgQAZvrJsmykXJ6YuL/caIjAT+J4bHR8fPz2ysrnIBCa9GDUrN9PPDU1mWXZ3t7eUDDU7fZqtWfHzZOTk6bn+VrToJF+BZnW67Xd3W9KpZZtMc5nZ2dWV9eJFGfM7NPMnwGAlLI4XKxMVpY/LQNAHMW3xkbv3rvTaKwg2koprQkREAgAGOe814seV6dLpdLGxiaALaV8+erFRXixv//ddXzf9x3b0bqPQiAKWufF4vDXjc2Dg0PHcTudzq+fp0tLH09PfzuOHYbh4eFRt9vjnAMAlq6XETFJEqVUoVAgoCRO0jR1XVcIQURR1HNs13Ev0UBDK2MMEfM8N0NjjBHpPNcAwDknIsMiEf2n1SzSUKiUQkQjtdZXif4H9y5AmuLgRAoAAAAASUVORK5CYII=",
+                "desc": "MDN Web Docs",
+                "url": "https://developer.mozilla.org/en-US/"
+            }
+        ]
+    },
+    {
+        "typeName": "Java",
+        "list": [
+            {
+                "title": "Java 11 中文",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC9klEQVQ4jV2TX2jWZRTHP9/n+b3/9qbbnGukc206nWOEUGhjhDcuw4tmF9WFUUh30U0bFlaXUYvChIgugigqCjLCJUWmFv2hZEJdFjbXHG/mRUhue/f++f2e53SxzaRzdTh8z+Gcw+cr1sIQwl767kBnqVh4UFGjKPYLgnAzkXguhvqJiZHT19a0AFptF2DHvh97PFf0z8hpQBIxGAicExYNM37LGuGFiXumPlwborXktR/vn2ztKBwNIZI1YpDAJAHIzMwgV3DeENWF8Nz48MlJjBXB69MPHM4Vc+9ULpLVqkgOJ4HdtCJAjIRSGW3eZr7RyA6N333yI714dqxrfbubrl733e++gtWX5Z03LMqcTPVM7Ohs2Pq+Ns1fbmWo+Wc2dNT7dYXs0mIt3ZO0lP0jzltPKSmHI4cPOEiAaCunCcmRKJPPe0vTRAlL/m++MFzW35LLPZQ4x30xRmtd18LB/XvxylsucTIgyzJqjSblUgsSCiHaclhk6o8zlrmaSRpNgG6LEBR1fXFJ5eIt/PzrHAvVZXb2buHc+V/o6minq6Odgd4eVevLZhgxGIbrdxgyDAPKLSU+++Yn3ps6w2BvD7OVq9y6oZ3BbT289cnnfPnDBcqlIma29lfvcKo4L2RYmgXbfceA7RrYysX5Cr9frjC4tYeZ+SvcNbSdOwe3WzNNAeG8MLOZxKK+NnSvECEENnVu0KNjozZbuarF6jLtbWV2+E0M79ppDq+FxjWTpBhMzvmzzmEfpPVwRYUo73wMmafZMPXdttn27dmNJ8/Gto0WUilkDq9cTAqONA2zTdc8IYDj02NPlMulN1tDX5pQckZwIEmyVZ9gREQSU1viHzfna9XaY+PDp96/gfLx8wdfzZftSKOeElILErCKMqsoJ3nnc/mE5pK9PDFy6tkbKK/FGxcefhIXn3Zet2NGjCt15wQYMepS1giTT418+vZ/ZvqfnY99u39Lrlg+FM32Ad0Iw5iT46uleu3j5/ee/utmO/8LnwFof3hW+HsAAAAASUVORK5CYII=",
+                "desc": "Java 11 中文",
+                "url": "https://www.runoob.com/manual/jdk11api/index.html"
+            },
+            {
+                "title": "Java 8官方文档",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAA7klEQVQ4jWN8K6PCQApgIkk1XTQwvJVReSuj8sHd99exE/9xgJ87dr23sIeoZHwro8Ksrcm3agkjH9+/J0//Pn6CZiKLtiYjH9//T58+WDr+//SJ4a2MCsTsH6vWQsxAQ++0jH7u2AVXwPhWRkXo8e3/nz691zbG6VEZaYHjByBqoJ7+c/U6Hn/+e/KUgYGBkY8PEUqsluZMMtK4NLBamjMwMPy9eh2q4cecBQwMDLxzpkMk0ACbuyvPnGkMDAw/16yDBus7LaM/V67hClMIgAcJIzwtsYcGsYUGYdrw/9On3zv3/Fy9DsJlHHyJDwBIB6LmjxW3LwAAAABJRU5ErkJggg==",
+                "desc": "Java 8官方文档",
+                "url": "https://docs.oracle.com/javase/8/docs/api/index.html"
+            },
+            {
+                "title": "Java 8 中文版 - 在线API中文手册 - 码工具",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACwUlEQVQ4jX1TS2gTURQ9971J0pkmk0mlWpFg0WrRUhEXiqIbEQQpLgTFlXs/CxUERdERK6K2KpGAohtRF0ZcKwh+Vi78oPXfptUqflrbJNM4TWcm866LFqlt8SwP9xzuPfdewkxgJhyHBB4hPiddV4U0xgYav8AmNbWUZhQT8WQqef7dCkdG3qLQFEw10SYpCSAGEZvZfJMk3giINKDmAfRDr1QuVmz6+v8O7GeG1ZA6SYydFK2JQWiACsGBB4AdVqqjtKupfboBM6Gjy7Di8bvSrF8XOgMeATESEiABViEYypfJhqgqDd4uDi7YDhwHbFsJ2A81ELGlGxdIRuar0sBmFYhWgNtY8Uulqs/AYVtF+S3V4Z/bSNPWmrPzR2DbCjaPR5A48bQ5le3+pnfm0/+MlOkxcfpDYjIVO/N6YSrb8x777tUBACUzvRukZZ1T7vCD0s7Fe6dtZQYks/lLMm4tV4XiQU1IdYeiNab6jRyYKZHpXS2l0jxFfZXCze/AMdRab+qjEWNRlWVY3tP4BMTDFNNXIVq8JRjch8CDJLEJRFwuGi+VH7ypFPzB8TlJuXtbB0Jv7F15aOgVciwFiTYEPgDuJr3zdTpWU9Mu9PiO0B25UhXVo+7ulp9mpm9lqPljYCEEh6PlPUu6a7NvGzSOnJdGYruquJ2B63WMr/FUVypl6f2kJxPKdT6VRkdbE4axXjCvA1HIoMcjIT9PadRFRrKB3UJ/cXdzIwAI5Fji0LKiCtUpyAgIDBxYNlrWnHtObeSo88s/NvLoxX3EHB/McbBCCHEYAJBjOXGBtsDWnLSyPTfqrv1iM/Nx5dTk49nuLbOuFzmZ/XB2nGGafsoAUpf7D3LVXxME4RE38Hph1rMZ/G4VAu0M7Zaza8HVCR3PaAAAxuXPcyOBt9RDJM8q1HSqpkuB6sL+lsLfp5vAH+mdS8q2vQmHAAAAAElFTkSuQmCC",
+                "desc": "Java 8 中文版 - 在线API中文手册 - 码工具",
+                "url": "https://www.matools.com/api/java8"
+            },
+            {
+                "title": "Hutool",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAACFElEQVQ4jV2SvWtUQRTFz52ZfR/ubmIkQTF+IERRgihYWSqIiNgFCyWNldpbRf8AhRRB/wZBNIUgmCYGCxsbBQlRNJUJS+LHxk12s/vezD0W77kJ3mIYzsC9c+75Se6DiBgjQkKEpJIAjIiIACBZXIoSkujLJHa97ZLLE4A9fWWysbF9dKQKiADtXvb648q3tdaR4T3OGIAAygnlzOvPxqfmMp+HEEgurzXl1ov07stGq6OqvdxneVBVkj5o5oOTWhKlFSUEUFVA0locRU4AEYmc7X/PGrEQx6CWiJ0r1MHUMagGOmu2trsz859ja29fOFFL4oWl1TdL6w5Gml0/+2FFINbIj82up1RAa2Sjk92fXXaRnTx/rJbEc4vrj55+cVIxyz+ziYfvQIICZ1BPq4mQNMZE9XRfZIwRANUkcoOJo9fR4fjOtZNKqRhpdvLp+dXCEoCg6gOUJOmVXukQeLAeT109U3hotjuP3670F08ojImtFZHYCkjjrFFhN89zH3zQZju3xjhnlKwldiCyW+3wqfGn5/P5pV8ucc63ehvt2BqxZS7camWIQycPowPppeN7ny+sXpx+f2hANrPgt+nu3Rg/PBSJFDnKUDV+MHEqMqZeMSSe3Dw7tr/+9fvm5XMHxkbSV4u/S0L+I6zEqA/FrpLMhyIBoDQalADsP5BCuTECoqQoFSgk2elckNhneae//AWUiCF99EBGLAAAAABJRU5ErkJggg==",
+                "desc": "Hutool",
+                "url": "https://hutool.cn/docs/#/"
+            },
+            {
+                "title": "Google Guava官方教程（中文版） | Google Guava 中文教程",
+                "icon": "",
+                "desc": "Google Guava官方教程（中文版） | Google Guava 中文教程",
+                "url": "https://wizardforcel.gitbooks.io/guava-tutorial/content/1.html"
+            },
+            {
+                "title": "Hutool 入门和安装",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAACFElEQVQ4jV2SvWtUQRTFz52ZfR/ubmIkQTF+IERRgihYWSqIiNgFCyWNldpbRf8AhRRB/wZBNIUgmCYGCxsbBQlRNJUJS+LHxk12s/vezD0W77kJ3mIYzsC9c+75Se6DiBgjQkKEpJIAjIiIACBZXIoSkujLJHa97ZLLE4A9fWWysbF9dKQKiADtXvb648q3tdaR4T3OGIAAygnlzOvPxqfmMp+HEEgurzXl1ov07stGq6OqvdxneVBVkj5o5oOTWhKlFSUEUFVA0locRU4AEYmc7X/PGrEQx6CWiJ0r1MHUMagGOmu2trsz859ja29fOFFL4oWl1TdL6w5Gml0/+2FFINbIj82up1RAa2Sjk92fXXaRnTx/rJbEc4vrj55+cVIxyz+ziYfvQIICZ1BPq4mQNMZE9XRfZIwRANUkcoOJo9fR4fjOtZNKqRhpdvLp+dXCEoCg6gOUJOmVXukQeLAeT109U3hotjuP3670F08ojImtFZHYCkjjrFFhN89zH3zQZju3xjhnlKwldiCyW+3wqfGn5/P5pV8ucc63ehvt2BqxZS7camWIQycPowPppeN7ny+sXpx+f2hANrPgt+nu3Rg/PBSJFDnKUDV+MHEqMqZeMSSe3Dw7tr/+9fvm5XMHxkbSV4u/S0L+I6zEqA/FrpLMhyIBoDQalADsP5BCuTECoqQoFSgk2elckNhneae//AWUiCF99EBGLAAAAABJRU5ErkJggg==",
+                "desc": "Hutool 入门和安装",
+                "url": "https://www.hutool.cn/docs/#/"
+            }
+        ]
+    },
+    {
+        "typeName": "GoLang",
+        "list": [
+            {
+                "title": "Go",
+                "icon": "",
+                "desc": "Go",
+                "url": "http://doc.codingdict.com/golang/doc/golang.org/doc/index.html"
+            },
+            {
+                "title": "Golang标准库文档中文版",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAACdUlEQVQ4jS3SzYtVdRzH8ff39/ude+7DjDozxXivjCYhWi2cAQnsQWsYg3ARgbRpIxS2i1a2qFXUKmgV4SJ3s5CeMIgoSBwJhohykMRJayodfJxR79xm7j33nnN+nxb2+hte9uI3/WtdlziiCM7MQEQRATDwhsBQVjLRULja9YkDyZttFGQlJmoJFcOMKNZyyqiKZyjY8oaFikOA2VrO1JimW5aVfLvMnZ5iJBiv7LRdm+z8Xc7eUNVbEDhTZ8Abezg+aWXEO2ZaHPmB0ZQTz9rkQwCvYe/8rFNLct7oDOzwBMcn7eOLevI0R+eYu0kWeW+fPbqJV8+w/7Qu3tPRXZZ6XB4ZCnp3ymav8MECUfplhQ9/45lxXpjgzXn9eFvXu5y8rK11RlLceq6DTWqBE4sarlh7QD8i6chOW1hh7gbNmtW83c+sEMERimjPNblwj6UOM9s42LR+5Ku/2L2F75YlkFkR41iV9dxt5AoVz45hLqzSKzmwVa8/ZojzKzaSsti2xCHIoz0xwmqm9gBX8wwlXO8xVrVPFu2teZY6tAcaDrQHBAdS6vX0OL+uMihxpTAx0VBW6HZPD1d1v89KRj3YWKpuoVtdTbfYvYWv/1Et4HoFVzq8/Ig9NU6zxuHtdqfH1XXaAx3bY8060y37aL99+TeX2jQSC4nX7J/MbLPPDzmkKGb/UL/k09/19pT76SUw5m/p/QXqiQls6ouiW2jvKM+3LCs5d1OX1yz16kcOtWzvKJfW+H5ZgsQbwh7/rEgd3YJeiRlVT80/6Mm/OXkkOIYCziGpiBZ21PNr3aSR0Ej+7xn1ILk2pxgmVEaAItr2evEfhM0ww++ScEcAAAAASUVORK5CYII=",
+                "desc": "Golang标准库文档中文版",
+                "url": "https://studygolang.com/pkgdoc"
+            },
+            {
+                "title": "go-zero",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADj0lEQVQ4jU3TXUybdRQG8Oe870tLS2n56ACFkTKi8s2YICM6hSwbSjRKBrg0SJZoluiVShZNvJBsiZg4442JmmgW3OYSKgnZBV0nU2RKFoZzIZaBbVlrt/BNS1ugb9v3f7wAlp37X845yfMQHpuKigrdgcamnvt370wUVlRXVz7fUpq5L4+9f91a+Hf0xlRe2TOHeW3xotPpVPcMPdLMBCLpqP3Uw/rWNuOBmoOZptx9IElCKpHAUjAYu+m4vHX16y8LmVkjIgYAZZdLIBKtbW0nXn35mDnHVmzY0qULEDEzIx6LocScbipqf10xRVffJKLLu8tZ6etrVoBm4fF4Gnp7ey/U1dUZWI1rzqm/pXBWNWmpJKzLfrzW1KApxvL0xpKi7wtyc31ms3kSgPzog4GBgbPMzJ/196uhUEhsRGN85rsBfu/zr3h1fY29Pq/44vx5lZnZ5XKd23NK35n3T29vbv7j8fkDANDT3U1ZFjPNeufZ57pKSpqM+/5mrq+tRrfdTgDg8/kDH75z6nB2gbVWPt7y4gdN9Yf6h1w3lHAiVVZZWUnBhSVMrsbI+twR2F5owYOVVZLVbejSDfTz9VFyjY5qJ1tb+sKRaIoAZJ/95OOJ0vKqMqFP15Y347IuK5fJkk2y3gDBAmo0Cg4tsxaLUlFutpZvMclTf/zu+ejTc00ygLiWpvPUVFW19djtGY2V5WIh4CdjbJ3yhYoCSuIpixGy0NBx/CjX1x2U3e6Z8A+XfjodDASmFWaWieh6j90+A+DIUijMdx4sSloiiVRsHilFB4NeBw0S6XOs4pXGZyHL8tyf4+MjzCwrAAQA2ojFlkPra2IjHOZSazanNEbYoKek0GAxGtlisaAkx8yxSERsqeoiM+/kgIgkANrNe17n9rXfTpQVPsmlNhuLZIJYPME6WQJLEpJMPLsSovGliHR7xj/S0U7cOTgoKQA0AFhZ+M8ZUZOB5bzi4o10A7O6TSKRYCE0kCSTnGFixWiSIt65oH/23jUAcHR1aXtJkoJzcxFdZH2+IA0n46oqZVjzU4ZMs6wzZFCaXq+FA/OScN+msR+/eXvkyqVbfX2QxsbACgB0doIcDuClQ7V5NZY0Gr747Vu/ZFinbbb9+wE9tiXt4frEr2XvdrVfeaOxoWB4cAhudycBjp0yORwQAKAR3JMzsx0XhoaHdi+bfqztd8tKn45bzebVHeMQAPA/CAep8p6krTwAAAAASUVORK5CYII=",
+                "desc": "go-zero",
+                "url": "https://go-zero.dev/cn/"
+            },
+            {
+                "title": "GoFrame官网 - 类似PHP-Laravel, Java-SpringBoot的Go企业级开发框架",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcElEQVQ4jW2SX2jOURjHv8/znN87xszSYrWMwhCKJm6EcoGVCzFR5E+UuHLBLkbLbnAhRXHjT4qbTUmZuSISa3azEGKY/P9vmrx+5/u4eLd37/DUuXme8/l8T+ccAQAsuhYwpmQrVH8AvITmmm/4T5Vtf7kOjjpJkgOfj45tB8QFALCmc5q5XVXVcg3hplo4nSkuavt2vOrLADx6x+uqINIiKjVq1mNJcqwohLMCAJn1DxoU0qSqUDWoaVaD3VVLmhPVO7BQLCK7RFArZlBVqGmqZh0ybEt3VXBeEtFZankBJCdzNfuhqqamxYOznERULoYiQ7VopkI1by6QmKhpyeDMIKoQEYhIF4mGUJaVG70jdK2FsNlCskxNy/4Gcmk5sL9eiWPPk31yP9+Z3uiZr7965yaabAymy8WsQlSlAAIAB9AljvpHe6UNAIZMAQCr3abMxAwoal0wT4lyFzgE70HcSBNc6K6XnoHtQwSTGr1SAlaKYCEc48QhVHwQRzuIy4+n4h7qJBYyecHkJl+igoMOzB4idoe7O8k3jLE1pjwzsmh4x4NGyeYFk5t8iQInXTB+kPPcYgQjQRJOgoxfGP1KZHpq+OfeW1Ld5NUQnHdgTh5kDshBOcE/PfIj6BuCA/sBn+P0ghSCZB/IGBlHMlKcQ04BJ95Fs4fBPVYwekrGMJAEZ2ukHga9jx7nxzSuYow1JDP96XB4y/fjE58F0lal6c/1HrmTMU6geyfNd7w9NOp5/3XcLt3+4oyKLOXvuInkAic/gWgueAWXyt3f58Y0rQd54c2R8nP//A8AZduelmazXEGmpT973p7A9cXpH5OnVkzwtgTfAAAAAElFTkSuQmCC",
+                "desc": "GoFrame官网 - 类似PHP-Laravel, Java-SpringBoot的Go企业级开发框架",
+                "url": "https://goframe.org/#all-updates"
+            }
+        ]
+    },
+    {
+        "typeName": "微服务",
+        "list": [
+            {
+                "title": "Consul HTTP API Overview | Consul by HashiCorp",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB1UlEQVQ4jcWSPWhTURTHf+fmvVYjFCIIfpA0DRVEsEsKTbSCiJODoBU6OLk4W2ykbpkUk0pBF0EQ3RyqQyF0URQU8tLBzYJGmmhAcQkK/bB5L+84NK8mppkceqbLuf//ub9zz4HdDtkpWR3LnFeYFBhB2KPwCdXH8dLsgoD2LPAtmQ03+lafonK5x3uLbmTj4tHFB5tBxgQHJWsa9vp8y9xQ5L6InBMYRzUPrKO8ajd3EFRSmUmBZ8CaL3I2UcwttQtr6an90eJcvTqWmTAibszJLXQQiHCtxXInMH84nu2rpaf2AkSLc3UFGfDMy007VOxqASUNoKLPAcqnbx3YN7C20lSrUk1eP7T1udMXfll6yXbdh9qit9oo+wHwzE8A2/WiwBEAE7KHge8GLYsSViOrwTT+EiCfAYzFKEDcyb8HmVC4GlvKv90GlaaiHOxuAS0AqJIN+o47uRdDTv5JoBgs3VvGmAQiy10FfLXvAnUg2VSrsHLyxmBw9/XUzcPVVOZRLT0zbDf81xuG7Ql1LFIlNX1GkAIQDryAD8QAo1D2Ir9P7LhIAEPO7BtjGEF0HnBbxviWTt+FjH+l5yL9G1/GZyLqe8d81KbZ/zFRuv2jl/a/4g8mpa69KcfsNwAAAABJRU5ErkJggg==",
+                "desc": "Consul HTTP API Overview | Consul by HashiCorp",
+                "url": "https://www.consul.io/api-docs"
+            },
+            {
+                "title": "博客 | Apache SkyWalking",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACDklEQVQ4jaWSS0hUcRTGf+d/R2bM1Jm00WgRFYkOrSJaWAupZQlBBC2ioCB3lVKCEHkhMno5GLQsgqJNy1ZF1LQImhYKIT5SgxZC2gvdOM69c78WPijCsvpW53DO93EeH/wnvL8lSDIzc7lcTgAGgC9HZjEeQvgWrVYstiCwesLb0dGGcufKJycnB80sNE6pLN3EfhMZeRQU8ObTOV7hY8vCkmGm4bGx1igo3VhTHm8IgiAXRdEJl27ijjnu42g1xzHncQjs5zXMBNCYGHiWGelpDouFK6lUqsXMblHfJ9X16u5ysy9Xe1MH6rLqAuCwPM4qCZC4pM2V19XDQSUn3g0/HR4ZmXNRxG08jtf1qbf2sjbgW2TGVoxufMXSzVyob2So6pq2JStLO6sSdFGi6JyGkPW76RlOR8YZPE56SfprerUrhOcShVSSDMZulahIxNkXydtUCjSgxzZXDGxc8tpsafK1vtIVKZ4QwVSBvekEeYl7ZuwB8iYa5IhM2FS7HcX3Hb4fueqsttRk1aT1OIOPGNX0M4sx4Xm0AdPzAQ9w7HDQEkF+4VbdSDIXd1yMGa8riwzi2B6JTh5ZCZEnwUY5Xsx02oTgA45UGPJyyRZmpth8Ge3xkGwYEg8Cxmc77CvAtLha+4WHn4uMAxTFkXiJdd/O2/vF32olv9kKhd961PDlfiHrx1z2b+J/wHdhwOpg2CqXzwAAAABJRU5ErkJggg==",
+                "desc": "博客 | Apache SkyWalking",
+                "url": "https://skywalking.apache.org/zh/"
+            }
+        ]
+    },
+    {
+        "typeName": "监控",
+        "list": [
+            {
+                "title": "arthas",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAACT0lEQVQ4jVWSS0tVcRTF19rn3HO83us1H/m4YlcN08A0pDswemikYGGjaFTRB4g+QB+gQUQzJ32GLBrUpAgqkiQcVCCBJaQ9KBP1+jjnnnP+/93gatma7bX3YsPix6p0D/YojDcA+G6W5F+TpKpWHPffraoFivnzjqTe/Xxu1Ahld6OVDACBKkhCIltuqS5cL967UZw8kOuNTbAbIOkotBIWkFAlaU3Y13RaFZFFf9NZNTGUAK2Ny+FqEpdVVVV3nlq1FK/YNrGwNju3/OpY/lwqlbGwxkSelxs6dXvs/JTrVltrBAQpkQlaM129Df0z3x6/Xprq2tfZnjscJdtCOT482dN3eWtrUTUhKVQQtCbobz5jNZn5/ujtjydbcTTYOm7j1fqGvvbC0Oybuy+eXrU2EXFEAVUr9I+2jK6H4WDz2FD+wmq4NtA8KlItblphN0oL4uRIUVWXlCgJWmq6CrX9jvhXBm4RLCdxzq9vy/UGZltIx/EAQ4KAKxBjgt7GE7V+5s70tS+lOYqzP9128+T9I00j06VpKFQNQFWCdI0aEW+k89KvYOn9yksRh4YrwdLixtxwx8UP8x9TPlOuLyKkWlX66UNQNEn3evi7ZD8BHgAgyrCjzm/+Gn7O1vVsrs4Dy35VPUl6frfnpcYnhmoyWU98VQVBMLLlxERVTjqOA89LB2Hy4OGzKIpdVSWlkD+YzVQnxuwgRxBCQFWVItSNza1KS6xK91hro3IJMIAAChA75HB3tIDj+TkRcQGISLamEcAeov+TKgAkSQLgDy5iEE+/5FdlAAAAAElFTkSuQmCC",
+                "desc": "arthas",
+                "url": "https://arthas.aliyun.com/doc/"
+            }
+        ]
+    },
+    {
+        "typeName": "数据库",
+        "list": [
+            {
+                "title": "MyBatis 3",
+                "icon": "",
+                "desc": "MyBatis 3",
+                "url": "http://doc.codingdict.com/mybatis_cn/index.html"
+            },
+            {
+                "title": "MySQL中文参考手册",
+                "icon": "",
+                "desc": "MySQL中文参考手册",
+                "url": "http://doc.codingdict.com/mysql-ref/index.html"
+            },
+            {
+                "title": "PostgreSQL",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACdUlEQVQ4jZWSzUtUYRTGf++9c2ccZzCdccaPtJq0HHMUP8KCMI1E+4AgW7gxo01Bf4D7tu3atYuIUAoKotRUqKgmNUs0JbBoKnJALUOdnI97574tJi+GUPQsn3PO857nOa/gN5ZXYxLAk+MWm7lEMkWxzyMA+l+MyWRK0twQsvoEwNU7A7Jv8C26SAJw7kgdhga3h6bQMdFQqN9XQrCijBv3HqOhcP74QS6cOSqU2ci87Hv0Bh0HQjrJ0wzIzeXW0CSGzHCGdDA+u8TgcJiz7fsxpIPrA6OMjE1KZWRiGl26EegA1FbXMD46h266ALBhAiDRWFxTiC4sEwr40aWbyI+f2JyKHYGORAOgwO9lx84CDqvwZX6ZwfAcEg2BTmdbHaW+bFZTaWYiowRLClGCu/0bmSHQcTht3H8wzNzHBQp92RZvw8TplAy8fMXiSiarplC5UEJlAatJopGMG8RSLp68jvDp6wpuJZ3ZTuiYahZLSwniiTiNVT4AFE+OWwRLc601HU6bdY0sh0bCzFxVl27ef47itpv4slUunW7NCADU7i2xbCRjSTxOO1LE8Rd6MFCsgKemo3Qca6ayOJ+qwHZhCbQ3VqCJGABDzyfo6Wqjs6UBJZ1gM9Z1g+i379RXllmcAhAqD4iOljoAerraaD1QJ041VbO+tkLA60aiocs0AMX5Xq71PuRpeFxaP3EDz2Y+yKZQuZiNzMv+8ChVu0roHZzlXXSNlJbCpUvuXrlIkXebNWfbLNAUKheA5Q+g+/LNzEspFbtd+WPYsvA3qKq0QnRlO7fU/yngz1UB0IRKQZ76/wInD9XgzTLZU6TR031iS/0XF47lAgwjgUMAAAAASUVORK5CYII=",
+                "desc": "PostgreSQL",
+                "url": "http://www.postgres.cn/docs/9.3/sql-createindex.html"
+            },
+            {
+                "title": "与 MySQL 兼容性对比-OceanBase 数据库 -OceanBase文档中心-分布式数据库使用文档",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB+UlEQVQ4jY2TvWqUURCGnznnfF9+WKO4UbDQrCRaWARJZaNIDNgKulqk8gK8ApstzDUExMLKYtELECwCIioIAS1FDErQGIJmTZbd/c53XotsFIPJ+sBUc+adOfMD+yBhEraffxdTAwfAuT+P7SbloMCB6D5ntUgN4HKjEWgoUJcH/VWV6WG4Eg2znsZ85saRTZXogh/zF8tWfBJuxxsCZ5D+lSgAi2HcnaEQmKAo8ZsJNorXvuApdzRmVWYgTWOuhsqTmDuEwyj1LhDjAmtMUFAS+LYSa+t3Wwtbj37emqDt56ime5g7zpADB5Y8SmAZaFvVYG81jVFDeDIq5EyRcYJhcl+B1HUoJVmXEpDAAEnOgbZCONqbtcP5efX6ngipFCpSSoWl/v9N4AHtMULEb9ImEpMAx46OGWa/m2eYYZ5gxs4cvOWgzXQ47E5jV7XfbZMUzHvTEI4IdOjQ5jNdPhJpyYiQfQpgFcvxMufNgRw7El2hpDXW7Bmj5RKnl1b85INRN/z1mFxZdZk5dWw1AEvqsEEqJdkPcF+wtILSMu2wnM3PXLM8m6czeskqIyNkFSTDcg+r2+8H7np4efWxP5JfT997z83rlUp9SKZ1Qy3ktHeBjbo8DQWaTQ/Am7lTvJidHJTo/2jWPap7mniEQ/1DPBBhHHDWvwDnOeDE4IlP5AAAAABJRU5ErkJggg==",
+                "desc": "与 MySQL 兼容性对比-OceanBase 数据库 -OceanBase文档中心-分布式数据库使用文档",
+                "url": "https://www.oceanbase.com/docs/common-oceanbase-database-cn-10000000001687857"
+            }
+        ]
+    },
+    {
+        "typeName": "C/C++",
+        "list": [
+            {
+                "title": "C",
+                "icon": "",
+                "desc": "C",
+                "url": "http://doc.codingdict.com/c_guide/index.html"
+            },
+            {
+                "title": "CPP",
+                "icon": "",
+                "desc": "CPP",
+                "url": "http://doc.codingdict.com/cpp_ref/reference/en/index.html"
+            }
+        ]
+    },
+    {
+        "typeName": "JavaScript",
+        "list": [
+            {
+                "title": "JavaScript 教程_w3cschool",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADY0lEQVQ4jV1TXWxTZRh+3u+cr916+ruW/oyxzqLSrVHEYSGL1QlmCRhuHYuZXOulmqBeyGaMFxi4wN9ETDSKyzBeKAR/EnE648hkwnRB0Q0213Ud61bW0x7anXO+zwtKMn3v3uR5kud9n+ch/H9a9qSjnspOw+blUlk9B90Db6y4z6WYnryuXUT2/PhGOG1cOh7ofL2/efn5roDuqEkFb89GZnzcQl/z6laXYuHnVe/6x7nQsSuXJ16+w1EAMACIJtOHXkvmjj3TmlXiDVV42Lr4y9CCR5OzTR1aGXFHFQ8H1xSvg2V+Eqk5o5CdBMDYAAAJIBMq9/ZGlgRMmEJCvvtPDH2RRaExC7DrWi2gP7qIPaHSkwDkAAD1CCAJfcFe+q1NETZBgTpecGF0LUABN8O3FSYrtyS4sKSLSyklsfy6ow2e7tARfWRFpWh3/NC2S2f8qtk+WXGJ7ZrBvrDb5MmTW8GJQABKNsOJV67SYe8fBJXJHf5K+5vc+p4Wug8ou5P+jz64bzrzoKdknc6H2YoBfG21wkMWbb+bEydBI9/dpAvXGJprN7ErYrC7nFWkfZXwhK4lWJev1BNRqyLhrqleUcVnjSm8ejhAn36py99nTExNmzh1RpcvvRCiH333YKlI0pYQiYYK0r5SD6u7wWwb4qnmZWyiKjp3aOjJaOANBN5IeLxLw+6dTsyUHBjKb4KigOH2a6GwYDz9WEjf1sRN0jRQeV7HJTuMeJTonQ+LGBs3sDej0diEJVOTvyKvutHiqNomcfX4bMs5Zd6RvJC1+N6ww4owW4gWzaL3xzie6N+Ca3MmvAGO/fv8+PzE33gxsUB+bsr3spuVs8vBqbPXQ0+TBIjcmVB3au2HA8HVJEiKqkUkuEqqCjhJ4psbPgy2TmNXkwEI4OBU6s/h0fsfkRhaUQcBkuXRwkHeMftcItcOW9y5UIKDJouNYk0TSDcZBBuWrSiKkHJWYmhlECA2cDtk8nxBO/1JPgao9WiqoLKt4tRSjD0bXwQRCBx8+EaUjRa8wwRgoN4FCQBGIXf5quNeZ9niaZuYeqXixtHpzTO5mrPYqtnBhZoTQ7lI7a258BvXp345XndP/qeNAIAtjz4Uc93qrEi1UloMfgWPDq/b2u9STHe+3DiO+ZGLG+H/AkyCZvrrLEGHAAAAAElFTkSuQmCC",
+                "desc": "JavaScript 教程_w3cschool",
+                "url": "https://www.w3cschool.cn/javascript/"
+            },
+            {
+                "title": "W3C Javascript 速查词典",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADY0lEQVQ4jV1TXWxTZRh+3u+cr916+ruW/oyxzqLSrVHEYSGL1QlmCRhuHYuZXOulmqBeyGaMFxi4wN9ETDSKyzBeKAR/EnE648hkwnRB0Q0213Ud61bW0x7anXO+zwtKMn3v3uR5kud9n+ch/H9a9qSjnspOw+blUlk9B90Db6y4z6WYnryuXUT2/PhGOG1cOh7ofL2/efn5roDuqEkFb89GZnzcQl/z6laXYuHnVe/6x7nQsSuXJ16+w1EAMACIJtOHXkvmjj3TmlXiDVV42Lr4y9CCR5OzTR1aGXFHFQ8H1xSvg2V+Eqk5o5CdBMDYAAAJIBMq9/ZGlgRMmEJCvvtPDH2RRaExC7DrWi2gP7qIPaHSkwDkAAD1CCAJfcFe+q1NETZBgTpecGF0LUABN8O3FSYrtyS4sKSLSyklsfy6ow2e7tARfWRFpWh3/NC2S2f8qtk+WXGJ7ZrBvrDb5MmTW8GJQABKNsOJV67SYe8fBJXJHf5K+5vc+p4Wug8ou5P+jz64bzrzoKdknc6H2YoBfG21wkMWbb+bEydBI9/dpAvXGJprN7ErYrC7nFWkfZXwhK4lWJev1BNRqyLhrqleUcVnjSm8ejhAn36py99nTExNmzh1RpcvvRCiH333YKlI0pYQiYYK0r5SD6u7wWwb4qnmZWyiKjp3aOjJaOANBN5IeLxLw+6dTsyUHBjKb4KigOH2a6GwYDz9WEjf1sRN0jRQeV7HJTuMeJTonQ+LGBs3sDej0diEJVOTvyKvutHiqNomcfX4bMs5Zd6RvJC1+N6ww4owW4gWzaL3xzie6N+Ca3MmvAGO/fv8+PzE33gxsUB+bsr3spuVs8vBqbPXQ0+TBIjcmVB3au2HA8HVJEiKqkUkuEqqCjhJ4psbPgy2TmNXkwEI4OBU6s/h0fsfkRhaUQcBkuXRwkHeMftcItcOW9y5UIKDJouNYk0TSDcZBBuWrSiKkHJWYmhlECA2cDtk8nxBO/1JPgao9WiqoLKt4tRSjD0bXwQRCBx8+EaUjRa8wwRgoN4FCQBGIXf5quNeZ9niaZuYeqXixtHpzTO5mrPYqtnBhZoTQ7lI7a258BvXp345XndP/qeNAIAtjz4Uc93qrEi1UloMfgWPDq/b2u9STHe+3DiO+ZGLG+H/AkyCZvrrLEGHAAAAAElFTkSuQmCC",
+                "desc": "W3C Javascript 速查词典",
+                "url": "https://www.w3cschool.cn/javascript/dict"
+            }
+        ]
+    },
+    {
+        "typeName": "后端开发框架",
+        "list": [
+            {
+                "title": "交流群 | yudao-cloud 开发指南",
+                "icon": "",
+                "desc": "交流群 | yudao-cloud 开发指南",
+                "url": "https://cloud.iocoder.cn/qun/#%F0%9F%90%B1-%E5%8F%8D%E9%A6%88%E4%BA%A4%E6%B5%81"
+            }
+        ]
+    },
+    {
+        "typeName": "前端开发框架",
+        "list": [
+            {
+                "title": "vuejs中文教程",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA10lEQVQ4jc3QL0tDURgG8N/cJhbbymRBDCYvgqwMwWDT4Tfx+8iSC8MPYLGJ1TDLymAmcZi0qDhBnOUeuFzO9UR94OWF87zPHw7/EWdYYBmZT5z+Js7wVSEOc1EUrJQMDlHHCLXSHOQ31+jF0lcxSaR/o43bIGoUDPaxg9f86L3ANTHFMzbwEjPo53sdb7GKOMcJLstEAx+J+kvsYoxOEIZPPMJaRWrAQ6H6Y3is53uAzYTBEC3McVMmnxLV77GFK+zF3MfYTjTIMKsiu7hLtJjjOBHyB/gBIUFJzQN8p/QAAAAASUVORK5CYII=",
+                "desc": "vuejs中文教程",
+                "url": "http://doc.codingdict.com/vuejs-cn-guide/index.html"
+            },
+            {
+                "title": "Vue.js 官方文档",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACfklEQVQ4jaWSTUiVURCG3znnfD/Xn1RuurBokwsVJEoIMn9woSSi1CaoRbRy565FgV7OhRDdla2DXAS1iwJdmiKJgYgUtdDARbZRSqV7v3u/75wzLa6aWbjpXc7MMzPMvMBRaS2aWfutPOThmFp5yGtm7UNrcTRO3dPZSeGrBia20dx2rfmwE8qKQBSlGVt59vQFALTeuXvbc8F9mys61VJdSHWd3iIm6WKzrpjonQj8YSZG2FKNnys74O0EKuUe1+uh1wBAq/EjjuJaeEDYUg0Z+AATbGJvyY3nsx/P3exolFI2czklMA7xlz2jvPBUeY6p8jt3qqK8ZqIoDtrTUE2VRjhBSb7w8m1fJqsAwEnK2GIySITQv1SD+NOeZ7YiBssHBMDkLIu60PMv1jDFrCwnBScpAwACGmK+d3TNODMpQl9QmXRBWxoMBmJHHDsCGGFbGlQmnQh9YZyZnO8dXYOGENBwYFBOReMmX9gQTgq/qcqp8xWAYWbDLBsq4DVVOeGkMPnCRk5F42AQNFzpJVlNyz0Tu85yBooECAja02AJIkUUXE0DBECRcJYzyz0Tu8hqAkrhQw8AQPdlmpOpoN2RNflXmxIElA2esQJS2ai4MPueu/brXekGvzsAWruE6R5ba5CAUp11nOqsYxgQW2sSpnslUB9S4gjvoLVY6M8s2cRMycCTVC4dlUknA0/axEwt9GeWoHXpbgdOPOZYAoArbx7WpwKsEqgGABj8IyriwuLAyLf9Ov57g4OEBi0OjGxa68bIl4J8Kax1Y4sDI5vQoKPwvzY4aEMNM8P+WVH7GQz6yluN631PYtCf8EkiAGifyd7omNbXTxz2v/oFIW4et9u/Qy8AAAAASUVORK5CYII=",
+                "desc": "Vue.js 官方文档",
+                "url": "https://cn.vuejs.org/guide/introduction.html"
+            },
+            {
+                "title": "React 官方文档",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACeUlEQVQ4jZ2TT0iTARjGf98f3aebm186cTaWfY4wDUEESxETDcGQSE8llIQR0VWogx48BnmwjoGHqEOHwrJb6LIOiUadCtNilnM6x5bNuf9/vg42U/Bi7+l9ed/nhed9nleoqqrq0nV9HLBxuFgXBGFAUlX13V5wcV0jJU0dJIN+MtFtAAxWG+WdvUj5BuIb3txoEdAu7wUr5XbK2rrxTj7G3tNP+PuXnUlnLb7Xzzl64Qpx/xpx32oOYhM0TdNzVUljG4IkEZidBuDknVEQBBbuDgJQ2tSBnskQnJ/Z5SHuJZWOhJFMZgDU+mayyQTZRBy1vhkA2WQhHQnvO4ScS/LMKpa6RspauzjS0EJBRSXBORcAx68NUt7Zi1Grxu96RdTjJrW1CYCkqupIafM5Krr72Jh+iVJWQSr0m+XxewiSRCq0ydrkE4yVJ0hvb+GbmsBx+SaCKBL1uHcoWM+eZ2lsmMjyIr8+vEVSFESDQs3QA2qG7iMaFGSTmeCci8jyIktjw1hbu/7dIBuPUehwAmBy1iIXFZMI+Ih63EQ9bhIBH3KRBZOzFoBCh5NsIgGAoGmaLhoKcFy6gVJqQ6lwEJx1oWdSrE48AsDe0w+ihLWlk9jqD+KBdVaePiSbiLFPxkKHE/vFq0R+fqPkTDvof1u6TnB+BpNWjefZOFGPe1cFSVXVkV1rOWuI+71sTL0g8H6KktNtZLbDfB29TejzRwRRRFIKiK2vHOyDbDKJbNzxQb5aip5OI8gy+ap1R3OjmWwyebAPAEILnyjv7MVyqoFUOMTi2DAAx/pukVdkAVFk483kvgWCpmlrHP4Tc+ETgeuA7z/AXmDgD9AW23M4cke8AAAAAElFTkSuQmCC",
+                "desc": "React 官方文档",
+                "url": "https://react.docschina.org/docs/hooks-intro.html"
+            },
+            {
+                "title": "Svelte 中文文档 | Svelte 中文网",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACf0lEQVQ4jW2TT4jUdRjGP+9vZpmt1tgiMyKSRE+hzQ6tsKyzfxOCzLC0pIsd6lKEELhaHdoOXiq0gy1E3YKIsGhFQi20hbJ2EQt0jSDwlpdYw4acmd3f99NhdqZcfeELLzw8D8/3fZ8XblFCodNv7+3z8duedtuqAZnMlvFo47GCmAUkALd2lWkuHqTGCIluoEEPv1BkX5zhh5sEhAjQ9ZR4qDjBtaUDBLfz2G7pH5Mrl4OvPgz+XqjRxWh8x7mOk3Zjlc0OM2cFfW5j8qdTzaS2nxd/rDt2hw7F1x1eh7yFR6xy1WpRj7zRtFnPk+rPM8k9W5OnP0+56r6nkn386a4H7gYodgZQyPaTRy+TnzYc31WK69eMw6/pJ1MRNeT3GbJX/0gsLWYEReop+294kyNF+5l3z6Y8V52fS46uTj6MvvW8Hn0/eWBnchOLVtERjgshRMvB/GoJrtNsZAKkXDb0B4cmtDwcQmTP7IVHp+S9V6CQXQiSQobQ2u1wdsgB9IupZlLz9uDOHk++MJa8NJfnmnx2nW7mrJMtXjEgtZRSmSLw9ssRsyeNyhY4/30wPR2se1C6ugMICsUEdN+YvO333G8f/7h/hx79IHewlFxLskzyyERyqZGS6rGP6w6GjmQftYO3LHDvGsv85es7W6v69rPkS9uSv55rEWtXc9/d23AQHeKKQ2y4IQdCWI2Tjvfoxdl6+/+56pkvm+5YrxV0lBmH2Ph/99HOv8P0s8RpVt3Vw5Mvypq1MnsqY+YYFFigp3SQbxqHA2zH/uZjGmeAJu9Qo0LQRdDkTk5QKr0ZJxq/rTy4Wx8TBk/0VmDxPordl2N64dIyXgjIWVH/AkbRg8kms26/AAAAAElFTkSuQmCC",
+                "desc": "Svelte 中文文档 | Svelte 中文网",
+                "url": "https://www.sveltejs.cn/"
+            }
+        ]
+    },
+    {
+        "typeName": "工具库",
+        "list": [
+            {
+                "title": " Video.js Documentation",
+                "icon": "",
+                "desc": "Video.js Documentation",
+                "url": "https://docs.videojs.com/"
+            },
+            {
+                "title": "高德开放平台 | 高德地图API",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADDElEQVQ4jS3BzYuVZRgG8Ou6n+c973vOzHjmeEanD0/m4IgVKYFIBS7EcFPtlHZFtWnjrlV/Q5vaFiJkBrZRCDcSFBGJI1GaGCVjUOQkynx0zpz367mvNv1+lESSuqVLoybpJFMcOlrs77xUz/qi/q2mHcP/zNDINsaVf713vliVxEhSN3XplUbTs4ntCB3CkZAhwAzIOhkAQiBcwiA4+nlcW59U75G8zGvjC4ss2hULGG3XVUPQXK0OZa9yXnv4z3hTEtHPKTPnN/eCPzEosuWd7cONCY5YUcSXBY0mVdkaLEA0gSE5zAXOZLD5QnZ9zcKblws7dTGPa1tlm0dbCJkdi2UqcwUIMLqAJKpNtF5OBYA//Wn66MccV341Th+5j54yHBw6a5nymHrROiZPjtZBylBkLWc6rpW/wXPXhc9+6TLVxGC7VN3NeWDB0c8drRMBQGwQaWzRiwlmzjv3F/DlynO8ens3msqR9YgdGxNM+jkTow4OSxSRKhMspMTImnQjb/31mL66eRBX7yyhmkQgTyjmgGx1gs2ZDJrNgInj0C5HchERAIIiMMV2Ir64saxvbxwwdOE20zKACL9NMI4G7c6BRmBB7B8kTFsoBKFJoA3wDPbE/fj49fv85O27OjpyekNld8coa0B7u0AjIAGjWWF5GBAtYzcY8sw8Po2jFghsJvDUvlavLTnfP1fx8xUJh3qEAyGaUi0s7wT6O3pqEtQYkFyKW00Z4KbN6dS3G2MnE06+EHTh/AMef3yXfigHmG4lAkA1Z/7pI2FSCTNzprwJs6bIDU9OCcqCULXCk8OED97ZoQ/f6OGtEy0OLEFI1MJAnLpQNtR2AqfAA95bX58vsuL7ols8u/ZwM9UOVkkY9nt4UAZc2RIQgDt/EItD0+4BlM0ystbqYuKLBIDVcX14LuPZumkPN04rkziTRWzBcHGdcALdHHBRgLzT4e0u8O6Zed6Ip09fDEuznZ/PX/v9+Inn9x2r26a/1ZhtJ9qjKoWmNrrcm8qaoghpvuvj8m747swRbkLif+Qgn4J1FTqhAAAAAElFTkSuQmCC",
+                "desc": "高德开放平台 | 高德地图API",
+                "url": "https://lbs.amap.com/"
+            },
+            {
+                "title": "微信小程序插件 | 高德地图API",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADDElEQVQ4jS3BzYuVZRgG8Ou6n+c973vOzHjmeEanD0/m4IgVKYFIBS7EcFPtlHZFtWnjrlV/Q5vaFiJkBrZRCDcSFBGJI1GaGCVjUOQkynx0zpz367mvNv1+lESSuqVLoybpJFMcOlrs77xUz/qi/q2mHcP/zNDINsaVf713vliVxEhSN3XplUbTs4ntCB3CkZAhwAzIOhkAQiBcwiA4+nlcW59U75G8zGvjC4ss2hULGG3XVUPQXK0OZa9yXnv4z3hTEtHPKTPnN/eCPzEosuWd7cONCY5YUcSXBY0mVdkaLEA0gSE5zAXOZLD5QnZ9zcKblws7dTGPa1tlm0dbCJkdi2UqcwUIMLqAJKpNtF5OBYA//Wn66MccV341Th+5j54yHBw6a5nymHrROiZPjtZBylBkLWc6rpW/wXPXhc9+6TLVxGC7VN3NeWDB0c8drRMBQGwQaWzRiwlmzjv3F/DlynO8ens3msqR9YgdGxNM+jkTow4OSxSRKhMspMTImnQjb/31mL66eRBX7yyhmkQgTyjmgGx1gs2ZDJrNgInj0C5HchERAIIiMMV2Ir64saxvbxwwdOE20zKACL9NMI4G7c6BRmBB7B8kTFsoBKFJoA3wDPbE/fj49fv85O27OjpyekNld8coa0B7u0AjIAGjWWF5GBAtYzcY8sw8Po2jFghsJvDUvlavLTnfP1fx8xUJh3qEAyGaUi0s7wT6O3pqEtQYkFyKW00Z4KbN6dS3G2MnE06+EHTh/AMef3yXfigHmG4lAkA1Z/7pI2FSCTNzprwJs6bIDU9OCcqCULXCk8OED97ZoQ/f6OGtEy0OLEFI1MJAnLpQNtR2AqfAA95bX58vsuL7ols8u/ZwM9UOVkkY9nt4UAZc2RIQgDt/EItD0+4BlM0ystbqYuKLBIDVcX14LuPZumkPN04rkziTRWzBcHGdcALdHHBRgLzT4e0u8O6Zed6Ip09fDEuznZ/PX/v9+Inn9x2r26a/1ZhtJ9qjKoWmNrrcm8qaoghpvuvj8m747swRbkLif+Qgn4J1FTqhAAAAAElFTkSuQmCC",
+                "desc": "微信小程序插件 | 高德地图API",
+                "url": "https://lbs.amap.com/api/wx/summary"
+            }
+        ]
+    },
+    {
+        "typeName": "脚本",
+        "list": [
+            {
+                "title": "快速参考 | AutoHotkey",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC30lEQVQ4jY2TTUhUcRTFz/2//3tv5s3oe46NzmimKVlEYWHZ1/QhmSUlWlGLqKCoiNCihaSUMRUmBUmLFm1qFUG5CyQ3YQYRgUaQZJmgmV85loyNOc689/4tmqKyoLs6i3sOF+7vAP8/BMC1zajclNAAAPafZgZAHPGcOL5R31QFQAQRZH8NEBAkIOiHTuzYq9RVC5Y4CupJYCpxAQsiyDgA2oM9LIQQKVBUAk0BQDWqVQLNABAA5FK94kaa5NO7pru+CAgQyAQADkA0o9kCgBKjbOlRXr3fA0/GoPk+VOs6P3ln6HbDPs/hS345o3RMfPws1Pg0gfQsZKWu1NbqfBlfsa4oefXWJNKl9sij59lzsgu8lF7cG3tzYUZENa/hzVfdctGA3dfq4E6fIVIrz3svb9YkLdsUlsIFFwRJjM9XcxsKnMvdn6zxGDGwZVJh+eDUYMcWtfyabDryNFtJ5qakKaQyn+rDkPnhRW+su54AKIUo5I6k5KyypPIzDjgCI/GhtxJjEZmpzkw2tyJqT8OGDbIJNrOmRszhW02hxrMAIjxfWZq7IaWk3sf8RnPo3rlUxXN3oXPx7oiIagPR/pepTk+pAJwMBOFCeEJ8am7qazwlIIhAjPfEXr1ZEJ1Xla5lth7wHur4an8NG8xImcRkOJtyd2pwOcesseGPfORppjU3oJnuPAFBF76/0uYAqCXcMtEe7tyx19hVlqRqARnyQW5z3S25MWoPPxug/tdZ8Zz1hvD4JqTPfQTigDABEEv8mUUwGmrDw/Z0yb9Rg0u1mBV7Z/U0BEfrymKWdUdl6oyDOwk22QDiIsEdT1Bl58AwjmmnWjOkzPz3Vn9nV6y75v747TYBQTROjwGsqUsLXpG5nA9AJlD8N4SDvsYHTf6b01Xe07UA9F9Q/ok2AAT0QC4A+VcvP+mtuX7Rf/VJobJm0R8FmtWTWTUrTinefjjtWA0ADQASLZu9+I/gbxPmB2f3E/XuAAAAAElFTkSuQmCC",
+                "desc": "快速参考 | AutoHotkey",
+                "url": "https://www.autoahk.com/help/autohotkey/zh-cn/docs/AutoHotkey.htm"
+            }
+        ]
+    },
+    {
+        "typeName": "GIS",
+        "list": [
+            {
+                "title": "Google Earth Engine API  |  Google Developers",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACMElEQVQ4jaWTS0iUURTHf+d+M85oOb4SQ6OFYAbRgxbRpkUPKYwUsSDoSVDroEVtaykE1aKoFpERBLqIQIsWBomCjRYRQZTRJtQWSSYz+Zjv/lt8nw+QatGBwz333vO65/+/SKqQ1CXJSwrj9U+y3KdLUgWxIUmFfwQvT1KI7S6TJMADFqsUFgzAXICAUB6AhAu04BOrMym+lQxJOGf8RbwkMzOLEmCSvPcyzOQMEzDT8xiAdHMrAPc/9mHAqQ17wAwvCWTOnMx7L7Ooq5mRYXKddygMDVCY/UXdo2cM1aTZ2XkOS6ZoWreNS9sPs7tuy0I3OBBjY9O8udbJ3PmT2GAfoTlKmg6i2lrqS6pobdiFmXj+9S0tvVc48+I6X35+i4aWn/U6fXOa8Yk8e3MDHJ3uofH4IdjXRggsjO3B5ywd2bu8n86j+RwN5WsZbr9KInCQWZ3gU1EZveVtvE43c6SymPY5UVwkvDko5DiR6qe55ik3EpXc/l5FY2YTySDA5L2m8uLh4DxPhmeZzBvyns3rAzqOraIqNc589gDhj3ekHVgqyUTNBaobLhIky4iHGEE0OuG593KO/g8hgfPcOltKY+kIcwM7cADVLVj9ZRKZrTHyPoJRkgmTMxkYr0YLZEqMjbUOYWgqC/OTuDX7I/AVCpyZmZaIBCYQEU/iCmAIFvfClg4WibSCymH8KlvkZFTDbCWVHdANuNhLgAXOcM4wW9AAs4BlwT6O6eZ/v/Nvwwmu1r04AVkAAAAASUVORK5CYII=",
+                "desc": "Google Earth Engine API  |  Google Developers",
+                "url": "https://developers.google.com/earth-engine/reference/rest"
+            },
+            {
+                "title": "Index of /MOLA 栅格数据 HDF 下载链接",
+                "icon": "",
+                "desc": "Index of /MOLA 栅格数据 HDF 下载链接",
+                "url": "https://e4ftl01.cr.usgs.gov/MOLA/"
+            }
+        ]
+    }
+]

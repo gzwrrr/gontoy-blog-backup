@@ -64,9 +64,9 @@ feed:
 2. [Android studio 和 gradle插件版本对应关系（最新 2023年）](https://blog.csdn.net/dongxin214/article/details/100726807)
 3. [Android各版本对应的SDK及JDK版本要求](https://blog.csdn.net/j086924/article/details/122866386)
 4. [官方版本相关解释](https://developer.android.google.cn/studio/releases/gradle-plugin?hl=zh-cn#groovy)
-5. Gradle 历史版本：[Gradle 下载文件归档（历史版本）](https://gradle.org/releases/)
-6. Kotlin 历史版本：[kotlin 版本](https://kotlinlang.org/docs/releases.html#release-details)
-7. gradle plugin 与 gradle 的版本对应：[gradle插件与gradle版本对应表](https://blog.csdn.net/u011897062/article/details/109357551)
+5. [Gradle 下载文件归档（历史版本）](https://gradle.org/releases/)
+6. [kotlin 历史版本版本](https://kotlinlang.org/docs/releases.html#release-details)
+7. [gradle插件与gradle版本对应表](https://blog.csdn.net/u011897062/article/details/109357551)
 
 **项目版本管理：**
 
@@ -181,10 +181,18 @@ feed:
 
 优先：
 
-1. [徐公](https://www.zhihu.com/people/chi-meng-15-86/posts)
-2. [郭霖](https://blog.csdn.net/guolin_blog?type=blog)
-3. [鸿洋](https://blog.csdn.net/lmj623565791?type=blog)
-4. [开源实验室](https://kymjs.com/)
+1. [Android Developers Blog](http://android-developers.blogspot.com/)
+2. [徐公](https://www.zhihu.com/people/chi-meng-15-86/posts)
+3. [郭霖](https://blog.csdn.net/guolin_blog?type=blog)
+4. [鸿洋](https://blog.csdn.net/lmj623565791?type=blog)
+5. [开源实验室](https://kymjs.com/)
+6. [任玉刚](http://blog.csdn.net/singwhatiwanna)
+7. [农民伯伯](http://over140.cnblogs.com/)
+8. [罗升阳](http://blog.csdn.net/Luoshengyang)
+9. [大头鬼](http://blog.csdn.net/lzyzsd/)
+10. [张兴业](http://blog.csdn.net/xyz_lmn)
+11. [Trinea](http://www.trinea.cn/)
+12. [代码家](http://blog.daimajia.com/)
 
 其次：
 
@@ -208,16 +216,17 @@ feed:
 
 **B 站：**
 
-1. [扔物线](https://space.bilibili.com/27559447?spm_id_from=333.337.0.0)
-2. [晨钟酱Official](https://space.bilibili.com/251013709?spm_id_from=333.337.0.0)
+- [扔物线](https://space.bilibili.com/27559447?spm_id_from=333.337.0.0)
+
+- [晨钟酱Official](https://space.bilibili.com/251013709?spm_id_from=333.337.0.0)
 
 **Youtube：**
 
-1. [Android Developers](https://www.youtube.com/@AndroidDevelopers)
+- [Android Developers](https://www.youtube.com/@AndroidDevelopers)
 
 **其他：**
 
-1. [谷歌开发者中文视频](http://boolan.com/gdg)
+- [谷歌开发者中文视频](http://boolan.com/gdg)
 
 
 
@@ -366,28 +375,53 @@ feed:
 
 1. [现在android开发都会用到那些快速开发框架或者第三库？](https://zhuanlan.zhihu.com/p/438958248)
 2. [Android 开发一般都使用什么框架？](https://www.zhihu.com/question/37160415)
+3. [Android开发常用框架汇总](https://cloud.tencent.com/developer/article/1477604)
 
 :::
 
-1. Android Jetpack Compose
-2. Kotlin Multiplatform
-3. MvRx
-4. RxJava
+4. 响应式编程
+   1. [RxJava](https://github.com/ReactiveX/RxJava)
+   2. [RxAndroid](https://github.com/ReactiveX/RxAndroid)
 5. 依赖注入
-   1. dagger
-   2. hilt
-6. 网络请求
-   1. OkHttp
-   2. Retrofit
-   3. Picasso
-   4. [Volley](http://stackoverflow.com/questions/24375043/how-to-implement-android-volley-with-okhttp-2-0/24951835#24951835)
-7. 图片加载
-   1. Glide
-8. 其他：
-   1. Picasso
-   2. GSON、Jackson 
-   3. ButterKnife
-   4. Retrolambda 是一个在Android和预JDK8平台上的使用Lambda表达式语法的Java类库。 它有助于保持你代码的紧凑性和可读性，特别当你使用如RxJava函数风格编程时。 使用它时先安装JDK8，在Android Studio工程结构对话框中把它设置成为SDK路径，同时设置`JAVA8_HOME`和`JAVA7_HOME`环境变量
+   1. [Dagger](https://github.com/google/dagger)
+   2. [Hilt](https://dagger.dev/hilt/quick-start)
+6. 消息通信
+   1. [EventBus](https://github.com/greenrobot/EventBus)
+   2. [Otto](https://github.com/square/otto)
+7. 网络请求
+   1. [OkHttp](https://github.com/square/okhttp)
+   2. [Retrofit](https://github.com/square/retrofit)
+   3. [AndroidAsyncHttp](https://github.com/android-async-http/android-async-http)
+8. 数据库
+   1. [SQLite](https://www.sqlite.org/index.html)
+   2. [Realm](https://github.com/realm/realm-java)
+   3. [ActiveAndroid](https://github.com/pardom-zz/ActiveAndroid)
+   4. [GreenDAO](https://github.com/greenrobot/greenDAO)
+9. 数据解析
+   1. [GSON](https://github.com/google/gson)
+   2. [Fastjson](https://github.com/alibaba/fastjson)
+   3. [Jackson](https://github.com/FasterXML/jackson)
+7. 图片下载缓存
+   1. [Android-Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader)
+   2. [Picasso](https://github.com/square/picasso)
+      3. [Glide](https://github.com/bumptech/glide)
+      4. [Fresco](https://github.com/facebook/fresco)
+   8. 媒体（图片、视频、文件、音乐、通讯录选择器）
+         1. [Android-Image-Cropper](https://github.com/ArthurHub/Android-Image-Cropper)
+         2. [uCrop](https://github.com/Yalantis/uCrop)
+         3. [PhotoView ](https://github.com/Baseflow/PhotoView)
+         4. [android-multipicker-library](https://github.com/coomar2841/android-multipicker-library)
+         5. [Android-UniversalMusicPlayer](https://github.com/android/uamp)
+9. 其他：
+      1. [Guava](https://github.com/google/guava)：工具库
+      2. [Zxing](https://github.com/zxing/zxing)、[ZBar](https://github.com/ZBar/ZBar)、[Barcodescanner](https://github.com/dm77/barcodescanner)：二维码
+      3. [Leakcanary ](https://github.com/square/leakcanary)：内存检测
+      4. [logger](https://github.com/orhanobut/logger)：日志
+      5. [ButterKnife](https://github.com/JakeWharton/butterknife)：视图绑定与回调
+      6. [Retrolambda](https://github.com/luontola/retrolambda)：将Java 8的lambda表达式移植到Java 7、6和5
+      7. Android Jetpack Compose
+   8. Kotlin Multiplatform
+   9. MvRx
 
 
 
@@ -408,4 +442,7 @@ feed:
 
 3. [7个最佳的Android模拟器](https://www.jianshu.com/p/e3c9b2999eef)
 2. [Android 开发艺术探索 – singwhatiwanna](https://blog.csdn.net/singwhatiwanna)
-3. HTTP Proxy：mirrors.neusoft.edu.cn:80（建议能科学上网就尽量别用代理，代理虽然能快一点但是会有其他问题）
+5. [Android-CleanArchitecture – mvp架构学习实例](https://github.com/android10/Android-CleanArchitecture)
+6. [官方mvp架构学习实例](https://github.com/android/architecture-samples)
+7. [框架/博客汇总](https://github.com/Android-campus/akr)
+8. HTTP Proxy：mirrors.neusoft.edu.cn:80（建议能科学上网就尽量别用代理，代理虽然能快一点但是会有其他问题）

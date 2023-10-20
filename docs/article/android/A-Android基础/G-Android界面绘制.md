@@ -293,8 +293,6 @@ feed:
 
 
 
-
-
 ## 界面渲染
 
 - 每一个Activity都拥有一个Window对象的实例。这个实例实际是PhoneWindow类型的。那么PhoneWindow从名字很容易看出，它应该是Window的儿子

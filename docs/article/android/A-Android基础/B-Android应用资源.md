@@ -155,3 +155,37 @@ res/
 
 :::
 
+
+
+
+
+## Drawable
+
+Drawable表示的是一种可以在Canvas上进行绘制的抽象的概念，它的种类有很多，最常见的颜色和图片都可以是一个Drawable。
+
+在实际开发中，Drawable常被用来作为View的背景使用。
+
+Drawable一般都是通过XML来定义的，当然我们也可以通过代码来创建具体的Drawable对象，只是用代码创建会稍显复杂。
+
+Drawable是一个抽象类，它是所有Drawable对象的基类，每个具体的Drawable都是它的子类，比如ShapeDrawable、BitmapDrawable等。
+
+Drawable的种类繁多，常见的有：
+
+| Drawable             | 说明                                                         |
+| -------------------- | ------------------------------------------------------------ |
+| `BitmapDrawable`     | 表示一张图片，在实际开发中，我们可以直接引用原始的图片即可，但是也可以通过XML的方式来描述它，通过XML来描述的BitmapDrawable可以设置更多的效果。 |
+| `ShapeDrawable`      | 通过颜色来构造的图形，它既可以是纯色的图形，也可以是具有渐变效果的图形。 |
+| `LayerDrawable`      | LayerDrawable对应的XML标签是`<layer-list>`，它表示一种层次化的Drawable集合，通过将不同的Drawable放置在不同的层上面从而达到一种叠加后的效果。 |
+| `StateListDrawable`  | StateListDrawable对应于`<selector>`标签，它也是表示Drawable集合，每个Drawable都对应着View的一种状态，这样系统就会根据View的状态来选择合适的Drawable。StateListDrawable主要用于设置可单击的View的背景，最常见的是Button。 |
+| `LevelListDrawable`  | LevelListDrawable对应于`<level-list>`标签，它同样表示一个Drawable集合，集合中的每个Drawable都有一个等级（level）的概念。根据不同的等级，LevelListDrawable会切换为对应的Drawable。 |
+| `TransitionDrawable` | TransitionDrawable对应于`<transition>`标签，它用于实现两个Drawable之间的淡入淡出效果。 |
+| `InsetDrawable`      | InsetDrawable对应于`<inset>`标签，它可以将其他Drawable内嵌到自己当中，并可以在四周留出一定的间距。当一个View希望自己的背景比自己的实际区域小的时候，可以采用InsetDrawable来实现，同时我们知道，通过LayerDrawable也可以实现这种效果。 |
+| `ScaleDrawable`      | ScaleDrawable对应于`<scale>`标签，它可以根据自己的等级（level）将指定的Drawable缩放到一定比例。 |
+| `ClipDrawable`       | ClipDrawable对应于`<clip>`标签，它可以根据自己当前的等级（level）来裁剪另一个Drawable，裁剪方向可以通android:clipOrientation和android:gravity这两个属性来共同控制。 |
+
+
+
+
+
+
+
