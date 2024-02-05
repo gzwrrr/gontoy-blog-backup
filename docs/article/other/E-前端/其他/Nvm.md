@@ -35,7 +35,7 @@ copy:
 feed:
   title: "Nvm"
   description: "Nvm"
-  author:+
+  author:
     name: gzw
     email: 1627121193@qq.com
 ---
