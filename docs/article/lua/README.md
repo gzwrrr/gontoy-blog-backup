@@ -13,7 +13,7 @@ notPage: true
 
 :::info 说明
 
-Lua 官网：https://www.lua.org
+[Lua 官网](https://www.lua.org)
 
 :::
 

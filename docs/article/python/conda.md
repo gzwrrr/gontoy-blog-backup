@@ -52,19 +52,13 @@ feed:
 - 方法一：在电脑上点击开始 --> Anaconda3 (64-bit) --> Anaconda Navigator，如果出现Anaconda的界面，表示安装成功。
 - 方法二：在电脑上点击开始 --> Anaconda3 (64-bit) --> 右键点击Anaconda Prompt (以管理员身份运行)，在弹开的命令行中输入`conda --version`或者`conda list`，如果出现版本号或者已安装的包名，表示安装成功。
 
-
-
-
-
-conda中的python版本有很多，你可以通过conda create --name  python= 来创建不同版本的python环境，例如，如果你想创建一个python3.6的环境，你可以执行conda create --name Python36 python=3.6。你也可以通过conda info --envs 来查看系统当前已有的python环境
+conda中的python版本有很多，可以通过conda create --name  python= 来创建不同版本的python环境，例如，如果你想创建一个python3.6的环境，你可以执行conda create --name Python36 python=3.6。你也可以通过conda info --envs 来查看系统当前已有的python环境
 
 
 
 ## 创建新环境
 
 conda创建新环境的方法是使用 `conda create --name <env_name> python=<version>` 命令12，其中 `<env_name>` 是你想要的环境名，`<version>` 是你想要的python版本。例如，如果你想创建一个名为 `myenv`的环境，使用python3.8版本，你可以执行 `conda create --name myenv python=3.8`。创建完后，你可以在anaconda的目录下找到 `envs/myenv`目录
-
-
 
 
 
@@ -98,14 +92,37 @@ conda国内镜像源设置的方法是使用 `conda config --add channels <URLS>
 
 
 
+## 命令
 
+|       命令       |    参数    |              解释              |                    例子                     |
+| :--------------: | :--------: | :----------------------------: | :-----------------------------------------: |
+|   conda create   |   --name   |          指定环境名称          |          conda create --name myenv          |
+|   conda create   |  --clone   |      克隆一个已存在的环境      |  conda create --name newenv --clone oldenv  |
+|   conda create   |     -n     |        --name的缩写形式        |            conda create -n myenv            |
+|  conda activate  |  环境名称  |       激活指定名称的环境       |            conda activate myenv             |
+| conda deactivate |     无     |       停用当前活跃的环境       |              conda deactivate               |
+|  conda install   | 软件包名称 |        安装指定的软件包        |             conda install numpy             |
+|  conda install   | --channel  |        指定软件包的渠道        | conda install --channel conda-forge pandas  |
+|  conda install   |     -c     |      --channel的缩写形式       |     conda install -c conda-forge pandas     |
+|  conda install   |   --file   |     从文件中安装一组软件包     |    conda install --file requirements.txt    |
+|   conda update   | 软件包名称 |        更新指定的软件包        |             conda update numpy              |
+|   conda remove   | 软件包名称 |        移除指定的软件包        |             conda remove numpy              |
+|    conda list    |     无     | 显示当前环境中安装的所有软件包 |                 conda list                  |
+|   conda search   | 软件包名称 | 在conda仓库中搜索指定的软件包  |             conda search pandas             |
+|   conda search   |   --info   |      显示软件包的详细信息      |         conda search --info pandas          |
+|    conda info    |     无     |     显示当前环境的详细信息     |                 conda info                  |
+|   conda config   |   --set    |         设置配置项的值         | conda config --set auto_activate_base false |
+|   conda config   |   --show   |        显示当前配置的值        |             conda config --show             |
 
-
-
-
-
-cdo是一种用于操作和分析气候和数值天气预报模型数据的命令行工具1。你可以用conda下载cdo，方法是使用conda install -c conda-forge cdo 命令12。这样就可以在你的conda环境中安装cdo了。安装后，你可以运行cdo来使用它
-
-
-
-你的conda没有添加conda-forge作为默认搜索的频道，或者你的频道顺序不正确。你可以使用conda config --add channels conda-forge命令来添加conda-forge频道，或者使用conda config --show channels命令来查看和修改你的频道顺序2。 你的conda没有更新到最新版本，或者你的网络连接不稳定。你可以使用conda update conda命令来更新你的conda，或者检查你的网络设置2。 你想要安装的cdo版本和你的python版本不兼容。你可以使用conda search -c conda-forge cdo命令来查看可用的cdo版本，或者使用不同的标签来指定cdo版本。例如，如果你想要安装支持python3.8的cdo，可以输入conda install -c "conda-forge/label/cf202003" cdo
+|     命令      |    参数    |                  解释                  |              例子               |
+| :-----------: | :--------: | :------------------------------------: | :-----------------------------: |
+|  pip install  | 软件包名称 |         安装指定的Python软件包         |        pip install numpy        |
+|  pip install  | --upgrade  |            升级指定的软件包            |   pip install --upgrade numpy   |
+|  pip install  |     -U     |          --upgrade的缩写形式           |      pip install -U numpy       |
+|  pip install  |     -r     |         从要求文件中安装软件包         | pip install -r requirements.txt |
+| pip uninstall | 软件包名称 |            卸载指定的软件包            |       pip uninstall numpy       |
+|   pip list    |     无     |     列出当前环境中安装的所有软件包     |            pip list             |
+|  pip search   | 软件包名称 |        在PyPI中搜索指定的软件包        |        pip search pandas        |
+|  pip search   |   --user   |         仅为当前用户安装软件包         |    pip install --user pandas    |
+|   pip show    | 软件包名称 |        显示指定软件包的详细信息        |         pip show pandas         |
+|  pip freeze   |     无     | 以要求文件格式输出当前环境的软件包列表 |  pip freeze > requirements.txt  |

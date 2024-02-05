@@ -446,7 +446,3 @@ Redisson是一个高级的分布式协调Redis客服端，能帮助用户在分�
 可以在同一个服务器部署多个Redis的实例，并把他们当作不同的服务器来使用，在某些时候，无论如何一个服务器是不够的， 所以，如果你想使用多个CPU，你可以考虑一下分片（shard）。
 
 - 6.0版本中多线程
-
-------
-
-著作权归@pdai所有 原文链接：https://pdai.tech/md/db/nosql-redis/db-redis-z-mianshi.html

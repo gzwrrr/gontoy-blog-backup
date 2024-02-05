@@ -92,8 +92,8 @@ InnoDB 是通过 `Buffer Pool`、`LogBuffer`、`RedoLog`、`UndoLog` 来实现�
 
 1. [带你读懂Spring 事务——事务的传播机制](https://zhuanlan.zhihu.com/p/148504094)
 
-2. https://mp.weixin.qq.com/s/LbyGTAiCmFy4esNdCJREJQ
-3. https://mp.weixin.qq.com/s/mdqVNmPfFphagrrB7EMegA
+2. [公司新来一个同事，把 @Transactional 事务注解运用得炉火纯青。。](https://mp.weixin.qq.com/s/LbyGTAiCmFy4esNdCJREJQ)
+3. [对线面试官：列出 @Transactional 注解下，事务失效的七种场景](https://mp.weixin.qq.com/s/mdqVNmPfFphagrrB7EMegA)
 
 :::
 

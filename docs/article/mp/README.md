@@ -182,21 +182,21 @@ WebView是一种用于在移动应用中嵌入Web内容的组件或控件。它�
 
 :::info 官方推荐
 
-1. **uni-app 中可使用的 UI 框架：**https://ask.dcloud.net.cn/article/35489
+1. [uni-app 中可使用的 UI 框架](https://ask.dcloud.net.cn/article/35489)
 
-2. **uni-app 导航栏开发指南：** https://ask.dcloud.net.cn/article/34921
+2. [uni-app 导航栏开发指南](https://ask.dcloud.net.cn/article/34921)
 
-3. **uni-app 实现全局变量：** https://ask.dcloud.net.cn/article/35021
+3. [uni-app 实现全局变量](https://ask.dcloud.net.cn/article/35021)
 
-4. **uni-app 引用 npm 第三方库：** https://ask.dcloud.net.cn/article/19727
+4. [uni-app 引用 npm 第三方库](https://ask.dcloud.net.cn/article/19727)
 
-5. **uni-app 中使用微信小程序第三方 SDK 及资源汇总：**https://ask.dcloud.net.cn/article/35070
+5. [uni-app 中使用微信小程序第三方 SDK 及资源汇总](https://ask.dcloud.net.cn/article/35070)
 
-6. **原生控件层级过高无法覆盖的解决方案：**https://uniapp.dcloud.io/component/native-component
+6. [原生控件层级过高无法覆盖的解决方案](https://uniapp.dcloud.io/component/native-component)
 
-7. **国际化/多语言/i18n方案：**https://ask.dcloud.net.cn/article/35872
+7. [国际化/多语言/i18n方案](https://ask.dcloud.net.cn/article/35872)
 
-8. **本地存储详解：**https://ask.dcloud.net.cn/article/166
+8. [本地存储详解](https://ask.dcloud.net.cn/article/166)
 
 :::
 

@@ -8,7 +8,7 @@ notPage: true
 
 Mybatis 学习
 
-官网：https://mybatis.org/mybatis-3/zh/index.html
+[Mybatis官网](https://mybatis.org/mybatis-3/zh/index.html)
 
 :::
 

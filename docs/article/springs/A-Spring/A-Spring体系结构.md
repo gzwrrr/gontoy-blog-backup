@@ -52,13 +52,10 @@ feed:
 
 :::info 相关资源
 
-[Spring 官网](https://spring.io/)
-
-[Spring 教程1](https://www.w3schools.cn/spring/index.asp)
-
-[Spring 教程2](https://www.w3cschool.cn/wkspring/)
-
-[Spring框架总结【无比详细】](https://blog.csdn.net/itcats_cn/article/details/81479185)
+- [Spring 官网](https://spring.io/)
+- [Spring 教程1](https://www.w3schools.cn/spring/index.asp)
+- [Spring 教程2](https://www.w3cschool.cn/wkspring/)
+- [Spring框架总结【无比详细】](https://blog.csdn.net/itcats_cn/article/details/81479185)
 
 :::
 

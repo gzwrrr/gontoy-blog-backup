@@ -52,9 +52,9 @@ feed:
 
 :::info 相关文章
 
-[数据库的五种索引类型](https://blog.csdn.net/qq_41793064/article/details/108697472)
+- [数据库的五种索引类型](https://blog.csdn.net/qq_41793064/article/details/108697472)
 
-[详细介绍mysql索引类型：FULLTEXT、NORMAL、SPATIAL、UNIQUE](https://blog.csdn.net/guo_qiangqiang/article/details/88794971)
+- [详细介绍mysql索引类型：FULLTEXT、NORMAL、SPATIAL、UNIQUE](https://blog.csdn.net/guo_qiangqiang/article/details/88794971)
 
 :::
 

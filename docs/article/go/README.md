@@ -29,13 +29,19 @@ GoLang 的简单使用
 
 **优质社区/博主：**
 
-1. 资源汇总：https://github.com/YSGStudyHards/GoFamily
-2. 资源汇总（Go 夜读）：https://github.com/talkgo/read & https://space.bilibili.com/326749661/channel/seriesdetail?sid=1565985
-3. go 教程：https://github.com/hoanhan101/ultimate-go/tree/master
-4. 标准库：https://github.com/polaris1119/The-Golang-Standard-Library-by-Example & https://github.com/syaning/go-pkgs
-5. 设计模式：https://tigerb.cn/go/#/
-6. 数据库连接：http://go-database-sql.org/overview.html
-7. web 开发：https://github.com/astaxie/build-web-application-with-golang/tree/master
+1. [资源汇总](https://github.com/YSGStudyHards/GoFamily)
+2. [资源汇总（Go 夜读）01](https://github.com/talkgo/read) & [资源汇总（Go 夜读）02](https://space.bilibili.com/326749661/channel/seriesdetail?sid=1565985)
+3. [go 教程](https://github.com/hoanhan101/ultimate-go/tree/master)
+4. [标准库01](https://github.com/polaris1119/The-Golang-Standard-Library-by-Example) & [标准库02](https://github.com/syaning/go-pkgs)
+5. [设计模式](https://tigerb.cn/go/#/)
+6. [数据库连接](http://go-database-sql.org/overview.html)
+7. [web 开发](https://github.com/astaxie/build-web-application-with-golang/tree/master)
+
+
+
+### 知乎
+
+- [极客兔兔](https://zhuanlan.zhihu.com/p/265813329)
 
 
 
@@ -49,12 +55,12 @@ GoLang 的简单使用
 
 ## Web 框架
 
-1. Beego：https://github.com/beego/beego
-2. Gin（轻量）：https://gin-gonic.com/zh-cn/
-3. Echo（轻量）：https://echo.labstack.com/
-4. Iris（大型项目）：https://www.iris-go.com/docs/
-5. GoFrame：https://goframe.org/#all-updates
-6. GoZero：https://go-zero.dev/cn/
+1. [Beego](https://github.com/beego/beego)
+2. [Gin（轻量）](https://gin-gonic.com/zh-cn/)
+3. [Echo（轻量）](https://echo.labstack.com/)
+4. [Iris（大型项目）](https://www.iris-go.com/docs/)
+5. [GoFrame](https://goframe.org/#all-updates)
+6. [GoZero](https://go-zero.dev/cn/)
 
 
 

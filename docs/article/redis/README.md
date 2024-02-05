@@ -72,12 +72,6 @@ Redis 相关的内容大部分内容来自狂神的 B 站视频
 
 ## 配置文件
 
-:::info 相关文章
-
-1. https://detail.youzan.com/show/goods/newest?kdt_id=104340304
-
-:::
-
 ### redis.conf
 
 模块划分：
@@ -149,12 +143,6 @@ Redis 相关的内容大部分内容来自狂神的 B 站视频
 |      | `sentinel deny-scripts-reconfig yes`              | 运行期间不能修改用于故障转移的脚本                           |
 
 注意：可以通过 `sentinel set` 命令来动态修改配置信息
-
-
-
-
-
-
 
 
 

@@ -22,11 +22,10 @@ notPage: true
 
 ## 优质资源
 
-1. https://www.iteblog.com/
-2. http://lxw1234.com/
-3. https://www.aboutyun.com/forum-117-1.html
-4. https://tech.meituan.com/archives
-5. https://www.cnblogs.com/shishanyuan
+1. [iteblog 论坛][https://www.iteblog.com/] / [iteblog 论坛2](http://lxw1234.com/)
+2. [大数据学习](https://www.aboutyun.com/forum-117-1.html)
+3. [美团技术团队](https://tech.meituan.com/archives)
+4. [郭景瞻个人博客](https://www.cnblogs.com/shishanyuan)
 
 
 

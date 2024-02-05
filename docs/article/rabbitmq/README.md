@@ -246,35 +246,6 @@ RabbitMQ是一个开源的消息中间件，用于在应用程序之间传递消
 
 
 
-### 核心对象和方法
-
-| 对象       | 方法               | 描述                                                         |
-| ---------- | ------------------ | ------------------------------------------------------------ |
-| Connection | open()             | 打开与 RabbitMQ 服务器的 TCP 连接。连接成功后，可以创建一个或多个通道。 |
-| Connection | close()            | 关闭连接。                                                   |
-| Connection | channel()          | 创建一个新的通道，用于执行 AMQP 操作。                       |
-| Channel    | queue_declare()    | 声明一个队列。如果队列不存在，则会创建一个新队列。如果队列已存在，则检查队列的参数是否与声明的参数匹配。 |
-| Channel    | queue_bind()       | 将队列绑定到一个交换器。消息通过交换器路由到队列。           |
-| Channel    | basic_publish()    | 将消息发布到一个交换器。消息必须包含一个路由键，用于将消息路由到正确的队列。 |
-| Channel    | basic_consume()    | 注册一个消费者，开始消费消息。消费者会从指定的队列接收消息，直到取消注册或通道关闭。 |
-| Channel    | basic_ack()        | 确认消息已被消费。消费者在成功处理消息后，应该发送 ACK 给 RabbitMQ。 |
-| Channel    | close()            | 关闭通道。                                                   |
-| Exchange   | exchange_declare() | 声明一个交换器。交换器接收生产者发布的消息，并将其路由到绑定的队列。 |
-| Exchange   | exchange_bind()    | 将一个交换器绑定到另一个交换器。可以使用此方法将一个交换器路由到另一个交换器。 |
-| Exchange   | exchange_unbind()  | 解绑一个交换器。                                             |
-| Exchange   | exchange_delete()  | 删除一个交换器。                                             |
-| Queue      | queue_declare()    | 声明一个队列。如果队列不存在，则会创建一个新队列。如果队列   |
-| Queue      | queue_bind()       | 将队列绑定到一个交换器。消息通过交换器路由到队列。           |
-| Queue      | queue_unbind()     | 解绑一个队列。                                               |
-| Queue      | queue_delete()     | 删除一个队列。                                               |
-| Queue      | basic_get()        | 从队列中获取消息。如果队列为空，则返回 None。                |
-| Queue      | basic_consume()    | 注册一个消费者开始消费消息。                                 |
-| Message    | /                  | 消息对象是由生产者发布到交换器的数据单元，包含消息头和消息体。消息头包含元数据，如路由键、消息 ID、时间戳等。消息体包含实际的数据。 |
-
-<br/>
-
-
-
 ### 其他
 
 > 插件机制等… TODO

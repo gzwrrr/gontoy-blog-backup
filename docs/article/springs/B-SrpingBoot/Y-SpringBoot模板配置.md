@@ -1246,24 +1246,27 @@ spring:
 ```
 
 ```java
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.data.redis.connection.RedisConnectionFactory;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
-import org.springframework.data.redis.serializer.StringRedisSerializer;
-
 @Configuration
 public class RedisConfig {
-
     @Bean
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory factory) {
         RedisTemplate<String, Object> template = new RedisTemplate<>();
         template.setConnectionFactory(factory);
+
+        /**
+         * 在Spring Boot中，可以使用不同的序列化器将Java对象序列化为Redis存储的键、值和哈希值。以下是常见的序列化器：
+         * StringRedisSerializer：将Java对象序列化为字符串。
+         * JdkSerializableStringRedisSerializer：将Java对象序列化为JDK序列化字符串。
+         * GenericJackson2JsonRedisSerializer：使用Jackson库将Java对象序列化为JSON字符串。
+         * StringListSerializer：将Java对象序列化为字符串列表。
+         * JdkSerializableStringListSerializer：将Java对象序列化为JDK序列化字符串列表。
+         */
         template.setKeySerializer(new StringRedisSerializer());
         template.setHashKeySerializer(new StringRedisSerializer());
         template.setValueSerializer(new GenericJackson2JsonRedisSerializer());
         template.setHashValueSerializer(new GenericJackson2JsonRedisSerializer());
+
+        // 该方法在所有属性设置完成后调用，用于初始化RedisTemplate对象。
         template.afterPropertiesSet();
         return template;
     }
@@ -1510,7 +1513,7 @@ void indexData() throws IOException {
 
 ### 热重启
 
-> https://www.cnblogs.com/pkukhq/p/17202760.html
+> [最新版 IDEA 2022.3.2 中配置热加载工具 DevTools](https://www.cnblogs.com/pkukhq/p/17202760.html)
 
 ```xml
 <!-- 热部署 -->
@@ -1541,8 +1544,6 @@ server:
 
 
 ### thymeleaf
-
-> https://www.cnblogs.com/pkukhq/p/17202760.html
 
 ```xml
 <!-- thymeleaf 场景启动 -->
@@ -1584,6 +1585,12 @@ spring:
 
 
 ### Swagger
+
+:::info 相关文章
+
+[Swagger官方文档](https://doc.xiaominfo.com/docs/quick-start)
+
+:::
 
 ```xml
 <!--swagger-->
@@ -1638,6 +1645,13 @@ public Docket webApiConfig(){
     <artifactId>knife4j-spring-boot-starter</artifactId>
     <version>3.0.3</version>
 </dependency>
+
+<!-- 或者 -->
+<dependency>
+    <groupId>com.github.xiaoymin</groupId>
+    <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
+    <version>4.3.0</version>
+</dependency>
 ```
 
 ```yaml
@@ -1645,24 +1659,39 @@ server:
   port: 8080
 knife4j:
   enable: true
-  documents:
-    - group: Test Group
-      name: My Documents
-      locations: classpath:wiki/*
-  setting:
-    # default lang
-    language: en-US
-    # footer
-    enableFooter: false
-    enableFooterCustom: true
-    footerCustomContent: MIT
-    # header
-    enableHomeCustom: true
-    homeCustomLocation: classpath:wiki/README.md
-    # models
-    enableSwaggerModels: true
-    swaggerModelName: My Models
+  openapi:
+    title: Knife4j官方文档
+    description: "我是测试"
+    email: xxx@xxx.xxx
+    concat: xxx
+    url: https://docs.xiaominfo.com
+    version: v4.0
+    license: Apache 2.0
+    license-url: https://stackoverflow.com/
+    terms-of-service-url: https://stackoverflow.com/
+    group:
+      test1:
+        group-name: default
+        api-rule: package
+        api-rule-resources:
+          - com.knife4j.demo.new3
 ```
+
+Swagger、Springdoc、和Knife4j 都是与 API 文档生成和展示有关的工具，尤其在基于 Spring Boot 的项目中使用较为常见。
+
+1. **Swagger:**
+   - Swagger 是一组开源工具，用于设计、构建、文档化和使用 RESTful Web 服务。它包括一个规范和一系列工具，可以生成交互式的 API 文档。Swagger 的规范定义了 API 的结构，然后使用 Swagger 工具集来生成文档、服务器存根和客户端库。
+2. **Springdoc:**
+   - Springdoc 是一个为 Spring Boot 应用生成 OpenAPI 文档的库。它是通过解析 Spring MVC 控制器上的注解来生成 API 文档。Springdoc 将 API 文档与代码直接绑定，遵循 OpenAPI 规范。
+3. **Knife4j:**
+   - Knife4j 是一款基于 Swagger 实现的、为 Java 开发者提供的一套简化 RESTful API 文档生成和调试的工具。它提供了一些额外的功能，如前端页面的优化和可视化操作。Knife4j 的目标是通过简化 API 文档生成和展示的方式，使开发者更加方便地理解和测试 API。
+
+联系：
+
+- **Swagger 和 Springdoc：** Springdoc 本质上是建立在 Swagger 规范之上的，它通过解析 Spring MVC 注解来生成 Swagger 风格的 API 文档。因此，Springdoc 是 Swagger 在 Spring Boot 中的一个衍生工具，简化了集成和使用。
+- **Swagger 和 Knife4j：** Knife4j 是在 Swagger 基础上进行的一些增强和优化，提供了更好的界面和一些额外的功能。它兼容 Swagger 规范，可以看作是 Swagger 的增强版本。
+
+
 
 
 

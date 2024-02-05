@@ -112,7 +112,7 @@ Redis是单线程模型的内存数据库，其性能非常高。但是，由于
 
 ## 3.其他
 
-> 可以结合 [这篇文章](https://www.pdai.tech/md/db/nosql-redis/db-redis-x-performance.html) 调优
+> 可以结合 [Redis进阶 - 性能调优：Redis性能调优详解](https://www.pdai.tech/md/db/nosql-redis/db-redis-x-performance.html) 调优
 
 1. 合理选择数据结构：Redis提供了多种数据结构，比如字符串、列表、哈希、集合、有序集合等，针对不同的场景选择合适的数据结构可以提高Redis的性能。
 2. 避免不必要的序列化和反序列化：在使用Redis时，应尽量避免将不必要的数据序列化到Redis中，以减少序列化和反序列化的开销。

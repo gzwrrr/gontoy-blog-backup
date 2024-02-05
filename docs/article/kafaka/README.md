@@ -9,11 +9,11 @@ notPage: true
 
 :::info 相关资源
 
-[Kafaka 官网](https://kafka.apache.org/documentation/)
+- [Kafaka 官网](https://kafka.apache.org/documentation/)
 
-[kafka一小时入门精讲课程（高清重制无废话版）](https://www.bilibili.com/video/BV1h94y1Q7Xg?p=7&spm_id_from=pageDriver&vd_source=e356fec025b50061af78324a814f8da0)
+- [kafka一小时入门精讲课程（高清重制无废话版）](https://www.bilibili.com/video/BV1h94y1Q7Xg?p=7&spm_id_from=pageDriver&vd_source=e356fec025b50061af78324a814f8da0)
 
-[Kafka3.x教程（从入门到调优，深入全面）](https://www.bilibili.com/video/BV1vr4y1677k?p=11&vd_source=e356fec025b50061af78324a814f8da0)
+- [Kafka3.x教程（从入门到调优，深入全面）](https://www.bilibili.com/video/BV1vr4y1677k?p=11&vd_source=e356fec025b50061af78324a814f8da0)
 
 :::
 

@@ -8,11 +8,19 @@ notPage: true
 
 # Spring Security
 
-> 相关文章：<https://blog.csdn.net/qq_44709990/article/details/123082560>
+> 相关文章：
 >
-> 相关视频：<https://www.bilibili.com/video/BV1mm4y1X7Hc/?p=17&spm_id_from=pageDriver&vd_source=e356fec025b50061af78324a814f8da0>
+> - [【全网最细致】SpringBoot整合Spring Security + JWT实现用户认证](https://blog.csdn.net/qq_44709990/article/details/123082560)
+>
+> - [芋道 Spring Boot 安全框架 Spring Security 入门](https://www.iocoder.cn/Spring-Boot/Spring-Security/)
+>
+> 相关视频：[SpringSecurity框架教程-Spring Security+JWT实现项目级前端分离认证授权](https://www.bilibili.com/video/BV1mm4y1X7Hc/?p=17&spm_id_from=pageDriver&vd_source=e356fec025b50061af78324a814f8da0)
 
-![image-20230617124448361](../../../../../../../../../../Users/gzw/AppData/Roaming/Typora/typora-user-images/image-20230617124448361.png)
+![认证授权流程](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//springsecurity/20231112/%E8%AE%A4%E8%AF%81%E6%8E%88%E6%9D%83%E6%B5%81%E7%A8%8B.png)
+
+
+
+![image-20230617124448361](https://my-photos-1.oss-cn-hangzhou.aliyuncs.com/markdown//springsecurity/20231112/jwt.png)
 
 ```xml
 <!-- Spring Security -->

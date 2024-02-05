@@ -11,6 +11,28 @@ import { onMounted, ref } from 'vue'
 
 let tip = ref('Focus');
 
+// 写一个快排
+function quickSort(arr, left, right) {
+    if (left < right) {
+        let i = left;
+        let j = right;
+        let pivot = arr[i];
+        while (i < j) {
+            while (i < j && pivot <= arr[j]) {
+                j--;
+            }
+            arr[i] = arr[j];
+            while (i < j && pivot >= arr[i]) {
+                i++;
+            }
+            arr[j] = arr[i];
+        }
+        arr[i] = pivot;
+        quickSort(arr, left, i - 1);
+        quickSort(arr, i + 1, right);
+    }
+}
+
 var last_element = null;
 
 var last_rect = null;

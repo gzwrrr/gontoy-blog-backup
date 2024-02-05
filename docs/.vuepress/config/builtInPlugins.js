@@ -31,9 +31,13 @@ export const builtInPlugins = {
                         content,
                     };
             },
-        },],
+        }],
+        include: {
+            deep: true
+        },
         presentation: ["highlight", "math", "search", "notes", "zoom"],
         align: true,
+        katex: true,
         attrs: true,
         card: true,
         chart: true,
@@ -47,7 +51,6 @@ export const builtInPlugins = {
         imgLazyload: true,
         imgMark: true,
         imgSize: true,
-        include: true,
         mark: true,
         mermaid: true,
         playground: {

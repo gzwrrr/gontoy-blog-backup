@@ -60,11 +60,11 @@ feed:
 
 :::info 相关文章
 
-[SpringBoot使用AOP，PointCut表达式详解以及使用](https://blog.csdn.net/LuQiaoYa/article/details/88233846)
+- [SpringBoot使用AOP，PointCut表达式详解以及使用](https://blog.csdn.net/LuQiaoYa/article/details/88233846)
 
-[SpringBoot整合AOP超详细教程](https://blog.csdn.net/XiongHuyi/article/details/118417301)
+- [SpringBoot整合AOP超详细教程](https://blog.csdn.net/XiongHuyi/article/details/118417301)
 
-[Spring Validation最佳实践及其实现原理，参数校验没那么简单！](https://www.cnblogs.com/chentianming/p/13424303.html)
+- [Spring Validation最佳实践及其实现原理，参数校验没那么简单！](https://www.cnblogs.com/chentianming/p/13424303.html)
 
 :::
 
@@ -162,8 +162,9 @@ Spring AOP 的底层默认实现是基于动态代理。Spring 使用动态代�
 
 :::info 相关文章
 
-1. [彻底征服 Spring AOP 之 理论篇](https://segmentfault.com/a/1190000007469968)
-2. [彻底征服 Spring AOP 之 实战篇](https://segmentfault.com/a/1190000007469982)
+- [彻底征服 Spring AOP 之 理论篇](https://segmentfault.com/a/1190000007469968)
+
+- [彻底征服 Spring AOP 之 实战篇](https://segmentfault.com/a/1190000007469982)
 
 :::
 
@@ -409,19 +410,48 @@ public class SomeService {
 
 
 
+## Advisor
 
+在Spring AOP中，`AbstractPointcutAdvisor`是一个抽象基类，用于实现通用的切面（Aspect）功能。它实现了`PointcutAdvisor`接口，该接口是Advisor的子接口。Advisor是Spring AOP中的一个概念，表示一个切面，它包含了一个切入点（Pointcut）和一个通知（Advice）。
 
+`AbstractPointcutAdvisor`的主要目的是简化切面的创建过程，提供一些通用的功能。它包含以下主要属性和方法：
 
+1. **pointcut（切入点）：** 通过`getPointcut()`方法获取切入点对象。切入点定义了在何处应该应用通知。
+2. **advice（通知）：** 通过`getAdvice()`方法获取通知对象。通知是在切入点处执行的具体逻辑，例如在方法执行前后执行的代码。
+3. **order（顺序）：** 可以通过`setOrder(int order)`方法设置切面的执行顺序。执行顺序用于确定多个切面的执行顺序。
+4. **advice bean名称：** 通过`setAdviceBeanName(String adviceBeanName)`方法设置通知bean的名称。
 
+`AbstractPointcutAdvisor`的子类可以通过继承并实现相应的方法，或者直接实例化并设置切入点和通知，来创建特定的切面。它提供了一些基本的功能，同时也允许用户在子类中添加特定的定制逻辑。在Spring AOP中，切面是通过Advisor配置的，而`AbstractPointcutAdvisor`是其中的一个实现辅助类。
 
+<br/>
 
+在Spring AOP中，Advisor是通过`AdvisorAutoProxyCreator`这个后置处理器（BeanPostProcessor）来自动创建的。
 
+Spring会自动检测`AbstractPointcutAdvisor`的实现，并且会在适当的时机（通常在应用上下文初始化完成后）通过`AdvisorAutoProxyCreator`来自动创建相应的代理。
 
+在代理创建的过程中，`AdvisorAutoProxyCreator`会扫描容器中的`Advisor`，然后，它会检查实现类中的`Pointcut`和`Advice`，将它们应用到符合`Pointcut`定义的切入点的bean上，生成代理对象。
 
+<br/>
 
+使用`@Aspect`注解和使用`Advisor`的方式都是Spring AOP提供的切面创建方式，它们有一些区别，而选择使用哪一种方式通常取决于个人或团队的偏好以及项目需求。
 
+使用`@Aspect`注解创建切面：
 
+1. **声明式：** 使用`@Aspect`注解是一种声明式的方式，可以将切面逻辑与业务逻辑分离，增强了代码的可读性和可维护性。
+2. **更灵活的切入点表达式：** `@Aspect`注解允许使用更灵活的切入点表达式，支持AspectJ表达式语言，可以更精确地定义切入点。
+3. **自动代理创建：** Spring会自动检测使用`@Aspect`注解的类，并在运行时自动创建代理对象。
 
+使用`Advisor`的方式：
+
+1. **编程式：** 使用`Advisor`是一种编程式的方式，需要通过Java代码显式地创建`Advisor`对象，定义`Advice`和`Pointcut`。
+2. **更多控制：** 使用`Advisor`的方式提供了更多的控制权，可以在代码中直接定义`Advice`和`Pointcut`的实现，更容易进行动态的配置。
+3. **适用于复杂场景：** 对于一些复杂的场景，可能需要更灵活的配置和动态的切面逻辑，使用`Advisor`的方式更为适用。
+
+选择的依据：
+
+- **简单场景：** 如果项目中的切面逻辑比较简单，而且使用AspectJ表达式能够满足需求，那么使用`@Aspect`注解通常更为方便。
+- **复杂场景：** 如果有复杂的业务需求，需要更灵活的控制，或者需要在运行时动态地添加或修改切面，那么使用`Advisor`的方式可能更合适。
+- **个人偏好：** 有些开发者更喜欢声明式的方式，而有些开发者可能更倾向于编程式的方式。选择哪种方式通常也取决于开发者个人的偏好和习惯。
 
 
 

@@ -109,7 +109,7 @@ Spring事务可以在多个层级的方法中嵌套使用，但是在某些情�
 
 :::info 相关文章
 
-1. [可能是最漂亮的 Spring 事务管理详解](https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&mid=2247484702&idx=1&sn=c04261d63929db09ff6df7cadc7cca21&chksm=fa497aafcd3ef3b94082da7bca841b5b7b528eb2a52dbc4eb647b97be63a9a1cf38a9e71bf90&token=165108535&lang=zh_CN#rd)
+- [可能是最漂亮的 Spring 事务管理详解](https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&mid=2247484702&idx=1&sn=c04261d63929db09ff6df7cadc7cca21&chksm=fa497aafcd3ef3b94082da7bca841b5b7b528eb2a52dbc4eb647b97be63a9a1cf38a9e71bf90&token=165108535&lang=zh_CN#rd)
 
 :::
 
@@ -238,7 +238,7 @@ public interface TransactionStatus ... {
 
 :::info 相关文章
 
-1. [可能是最漂亮的Spring事务管理详解](https://juejin.cn/post/6844903608224333838)
+- [可能是最漂亮的Spring事务管理详解](https://juejin.cn/post/6844903608224333838)
 
 :::
 

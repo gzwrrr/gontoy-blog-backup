@@ -4,6 +4,7 @@
 // import {
 //     mdEnhancePlugin
 // } from "vuepress-plugin-md-enhance";
+import { prismjsPlugin } from '@vuepress/plugin-prismjs'
 import {
     searchProPlugin
 } from "vuepress-plugin-search-pro";
@@ -36,6 +37,10 @@ const __dirname = getDirname(
     import.meta.url)
 
 export default [
+    prismjsPlugin({
+        // 配置项
+        dark: 'z-touch'
+    }),
     tocPlugin({
         // 配置项
         componentName: 'Toc',
@@ -50,7 +55,6 @@ export default [
             linkChildrenActiveClass: 'active',
         }
     }),
-
     containerPlugin({
         type: 'hide',
         locales: {

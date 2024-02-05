@@ -1,0 +1,316 @@
+[
+    {
+        "typeName": "算法",
+        "list": [
+            {
+                "title": "changgyhub/leetcode_101: LeetCode 101：和你一起你轻松刷题",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdklEQVQ4jY3TvWpUURQF4HUmk2QUCWJhoVUQBLHwByWx0aewsBV8mChBLRIQtNBaFBFsbIIvYCdEUJNCsRSMI5KJn4X74mUw4obD3eesvfb/TZKgpQSX8ADvMcb30u9jKfsJZrFahE5+1ulkjBUM+sQB5vHc/8vjCjjonNwp4CWuYQM72MKH0l8V9qJsVzryMn5ggrV6G+I4RnWOYa6w22X7DeeGSW4kmauKJphJstda+9hr0Se0wiZJZpIcTHI9eFuNGuNkry/9ybTujkV8Lc7rVH2wjdl9x/TH2Qw2y8GXQZKWRJJDSQ70I/+F3JKMkiwUbzhIsl34kSRLrTXVxOkShq01SZaTHK2gW8G9Smenyjj1jwxO4w32quz14Hxd7uJJ6U9xZor4sNev3Rr92c5gvYALuFULtdhzcKK3heP6rnZgt8obeIeruDiV+gife06eFWcwbfSoZ3S4hy1Un3axprZyejydfhk3Meq9zfv9F16Z5vwCz01H2UDrUX0AAAAASUVORK5CYII=",
+                "desc": "changgyhub/leetcode_101: LeetCode 101：和你一起你轻松刷题",
+                "url": "https://github.com/changgyhub/leetcode_101"
+            },
+            {
+                "title": "字符串转换整数 (atoi)",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACw0lEQVQ4jX3SW0iTYRgH8P+7fd+7z83MY552MMvmp3VRDgySQMoOZmXW6tabuqmboOgiAjHoQowihIgiQwhtxuzk6KBZxsTDEEJMwpthFNHpc9PNbX77ni5qEjl9rp/f+/zf530ZVi4dAG1ieDjXo6rh2tYr+w2SqSmkqmOcKafLu9/MA4CwGn7Z2VlQ7Wy4eW291aXPK7y7oKpiJueyEk0bA9BGTqdetxL2er3rTl44//LHpy/VWiB7mpgWTBEEtqhpiAOzAIDubkqG0dfXl2uxmEcZQOcO50foxdadz42n8qedDf3jDYeaV7szent78yyWgjFJFOhMnVVRe6rmw10OCrkdF5UPbbaVMEtgs7lw1MBF2lJe6qbJG2U0fW/D7KOD92mgiubcNROBty0lAEB/zRJub2/Ps5jNYwYDJ1mWH3wlMiUaGttJCnqO3qKh3aQ8PX7Z5XLpyXdKXDqAiMTSTSXPOBdJluUuIjImi0nDjTXkykldFr25+VJFa+t1X0ZG+ojfP7OXMRaYmprKUhSlPhqNSgIjimtAjKUGRUQkQRc3cYlPVFbueC0AgN//2QpAS0tLHwCwAIBFIpF92ZkZd+aCQej0ejAGcEGHWCwFBknCz1/KjM/n2ygAQFFRoZ8ButnZX3sAtABQYrHY81gk1BiNqvxP/jiFWE5AorBRmA+ZTEbj5DaHYzGxA0GW7T2ci2S3lzwmojVJd/DuSB29Kl6b9Ak9Hk+OzWYd4lykUnvJEyJKSzS4higl2FvfQUO76efjY5ddRPpJl5MvmzA4OJhTZLN6uShS2aaNnrn3NzdHJ27LgUe1XeSppPmHu8YXvG22v0PZ/54BgM/ny95QbOuvc2TR944KLdhVqdKz7RR014yEP/YXAkk+0T+lA6B9I0qNu0+czUqNHlhUSQ99yovF7S1X09NtCjVBx5qgJcBve4Y7oNaMCnkAAAAASUVORK5CYII=",
+                "desc": "字符串转换整数 (atoi)",
+                "url": "https://leetcode-cn.com/problems/string-to-integer-atoi/solution/zi-fu-chuan-zhuan-huan-zheng-shu-atoi-by-leetcode-/"
+            },
+            {
+                "title": "贪心算法_刘先生生的博客-CSDN博客_贪心算法",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAB/klEQVQ4jU2SPWtUYRCFz5n3bvbubhISoyJiJxEsEkglghZJZUTUJkhAUoja2WihgohFQPAXaGVhk8rGRkQrURDEFOL3B2idkDXJ7t3Nve8ci7ubZOozZ2aeMyzmptAvSSBpBgkxgkQIkOQOkgCAZLeaJEi1NkBDWgeEzXUkFVZTuIPcaSjVkqPb5bEZTp/H4aPMc//0Hs+X9Psb0hrlILm9kuRw5+XbNjsPuX//yNEx239Inbbfu6IvH5jWISU9fzNlmV26FWbn/d0rf7SI5oosaPosF25gZC9iLH1ZzE0JRLeN8YnwYEl/fsSb8+xkTOvyiK0O9h3ERhMSAZAGgKTy3E6eppmePcHmOhtDgmjG2iDXVtjnAcAAyCNrDYxPSNLXZVZTxYIlZTmSBKSkciUrb0BSwfAe5DnW11DmUE7u6bhN3/opRHTbSALSGgSaARDAEOCuYmu72QAwJGq39OszLXDqhP6tKjrc6VEbTdUaHDugIufODRAt6OVTxcIWrtuZi6imCokGUkwet7sPbfExBqpy72Etc0C7xVMX7OodVCroZGquojHIoRECvvzG71+DnLRdSQPIWhiftJlzODLJ4VF1Mvz9qeXXevsCRcEQ+hN2Ps/UaaPIUWswJJKjm6EoWB8syZLsPV8PgiLTGlhHjIoFSaR10OQRpSPwH79sFlWOAVADAAAAAElFTkSuQmCC",
+                "desc": "贪心算法_刘先生生的博客-CSDN博客_贪心算法",
+                "url": "https://blog.csdn.net/weixin_45837693/article/details/107806255?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161572675116780266223256%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161572675116780266223256&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-1-107806255.first_rank_v2_pc_rank_v29&utm_term=%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95"
+            },
+            {
+                "title": "约瑟夫环_.-CSDN博客_约瑟夫环",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAB/klEQVQ4jU2SPWtUYRCFz5n3bvbubhISoyJiJxEsEkglghZJZUTUJkhAUoja2WihgohFQPAXaGVhk8rGRkQrURDEFOL3B2idkDXJ7t3Nve8ci7ubZOozZ2aeMyzmptAvSSBpBgkxgkQIkOQOkgCAZLeaJEi1NkBDWgeEzXUkFVZTuIPcaSjVkqPb5bEZTp/H4aPMc//0Hs+X9Psb0hrlILm9kuRw5+XbNjsPuX//yNEx239Inbbfu6IvH5jWISU9fzNlmV26FWbn/d0rf7SI5oosaPosF25gZC9iLH1ZzE0JRLeN8YnwYEl/fsSb8+xkTOvyiK0O9h3ERhMSAZAGgKTy3E6eppmePcHmOhtDgmjG2iDXVtjnAcAAyCNrDYxPSNLXZVZTxYIlZTmSBKSkciUrb0BSwfAe5DnW11DmUE7u6bhN3/opRHTbSALSGgSaARDAEOCuYmu72QAwJGq39OszLXDqhP6tKjrc6VEbTdUaHDugIufODRAt6OVTxcIWrtuZi6imCokGUkwet7sPbfExBqpy72Etc0C7xVMX7OodVCroZGquojHIoRECvvzG71+DnLRdSQPIWhiftJlzODLJ4VF1Mvz9qeXXevsCRcEQ+hN2Ps/UaaPIUWswJJKjm6EoWB8syZLsPV8PgiLTGlhHjIoFSaR10OQRpSPwH79sFlWOAVADAAAAAElFTkSuQmCC",
+                "desc": "约瑟夫环_.-CSDN博客_约瑟夫环",
+                "url": "https://blog.csdn.net/qie_wei/article/details/87915174?ops_request_misc=%25257B%252522request%25255Fid%252522%25253A%252522160879512116780296854352%252522%25252C%252522scm%252522%25253A%25252220140713.130102334..%252522%25257D&request_id=160879512116780296854352&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-4-87915174.first_rank_v2_pc_rank_v29&utm_term=%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF"
+            },
+            {
+                "title": "Genetic Algorithm",
+                "icon": "",
+                "desc": "Genetic Algorithm",
+                "url": "https://rossning92.github.io/genetic-algorithm/"
+            },
+            {
+                "title": "一文图解弄懂八大常用算法思想！",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcklEQVQ4jT3TTahVdRQF8N8+59yr5numZlmgQVQUUaOkkUKDoonRQIIgCMLyQYOa5CxMigZBDjIsIiyKjIqmFk0alDxq0CTpSUEiWYZUfqX3Xt85578bnFeDDXuyF2utvVbYn2PFS8aeFtbXI/oKFWqhQb0ylTQSav8Ib/vZC42pV8x5XidV9DNcI2MkhMxOBJCIaGVJ8+btdbsS9uZljTUqqVbvukd+cZLJFGNpLMT/jGikBqtQudzora1CKRPVw9vkwYfY+TFlAxrxyyW2rmf1eJDQhzhzlb+uSo35RqcgdPLRu0RTc/Qxevx6niMn2L+ds1OudOLODeL14/LFYzTrqKITZcrNm8WOW9j1AUtnefUbHjzEyXP8ORXbj7DjXb48JTeOhVZET5UdCssz7jvAsUVKEWcuMPmDi5PBwOmM9gpXe5kpdWQnGzkATGbs3sEN93PbJrmwTdy7SV7AtGWULKesioiCjuhFE5XMZbFlHXdfT92wcQ2/XVDmGtEWSiF6tEKuPLRFJ6tMjFg6ze435MKHXJzx/nfiucPy6BJrR3TLw0FfBsY6sheVHFBHYzTsfYDzE3loF089IrqW1Q2lZUSsbVYYdERHI2SEaK9w041i306eeE+c+pvPFsSTH8lrV/H9s6Ivcut6XlscjM2WJggtW67j02f4/DiffEu28uBXnPidO17m8OPywNf8cIZZhTFdq4rYkxezmNu8gVs3icWfpEpEkP2wq1doVysRbhRjhFmVvbesVp09JxZ/lOoh+2nwRAymRUU16E9FpVbrvNm4ZJ9KrbGnasyV8l/vkEMjFZFl0KwWKudNvOO0ff8CDNsVBiQlEB0AAAAASUVORK5CYII=",
+                "desc": "一文图解弄懂八大常用算法思想！",
+                "url": "https://zhuanlan.zhihu.com/p/161989297"
+            },
+            {
+                "title": "KMP 算法详解",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcklEQVQ4jT3TTahVdRQF8N8+59yr5numZlmgQVQUUaOkkUKDoonRQIIgCMLyQYOa5CxMigZBDjIsIiyKjIqmFk0alDxq0CTpSUEiWYZUfqX3Xt85578bnFeDDXuyF2utvVbYn2PFS8aeFtbXI/oKFWqhQb0ylTQSav8Ib/vZC42pV8x5XidV9DNcI2MkhMxOBJCIaGVJ8+btdbsS9uZljTUqqVbvukd+cZLJFGNpLMT/jGikBqtQudzora1CKRPVw9vkwYfY+TFlAxrxyyW2rmf1eJDQhzhzlb+uSo35RqcgdPLRu0RTc/Qxevx6niMn2L+ds1OudOLODeL14/LFYzTrqKITZcrNm8WOW9j1AUtnefUbHjzEyXP8ORXbj7DjXb48JTeOhVZET5UdCssz7jvAsUVKEWcuMPmDi5PBwOmM9gpXe5kpdWQnGzkATGbs3sEN93PbJrmwTdy7SV7AtGWULKesioiCjuhFE5XMZbFlHXdfT92wcQ2/XVDmGtEWSiF6tEKuPLRFJ6tMjFg6ze435MKHXJzx/nfiucPy6BJrR3TLw0FfBsY6sheVHFBHYzTsfYDzE3loF089IrqW1Q2lZUSsbVYYdERHI2SEaK9w041i306eeE+c+pvPFsSTH8lrV/H9s6Ivcut6XlscjM2WJggtW67j02f4/DiffEu28uBXnPidO17m8OPywNf8cIZZhTFdq4rYkxezmNu8gVs3icWfpEpEkP2wq1doVysRbhRjhFmVvbesVp09JxZ/lOoh+2nwRAymRUU16E9FpVbrvNm4ZJ9KrbGnasyV8l/vkEMjFZFl0KwWKudNvOO0ff8CDNsVBiQlEB0AAAAASUVORK5CYII=",
+                "desc": "KMP 算法详解",
+                "url": "https://zhuanlan.zhihu.com/p/83334559"
+            },
+            {
+                "title": "labuldong 的刷题笔记目录",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "labuldong 的刷题笔记目录",
+                "url": "https://mp.weixin.qq.com/s/oLKyXi79TVhhk7RPgGMKfA"
+            },
+            {
+                "title": "labuladong 的算法秘籍目录",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "labuladong 的算法秘籍目录",
+                "url": "https://mp.weixin.qq.com/s/00yRZUaU5c5KV-yTWhoDig"
+            },
+            {
+                "title": "列表形式目录",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "列表形式目录",
+                "url": "https://mp.weixin.qq.com/s/Rjzw-cacx448YMi0UH5Q4Q"
+            },
+            {
+                "title": "图文详解二叉堆，实现优先级队列",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "图文详解二叉堆，实现优先级队列",
+                "url": "https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484495&idx=1&sn=bbfeba9bb5cfd50598e2a4d08c839ee9&scene=21#wechat_redirect"
+            },
+            {
+                "title": "我写了一个模板，把 Dijkstra 算法变成了默写题",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "我写了一个模板，把 Dijkstra 算法变成了默写题",
+                "url": "https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247492167&idx=1&sn=bc96c8f97252afdb3973c7d760edb9c0&scene=21#wechat_redirect"
+            },
+            {
+                "title": "876. 链表的中间结点",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACRUlEQVQ4jY1TzWsTcRB9+5H96u7m17SmraZxI4GlFaVSKj0KelCIxwYPFRQxN0H/BPWieLGXIoskqS1Vk4oILSpVKihIRIt4EDxJKT20UPqRppu22R0PKqYhqZ3T/GbeezO84Qf8JxizWJOuz+imOVxV5v4m4l7kHstixc2ll4Lk9XtcYGljfTd5zzjVYzFdUz8CAQKUB/siVU9uNdUCIJBzmdFm2hqiz73avsgWY6wzpBQAie5daF4tZyLrNBWlUjr6nXJ97bV4vvrBGGPL2+Xp+SKdjIXFZ1fP6r1ym9LtLmJMC1PXVmnxnfvIjtWdHImYIVVVCooik6apE7uaRFxp5HiW3h6l0siJW3UFTEN7oSgyqar6hIjqOk0PcZpuQK2ucQDQ3t7St7ZW+sRx3Ozg4MV+x3F2RkdHO1oYS3jwNRFEFXD+qsBWDHJVydtmPs9/TSQSb0QA8H2K/tF77TjODgCEgsEzBw91OJWdCnwiiDyPWIBHeUuCommYm5tbyOVyR0QAEAT+5++d/cTAwMDtfD7vLi0vT/M8f6lCnsr7HjxOrKyIbNXwNjTZW2S+IHxLJpPb/y5g6BOyLFHQ0J+nUqlAAw/O0x0E65oYj8dN09A/BGSZDjQ3Tdb23aw9RjNd5GaP3awrAAC2bRvhZu09IBE4bXJh2LbpcY/lpjuf0mSUyuno7OZYPNJQAACunYubgDpzN2lSORMhGu8kmjpM5Uz0C433ttbiG/ysbml+aON6WxAJIgiA8ErypfvclR/FWuQvcBnWk4r21EgAAAAASUVORK5CYII=",
+                "desc": "876. 链表的中间结点",
+                "url": "https://leetcode.cn/problems/middle-of-the-linked-list/solutions/165152/kuai-man-zhi-zhen-zhu-yao-zai-yu-diao-shi-by-liwei/"
+            },
+            {
+                "title": "单链表的六大解题套路，你都见过么？",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "单链表的六大解题套路，你都见过么？",
+                "url": "https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247492022&idx=1&sn=35f6cb8ab60794f8f52338fab3e5cda5&scene=21#wechat_redirect"
+            },
+            {
+                "title": "我写了一个套路，助你随心所欲运用二分搜索",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "我写了一个套路，助你随心所欲运用二分搜索",
+                "url": "https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247491336&idx=1&sn=dbcbb07b05ebc7889f944d54d2acebd4&scene=21#wechat_redirect"
+            },
+            {
+                "title": "我写了套框架，把滑动窗口算法变成了默写题",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "我写了套框架，把滑动窗口算法变成了默写题",
+                "url": "https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485141&idx=1&sn=0e4583ad935e76e9a3f6793792e60734&scene=21#wechat_redirect"
+            },
+            {
+                "title": "前缀和技巧：解决子数组问题",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "前缀和技巧：解决子数组问题",
+                "url": "https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484488&idx=1&sn=848f76e86fce722e70e265d0c6f84dc3&scene=21#wechat_redirect"
+            },
+            {
+                "title": "递归反转链表：如何拆解复杂问题",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "递归反转链表：如何拆解复杂问题",
+                "url": "https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484467&idx=1&sn=beb3ae89993b812eeaa6bbdeda63c494&scene=21#wechat_redirect"
+            },
+            {
+                "title": "一文秒杀排列组合问题的 9 种题型",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "一文秒杀排列组合问题的 9 种题型",
+                "url": "https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247496080&idx=1&sn=a2ae8c8ebf13c7ea704ffb6b16018f08&scene=21#wechat_redirect"
+            },
+            {
+                "title": "算法时空复杂度分析实用指南",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "算法时空复杂度分析实用指南",
+                "url": "https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247496738&idx=1&sn=2c7d16c8b0ee64d8101abb35e06b08cc&scene=21#wechat_redirect"
+            },
+            {
+                "title": "关于算法笔试，东哥又整出套路了🤔",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "关于算法笔试，东哥又整出套路了🤔",
+                "url": "https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247486714&idx=1&sn=128226cadf8c8e940b94b39daf52a10f&scene=21#wechat_redirect"
+            },
+            {
+                "title": "递归思维：k 个一组反转链表",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "递归思维：k 个一组反转链表",
+                "url": "https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484597&idx=1&sn=c603f1752e33cb2701e371d84254aee2&scene=21#wechat_redirect"
+            },
+            {
+                "title": "矩阵快速幂详解",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACUElEQVQ4jZVTMWsUQRT+3u54p7nbu40cCcFGEERDEBstBNHCWhCUgGARLAQbJYiFhVhZWFkEtFTR5hr/gHggNqZUtIuFkRweszOzO7N3l7vsPJvbcEkR9INpHh/fe9/33gAHIM/zR9baNMsy45x7dhB3F8wcAIDW+r5zbpxl2Yq1dnkwGPxSSr2c5kyD9okIrfVmkiS3y1q3213UWqfW2rlpbqnE+wQrzCy895/LjgsLCz+YedN7f8dae7psHDBzmKbp+Xa7HU7IRER9AF+EEG96vV6diLy19jERNYuiuFEUxVUA6HQ6IQAgSZInUsorAIiZQwCw1s5lWfbVOdczxmz0+32VZdnTwWDglVJr5WSlBReG4b2JFQ8AURT1Go3GGQAPmfndcDg8Ox6PT1arVRDRpXa7HRKRBwAYY05orXMp5anSBjPvCTZJkuuj0YjTNPVKqdw5N78bYhzHGwAKAHenwt21s7W1dbFWq73y3sN7P5qZmTmyvb19GQCCqZ2+r1Qqt5hZEFFBRJ6ICmPMcqvV+hQEQS3P81VmXq1WqxQEwbFy5yEAaK1XmJmllNcAIE3Tc9baNWPMz+Fw+KLb7S5O7M72+33WWj/fc0DOuXnvfRdAXhSFjOP4uDHGAXjNzN+FEN+iKFonopGU8qMQ4nAcxxdEKVCv1/8opW5GUbRkrQ2TJMmDICiI6BAz15i5IaWsAhhVKpW33vsH+4P+Z6RpetQYs87M9T2fgplDZhbTr9PpiEk9KFfcbDaV9/6DUmr2v0eYnDpba5d2dnZ+/wVUUouGcJXD1AAAAABJRU5ErkJggg==",
+                "desc": "矩阵快速幂详解",
+                "url": "https://www.cnblogs.com/MMMMMMMW/p/12300262.html"
+            },
+            {
+                "title": "N人过桥问题",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcklEQVQ4jT3TTahVdRQF8N8+59yr5numZlmgQVQUUaOkkUKDoonRQIIgCMLyQYOa5CxMigZBDjIsIiyKjIqmFk0alDxq0CTpSUEiWYZUfqX3Xt85578bnFeDDXuyF2utvVbYn2PFS8aeFtbXI/oKFWqhQb0ylTQSav8Ib/vZC42pV8x5XidV9DNcI2MkhMxOBJCIaGVJ8+btdbsS9uZljTUqqVbvukd+cZLJFGNpLMT/jGikBqtQudzora1CKRPVw9vkwYfY+TFlAxrxyyW2rmf1eJDQhzhzlb+uSo35RqcgdPLRu0RTc/Qxevx6niMn2L+ds1OudOLODeL14/LFYzTrqKITZcrNm8WOW9j1AUtnefUbHjzEyXP8ORXbj7DjXb48JTeOhVZET5UdCssz7jvAsUVKEWcuMPmDi5PBwOmM9gpXe5kpdWQnGzkATGbs3sEN93PbJrmwTdy7SV7AtGWULKesioiCjuhFE5XMZbFlHXdfT92wcQ2/XVDmGtEWSiF6tEKuPLRFJ6tMjFg6ze435MKHXJzx/nfiucPy6BJrR3TLw0FfBsY6sheVHFBHYzTsfYDzE3loF089IrqW1Q2lZUSsbVYYdERHI2SEaK9w041i306eeE+c+pvPFsSTH8lrV/H9s6Ivcut6XlscjM2WJggtW67j02f4/DiffEu28uBXnPidO17m8OPywNf8cIZZhTFdq4rYkxezmNu8gVs3icWfpEpEkP2wq1doVysRbhRjhFmVvbesVp09JxZ/lOoh+2nwRAymRUU16E9FpVbrvNm4ZJ9KrbGnasyV8l/vkEMjFZFl0KwWKudNvOO0ff8CDNsVBiQlEB0AAAAASUVORK5CYII=",
+                "desc": "N人过桥问题",
+                "url": "https://zhuanlan.zhihu.com/p/380928472"
+            },
+            {
+                "title": "java 三种方法实现最大公约数_最大公约数java_vigel1990的博客-CSDN博客",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAB/klEQVQ4jU2SPWtUYRCFz5n3bvbubhISoyJiJxEsEkglghZJZUTUJkhAUoja2WihgohFQPAXaGVhk8rGRkQrURDEFOL3B2idkDXJ7t3Nve8ci7ubZOozZ2aeMyzmptAvSSBpBgkxgkQIkOQOkgCAZLeaJEi1NkBDWgeEzXUkFVZTuIPcaSjVkqPb5bEZTp/H4aPMc//0Hs+X9Psb0hrlILm9kuRw5+XbNjsPuX//yNEx239Inbbfu6IvH5jWISU9fzNlmV26FWbn/d0rf7SI5oosaPosF25gZC9iLH1ZzE0JRLeN8YnwYEl/fsSb8+xkTOvyiK0O9h3ERhMSAZAGgKTy3E6eppmePcHmOhtDgmjG2iDXVtjnAcAAyCNrDYxPSNLXZVZTxYIlZTmSBKSkciUrb0BSwfAe5DnW11DmUE7u6bhN3/opRHTbSALSGgSaARDAEOCuYmu72QAwJGq39OszLXDqhP6tKjrc6VEbTdUaHDugIufODRAt6OVTxcIWrtuZi6imCokGUkwet7sPbfExBqpy72Etc0C7xVMX7OodVCroZGquojHIoRECvvzG71+DnLRdSQPIWhiftJlzODLJ4VF1Mvz9qeXXevsCRcEQ+hN2Ps/UaaPIUWswJJKjm6EoWB8syZLsPV8PgiLTGlhHjIoFSaR10OQRpSPwH79sFlWOAVADAAAAAElFTkSuQmCC",
+                "desc": "java 三种方法实现最大公约数_最大公约数java_vigel1990的博客-CSDN博客",
+                "url": "https://blog.csdn.net/c1052981766/article/details/79130139"
+            },
+            {
+                "title": "Java计算素数_younglao的博客-CSDN博客",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAB/klEQVQ4jU2SPWtUYRCFz5n3bvbubhISoyJiJxEsEkglghZJZUTUJkhAUoja2WihgohFQPAXaGVhk8rGRkQrURDEFOL3B2idkDXJ7t3Nve8ci7ubZOozZ2aeMyzmptAvSSBpBgkxgkQIkOQOkgCAZLeaJEi1NkBDWgeEzXUkFVZTuIPcaSjVkqPb5bEZTp/H4aPMc//0Hs+X9Psb0hrlILm9kuRw5+XbNjsPuX//yNEx239Inbbfu6IvH5jWISU9fzNlmV26FWbn/d0rf7SI5oosaPosF25gZC9iLH1ZzE0JRLeN8YnwYEl/fsSb8+xkTOvyiK0O9h3ERhMSAZAGgKTy3E6eppmePcHmOhtDgmjG2iDXVtjnAcAAyCNrDYxPSNLXZVZTxYIlZTmSBKSkciUrb0BSwfAe5DnW11DmUE7u6bhN3/opRHTbSALSGgSaARDAEOCuYmu72QAwJGq39OszLXDqhP6tKjrc6VEbTdUaHDugIufODRAt6OVTxcIWrtuZi6imCokGUkwet7sPbfExBqpy72Etc0C7xVMX7OodVCroZGquojHIoRECvvzG71+DnLRdSQPIWhiftJlzODLJ4VF1Mvz9qeXXevsCRcEQ+hN2Ps/UaaPIUWswJJKjm6EoWB8syZLsPV8PgiLTGlhHjIoFSaR10OQRpSPwH79sFlWOAVADAAAAAElFTkSuQmCC",
+                "desc": "Java计算素数_younglao的博客-CSDN博客",
+                "url": "https://blog.csdn.net/younglao/article/details/76302184"
+            },
+            {
+                "title": "约瑟夫环问题的三种解法讲解",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACw0lEQVQ4jX3SW0iTYRgH8P+7fd+7z83MY552MMvmp3VRDgySQMoOZmXW6tabuqmboOgiAjHoQowihIgiQwhtxuzk6KBZxsTDEEJMwpthFNHpc9PNbX77ni5qEjl9rp/f+/zf530ZVi4dAG1ieDjXo6rh2tYr+w2SqSmkqmOcKafLu9/MA4CwGn7Z2VlQ7Wy4eW291aXPK7y7oKpiJueyEk0bA9BGTqdetxL2er3rTl44//LHpy/VWiB7mpgWTBEEtqhpiAOzAIDubkqG0dfXl2uxmEcZQOcO50foxdadz42n8qedDf3jDYeaV7szent78yyWgjFJFOhMnVVRe6rmw10OCrkdF5UPbbaVMEtgs7lw1MBF2lJe6qbJG2U0fW/D7KOD92mgiubcNROBty0lAEB/zRJub2/Ps5jNYwYDJ1mWH3wlMiUaGttJCnqO3qKh3aQ8PX7Z5XLpyXdKXDqAiMTSTSXPOBdJluUuIjImi0nDjTXkykldFr25+VJFa+t1X0ZG+ojfP7OXMRaYmprKUhSlPhqNSgIjimtAjKUGRUQkQRc3cYlPVFbueC0AgN//2QpAS0tLHwCwAIBFIpF92ZkZd+aCQej0ejAGcEGHWCwFBknCz1/KjM/n2ygAQFFRoZ8ButnZX3sAtABQYrHY81gk1BiNqvxP/jiFWE5AorBRmA+ZTEbj5DaHYzGxA0GW7T2ci2S3lzwmojVJd/DuSB29Kl6b9Ak9Hk+OzWYd4lykUnvJEyJKSzS4higl2FvfQUO76efjY5ddRPpJl5MvmzA4OJhTZLN6uShS2aaNnrn3NzdHJ27LgUe1XeSppPmHu8YXvG22v0PZ/54BgM/ny95QbOuvc2TR944KLdhVqdKz7RR014yEP/YXAkk+0T+lA6B9I0qNu0+czUqNHlhUSQ99yovF7S1X09NtCjVBx5qgJcBve4Y7oNaMCnkAAAAASUVORK5CYII=",
+                "desc": "约瑟夫环问题的三种解法讲解",
+                "url": "https://leetcode.cn/circle/article/BOoxAL/"
+            },
+            {
+                "title": "28. 找出字符串中第一个匹配项的下标",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACRUlEQVQ4jY1TzWsTcRB9+5H96u7m17SmraZxI4GlFaVSKj0KelCIxwYPFRQxN0H/BPWieLGXIoskqS1Vk4oILSpVKihIRIt4EDxJKT20UPqRppu22R0PKqYhqZ3T/GbeezO84Qf8JxizWJOuz+imOVxV5v4m4l7kHstixc2ll4Lk9XtcYGljfTd5zzjVYzFdUz8CAQKUB/siVU9uNdUCIJBzmdFm2hqiz73avsgWY6wzpBQAie5daF4tZyLrNBWlUjr6nXJ97bV4vvrBGGPL2+Xp+SKdjIXFZ1fP6r1ym9LtLmJMC1PXVmnxnfvIjtWdHImYIVVVCooik6apE7uaRFxp5HiW3h6l0siJW3UFTEN7oSgyqar6hIjqOk0PcZpuQK2ucQDQ3t7St7ZW+sRx3Ozg4MV+x3F2RkdHO1oYS3jwNRFEFXD+qsBWDHJVydtmPs9/TSQSb0QA8H2K/tF77TjODgCEgsEzBw91OJWdCnwiiDyPWIBHeUuCommYm5tbyOVyR0QAEAT+5++d/cTAwMDtfD7vLi0vT/M8f6lCnsr7HjxOrKyIbNXwNjTZW2S+IHxLJpPb/y5g6BOyLFHQ0J+nUqlAAw/O0x0E65oYj8dN09A/BGSZDjQ3Tdb23aw9RjNd5GaP3awrAAC2bRvhZu09IBE4bXJh2LbpcY/lpjuf0mSUyuno7OZYPNJQAACunYubgDpzN2lSORMhGu8kmjpM5Uz0C433ttbiG/ysbml+aON6WxAJIgiA8ErypfvclR/FWuQvcBnWk4r21EgAAAAASUVORK5CYII=",
+                "desc": "28. 找出字符串中第一个匹配项的下标",
+                "url": "https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/solutions/575568/shua-chuan-lc-shuang-bai-po-su-jie-fa-km-tb86/"
+            },
+            {
+                "title": "102. 二叉树的层序遍历",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACRUlEQVQ4jY1TzWsTcRB9+5H96u7m17SmraZxI4GlFaVSKj0KelCIxwYPFRQxN0H/BPWieLGXIoskqS1Vk4oILSpVKihIRIt4EDxJKT20UPqRppu22R0PKqYhqZ3T/GbeezO84Qf8JxizWJOuz+imOVxV5v4m4l7kHstixc2ll4Lk9XtcYGljfTd5zzjVYzFdUz8CAQKUB/siVU9uNdUCIJBzmdFm2hqiz73avsgWY6wzpBQAie5daF4tZyLrNBWlUjr6nXJ97bV4vvrBGGPL2+Xp+SKdjIXFZ1fP6r1ym9LtLmJMC1PXVmnxnfvIjtWdHImYIVVVCooik6apE7uaRFxp5HiW3h6l0siJW3UFTEN7oSgyqar6hIjqOk0PcZpuQK2ucQDQ3t7St7ZW+sRx3Ozg4MV+x3F2RkdHO1oYS3jwNRFEFXD+qsBWDHJVydtmPs9/TSQSb0QA8H2K/tF77TjODgCEgsEzBw91OJWdCnwiiDyPWIBHeUuCommYm5tbyOVyR0QAEAT+5++d/cTAwMDtfD7vLi0vT/M8f6lCnsr7HjxOrKyIbNXwNjTZW2S+IHxLJpPb/y5g6BOyLFHQ0J+nUqlAAw/O0x0E65oYj8dN09A/BGSZDjQ3Tdb23aw9RjNd5GaP3awrAAC2bRvhZu09IBE4bXJh2LbpcY/lpjuf0mSUyuno7OZYPNJQAACunYubgDpzN2lSORMhGu8kmjpM5Uz0C433ttbiG/ysbml+aON6WxAJIgiA8ErypfvclR/FWuQvcBnWk4r21EgAAAAASUVORK5CYII=",
+                "desc": "102. 二叉树的层序遍历",
+                "url": "https://leetcode.cn/problems/binary-tree-level-order-traversal/solutions/244853/bfs-de-shi-yong-chang-jing-zong-jie-ceng-xu-bian-l/"
+            },
+            {
+                "title": "106. 从中序与后序遍历序列构造二叉树",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACRUlEQVQ4jY1TzWsTcRB9+5H96u7m17SmraZxI4GlFaVSKj0KelCIxwYPFRQxN0H/BPWieLGXIoskqS1Vk4oILSpVKihIRIt4EDxJKT20UPqRppu22R0PKqYhqZ3T/GbeezO84Qf8JxizWJOuz+imOVxV5v4m4l7kHstixc2ll4Lk9XtcYGljfTd5zzjVYzFdUz8CAQKUB/siVU9uNdUCIJBzmdFm2hqiz73avsgWY6wzpBQAie5daF4tZyLrNBWlUjr6nXJ97bV4vvrBGGPL2+Xp+SKdjIXFZ1fP6r1ym9LtLmJMC1PXVmnxnfvIjtWdHImYIVVVCooik6apE7uaRFxp5HiW3h6l0siJW3UFTEN7oSgyqar6hIjqOk0PcZpuQK2ucQDQ3t7St7ZW+sRx3Ozg4MV+x3F2RkdHO1oYS3jwNRFEFXD+qsBWDHJVydtmPs9/TSQSb0QA8H2K/tF77TjODgCEgsEzBw91OJWdCnwiiDyPWIBHeUuCommYm5tbyOVyR0QAEAT+5++d/cTAwMDtfD7vLi0vT/M8f6lCnsr7HjxOrKyIbNXwNjTZW2S+IHxLJpPb/y5g6BOyLFHQ0J+nUqlAAw/O0x0E65oYj8dN09A/BGSZDjQ3Tdb23aw9RjNd5GaP3awrAAC2bRvhZu09IBE4bXJh2LbpcY/lpjuf0mSUyuno7OZYPNJQAACunYubgDpzN2lSORMhGu8kmjpM5Uz0C433ttbiG/ysbml+aON6WxAJIgiA8ErypfvclR/FWuQvcBnWk4r21EgAAAAASUVORK5CYII=",
+                "desc": "106. 从中序与后序遍历序列构造二叉树",
+                "url": "https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/solutions/426738/cong-zhong-xu-yu-hou-xu-bian-li-xu-lie-gou-zao-14/"
+            },
+            {
+                "title": "743. 网络延迟时间",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACRUlEQVQ4jY1TzWsTcRB9+5H96u7m17SmraZxI4GlFaVSKj0KelCIxwYPFRQxN0H/BPWieLGXIoskqS1Vk4oILSpVKihIRIt4EDxJKT20UPqRppu22R0PKqYhqZ3T/GbeezO84Qf8JxizWJOuz+imOVxV5v4m4l7kHstixc2ll4Lk9XtcYGljfTd5zzjVYzFdUz8CAQKUB/siVU9uNdUCIJBzmdFm2hqiz73avsgWY6wzpBQAie5daF4tZyLrNBWlUjr6nXJ97bV4vvrBGGPL2+Xp+SKdjIXFZ1fP6r1ym9LtLmJMC1PXVmnxnfvIjtWdHImYIVVVCooik6apE7uaRFxp5HiW3h6l0siJW3UFTEN7oSgyqar6hIjqOk0PcZpuQK2ucQDQ3t7St7ZW+sRx3Ozg4MV+x3F2RkdHO1oYS3jwNRFEFXD+qsBWDHJVydtmPs9/TSQSb0QA8H2K/tF77TjODgCEgsEzBw91OJWdCnwiiDyPWIBHeUuCommYm5tbyOVyR0QAEAT+5++d/cTAwMDtfD7vLi0vT/M8f6lCnsr7HjxOrKyIbNXwNjTZW2S+IHxLJpPb/y5g6BOyLFHQ0J+nUqlAAw/O0x0E65oYj8dN09A/BGSZDjQ3Tdb23aw9RjNd5GaP3awrAAC2bRvhZu09IBE4bXJh2LbpcY/lpjuf0mSUyuno7OZYPNJQAACunYubgDpzN2lSORMhGu8kmjpM5Uz0C433ttbiG/ysbml+aON6WxAJIgiA8ErypfvclR/FWuQvcBnWk4r21EgAAAAASUVORK5CYII=",
+                "desc": "743. 网络延迟时间",
+                "url": "https://leetcode.cn/problems/network-delay-time/solutions/910056/gong-shui-san-xie-yi-ti-wu-jie-wu-chong-oghpz/"
+            },
+            {
+                "title": "3. 无重复字符的最长子串",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACRUlEQVQ4jY1TzWsTcRB9+5H96u7m17SmraZxI4GlFaVSKj0KelCIxwYPFRQxN0H/BPWieLGXIoskqS1Vk4oILSpVKihIRIt4EDxJKT20UPqRppu22R0PKqYhqZ3T/GbeezO84Qf8JxizWJOuz+imOVxV5v4m4l7kHstixc2ll4Lk9XtcYGljfTd5zzjVYzFdUz8CAQKUB/siVU9uNdUCIJBzmdFm2hqiz73avsgWY6wzpBQAie5daF4tZyLrNBWlUjr6nXJ97bV4vvrBGGPL2+Xp+SKdjIXFZ1fP6r1ym9LtLmJMC1PXVmnxnfvIjtWdHImYIVVVCooik6apE7uaRFxp5HiW3h6l0siJW3UFTEN7oSgyqar6hIjqOk0PcZpuQK2ucQDQ3t7St7ZW+sRx3Ozg4MV+x3F2RkdHO1oYS3jwNRFEFXD+qsBWDHJVydtmPs9/TSQSb0QA8H2K/tF77TjODgCEgsEzBw91OJWdCnwiiDyPWIBHeUuCommYm5tbyOVyR0QAEAT+5++d/cTAwMDtfD7vLi0vT/M8f6lCnsr7HjxOrKyIbNXwNjTZW2S+IHxLJpPb/y5g6BOyLFHQ0J+nUqlAAw/O0x0E65oYj8dN09A/BGSZDjQ3Tdb23aw9RjNd5GaP3awrAAC2bRvhZu09IBE4bXJh2LbpcY/lpjuf0mSUyuno7OZYPNJQAACunYubgDpzN2lSORMhGu8kmjpM5Uz0C433ttbiG/ysbml+aON6WxAJIgiA8ErypfvclR/FWuQvcBnWk4r21EgAAAAASUVORK5CYII=",
+                "desc": "3. 无重复字符的最长子串",
+                "url": "https://leetcode.cn/problems/longest-substring-without-repeating-characters/solutions/3982/hua-dong-chuang-kou-by-powcai/"
+            },
+            {
+                "title": "77. 组合",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACRUlEQVQ4jY1TzWsTcRB9+5H96u7m17SmraZxI4GlFaVSKj0KelCIxwYPFRQxN0H/BPWieLGXIoskqS1Vk4oILSpVKihIRIt4EDxJKT20UPqRppu22R0PKqYhqZ3T/GbeezO84Qf8JxizWJOuz+imOVxV5v4m4l7kHstixc2ll4Lk9XtcYGljfTd5zzjVYzFdUz8CAQKUB/siVU9uNdUCIJBzmdFm2hqiz73avsgWY6wzpBQAie5daF4tZyLrNBWlUjr6nXJ97bV4vvrBGGPL2+Xp+SKdjIXFZ1fP6r1ym9LtLmJMC1PXVmnxnfvIjtWdHImYIVVVCooik6apE7uaRFxp5HiW3h6l0siJW3UFTEN7oSgyqar6hIjqOk0PcZpuQK2ucQDQ3t7St7ZW+sRx3Ozg4MV+x3F2RkdHO1oYS3jwNRFEFXD+qsBWDHJVydtmPs9/TSQSb0QA8H2K/tF77TjODgCEgsEzBw91OJWdCnwiiDyPWIBHeUuCommYm5tbyOVyR0QAEAT+5++d/cTAwMDtfD7vLi0vT/M8f6lCnsr7HjxOrKyIbNXwNjTZW2S+IHxLJpPb/y5g6BOyLFHQ0J+nUqlAAw/O0x0E65oYj8dN09A/BGSZDjQ3Tdb23aw9RjNd5GaP3awrAAC2bRvhZu09IBE4bXJh2LbpcY/lpjuf0mSUyuno7OZYPNJQAACunYubgDpzN2lSORMhGu8kmjpM5Uz0C433ttbiG/ysbml+aON6WxAJIgiA8ErypfvclR/FWuQvcBnWk4r21EgAAAAASUVORK5CYII=",
+                "desc": "77. 组合",
+                "url": "https://leetcode.cn/problems/combinations/solutions/405094/zu-he-by-leetcode-solution/"
+            },
+            {
+                "title": "918. 环形子数组的最大和",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACRUlEQVQ4jY1TzWsTcRB9+5H96u7m17SmraZxI4GlFaVSKj0KelCIxwYPFRQxN0H/BPWieLGXIoskqS1Vk4oILSpVKihIRIt4EDxJKT20UPqRppu22R0PKqYhqZ3T/GbeezO84Qf8JxizWJOuz+imOVxV5v4m4l7kHstixc2ll4Lk9XtcYGljfTd5zzjVYzFdUz8CAQKUB/siVU9uNdUCIJBzmdFm2hqiz73avsgWY6wzpBQAie5daF4tZyLrNBWlUjr6nXJ97bV4vvrBGGPL2+Xp+SKdjIXFZ1fP6r1ym9LtLmJMC1PXVmnxnfvIjtWdHImYIVVVCooik6apE7uaRFxp5HiW3h6l0siJW3UFTEN7oSgyqar6hIjqOk0PcZpuQK2ucQDQ3t7St7ZW+sRx3Ozg4MV+x3F2RkdHO1oYS3jwNRFEFXD+qsBWDHJVydtmPs9/TSQSb0QA8H2K/tF77TjODgCEgsEzBw91OJWdCnwiiDyPWIBHeUuCommYm5tbyOVyR0QAEAT+5++d/cTAwMDtfD7vLi0vT/M8f6lCnsr7HjxOrKyIbNXwNjTZW2S+IHxLJpPb/y5g6BOyLFHQ0J+nUqlAAw/O0x0E65oYj8dN09A/BGSZDjQ3Tdb23aw9RjNd5GaP3awrAAC2bRvhZu09IBE4bXJh2LbpcY/lpjuf0mSUyuno7OZYPNJQAACunYubgDpzN2lSORMhGu8kmjpM5Uz0C433ttbiG/ysbml+aON6WxAJIgiA8ErypfvclR/FWuQvcBnWk4r21EgAAAAASUVORK5CYII=",
+                "desc": "918. 环形子数组的最大和",
+                "url": "https://leetcode.cn/problems/maximum-sum-circular-subarray/solutions/1152143/wo-hua-yi-bian-jiu-kan-dong-de-ti-jie-ni-892u/"
+            },
+            {
+                "title": "AVL树(三)之 Java的实现",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACUElEQVQ4jZVTMWsUQRT+3u54p7nbu40cCcFGEERDEBstBNHCWhCUgGARLAQbJYiFhVhZWFkEtFTR5hr/gHggNqZUtIuFkRweszOzO7N3l7vsPJvbcEkR9INpHh/fe9/33gAHIM/zR9baNMsy45x7dhB3F8wcAIDW+r5zbpxl2Yq1dnkwGPxSSr2c5kyD9okIrfVmkiS3y1q3213UWqfW2rlpbqnE+wQrzCy895/LjgsLCz+YedN7f8dae7psHDBzmKbp+Xa7HU7IRER9AF+EEG96vV6diLy19jERNYuiuFEUxVUA6HQ6IQAgSZInUsorAIiZQwCw1s5lWfbVOdczxmz0+32VZdnTwWDglVJr5WSlBReG4b2JFQ8AURT1Go3GGQAPmfndcDg8Ox6PT1arVRDRpXa7HRKRBwAYY05orXMp5anSBjPvCTZJkuuj0YjTNPVKqdw5N78bYhzHGwAKAHenwt21s7W1dbFWq73y3sN7P5qZmTmyvb19GQCCqZ2+r1Qqt5hZEFFBRJ6ICmPMcqvV+hQEQS3P81VmXq1WqxQEwbFy5yEAaK1XmJmllNcAIE3Tc9baNWPMz+Fw+KLb7S5O7M72+33WWj/fc0DOuXnvfRdAXhSFjOP4uDHGAXjNzN+FEN+iKFonopGU8qMQ4nAcxxdEKVCv1/8opW5GUbRkrQ2TJMmDICiI6BAz15i5IaWsAhhVKpW33vsH+4P+Z6RpetQYs87M9T2fgplDZhbTr9PpiEk9KFfcbDaV9/6DUmr2v0eYnDpba5d2dnZ+/wVUUouGcJXD1AAAAABJRU5ErkJggg==",
+                "desc": "AVL树(三)之 Java的实现",
+                "url": "https://www.cnblogs.com/skywang12345/p/3577479.html"
+            },
+            {
+                "title": "prim算法详解",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACgUlEQVQ4jV2TzYtcVRDFf3XvfR89Pd1oZoYkaBKURCcaJaCLQCALEdGF/0EQNAiBQATJQnQliIuAC3HjOpu4NhDE5A8IiCFDskt0jF8ziuPHTE9/vPfuPS5et0xbq3urOFXUOads7fkjT/i8/DTJXjUUmIWZMR9Cmj6scaavYjV+J1hWfr7o3Ss7TUpzQOcgJTRLe9/mJRnyi969vp2Vhd194emEkRAOMHNOSpE42DXXKbGiBAmNRrLgwQdD0gwTwGjBMnNOsarM8oKlN87RP/MS+aHDECPj7+7bxicf02xuyLLMpgMJIDDMMMW6Mt/vc/jyZ/ROnQagGezgfKB88ihbV69Q/fSj+TwXyJAUMDMEyTDVNQcvfUDv1GkmD9f55fJHjNZuY97TeeYE1a8/47IMJJvxZXdfXBVAmowpjq1y7IsvAfjhwjn+uXmd8OgSpESqJri8wEIACaZchxnjaVLROf4sLssYr3/PcO02YWkFm9Z9nreqSHMKu6nooIRf6CKJNBoiCbTXBXs//L+BMO9p/tzCzCgOHSFbXiENB60fANUVirGdvqdZW00JK0uGd76l/vsvfK/HgXffI+xbJg2HpGpCWNmP7/dRjP/tD9AaCcycVzPYtqWzb/H4+x8CUG1uMLx3B9fpsvDcSR5efJvBN7fw3a7QTEYMDEnJQndRW1evWNrdZfnsm5RPrfLIy68BMHpwn/qP33FZmIKnBpqzsrUbxt0B1utbfvAxfHeBZmeH5rdNUdfg/byVBTf6s2OSkJm5Xh/Fhsn6A0gC57AQzLynlQf1vPPbTfraqR6fH8R0TVicXRspyczhihLX6eCKAnNOUzDC4iCma6rH5/8F5tA3xipPqRgAAAAASUVORK5CYII=",
+                "desc": "prim算法详解",
+                "url": "http://c.biancheng.net/algorithm/prim.html"
+            },
+            {
+                "title": "《LeetCode刷题Java版答案》pdf来了，羊保姆什么时候让你失望过？",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "《LeetCode刷题Java版答案》pdf来了，羊保姆什么时候让你失望过？",
+                "url": "https://mp.weixin.qq.com/s?__biz=MzU4ODI1MjA3NQ==&mid=2247498311&idx=1&sn=f6158d86cbc2787212d601a07bfe91cd&scene=19#wechat_redirect"
+            },
+            {
+                "title": "LeetCode刷题指南",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcklEQVQ4jT3TTahVdRQF8N8+59yr5numZlmgQVQUUaOkkUKDoonRQIIgCMLyQYOa5CxMigZBDjIsIiyKjIqmFk0alDxq0CTpSUEiWYZUfqX3Xt85578bnFeDDXuyF2utvVbYn2PFS8aeFtbXI/oKFWqhQb0ylTQSav8Ib/vZC42pV8x5XidV9DNcI2MkhMxOBJCIaGVJ8+btdbsS9uZljTUqqVbvukd+cZLJFGNpLMT/jGikBqtQudzora1CKRPVw9vkwYfY+TFlAxrxyyW2rmf1eJDQhzhzlb+uSo35RqcgdPLRu0RTc/Qxevx6niMn2L+ds1OudOLODeL14/LFYzTrqKITZcrNm8WOW9j1AUtnefUbHjzEyXP8ORXbj7DjXb48JTeOhVZET5UdCssz7jvAsUVKEWcuMPmDi5PBwOmM9gpXe5kpdWQnGzkATGbs3sEN93PbJrmwTdy7SV7AtGWULKesioiCjuhFE5XMZbFlHXdfT92wcQ2/XVDmGtEWSiF6tEKuPLRFJ6tMjFg6ze435MKHXJzx/nfiucPy6BJrR3TLw0FfBsY6sheVHFBHYzTsfYDzE3loF089IrqW1Q2lZUSsbVYYdERHI2SEaK9w041i306eeE+c+pvPFsSTH8lrV/H9s6Ivcut6XlscjM2WJggtW67j02f4/DiffEu28uBXnPidO17m8OPywNf8cIZZhTFdq4rYkxezmNu8gVs3icWfpEpEkP2wq1doVysRbhRjhFmVvbesVp09JxZ/lOoh+2nwRAymRUU16E9FpVbrvNm4ZJ9KrbGnasyV8l/vkEMjFZFl0KwWKudNvOO0ff8CDNsVBiQlEB0AAAAASUVORK5CYII=",
+                "desc": "LeetCode刷题指南",
+                "url": "https://zhuanlan.zhihu.com/p/351583946"
+            },
+            {
+                "title": "代码随想录",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAABvklEQVQ4jYVSsW4aQRCd2b1DPmLrDBWmQSfHFEZUfACCwoqsywcgUTi9C39SytCfadIi0TlKZGQkghAJh1BOdgoKfOF2JsWcLucUyVQ7s+/tvPe0yMzMDC8LEYmIiLTW+SEAqDyOmRFR2Eopy7KIKH+bEuQk6Jvr6/PTU8/zOp3OcDjUWuc5KQERRRgift//+qbg9dnZp7s73/fH47FSioj+yGZmkWuMIaKbj7dvPrxn5sn9vda63+8z836/FwAz5zwgIuIru3hUONo9P583GrVabTabMbPWWvb/bRoA7MNDp1RyDg5Mkmy32+PSMQAQkaABwHohDuDn5y9fpw+DH9FtEERR5PtvJWKlVLpEPBhjkiRh5suLi2zb1bur3W5njBF7UiipCU0p9TCdRlFkae26brPZzPJRKs0TZST9PypTbomy+Xy+2Ww8zwvD0HGc1Wp1Uj15enzSWler1cVi0W63C4UCEVny/GAwEMJoNGo0GkEQdLvd5XLpum69Xg+CoNVqlctlAEBjDCJOJpMwDOM4tm07juMwDCuVSpIkjuNYlrVer3u9XrFYBIDUdBbz/z1kff4Lis4MlKWCiL8BcKwthz//Ld0AAAAASUVORK5CYII=",
+                "desc": "代码随想录",
+                "url": "https://programmercarl.com/%E5%89%8D%E5%BA%8F/%E5%85%B3%E4%BA%8E%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%EF%BC%8C%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E9%83%BD%E5%9C%A8%E8%BF%99%E9%87%8C%EF%BC%81.html#%E7%A9%B6%E7%AB%9F%E4%BB%80%E4%B9%88%E6%98%AF%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"
+            },
+            {
+                "title": "什么是fail-fast",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADEklEQVQ4jU2T0W9UZRDFz/nuhd1u22036rbYQtcWlRZjrYCKaKKG6gvKkw0JxhcSEoIPxD/DxPigxoQYTbAoYjSKDfhkI6nYlWI1SpfYtBSWtpRbXWp3t3d37/cdH7oQJplkXuY3JzNnWKvVavM35ripYwvlHGOxOAHAOeckgSQIACTqIQAEIJLO9zyP/wRLHM/+yoX5vPr7B9TR0clHt/WZeoMTQEr3Qu4UZBAE0dGjh1kuVwhvo1oS4PN7diHWkMLQgTeRSCToBBEA1wF3FQBwxjnHZHOS165fZSxa5eZ0E9fWQp47e5ZffvEZS+UyIFEQJRF11p006XTaDL78ivp6t+nVfa8pFW/Qho1SfmFJw58P60puSsYYyEkABN2dLgAyAJTpeoirxRJOnhnhjb9mmaqGTCbijGzEm/kpRlEEkhREkFpXUlcAAF2ZjF56YS+XlhbV/cQO/PzDBIrVGiqFACePf4SJ8Z/Wt2kdBOHeMABYqVQ4NHRA3339PR/evQfnF/N4MBXHoUNvoDnZiN8ujMKY+lFESHWIBEhyC4vzLghuOUl6+9hbOnZ4v0ZOvatSIac/st/o9b1PKjs2qshaWRs5a63culEiHwA9YyA5Z63l9kc60bVpCxximL7yJ8phFfHWZpz++D2k29qQ2dpLG0Uwvo+6P6Tl5UBRZNHe3s7ZmRxOHH8HWzNtaGm5D/A9+LE4kq09mLt8CfsPHlFTS4rOWRnjOQNAnu/D8wwAqLunFyWbVOG/kkphUY1NTaqtrapQKOiZF/fp2xPvKyyXYIxHSDIACIHOOQFgIZhHtRzw4qVZhmGVnueYX1zg+dEf2dP7OAeeHeSZ4Q9Vq4YCYEz9KWStpSRdnZnS9N+zWi5GGhu/rJXCbblaJAMjZyNt37Gb3X0DOPfVpwAJHwCMMVhZ+VfXpi/y9PAnsBHQk0lhbjqHyV+IVLodXZ0pBDdn0Hr/ZrfzuUEztlZ2I6c+cJRUq1RClkpFFFdu8feJC5rMZokNDXjq6Z16rH8XY/FG80C6TVaER8+BhEjM5Cbd/9mHsigmJK+xAAAAAElFTkSuQmCC",
+                "desc": "什么是fail-fast",
+                "url": "https://www.cnblogs.com/54chensongxia/p/12470446.html"
+            },
+            {
+                "title": "JAVA的一般输入输出 和 快速输入输出 _Androids_lost_Sheep的博客-CSDN博客",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAB/klEQVQ4jU2SPWtUYRCFz5n3bvbubhISoyJiJxEsEkglghZJZUTUJkhAUoja2WihgohFQPAXaGVhk8rGRkQrURDEFOL3B2idkDXJ7t3Nve8ci7ubZOozZ2aeMyzmptAvSSBpBgkxgkQIkOQOkgCAZLeaJEi1NkBDWgeEzXUkFVZTuIPcaSjVkqPb5bEZTp/H4aPMc//0Hs+X9Psb0hrlILm9kuRw5+XbNjsPuX//yNEx239Inbbfu6IvH5jWISU9fzNlmV26FWbn/d0rf7SI5oosaPosF25gZC9iLH1ZzE0JRLeN8YnwYEl/fsSb8+xkTOvyiK0O9h3ERhMSAZAGgKTy3E6eppmePcHmOhtDgmjG2iDXVtjnAcAAyCNrDYxPSNLXZVZTxYIlZTmSBKSkciUrb0BSwfAe5DnW11DmUE7u6bhN3/opRHTbSALSGgSaARDAEOCuYmu72QAwJGq39OszLXDqhP6tKjrc6VEbTdUaHDugIufODRAt6OVTxcIWrtuZi6imCokGUkwet7sPbfExBqpy72Etc0C7xVMX7OodVCroZGquojHIoRECvvzG71+DnLRdSQPIWhiftJlzODLJ4VF1Mvz9qeXXevsCRcEQ+hN2Ps/UaaPIUWswJJKjm6EoWB8syZLsPV8PgiLTGlhHjIoFSaR10OQRpSPwH79sFlWOAVADAAAAAElFTkSuQmCC",
+                "desc": "JAVA的一般输入输出 和 快速输入输出 _Androids_lost_Sheep的博客-CSDN博客",
+                "url": "https://blog.csdn.net/GD_ONE/article/details/103480407"
+            },
+            {
+                "title": "",
+                "icon": "",
+                "desc": "",
+                "url": ""
+            }
+        ]
+    },
+    {
+        "typeName": "二叉树",
+        "list": [
+            {
+                "title": "450. 删除二叉搜索树中的节点",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACRUlEQVQ4jY1TzWsTcRB9+5H96u7m17SmraZxI4GlFaVSKj0KelCIxwYPFRQxN0H/BPWieLGXIoskqS1Vk4oILSpVKihIRIt4EDxJKT20UPqRppu22R0PKqYhqZ3T/GbeezO84Qf8JxizWJOuz+imOVxV5v4m4l7kHstixc2ll4Lk9XtcYGljfTd5zzjVYzFdUz8CAQKUB/siVU9uNdUCIJBzmdFm2hqiz73avsgWY6wzpBQAie5daF4tZyLrNBWlUjr6nXJ97bV4vvrBGGPL2+Xp+SKdjIXFZ1fP6r1ym9LtLmJMC1PXVmnxnfvIjtWdHImYIVVVCooik6apE7uaRFxp5HiW3h6l0siJW3UFTEN7oSgyqar6hIjqOk0PcZpuQK2ucQDQ3t7St7ZW+sRx3Ozg4MV+x3F2RkdHO1oYS3jwNRFEFXD+qsBWDHJVydtmPs9/TSQSb0QA8H2K/tF77TjODgCEgsEzBw91OJWdCnwiiDyPWIBHeUuCommYm5tbyOVyR0QAEAT+5++d/cTAwMDtfD7vLi0vT/M8f6lCnsr7HjxOrKyIbNXwNjTZW2S+IHxLJpPb/y5g6BOyLFHQ0J+nUqlAAw/O0x0E65oYj8dN09A/BGSZDjQ3Tdb23aw9RjNd5GaP3awrAAC2bRvhZu09IBE4bXJh2LbpcY/lpjuf0mSUyuno7OZYPNJQAACunYubgDpzN2lSORMhGu8kmjpM5Uz0C433ttbiG/ysbml+aON6WxAJIgiA8ErypfvclR/FWuQvcBnWk4r21EgAAAAASUVORK5CYII=",
+                "desc": "450. 删除二叉搜索树中的节点",
+                "url": "https://leetcode.cn/problems/delete-node-in-a-bst/solutions/1529700/shan-chu-er-cha-sou-suo-shu-zhong-de-jie-n6vo/"
+            }
+        ]
+    },
+    {
+        "typeName": "图",
+        "list": [
+            {
+                "title": "752. 打开转盘锁",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACRUlEQVQ4jY1TzWsTcRB9+5H96u7m17SmraZxI4GlFaVSKj0KelCIxwYPFRQxN0H/BPWieLGXIoskqS1Vk4oILSpVKihIRIt4EDxJKT20UPqRppu22R0PKqYhqZ3T/GbeezO84Qf8JxizWJOuz+imOVxV5v4m4l7kHstixc2ll4Lk9XtcYGljfTd5zzjVYzFdUz8CAQKUB/siVU9uNdUCIJBzmdFm2hqiz73avsgWY6wzpBQAie5daF4tZyLrNBWlUjr6nXJ97bV4vvrBGGPL2+Xp+SKdjIXFZ1fP6r1ym9LtLmJMC1PXVmnxnfvIjtWdHImYIVVVCooik6apE7uaRFxp5HiW3h6l0siJW3UFTEN7oSgyqar6hIjqOk0PcZpuQK2ucQDQ3t7St7ZW+sRx3Ozg4MV+x3F2RkdHO1oYS3jwNRFEFXD+qsBWDHJVydtmPs9/TSQSb0QA8H2K/tF77TjODgCEgsEzBw91OJWdCnwiiDyPWIBHeUuCommYm5tbyOVyR0QAEAT+5++d/cTAwMDtfD7vLi0vT/M8f6lCnsr7HjxOrKyIbNXwNjTZW2S+IHxLJpPb/y5g6BOyLFHQ0J+nUqlAAw/O0x0E65oYj8dN09A/BGSZDjQ3Tdb23aw9RjNd5GaP3awrAAC2bRvhZu09IBE4bXJh2LbpcY/lpjuf0mSUyuno7OZYPNJQAACunYubgDpzN2lSORMhGu8kmjpM5Uz0C433ttbiG/ysbml+aON6WxAJIgiA8ErypfvclR/FWuQvcBnWk4r21EgAAAAASUVORK5CYII=",
+                "desc": "752. 打开转盘锁",
+                "url": "https://leetcode.cn/problems/open-the-lock/solutions/843687/da-kai-zhuan-pan-suo-by-leetcode-solutio-l0xo/"
+            }
+        ]
+    },
+    {
+        "typeName": "题解",
+        "list": [
+            {
+                "title": "CS-Notes/notes at master · CyC2018/CS-Notes",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdklEQVQ4jY3TvWpUURQF4HUmk2QUCWJhoVUQBLHwByWx0aewsBV8mChBLRIQtNBaFBFsbIIvYCdEUJNCsRSMI5KJn4X74mUw4obD3eesvfb/TZKgpQSX8ADvMcb30u9jKfsJZrFahE5+1ulkjBUM+sQB5vHc/8vjCjjonNwp4CWuYQM72MKH0l8V9qJsVzryMn5ggrV6G+I4RnWOYa6w22X7DeeGSW4kmauKJphJstda+9hr0Se0wiZJZpIcTHI9eFuNGuNkry/9ybTujkV8Lc7rVH2wjdl9x/TH2Qw2y8GXQZKWRJJDSQ70I/+F3JKMkiwUbzhIsl34kSRLrTXVxOkShq01SZaTHK2gW8G9Smenyjj1jwxO4w32quz14Hxd7uJJ6U9xZor4sNev3Rr92c5gvYALuFULtdhzcKK3heP6rnZgt8obeIeruDiV+gife06eFWcwbfSoZ3S4hy1Un3axprZyejydfhk3Meq9zfv9F16Z5vwCz01H2UDrUX0AAAAASUVORK5CYII=",
+                "desc": "CS-Notes/notes at master · CyC2018/CS-Notes",
+                "url": "https://github.com/CyC2018/CS-Notes/tree/master/notes"
+            },
+            {
+                "title": "doocs/leetcode: 😏 LeetCode solutions in any programming language | 多种编程语言实现 LeetCode、《剑指 Offer》题解",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdklEQVQ4jY3TvWpUURQF4HUmk2QUCWJhoVUQBLHwByWx0aewsBV8mChBLRIQtNBaFBFsbIIvYCdEUJNCsRSMI5KJn4X74mUw4obD3eesvfb/TZKgpQSX8ADvMcb30u9jKfsJZrFahE5+1ulkjBUM+sQB5vHc/8vjCjjonNwp4CWuYQM72MKH0l8V9qJsVzryMn5ggrV6G+I4RnWOYa6w22X7DeeGSW4kmauKJphJstda+9hr0Se0wiZJZpIcTHI9eFuNGuNkry/9ybTujkV8Lc7rVH2wjdl9x/TH2Qw2y8GXQZKWRJJDSQ70I/+F3JKMkiwUbzhIsl34kSRLrTXVxOkShq01SZaTHK2gW8G9Smenyjj1jwxO4w32quz14Hxd7uJJ6U9xZor4sNev3Rr92c5gvYALuFULtdhzcKK3heP6rnZgt8obeIeruDiV+gife06eFWcwbfSoZ3S4hy1Un3axprZyejydfhk3Meq9zfv9F16Z5vwCz01H2UDrUX0AAAAASUVORK5CYII=",
+                "desc": "doocs/leetcode: 😏 LeetCode solutions in any programming language | 多种编程语言实现 LeetCode、《剑指 Offer》题解",
+                "url": "https://github.com/doocs/leetcode"
+            },
+            {
+                "title": "#手撕力扣高频面试题",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "#手撕力扣高频面试题",
+                "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=1318896187793260544&scene=173&from_msgid=100000768&from_itemidx=1&count=3&nolastread=1#wechat_redirect"
+            },
+            {
+                "title": "https://mp.weixin.qq.com/s/AWsL7G89RtaHyHjRPNJENA",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jYWTsYsdZRTFf+fO7LxdVwW38L1dEfwjorGwEVMJgpq1sLaJnSipRJjONIqNxMo2ECMGAoENkZAuMdvaCIIWyb6nawxrkue8mbnH4s0um8pTfXzfueccvsuBQ9QEx3GDcrwzXh/vjNe5QfnE2zGuADBCGGDrytbbTr9J5xPg5wfaH5TaVejqvbfuXT4+I2qCmhxfGJ8sntJXhF4lgB6WkoNNASSQvtU/9kez92e3qQkBvPDd+A2P4gfEM+5NjALPjdMJoFBoTWSTqBCYf9TkO3ffm/2orQsbL7qqfqJkAnTq2DW+DvEh4Q0AUvchzwudcskJoKRjqsXilaCqzsZqTGhpVKpEcW7v9OwzxLWoQlGFENeWd3FOpUpamliNCVV1VpvfT36l4CV6Uisq3PoO8nU5zjj8HIBSf1v5DdYprehlt9lTKOj5TVuXNueWR0drqSSNhB8Zpz38gbQu3Bgv7CMuagL5/rBVC8kL9z7I1mkLSUhO2wfZeuFeSIAJsP0gLN1UJdlOYwNhUQrJ2GYpZFECYWzbqUqSuBlk+yUN/6pQGOfgoCGiDoWAw3OvUqKlSdovYm97fzfTH0cVIS2TYPLQfRgGk9htRJSxGkWmP5me/utOUBPT7en5fNydUaEWESoV0tJdaIkVhZ7WCgV/dg/7D6bvTr8GIqgxoHm52KFghDhw+hdMY5shxdydf845n/cP8uRse/btUKgsqRE1ucbaa174UrvoPt1/dv/3STPZdHqiUCo129vYu8vrdEdtrMknGspVRvwfLlLgocED/gM4lT/uKMXTbQAAAABJRU5ErkJggg==",
+                "desc": "https://mp.weixin.qq.com/s/AWsL7G89RtaHyHjRPNJENA",
+                "url": "https://mp.weixin.qq.com/s/AWsL7G89RtaHyHjRPNJENA"
+            },
+            {
+                "title": "小浩算法",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADh0lEQVQ4jV2TXUxbdRjGn/ec056yU1oQrIePAqV8LW4MBsFsmA3JyMTELUbmDEQzE4NuRi/8SkyIzgsTP+6UMEO8cCbGDPXCLVvUbBNdMGGCG7CxsRQsXxsUaUtpOe055///ezFIFt+L530unrzvc/Mj/G+mRw546erNt1k69Zxp2+UWA2Wpym0123269OXuL4hOph/M04M7+dMO372pubM2SzWRxpAi8EfcgIND2lhzwLDdg9sP+o/SrvHI1gEJAATu682R2d7oWqJJ0Vjmx6vgoTHQbATUexl8ImKZCou1XDu32D8gBmSx+VQRAPkB13fdD7U6VoxDZyclFlrgjuFoFgUsC5dSNuoK8qi+waks6THbMKOHKz7sbobAFUEgiJOQAKjF2Rj+pqucte8usAFwKBKHRBwA92SrvLLUx187EDSn3q/mF48VvAkAv7VAuV9efB387PXq215NYV4X2boLvMJNHIBQJYhyDRwAB2C/1JrL/vy8flSsflIMAMqCGM5b+vm9M008XO1itl2b75R3+hyI2sB+SRYXZ5I4XOPGuakkZta59OuVGG/xJXaXFLHvI2KgTX63LdEz8cvg0e4vDWs+DaWh0IkPOqswuiqhY3+AFJeLutor4XEpuB6OI8GI1LvcCuaulbqMO4a0sTDZlQwnuS5DzlUJFfo2rFAWOloqyRsI4sSxVqRkDzU3+vF4TQ4YBBaTkKNzaY7E4guKnYxrERNizgTFLYFdO0shNx6HsbyGUn0ZDoXAzEroge1oj53Chb/PIwpQJA2xHs1o8vGncwoL1fW9U9NkeXI0qq5voB1PvQFPQRCZ2D/I1fOh13Yg5SxGSb6MeGic18hpvm+vrfj82X1y78f1Q3PhaIUqmbUHH/ZIeqGHPB4HtvEILHOZstxOSkfnxPytScoTC1TCMpLunZELSqRvz8Qb3lLo0cHkgBjoPHTqlT9ujMRO5LGlstjSpCvl3EO6/zFhMIZ/NwxKGuOCSesbRuzadHGJ2VfXI/oBElssAAB+eFattO5mPgo8+cQzyp7nKaeokcz0BmxjluesjmH406/Oh8diPe8kcWOTH0Fbpl9DXb6N044MasuOVEFtq8G9FcYzDPAXeyRp5A5CfaPgWZiPcbz6YgYXAJCyxVI6hVtF2TiSsbEvcT3eHOwsa+CaWWVbNnnztdDCX0MTmoQhl4TfYSC0WVr8B/ioj3ZcEyvuAAAAAElFTkSuQmCC",
+                "desc": "小浩算法",
+                "url": "https://www.geekxh.com/1.0.%E6%95%B0%E7%BB%84%E7%B3%BB%E5%88%97/002.html#_03%E3%80%81%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90"
+            }
+        ]
+    }
+]

@@ -161,4 +161,3 @@ insert into 表名 (列名,列名) values(数据,数据);
 update 表名 set 列名=值 where 限定条件（如id=1）
 ```
 
-

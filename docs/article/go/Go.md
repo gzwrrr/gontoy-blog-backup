@@ -91,17 +91,17 @@ GO 的缺陷：
 
 ## 生态
 
-| 软件       | 描述                         | 链接                                                         |
-| ---------- | ---------------------------- | ------------------------------------------------------------ |
-| docker     | 家喻户晓的容器技术           | [github.com/moby/moby](https://github.com/moby/moby)         |
-| kubernetes | 容器编排引擎，google出品     | [github.com/kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) |
-| etcd       | 分布式服务注册发现系统       | [github.com/etcd-io/etcd](https://github.com/etcd-io/etcd)   |
-| influxdb   | 时序数据库                   | [github.com/influxdata/influxdb](https://github.com/influxdata/influxdb) |
-| grafana    | 数据监控可视化看板           | [github.com/grafana/grafana](https://github.com/grafana/grafana) |
-| prometheus | 开源监控系统                 | [github.com/prometheus/prometheus](https://github.com/prometheus/prometheus) |
-| consul     | 分布式服务发现系统           | [github.com/hashicorp/consul](https://github.com/hashicorp/consul) |
-| nsq        | 亿级消息队列                 | [github.com/nsqio/nsq](https://github.com/nsqio/nsq)         |
-| TiDB       | 分布式数据库, go + rust 打造 | [github.com/pingcap/tidb](https://github.com/pingcap/tidb)   |
+| 描述                         | 链接                                                         |
+| ---------------------------- | ------------------------------------------------------------ |
+| 家喻户晓的容器技术           | [docker - github.com/moby/moby](https://github.com/moby/moby) |
+| 容器编排引擎，google出品     | [kubernetes - github.com/kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) |
+| 分布式服务注册发现系统       | [etcd - github.com/etcd-io/etcd](https://github.com/etcd-io/etcd) |
+| 时序数据库                   | [influxdb - github.com/influxdata/influxdb](https://github.com/influxdata/influxdb) |
+| 数据监控可视化看板           | [grafana - github.com/grafana/grafana](https://github.com/grafana/grafana) |
+| 开源监控系统                 | [prometheus - github.com/prometheus/prometheus](https://github.com/prometheus/prometheus) |
+| 分布式服务发现系统           | [consul - github.com/hashicorp/consul](https://github.com/hashicorp/consul) |
+| 亿级消息队列                 | [nsq - github.com/nsqio/nsq](https://github.com/nsqio/nsq)   |
+| 分布式数据库, go + rust 打造 | [TiDB - github.com/pingcap/tidb](https://github.com/pingcap/tidb) |
 
 
 

@@ -423,9 +423,9 @@ select 局部变量名;
 
 :::info 相关文章
 
-https://zhuanlan.zhihu.com/p/213770128
+[Mysql 核心日志（redolog、undolog、binlog）](https://zhuanlan.zhihu.com/p/213770128)
 
-https://blog.csdn.net/huangzhilin2015/article/details/115396599?ydreferer=aHR0cHM6Ly9jbi5iaW5nLmNvbS8%3D
+[MySQL--buffer pool、redo log、undo log、binlog](https://blog.csdn.net/huangzhilin2015/article/details/115396599?ydreferer=aHR0cHM6Ly9jbi5iaW5nLmNvbS8%3D)
 
 :::
 

@@ -58,7 +58,7 @@ feed:
 
 相关文档：
 
-1. https://springdoc.cn/spring-data-redis/#redis
+- [Spring Data Redis 中文文档](https://springdoc.cn/spring-data-redis/#redis)
 
 :::
 
@@ -174,9 +174,9 @@ public class RedisConfig {
 
 
 
-## Redission
+## Redisson
 
-> 中文文档：https://github.com/redisson/redisson/wiki/%E7%9B%AE%E5%BD%95
+> [Redisson中文文档](https://github.com/redisson/redisson/wiki/%E7%9B%AE%E5%BD%95)
 
 :::note 官方说明
 

@@ -143,7 +143,7 @@ RequestCondition是一个接口，它继承了springframework的Conditional接�
 
 :::info 相关文章
 
-http://c.biancheng.net/servlet2/httpservletrequest.html
+[HttpServletRequest接口详解](http://c.biancheng.net/servlet2/httpservletrequest.html)
 
 :::
 
@@ -180,7 +180,7 @@ http://c.biancheng.net/servlet2/httpservletrequest.html
 
 :::info 相关文章
 
-https://blog.csdn.net/Herishwater/article/details/103544342
+- [Spring Boot拦截器(Interceptor)详解](https://blog.csdn.net/Herishwater/article/details/103544342)
 
 :::
 

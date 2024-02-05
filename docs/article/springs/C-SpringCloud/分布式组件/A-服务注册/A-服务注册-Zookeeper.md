@@ -46,17 +46,13 @@ feed:
 
 :::info 相关资源
 
-官方文档：https://cwiki.apache.org/confluence/display/ZOOKEEPER/Index
+- [Zookeeper官方文档](https://cwiki.apache.org/confluence/display/ZOOKEEPER/Index)
 
-下载地址：https://zookeeper.apache.org/releases.html
-
-分布式锁框架 Curator 官网：https://curator.apache.org/
-
-相关视频：https://www.bilibili.com/video/BV1to4y1C7gw/?spm_id_from=333.337.search-card.all.click&vd_source=e356fec025b50061af78324a814f8da0
-
-相关文章：[zookeeper架构简介](https://www.cnblogs.com/arjenlee/articles/9224366.html#:~:text=Zookpeeper%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9E%B6%E6%9E%84%201%20%E6%AF%8F%E4%B8%AAServer%E5%9C%A8%E5%86%85%E5%AD%98%E4%B8%AD%E5%AD%98%E5%82%A8%E4%BA%86%E4%B8%80%E4%BB%BD%E6%95%B0%E6%8D%AE%EF%BC%9B%202,Zookeeper%E5%90%AF%E5%8A%A8%E6%97%B6%EF%BC%8C%E5%B0%86%E4%BB%8E%E5%AE%9E%E4%BE%8B%E4%B8%AD%E9%80%89%E4%B8%BE%E4%B8%80%E4%B8%AAleader%EF%BC%88Paxos%E5%8D%8F%E8%AE%AE%EF%BC%89%EF%BC%9B%203%20Leader%E8%B4%9F%E8%B4%A3%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%88Zab%E5%8D%8F%E8%AE%AE%EF%BC%89%EF%BC%9B%204%20%E4%B8%80%E4%B8%AA%E6%9B%B4%E6%96%B0%E6%93%8D%E4%BD%9C%E6%88%90%E5%8A%9F%EF%BC%8C%E5%BD%93%E4%B8%94%E4%BB%85%E5%BD%93%E5%A4%A7%E5%A4%9A%E6%95%B0Server%E5%9C%A8%E5%86%85%E5%AD%98%E4%B8%AD%E6%88%90%E5%8A%9F%E4%BF%AE%E6%94%B9)
-
-相关文章：[基本架构](https://blog.csdn.net/weixin_45366499/article/details/106899924)
+- [Zookeeper下载地址](https://zookeeper.apache.org/releases.html)
+- [分布式锁框架 Curator 官网](https://curator.apache.org/)
+- [【尚硅谷】大数据技术之Zookeeper 3.5.7版本教程](https://www.bilibili.com/video/BV1to4y1C7gw/?spm_id_from=333.337.search-card.all.click&vd_source=e356fec025b50061af78324a814f8da0)
+- [Zookeeper架构简介](https://www.cnblogs.com/arjenlee/articles/9224366.html#:~:text=Zookpeeper%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9E%B6%E6%9E%84%201%20%E6%AF%8F%E4%B8%AAServer%E5%9C%A8%E5%86%85%E5%AD%98%E4%B8%AD%E5%AD%98%E5%82%A8%E4%BA%86%E4%B8%80%E4%BB%BD%E6%95%B0%E6%8D%AE%EF%BC%9B%202,Zookeeper%E5%90%AF%E5%8A%A8%E6%97%B6%EF%BC%8C%E5%B0%86%E4%BB%8E%E5%AE%9E%E4%BE%8B%E4%B8%AD%E9%80%89%E4%B8%BE%E4%B8%80%E4%B8%AAleader%EF%BC%88Paxos%E5%8D%8F%E8%AE%AE%EF%BC%89%EF%BC%9B%203%20Leader%E8%B4%9F%E8%B4%A3%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%88Zab%E5%8D%8F%E8%AE%AE%EF%BC%89%EF%BC%9B%204%20%E4%B8%80%E4%B8%AA%E6%9B%B4%E6%96%B0%E6%93%8D%E4%BD%9C%E6%88%90%E5%8A%9F%EF%BC%8C%E5%BD%93%E4%B8%94%E4%BB%85%E5%BD%93%E5%A4%A7%E5%A4%9A%E6%95%B0Server%E5%9C%A8%E5%86%85%E5%AD%98%E4%B8%AD%E6%88%90%E5%8A%9F%E4%BF%AE%E6%94%B9)
+- [Zookeeper基本架构](https://blog.csdn.net/weixin_45366499/article/details/106899924)
 
 :::
 

@@ -52,7 +52,7 @@ feed:
 
 :::info 相关文章
 
-1. [面试问烂的 Spring IOC 过程](https://www.iocoder.cn/Fight/Interview-poorly-asked-Spring-IOC-process-1/)
+- [面试问烂的 Spring IOC 过程](https://www.iocoder.cn/Fight/Interview-poorly-asked-Spring-IOC-process-1/)
 
 :::
 

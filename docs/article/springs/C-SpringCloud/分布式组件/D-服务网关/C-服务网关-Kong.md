@@ -44,19 +44,17 @@ feed:
 
 # 服务网关-Kong
 
-> [Kong API 练习](https://mockbin.org/)（需要科学上网）
+> - [Kong API 练习](https://mockbin.org/)（需要科学上网）
 >
-> [Kong 官方文档](https://docs.konghq.com/gateway/3.2.x/get-started/services-and-routes/)
+> - [Kong 官方文档](https://docs.konghq.com/gateway/3.2.x/get-started/services-and-routes/)
 
 :::info 相关文章
 
-[网关神器Kong（一）：介绍](https://cloud.tencent.com/developer/article/1938873#:~:text=Kong%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9E%B6%E6%9E%84%201%20Kong%20%E4%BD%BF%E7%94%A8%20PostgreSQL%20%E6%88%96%20Cassandra,%E6%8F%90%E4%BE%9B%E4%BA%86%E6%8F%92%E4%BB%B6%E6%A8%A1%E5%9E%8B%EF%BC%8C%E4%BD%BF%E7%94%A8%20Lua%20%E8%84%9A%E6%9C%AC%E6%9D%A5%E5%AF%B9%20Nginx%20%E6%95%B4%E4%B8%AA%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%BF%9B%E8%A1%8C%E6%89%A9%E5%B1%95%E3%80%82%20%E5%AE%9E%E7%8E%B0%E4%BA%86%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%EF%BC%88%20%E9%99%90%E6%B5%81%E3%80%81%E7%86%94%E6%96%AD%E3%80%81%E9%AA%8C%E6%9D%83%E7%AD%89%20%EF%BC%89%E3%80%82)
+- [网关神器Kong（一）：介绍](https://cloud.tencent.com/developer/article/1938873#:~:text=Kong%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9E%B6%E6%9E%84%201%20Kong%20%E4%BD%BF%E7%94%A8%20PostgreSQL%20%E6%88%96%20Cassandra,%E6%8F%90%E4%BE%9B%E4%BA%86%E6%8F%92%E4%BB%B6%E6%A8%A1%E5%9E%8B%EF%BC%8C%E4%BD%BF%E7%94%A8%20Lua%20%E8%84%9A%E6%9C%AC%E6%9D%A5%E5%AF%B9%20Nginx%20%E6%95%B4%E4%B8%AA%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%BF%9B%E8%A1%8C%E6%89%A9%E5%B1%95%E3%80%82%20%E5%AE%9E%E7%8E%B0%E4%BA%86%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%EF%BC%88%20%E9%99%90%E6%B5%81%E3%80%81%E7%86%94%E6%96%AD%E3%80%81%E9%AA%8C%E6%9D%83%E7%AD%89%20%EF%BC%89%E3%80%82)
 
-[网关服务Kong和konga介绍安装使用教程](https://zhuanlan.zhihu.com/p/421894560)
-
-[KONG网关 — 介绍安装](https://zhuanlan.zhihu.com/p/109720608)
-
-[使用Kong作为微服务网关](https://zhuanlan.zhihu.com/p/268012199)
+- [网关服务Kong和konga介绍安装使用教程](https://zhuanlan.zhihu.com/p/421894560)
+- [KONG网关 — 介绍安装](https://zhuanlan.zhihu.com/p/109720608)
+- [使用Kong作为微服务网关](https://zhuanlan.zhihu.com/p/268012199)
 
 :::
 

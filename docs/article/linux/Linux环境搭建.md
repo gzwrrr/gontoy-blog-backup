@@ -52,18 +52,17 @@ feed:
 
 ## 搭建虚拟机
 
-[VMware 打开运行一段时间后卡死，CPU占比增至100%](https://blog.csdn.net/hxinyu6666/article/details/127893227)
+- [VMware 打开运行一段时间后卡死，CPU占比增至100%](https://blog.csdn.net/hxinyu6666/article/details/127893227)
 
-[Centos7修改IP地址](https://blog.csdn.net/WeiHao0240/article/details/121076163#:~:text=Centos7%E4%BF%AE%E6%94%B9IP%E5%9C%B0%E5%9D%80%201%201.%20%E6%9F%A5%E7%9C%8B%E6%9C%AC%E5%9C%B0ip%20ifconfig%201%202%202.,%E9%87%8D%E5%90%AF%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1%E5%8D%B3%E5%8F%AF%20service%20network%20restart%201%20%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%E9%87%8D%E5%90%AF%EF%BC%8C%E8%A6%81%E6%89%8B%E5%8A%A8%E9%87%8D%E5%90%AF%E4%B8%80%E4%B8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8D%B3%E5%8F%AF%E3%80%82%20%E6%B3%A8%E6%84%8F%EF%BC%9A%20%E5%A6%82%E6%9E%9C%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B2%A1%E6%9C%89%E6%98%BE%E7%A4%BA%E5%99%A8%EF%BC%8C%E9%82%A3%E5%B0%B1%E7%99%BB%E5%BD%95%E5%88%B0%E8%B7%AF%E7%94%B1%E5%99%A8%E9%87%8C%E9%9D%A2%E6%9F%A5%E7%9C%8B%E5%9C%A8%E7%BA%BF%E4%B8%BB%E6%9C%BA%E7%9A%84ip%E8%BF%9B%E8%A1%8C%E6%8E%A8%E6%B5%8B%E3%80%82)
+- [Centos7修改IP地址](https://blog.csdn.net/WeiHao0240/article/details/121076163#:~:text=Centos7%E4%BF%AE%E6%94%B9IP%E5%9C%B0%E5%9D%80%201%201.%20%E6%9F%A5%E7%9C%8B%E6%9C%AC%E5%9C%B0ip%20ifconfig%201%202%202.,%E9%87%8D%E5%90%AF%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1%E5%8D%B3%E5%8F%AF%20service%20network%20restart%201%20%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%E9%87%8D%E5%90%AF%EF%BC%8C%E8%A6%81%E6%89%8B%E5%8A%A8%E9%87%8D%E5%90%AF%E4%B8%80%E4%B8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8D%B3%E5%8F%AF%E3%80%82%20%E6%B3%A8%E6%84%8F%EF%BC%9A%20%E5%A6%82%E6%9E%9C%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B2%A1%E6%9C%89%E6%98%BE%E7%A4%BA%E5%99%A8%EF%BC%8C%E9%82%A3%E5%B0%B1%E7%99%BB%E5%BD%95%E5%88%B0%E8%B7%AF%E7%94%B1%E5%99%A8%E9%87%8C%E9%9D%A2%E6%9F%A5%E7%9C%8B%E5%9C%A8%E7%BA%BF%E4%B8%BB%E6%9C%BA%E7%9A%84ip%E8%BF%9B%E8%A1%8C%E6%8E%A8%E6%B5%8B%E3%80%82)
 
+- [linux yum install 提示：Loaded plugins: fastestmirror](https://blog.csdn.net/qcsdn123/article/details/120087514)
+  [centos安装docker显示 No package docker-ce available](https://blog.csdn.net/qq_25760623/article/details/88657491)
+  [【Bug解决】yum提示Another app is currently holding the yum lock； waiting for it to exit...](https://blog.csdn.net/Dan1374219106/article/details/112450922)
 
-
-[linux yum install **** 提示：Loaded plugins: fastestmirror](https://blog.csdn.net/qcsdn123/article/details/120087514)
-[centos安装docker显示 No package docker-ce available](https://blog.csdn.net/qq_25760623/article/details/88657491)
-[【Bug解决】yum提示Another app is currently holding the yum lock； waiting for it to exit...](https://blog.csdn.net/Dan1374219106/article/details/112450922)
-
-[Centos7下yum安装软件报错解决办法](https://www.cnblogs.com/HByang/p/9198712.html)
-[centos安装docker显示 No package docker-ce available](https://blog.csdn.net/qq_25760623/article/details/88657491)
+- [Centos7下yum安装软件报错解决办法](https://www.cnblogs.com/HByang/p/9198712.html)
+- [centos安装docker显示 No package docker-ce available](https://blog.csdn.net/qq_25760623/article/details/88657491)
+- [Centos /lib64/libc.so.6: version `GLIBC_2.28‘ not found (required by](https://blog.csdn.net/NinjaKilling/article/details/125979091)
 
 ```shell
 cd /etc/sysconfig/network-scripts
@@ -125,18 +124,6 @@ sdkman jdk 管理工具
 ```shell
 curl -s "https://get.sdkman.io" | bash
 ```
-
-
-
-
-
-
-
-## 报错
-
-1. [Centos /lib64/libc.so.6: version `GLIBC_2.28‘ not found (required by](https://blog.csdn.net/NinjaKilling/article/details/125979091)
-
-
 
 
 

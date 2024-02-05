@@ -1,5 +1,5 @@
 ---
-notPage: true
+otPage: true
 ---
 
 
@@ -84,6 +84,14 @@ Java 体系学习笔记，持续增加...
 
 
 
+
+## 书籍
+
+:::info 相关文章
+
+[史上最全的Java进阶书籍推荐](https://blog.csdn.net/qq_17231297/article/details/80763097)
+
+:::
 
 
 

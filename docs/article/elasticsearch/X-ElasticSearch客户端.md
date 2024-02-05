@@ -56,8 +56,8 @@ feed:
 
 相关文档：
 
-1. https://www.elastic.co/guide/en/elasticsearch/client/java-api-client/current/getting-started-java.html
-2. https://docs.spring.io/spring-data/elasticsearch/docs/current/reference/html/#reference
+1. [ElasticSearch官方文档](https://www.elastic.co/guide/en/elasticsearch/client/java-api-client/current/getting-started-java.html)
+2. [Spring ElasticSearch官方文档](https://docs.spring.io/spring-data/elasticsearch/reference/#reference)
 
 :::
 

@@ -286,12 +286,12 @@ function resolveRelativePath(to, from) {
   return fromSegments.slice(0, position).join("/") + "/" + toSegments.slice(toPosition - (toPosition === toSegments.length ? 1 : 0)).join("/");
 }
 var NavigationType;
-(function (NavigationType2) {
+(function(NavigationType2) {
   NavigationType2["pop"] = "pop";
   NavigationType2["push"] = "push";
 })(NavigationType || (NavigationType = {}));
 var NavigationDirection;
-(function (NavigationDirection2) {
+(function(NavigationDirection2) {
   NavigationDirection2["back"] = "back";
   NavigationDirection2["forward"] = "forward";
   NavigationDirection2["unknown"] = "";
@@ -667,7 +667,7 @@ var START_LOCATION_NORMALIZED = {
 };
 var NavigationFailureSymbol = Symbol(true ? "navigation failure" : "");
 var NavigationFailureType;
-(function (NavigationFailureType2) {
+(function(NavigationFailureType2) {
   NavigationFailureType2[NavigationFailureType2["aborted"] = 4] = "aborted";
   NavigationFailureType2[NavigationFailureType2["cancelled"] = 8] = "cancelled";
   NavigationFailureType2[NavigationFailureType2["duplicated"] = 16] = "duplicated";
@@ -781,8 +781,8 @@ function tokensToParser(segments, extraOptions) {
         let subPattern = repeatable ? `((?:${re2})(?:/(?:${re2}))*)` : `(${re2})`;
         if (!tokenIndex)
           subPattern = // avoid an optional / if there are more segments e.g. /:p?-static
-            // or /:p?-:p2
-            optional && segment.length < 2 ? `(?:/${subPattern})` : "/" + subPattern;
+          // or /:p?-:p2
+          optional && segment.length < 2 ? `(?:/${subPattern})` : "/" + subPattern;
         if (optional)
           subPattern += "?";
         pattern += subPattern;
@@ -1144,8 +1144,8 @@ function createRouterMatcher(routes, globalOptions) {
   function insertMatcher(matcher) {
     let i = 0;
     while (i < matchers.length && comparePathParserScore(matcher, matchers[i]) >= 0 && // Adding children with empty path should still appear before the parent
-      // https://github.com/vuejs/router/issues/1124
-      (matcher.record.path !== matchers[i].record.path || !isRecordChildOf(matcher, matchers[i])))
+    // https://github.com/vuejs/router/issues/1124
+    (matcher.record.path !== matchers[i].record.path || !isRecordChildOf(matcher, matchers[i])))
       i++;
     matchers.splice(i, 0, matcher);
     if (matcher.record.name && !isAliasRecord(matcher))
@@ -1465,7 +1465,7 @@ function onBeforeRouteUpdate(updateGuard) {
 }
 function guardToPromiseFn(guard, to, from, record, name) {
   const enterCallbackArray = record && // name is defined if record is because of the function overload
-    (record.enterCallbacks[name] = record.enterCallbacks[name] || []);
+  (record.enterCallbacks[name] = record.enterCallbacks[name] || []);
   return () => new Promise((resolve, reject) => {
     const next = (valid) => {
       if (valid === false) {
@@ -1482,7 +1482,7 @@ function guardToPromiseFn(guard, to, from, record, name) {
         }));
       } else {
         if (enterCallbackArray && // since enterCallbackArray is truthy, both record and name also are
-          record.enterCallbacks[name] === enterCallbackArray && typeof valid === "function") {
+        record.enterCallbacks[name] === enterCallbackArray && typeof valid === "function") {
           enterCallbackArray.push(valid);
         }
         resolve();
@@ -1517,7 +1517,7 @@ ${guard.toString()}
 }
 function canOnlyBeCalledOnce(next, to, from) {
   let called = 0;
-  return function () {
+  return function() {
     if (called++ === 1)
       warn(`The "next" callback was called more than once in one navigation guard when going from "${from.fullPath}" to "${to.fullPath}". It should be called exactly one time in each navigation guard. This will fail in production.`);
     next._called = true;
@@ -1542,7 +1542,7 @@ function extractComponentsGuards(matched, guardType, to, from) {
           const promise = rawComponent;
           rawComponent = () => promise;
         } else if (rawComponent.__asyncLoader && // warn only once per component
-          !rawComponent.__warnedDefineAsync) {
+        !rawComponent.__warnedDefineAsync) {
           rawComponent.__warnedDefineAsync = true;
           warn(`Component "${name}" in record with path "${record.path}" is defined using "defineAsyncComponent()". Write "() => import('./MyPage.vue')" instead of "defineAsyncComponent(() => import('./MyPage.vue'))".`);
         }
@@ -1609,10 +1609,10 @@ function useLink(props) {
     return (
       // we are dealing with nested routes
       length > 1 && // if the parent and matched route have the same path, this link is
-        // referring to the empty child. Or we currently are on a different
-        // child of the same parent
-        getOriginalPath(routeMatched) === parentRecordPath && // avoid comparing the child with its parent
-        currentMatched[currentMatched.length - 1].path !== parentRecordPath ? currentMatched.findIndex(isSameRouteRecord.bind(null, matched[length - 2])) : index
+      // referring to the empty child. Or we currently are on a different
+      // child of the same parent
+      getOriginalPath(routeMatched) === parentRecordPath && // avoid comparing the child with its parent
+      currentMatched[currentMatched.length - 1].path !== parentRecordPath ? currentMatched.findIndex(isSameRouteRecord.bind(null, matched[length - 2])) : index
     );
   });
   const isActive = computed(() => activeRecordIndex.value > -1 && includesParams(currentRoute.params, route.value.params));
@@ -1776,8 +1776,8 @@ var RouterViewImpl = defineComponent({
         }
       }
       if (instance && to && // if there is no instance but to and from are the same this might be
-        // the first visit
-        (!from || !isSameRouteRecord(to, from) || !oldInstance)) {
+      // the first visit
+      (!from || !isSameRouteRecord(to, from) || !oldInstance)) {
         (to.enterCallbacks[name] || []).forEach((callback) => callback(instance));
       }
     }, { flush: "post" });
@@ -2014,8 +2014,8 @@ function addDevtools(app, router, matcher) {
         return;
       const payload = activeRoutesPayload;
       let routes = matcher.getRoutes().filter((route) => !route.parent || // these routes have a parent with no component which will not appear in the view
-        // therefore we still need to include them
-        !route.parent.record.components);
+      // therefore we still need to include them
+      !route.parent.record.components);
       routes.forEach(resetMatchStateOnRouteRecord);
       if (payload.filter) {
         routes = routes.filter((route) => (
@@ -2299,7 +2299,7 @@ function createRouter(options) {
     let matcherLocation;
     if ("path" in rawLocation) {
       if ("params" in rawLocation && !("name" in rawLocation) && // @ts-expect-error: the type is never
-        Object.keys(rawLocation.params).length) {
+      Object.keys(rawLocation.params).length) {
         warn(`Path "${rawLocation.path}" was passed with params but they will be ignored. Use a named route alongside params instead.`);
       }
       matcherLocation = assign({}, rawLocation, {
@@ -2447,12 +2447,12 @@ ${JSON.stringify(newTargetLocation, null, 2)}
           /* ErrorTypes.NAVIGATION_GUARD_REDIRECT */
         )) {
           if (// we are redirecting to the same location we were already at
-            isSameRouteLocation(stringifyQuery$1, resolve(failure2.to), toLocation) && // and we have done it a couple of times
-            redirectedFrom && // @ts-expect-error: added only in dev
-            (redirectedFrom._count = redirectedFrom._count ? (
-              // @ts-expect-error
-              redirectedFrom._count + 1
-            ) : 1) > 30) {
+          isSameRouteLocation(stringifyQuery$1, resolve(failure2.to), toLocation) && // and we have done it a couple of times
+          redirectedFrom && // @ts-expect-error: added only in dev
+          (redirectedFrom._count = redirectedFrom._count ? (
+            // @ts-expect-error
+            redirectedFrom._count + 1
+          ) : 1) > 30) {
             warn(`Detected a possibly infinite redirection in a navigation guard when going from "${from.fullPath}" to "${toLocation.fullPath}". Aborting to avoid a Stack Overflow.
  Are you always returning a new location within a navigation guard? That would lead to this error. Only return when redirecting or aborting, that should fix this. This might break in production if not fixed.`);
             return Promise.reject(new Error("Infinite redirect in navigation guard"));
@@ -2624,12 +2624,12 @@ ${JSON.stringify(newTargetLocation, null, 2)}
         );
         if (failure) {
           if (info.delta && // a new navigation has been triggered, so we do not want to revert, that will change the current history
-            // entry while a different route is displayed
-            !isNavigationFailure(
-              failure,
-              8
-              /* ErrorTypes.NAVIGATION_CANCELLED */
-            )) {
+          // entry while a different route is displayed
+          !isNavigationFailure(
+            failure,
+            8
+            /* ErrorTypes.NAVIGATION_CANCELLED */
+          )) {
             routerHistory.go(-info.delta, false);
           } else if (info.type === NavigationType.pop && isNavigationFailure(
             failure,
@@ -2714,8 +2714,8 @@ ${JSON.stringify(newTargetLocation, null, 2)}
         get: () => unref(currentRoute)
       });
       if (isBrowser && // used for the initial navigation client side to avoid pushing
-        // multiple times when the router is used in multiple apps
-        !started && currentRoute.value === START_LOCATION_NORMALIZED) {
+      // multiple times when the router is used in multiple apps
+      !started && currentRoute.value === START_LOCATION_NORMALIZED) {
         started = true;
         push(routerHistory.location).catch((err) => {
           if (true)
@@ -2734,7 +2734,7 @@ ${JSON.stringify(newTargetLocation, null, 2)}
       app.provide(routerViewLocationKey, currentRoute);
       const unmountApp = app.unmount;
       installedApps.add(app);
-      app.unmount = function () {
+      app.unmount = function() {
         installedApps.delete(app);
         if (installedApps.size < 1) {
           pendingLocation = START_LOCATION_NORMALIZED;
